@@ -5,6 +5,11 @@ library UNISIM;
 use UNISIM.vcomponents.all;
 
 entity ampl_top is
+  generic (
+    ADC_DATA_LINES  : integer := 7;
+    ADC_RESOLUTION  : integer := 14;
+    DATA_OUT_W      : integer := 13
+  );
   port (
     CLK80       : in std_logic;
     CLK40       : out std_logic;
@@ -17,11 +22,11 @@ entity ampl_top is
     STR         : in std_logic;
     DV          : out std_logic;
 
-    ADC0_n      : in std_logic_vector (6 downto 0);
-    ADC0_p      : in std_logic_vector (6 downto 0);
-    ADC1_n      : in std_logic_vector (6 downto 0);
-    ADC1_p      : in std_logic_vector (6 downto 0);
-    DOUT        : out std_logic_vector (12 downto 0)
+    ADC0_N      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADC0_P      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADC1_N      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADC1_P      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    DOUT        : out std_logic_vector (DATA_OUT_W-1 downto 0)
   );
 end ampl_top;
 
@@ -29,8 +34,8 @@ architecture Frontend of ampl_top is
 
   signal rstn : std_logic;
 
-  signal ADC0_ddr, ADC1_ddr : std_logic_vector(6 downto 0);
-  signal ADC0, ADC1 : std_logic_vector(6 downto 0);
+  signal adc1_ddr_ddr, adc1_ddr : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal d_in0, d_in1 : std_logic_vector(ADC_RESOLUTION-1 downto 0);
 
   component ampl_logic
   port (
@@ -42,31 +47,26 @@ architecture Frontend of ampl_top is
     evnt      : in std_logic;
     evout     : out std_logic;
     
-    d_in_a    : in std_logic_vector (13 downto 0);
-    d_in_b    : in std_logic_vector (13 downto 0);
-    d_out     : out std_logic_vector (12 downto 0);
+    d_in0     : in std_logic_vector (13 downto 0);
+    d_in1    : in std_logic_vector (13 downto 0);
+    d_out     : out std_logic_vector (12 downto 0)
   );
   end component;
 
 begin
-
-  CLK_BUF : IBUF port map(
-    I => CLK80,
-    O => clk
-  );
   
   CLK40_BUF   : OBUF port map(
-    I => CNT(0),
+    I => clk_gate,
     O => CLK40
   );
 
   CLK20_BUF   : OBUF port map(
-    I => CNT(1),
+    I => clk_int_a,
     O => CLK20_P
   );
 
   CLK20_N_BUF : OBUF port map(
-    I => not CNT(1),
+    I => clk_int_b,
     O => CLK20_N
   );
 
@@ -77,11 +77,11 @@ begin
 
   EV_BUF  : IBUF port map(
     I => EV,
-    O => EVNT
+    O => evnt
   );
 
   EV_OUT_BUF : OBUF port map(
-    I => EVOUT,
+    I => evout,
     O => EV_out
   );
 
@@ -96,23 +96,51 @@ begin
     O => DV
   );
 
-  ADC0_IN : for i in 0 to 11 generate
-    ADC0_IBUFDS : IBUFDS port map(
-      I  => ADC0_p(i),
-      IB => ADC0_n(i),
-      O  => ADC0_ddr(i)
-    );
+  adc0_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
+          adc1_ddr_IBUFDS : IBUFDS port map(
+            I  => ADC0_P(i),
+            IB => ADC0_N(i),
+            O  => adc0_ddr(i)
+          );
+
+          adc0_IDDRE1 : IDDRE1 generic map (
+            DDR_CLK_EDGE => "OPPOSITE_EDGE",
+            IS_CB_INVERTED => '1',
+            IS_C_INVERTED => '0'
+          )
+          port map (
+            Q1 => d_in0(2*i),
+            Q2 => d_in0(2*i+1),
+            C => clk,
+            CB => clk_n,
+            D => adc0_ddr(i),
+            R => rstn
+          );
   end generate;
   
-  ADC0_IN : for i in 0 to 11 generate
-    ADC1_IBUFDS : IBUFDS port map(
-      I  => ADC1_p(i),
-      IB => ADC1_n(i),
-      O  => ADC1_ddr(i)
-    );
+  adc1_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
+          ADC1_IBUFDS : IBUFDS port map(
+            I  => ADC1_P(i),
+            IB => ADC1_N(i),
+            O  => adc1_ddr(i)
+          );
+
+          adc1_IDDRE1 : IDDRE1 generic map (
+            DDR_CLK_EDGE => "OPPOSITE_EDGE",
+            IS_CB_INVERTED => '1',
+            IS_C_INVERTED => '0'
+          )
+          port map (
+            Q1 => d_in1(2*i),
+            Q2 => d_in1(2*i+1),
+            C => clk,
+            CB => clk_n,
+            D => adc1_ddr(i),
+            R => rstn
+          );
   end generate;
 
-  DATA_OUT : for i in 0 to 12 generate
+  DATA_OUT : for i in 0 to DATA_OUT_W-1 generate
     DOUT_OUT : OBUF port map(
       I => d_out(i),
       O => DOUT(i)
