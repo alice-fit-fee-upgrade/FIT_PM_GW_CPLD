@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="xOZ5PSezsBWC3icij8oC" name="Page-1">
-        <mxGraphModel dx="1181" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="1181" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -14,7 +14,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="34" value="INTA_G_DRV (CLK20_P)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="32" vertex="1" connectable="0">
+                <mxCell id="34" value="INTA_G_DRV (20MHz)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="32" vertex="1" connectable="0">
                     <mxGeometry x="0.2037" y="1" relative="1" as="geometry">
                         <mxPoint x="17" y="-1" as="offset"/>
                     </mxGeometry>
@@ -26,7 +26,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="35" value="INTB_G_DRV (CLK20_N)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="33" vertex="1" connectable="0">
+                <mxCell id="35" value="INTB_G_DRV (20MHz)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="33" vertex="1" connectable="0">
                     <mxGeometry x="0.089" relative="1" as="geometry">
                         <mxPoint x="14" as="offset"/>
                     </mxGeometry>
@@ -41,26 +41,14 @@
                         <mxPoint x="44" y="-29" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="3" value="CPLD [1:12]" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                <mxCell id="3" value="FGPA" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="800" y="400" width="100" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="41" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;" parent="1" source="4" target="40" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Integrators [1:12]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="4" value="Integrators [1:2]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="562" y="400" width="105" height="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="36" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6" target="3" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="1030" y="300"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="37" value="ADC_CLK&lt;br&gt;(CLK80)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="36" vertex="1" connectable="0">
-                    <mxGeometry x="-0.1895" y="1" relative="1" as="geometry">
-                        <mxPoint x="29" y="-46" as="offset"/>
-                    </mxGeometry>
                 </mxCell>
                 <mxCell id="47" style="edgeStyle=elbowEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;elbow=vertical;" parent="1" source="6" target="40" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -73,7 +61,12 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="6" value="PLL with delay control [1:12]&lt;br&gt;(CDCF5901)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="56" value="ADC_CLK&lt;br&gt;(240MHz)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="47">
+                    <mxGeometry x="-0.3062" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="PLL with delay control [1:2]&lt;br&gt;(CDCF5801)" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="740" y="110" width="270" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7" target="23" edge="1">
@@ -126,7 +119,7 @@
                         <mxPoint x="740" y="190" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="27" value="PLL_CLK0[1:12]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="26" vertex="1" connectable="0">
+                <mxCell id="27" value="PLL_CLK0[1:2]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="26" vertex="1" connectable="0">
                     <mxGeometry x="-0.392" y="-2" relative="1" as="geometry">
                         <mxPoint x="17" y="-2" as="offset"/>
                     </mxGeometry>
@@ -146,11 +139,11 @@
                 <mxCell id="31" value="dlyctrl" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="850" y="240" width="50" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" value="ADC [1:12]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="40" value="ADC [1:2]" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="562" y="530" width="105" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="44" value="Integrators clock is phase aligned with PLL_CLK0[1:12]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-                    <mxGeometry x="550" y="290" width="320" height="30" as="geometry"/>
+                <mxCell id="44" value="Integrators clock is phase aligned with PLL_CLK0[1:2]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="555" y="280" width="310" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="45" value="" style="endArrow=classic;html=1;elbow=vertical;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" target="6" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -183,8 +176,11 @@
                         <mxPoint x="44" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="53" value="DS90LT012" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="560" y="220" width="100" height="40" as="geometry"/>
+                <mxCell id="57" value="DS90LT012" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="215" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;INTB_G_DRV is negation of&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 11px; background-color: rgb(24, 20, 29);&quot;&gt;INTA_G_DRV&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="305" width="230" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
