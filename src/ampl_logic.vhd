@@ -3,6 +3,11 @@ use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_UNSIGNED.all;
 
 entity ampl_logic is
+  generic (
+    ADC_RESOLUTION_BITS   : integer := 14;
+    DATA_OUT_W            : integer := 13;
+    ADC_OVERFLOW_VAL      : integer := 16#1FFF# -- 16#3FFF# max value for 14-bits
+  );
   port (
     clk80     : in std_logic;
     rstn      : in std_logic;
