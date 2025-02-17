@@ -17,27 +17,47 @@ entity ampl_top is
     CLK20_N     : out std_logic;
 
     ENA         : in std_logic;
+    STR         : in std_logic;
     EV          : in std_logic;
     EV_out      : out std_logic;
-    STR         : in std_logic;
+    
+    ADCA_CLK_N  : in std_logic;
+    ADCA_CLK_P  : in std_logic;
+    ADCAA_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCAA_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCAB_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCAB_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    
+    ADCB_CLK_N  : in std_logic;
+    ADCB_CLK_P  : in std_logic;
+    ADCBA_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCBA_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCBB_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCBB_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    
     DV          : out std_logic;
-
-    ADCA_N      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCA_P      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCB_N      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCB_P      : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
     DOUT        : out std_logic_vector (DATA_OUT_W-1 downto 0)
   );
 end ampl_top;
 
 architecture Frontend of ampl_top is
 
+  signal clk : std_logic;
   signal rstn : std_logic := '0';
-  signal clk_gate, clk_int_a, clk_int_b : std_logic;
-  signal adcA_ddr, adcB_ddr : std_logic_vector(ADC_DATA_LINES-1 downto 0);
-  signal d_inA, d_inB : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-
+  signal clk_gate, clk_int_A, clk_int_B : std_logic;
   signal clks_locked, clk_fb : std_logic;
+
+  signal enai, strb, evnt, evout : std_logic;
+
+  signal adcA_clk_n_buff, adcA_clk_p_buff, adcB_clk_n_buff, adcB_clk_p_buff : std_logic;
+  signal adcA_clk_n_bufg, adcA_clk_p_bufg, adcB_clk_n_bufg, adcB_clk_p_bufg : std_logic;
+  signal adcA_clk_buff, adcB_clk_buff : std_logic;
+  signal adcA_clk, adcB_clk : std_logic;
+  signal adcAA_ddr, adcAB_ddr, adcBA_ddr, adcBB_ddr : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d, adcAB_d, adcBA_d, adcBB_d : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+
+  signal d_val : std_logic;
+  signal d_out : std_logic_vector(DATA_OUT_W-1 downto 0);
 
   component ampl_logic
   generic (
@@ -48,15 +68,26 @@ architecture Frontend of ampl_top is
   port (
     clk       : in std_logic;
     rstn      : in std_logic;
-    
-    strb      : in std_logic;
+
+    clk_gate  : in std_logic;
+    clk_int_A : in std_logic;
+    clk_int_B : in std_logic;
+
     enai      : in std_logic;
+    strb      : in std_logic;
     evnt      : in std_logic;
     evout     : out std_logic;
     
-    d_inA     : in std_logic_vector (ADC_RESOLUTION_BITS-1 downto 0);
-    d_inB     : in std_logic_vector (ADC_RESOLUTION_BITS-1 downto 0);
-    d_out     : out std_logic_vector (DATA_OUT_W-1 downto 0)
+    clk_inA   : in std_logic;
+    d_inAA     : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+    d_inAB     : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+
+    clk_inB   : in std_logic;
+    d_inBA     : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+    d_inBB     : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+
+    d_val     : out std_logic;
+    d_out     : out std_logic_vector(DATA_OUT_W-1 downto 0)
   );
   end component;
 
@@ -65,100 +96,211 @@ begin
   Logic : ampl_logic port map(
     clk   => clk,
     rstn  => clks_locked,
+
+    clk_gate  => clk_gate,
+    clk_int_A => clk_int_A,
+    clk_int_B => clk_int_B,
     
-    strb  => strb,
     enai  => enai,
+    strb  => strb,
     evnt  => evnt,
     evout => evout,
     
-    d_inA => d_inA,
-    d_inB => d_inB,
+    clk_inA => adcA_clk,
+    d_inAA  => adcAA_d,
+    d_inAB  => adcAB_d,
+
+    clk_inB => adcB_clk,
+    d_inBA  => adcBA_d,
+    d_inBB  => adcBB_d,
+
+    d_val => d_val,
     d_out => d_out
   );
   
-  CLK40_BUF   : OBUF port map(
+  clk_gate_obuf : OBUF port map(
     I => clk_gate,
     O => CLK40
   );
 
-  CLK20_BUF   : OBUF port map(
-    I => clk_int_a,
+  clk_int_A_obuf : OBUF port map(
+    I => clk_int_A,
     O => CLK20_P
   );
 
-  CLK20_N_BUF : OBUF port map(
-    I => clk_int_b,
+  clk_int_B_obuf : OBUF port map(
+    I => clk_int_B,
     O => CLK20_N
   );
 
-  ENA_BUF : IBUF port map(
+  enai_ibuf : IBUF port map(
     I => ENA,
     O => enai
   );
 
-  EV_BUF  : IBUF port map(
+  evnt_ibuf : IBUF port map(
     I => EV,
     O => evnt
   );
 
-  EV_OUT_BUF : OBUF port map(
+  ev_out_obuf : OBUF port map(
     I => evout,
     O => EV_out
   );
 
 
-  STR_BUF : IBUF port map(
+  str_ibuf : IBUF port map(
     I => STR,
     O => strb
   );
 
-  DV_BUF : OBUF port map(
-    I => dly(7),
+  d_val_obuf : OBUF port map(
+    I => d_val,
     O => DV
   );
 
-  adcA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
-          adcB_ddr_IBUFDS : IBUFDS port map(
-            I  => ADCA_P(i),
-            IB => ADCA_N(i),
-            O  => adcA_ddr(i)
-          );
+  adcA_clk_ibufds_diff_out : IBUFDS_DIFF_OUT port map(
+    I  => ADCA_CLK_P,
+    IB => ADCA_CLK_N,
+    O  => adcA_clk_p_buff,
+    OB => adcA_clk_n_buff
+  );
 
-          adc0_IDDRE1 : IDDRE1 generic map (
-            DDR_CLK_EDGE => "OPPOSITE_EDGE",
-            IS_CB_INVERTED => '1',
-            IS_C_INVERTED => '0'
-          )
-          port map (
-            Q1 => d_inA(2*i),
-            Q2 => d_inA(2*i+1),
-            C => clk,
-            CB => clk_n,
-            D => adcA_ddr(i),
-            R => rstn
-          );
+  adcA_clk_p_buff_bufg : BUFG port map(
+    I => adcA_clk_p_buff,
+    O => adcA_clk_p_bufg
+  );
+
+  adcA_clk_n_buff_bufg : BUFG port map(
+    I => adcA_clk_n_buff,
+    O => adcA_clk_n_bufg
+  );
+
+  adcA_clk_ibufds : IBUFDS port map(
+    I  => ADCA_CLK_P,
+    IB => ADCA_CLK_N,
+    O  => adcA_clk_buff
+  );
+
+  adcA_clk_bufg : BUFG port map(
+    I => adcA_clk_buff,
+    O => adcA_clk
+  );
+
+  adcAA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
+        adcAA_ibufds : IBUFDS port map(
+          I  => ADCAA_P(i),
+          IB => ADCAA_N(i),
+          O  => adcAA_ddr(i)
+        );
+
+        adcAA_iddre1 : IDDRE1 generic map (
+          DDR_CLK_EDGE => "OPPOSITE_EDGE",
+          IS_CB_INVERTED => '1',
+          IS_C_INVERTED => '0'
+        )
+        port map (
+          R  => rstn,
+          C  => adcA_clk_p_bufg,
+          CB => adcA_clk_n_bufg,
+          D  => adcAA_ddr(i),
+          Q1 => adcAA_d(2*i),
+          Q2 => adcAA_d(2*i+1)
+        );
   end generate;
-  
-  adcB_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
-          ADC1_IBUFDS : IBUFDS port map(
-            I  => ADCB_P(i),
-            IB => ADCB_N(i),
-            O  => adcB_ddr(i)
-          );
 
-          adc1_IDDRE1 : IDDRE1 generic map (
-            DDR_CLK_EDGE => "OPPOSITE_EDGE",
-            IS_CB_INVERTED => '1',
-            IS_C_INVERTED => '0'
-          )
-          port map (
-            Q1 => d_inB(2*i),
-            Q2 => d_inB(2*i+1),
-            C => clk,
-            CB => clk_n,
-            D => adcB_ddr(i),
-            R => rstn
-          );
+  adcA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
+        adcAB_ibufds : IBUFDS port map(
+          I  => ADCAB_P(i),
+          IB => ADCAB_N(i),
+          O  => adcAB_ddr(i)
+        );
+
+        adcAB_iddre1 : IDDRE1 generic map (
+          DDR_CLK_EDGE => "OPPOSITE_EDGE",
+          IS_CB_INVERTED => '1',
+          IS_C_INVERTED => '0'
+        )
+        port map (
+          R  => rstn,
+          C  => adcA_clk_p_bufg,
+          CB => adcA_clk_n_bufg,
+          D  => adcAB_ddr(i),
+          Q1 => adcAB_d(2*i),
+          Q2 => adcAB_d(2*i+1)
+        );
+  end generate;
+
+  adcB_clk_ibufds_diff_out : IBUFDS_DIFF_OUT port map(
+    I  => ADCB_CLK_P,
+    IB => ADCB_CLK_N,
+    O  => adcB_clk_p_buff,
+    OB => adcB_clk_n_buff
+  );
+
+  adcB_clk_p_buff_bufg : BUFG port map(
+    I => adcB_clk_p_buff,
+    O => adcB_clk_p_bufg
+  );
+
+  adcB_clk_n_buff_bufg : BUFG port map(
+    I => adcB_clk_n_buff,
+    O => adcB_clk_n_bufg
+  );
+
+  adcB_clk_ibufds : IBUFDS port map(
+    I  => ADCB_CLK_P,
+    IB => ADCB_CLK_N,
+    O  => adcB_clk_buff
+  );
+
+  adcB_clk_bufg : BUFG port map(
+    I => adcB_clk_buff,
+    O => adcB_clk
+  );
+
+  adcBA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
+        adcBA_ibufds : IBUFDS port map(
+          I  => ADCBA_P(i),
+          IB => ADCBA_N(i),
+          O  => adcBA_ddr(i)
+        );
+
+        adcBA_iddre1 : IDDRE1 generic map (
+          DDR_CLK_EDGE => "OPPOSITE_EDGE",
+          IS_CB_INVERTED => '1',
+          IS_C_INVERTED => '0'
+        )
+        port map (
+          R  => rstn,
+          C  => adcB_clk_p_bufg,
+          CB => adcB_clk_n_bufg,
+          D  => adcBA_ddr(i),
+          Q1 => adcBA_d(2*i),
+          Q2 => adcBA_d(2*i+1)
+        );
+  end generate;
+
+  adcBB_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
+        adcBB_ibufds : IBUFDS port map(
+          I  => ADCBB_P(i),
+          IB => ADCBB_N(i),
+          O  => adcBB_ddr(i)
+        );
+
+        adcBB_iddre1 : IDDRE1 generic map (
+          DDR_CLK_EDGE => "OPPOSITE_EDGE",
+          IS_CB_INVERTED => '1',
+          IS_C_INVERTED => '0'
+        )
+        port map (
+          R  => rstn,
+          C  => adcB_clk_p_bufg,
+          CB => adcB_clk_n_bufg,
+          D  => adcBB_ddr(i),
+          Q1 => adcBB_d(2*i),
+          Q2 => adcBB_d(2*i+1)
+        );
   end generate;
 
   DATA_OUT : for i in 0 to DATA_OUT_W-1 generate
@@ -182,7 +324,7 @@ begin
       CLKOUT1_DIVIDE => 2,        -- Divide amount for CLKOUT (1-128)
       CLKOUT1_DUTY_CYCLE => 0.5,  -- Duty cycle for CLKOUT outputs (0.001-0.999).
       CLKOUT1_PHASE => 0.0,       -- Phase offset for CLKOUT outputs (-360.000-360.000).
-      -- clk_int_a / clk_int_b (20MHz)
+      -- clk_int_A / clk_int_B (20MHz)
       CLKOUT2_DIVIDE => 4,        -- Divide amount for CLKOUT (1-128)
       CLKOUT2_DUTY_CYCLE => 0.5,  -- Duty cycle for CLKOUT outputs (0.001-0.999).
       CLKOUT2_PHASE => 0.0,       -- Phase offset for CLKOUT outputs (-360.000-360.000).
@@ -203,8 +345,8 @@ begin
       CLKOUT0B  => open,
       CLKOUT1   => clk_gate,
       CLKOUT1B  => open,
-      CLKOUT2   => clk_int_a,
-      CLKOUT2B  => clk_int_b,
+      CLKOUT2   => clk_int_A,
+      CLKOUT2B  => clk_int_B,
       CLKOUT3   => open,
       CLKOUT3B  => open,
       CLKOUT4   => open,
