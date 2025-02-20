@@ -54,6 +54,10 @@ architecture Frontend of ampl_top is
   signal adcA_clk_buff, adcB_clk_buff : std_logic;
   signal adcA_clk, adcB_clk : std_logic;
   signal adcAA_ddr, adcAB_ddr, adcBA_ddr, adcBB_ddr : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+
+  signal adcAA_d_odd, adcAB_d_odd, adcBA_d_odd, adcBB_d_odd : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d_even, adcAB_d_even, adcBA_d_even, adcBB_d_even : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+
   signal adcAA_d, adcAB_d, adcBA_d, adcBB_d : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
 
   signal d_val : std_logic;
@@ -159,23 +163,6 @@ begin
     O => DV
   );
 
-  adcA_clk_ibufds_diff_out : IBUFDS_DIFF_OUT port map(
-    I  => ADCA_CLK_P,
-    IB => ADCA_CLK_N,
-    O  => adcA_clk_p_buff,
-    OB => adcA_clk_n_buff
-  );
-
-  adcA_clk_p_buff_bufg : BUFG port map(
-    I => adcA_clk_p_buff,
-    O => adcA_clk_p_bufg
-  );
-
-  adcA_clk_n_buff_bufg : BUFG port map(
-    I => adcA_clk_n_buff,
-    O => adcA_clk_n_bufg
-  );
-
   adcA_clk_ibufds : IBUFDS port map(
     I  => ADCA_CLK_P,
     IB => ADCA_CLK_N,
@@ -200,12 +187,12 @@ begin
           IS_C_INVERTED => '0'
         )
         port map (
-          R  => rstn,
-          C  => adcA_clk_p_bufg,
-          CB => adcA_clk_n_bufg,
+          R  => not(rstn),
+          C  => adcA_clk,
+          CB => adcA_clk,
           D  => adcAA_ddr(i),
-          Q1 => adcAA_d(2*i),
-          Q2 => adcAA_d(2*i+1)
+          Q1 => adcAA_d_odd(i),
+          Q2 => adcAA_d_even(i)
         );
   end generate;
 
@@ -222,31 +209,14 @@ begin
           IS_C_INVERTED => '0'
         )
         port map (
-          R  => rstn,
-          C  => adcA_clk_p_bufg,
-          CB => adcA_clk_n_bufg,
+          R  => not(rstn),
+          C  => adcA_clk,
+          CB => adcA_clk,
           D  => adcAB_ddr(i),
-          Q1 => adcAB_d(2*i),
-          Q2 => adcAB_d(2*i+1)
+          Q1 => adcAB_d_odd(i),
+          Q2 => adcAB_d_even(i)
         );
   end generate;
-
-  adcB_clk_ibufds_diff_out : IBUFDS_DIFF_OUT port map(
-    I  => ADCB_CLK_P,
-    IB => ADCB_CLK_N,
-    O  => adcB_clk_p_buff,
-    OB => adcB_clk_n_buff
-  );
-
-  adcB_clk_p_buff_bufg : BUFG port map(
-    I => adcB_clk_p_buff,
-    O => adcB_clk_p_bufg
-  );
-
-  adcB_clk_n_buff_bufg : BUFG port map(
-    I => adcB_clk_n_buff,
-    O => adcB_clk_n_bufg
-  );
 
   adcB_clk_ibufds : IBUFDS port map(
     I  => ADCB_CLK_P,
@@ -272,12 +242,12 @@ begin
           IS_C_INVERTED => '0'
         )
         port map (
-          R  => rstn,
-          C  => adcB_clk_p_bufg,
-          CB => adcB_clk_n_bufg,
+          R  => not(rstn),
+          C  => adcB_clk,
+          CB => adcB_clk,
           D  => adcBA_ddr(i),
-          Q1 => adcBA_d(2*i),
-          Q2 => adcBA_d(2*i+1)
+          Q1 => adcBA_d_odd(i),
+          Q2 => adcBA_d_even(i)
         );
   end generate;
 
@@ -294,12 +264,12 @@ begin
           IS_C_INVERTED => '0'
         )
         port map (
-          R  => rstn,
-          C  => adcB_clk_p_bufg,
-          CB => adcB_clk_n_bufg,
+          R  => not(rstn),
+          C  => adcB_clk,
+          CB => adcB_clk,
           D  => adcBB_ddr(i),
-          Q1 => adcBB_d(2*i),
-          Q2 => adcBB_d(2*i+1)
+          Q1 => adcBB_d_odd(i),
+          Q2 => adcBB_d_even(i)
         );
   end generate;
 
