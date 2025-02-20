@@ -76,14 +76,14 @@ begin
   process (clk) begin
 
     if rstn = '0' then
-      c_count <= "0000000";
+      c_count <= (others => '0');
       cal_str <= '0';
       evout <= '0';
       dly <= x"00";
     
     elsif rising_edge(clk) then
       if (evnt_synch(2) = '0' and evnt_synch(1) = '1') then
-        c_count <= "0000000";
+        c_count <= (others => '0');
         cal_str <= '1';
       elsif (clk_gate = '1') then
         if c_count = "1111111" then
