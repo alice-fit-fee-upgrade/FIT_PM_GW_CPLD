@@ -49,14 +49,13 @@ architecture Frontend of ampl_top is
 
   signal enai, strb, evnt, evout : std_logic;
 
-  signal adcA_clk_n_buff, adcA_clk_p_buff, adcB_clk_n_buff, adcB_clk_p_buff : std_logic;
-  signal adcA_clk_n_bufg, adcA_clk_p_bufg, adcB_clk_n_bufg, adcB_clk_p_bufg : std_logic;
   signal adcA_clk_buff, adcB_clk_buff : std_logic;
   signal adcA_clk, adcB_clk : std_logic;
   signal adcAA_ddr, adcAB_ddr, adcBA_ddr, adcBB_ddr : std_logic_vector(ADC_DATA_LINES-1 downto 0);
 
   signal adcAA_d_odd, adcAB_d_odd, adcBA_d_odd, adcBB_d_odd : std_logic_vector(ADC_DATA_LINES-1 downto 0);
   signal adcAA_d_even, adcAB_d_even, adcBA_d_even, adcBB_d_even : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d_even_ff, adcAB_d_even_ff, adcBA_d_even_ff, adcBB_d_even_ff : std_logic_vector(ADC_DATA_LINES-1 downto 0);
 
   signal adcAA_d, adcAB_d, adcBA_d, adcBB_d : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
 
@@ -196,6 +195,31 @@ begin
         );
   end generate;
 
+        adcAA_delay: process(adcA_clk, rstn) begin
+          if rstn = '0' then
+            adcAA_d_even_ff <= (others => '0');
+          else
+            if rising_edge(adcA_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcAA_d_even_ff(i) <= adcAA_d_even(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+
+        abcAA_align: process(adcA_clk, rstn) begin
+          if rstn = '0' then
+            adcAA_d <= (others => '0');
+          else
+            if rising_edge(adcA_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcAA_d(2*i) <= adcAA_d_even_ff(i);
+                adcAA_d(2*i+1) <= adcAA_d_odd(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+
   adcA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
         adcAB_ibufds : IBUFDS port map(
           I  => ADCAB_P(i),
@@ -217,6 +241,31 @@ begin
           Q2 => adcAB_d_even(i)
         );
   end generate;
+
+        adcAB_delay: process(adcA_clk, rstn) begin
+          if rstn = '0' then
+            adcAA_d_even_ff <= (others => '0');
+          else
+            if rising_edge(adcA_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcAB_d_even_ff(i) <= adcAB_d_even(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+
+        abcAB_align: process(adcA_clk, rstn) begin
+          if rstn = '0' then
+            adcAB_d <= (others => '0');
+          else
+            if rising_edge(adcA_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcAB_d(2*i) <= adcAB_d_even_ff(i);
+                adcAB_d(2*i+1) <= adcAB_d_odd(i);
+              end loop;
+            end if;
+          end if;
+        end process;
 
   adcB_clk_ibufds : IBUFDS port map(
     I  => ADCB_CLK_P,
@@ -251,6 +300,31 @@ begin
         );
   end generate;
 
+        adcBA_delay: process(adcB_clk, rstn) begin
+          if rstn = '0' then
+            adcBA_d_even_ff <= (others => '0');
+          else
+            if rising_edge(adcB_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcBA_d_even_ff(i) <= adcBA_d_even(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+
+        abcBA_align: process(adcB_clk, rstn) begin
+          if rstn = '0' then
+            adcBA_d <= (others => '0');
+          else
+            if rising_edge(adcB_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcBA_d(2*i) <= adcBA_d_even_ff(i);
+                adcBA_d(2*i+1) <= adcBA_d_odd(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+
   adcBB_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
         adcBB_ibufds : IBUFDS port map(
           I  => ADCBB_P(i),
@@ -273,6 +347,31 @@ begin
         );
   end generate;
 
+        adcBB_delay: process(adcB_clk, rstn) begin
+          if rstn = '0' then
+            adcBA_d_even_ff <= (others => '0');
+          else
+            if rising_edge(adcB_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcBB_d_even_ff(i) <= adcBB_d_even(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+
+        abcBB_align: process(adcB_clk, rstn) begin
+          if rstn = '0' then
+            adcBB_d <= (others => '0');
+          else
+            if rising_edge(adcB_clk) then
+              for i in 0 to ADC_DATA_LINES-1 loop
+                adcBB_d(2*i) <= adcBB_d_even_ff(i);
+                adcBB_d(2*i+1) <= adcBB_d_odd(i);
+              end loop;
+            end if;
+          end if;
+        end process;
+  
   DATA_OUT : for i in 0 to DATA_OUT_W-1 generate
     DOUT_OUT : OBUF port map(
       I => d_out(i),
