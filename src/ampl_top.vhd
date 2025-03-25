@@ -11,32 +11,32 @@ entity ampl_top is
     DATA_OUT_W            : integer := 13
   );
   port (
-    CLK_IN      : in std_logic;
-    CLK40       : out std_logic;
-    CLK20_P     : out std_logic;
-    CLK20_N     : out std_logic;
+    CLK_IN                : in std_logic;
+    CLK40                 : out std_logic;
+    CLK20_P               : out std_logic;
+    CLK20_N               : out std_logic;
 
-    ENA         : in std_logic;
-    STR         : in std_logic;
-    EV          : in std_logic;
-    EV_out      : out std_logic;
-    
-    ADCA_CLK_N  : in std_logic;
-    ADCA_CLK_P  : in std_logic;
-    ADCAA_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCAA_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCAB_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCAB_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    
-    ADCB_CLK_N  : in std_logic;
-    ADCB_CLK_P  : in std_logic;
-    ADCBA_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCBA_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCBB_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCBB_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    
-    DV          : out std_logic;
-    DOUT        : out std_logic_vector (DATA_OUT_W-1 downto 0)
+    ENA                   : in std_logic;
+    STR                   : in std_logic;
+    EV                    : in std_logic;
+    EV_out                : out std_logic;
+
+    ADCA_CLK_N            : in std_logic;
+    ADCA_CLK_P            : in std_logic;
+    ADCAA_N               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCAA_P               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCAB_N               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCAB_P               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+
+    ADCB_CLK_N            : in std_logic;
+    ADCB_CLK_P            : in std_logic;
+    ADCBA_N               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCBA_P               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCBB_N               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADCBB_P               : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+
+    DV                    : out std_logic;
+    DOUT                  : out std_logic_vector (DATA_OUT_W-1 downto 0)
   );
 end ampl_top;
 
@@ -244,7 +244,7 @@ begin
 
         adcAB_delay: process(adcA_clk, rstn) begin
           if rstn = '0' then
-            adcAA_d_even_ff <= (others => '0');
+            adcAB_d_even_ff <= (others => '0');
           else
             if rising_edge(adcA_clk) then
               for i in 0 to ADC_DATA_LINES-1 loop
