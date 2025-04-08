@@ -4,33 +4,36 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity adc_mux is
-    generic (
+    generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         OVERFLOW_VAL            : std_logic_vector(13 downto 0) := "00000001111111"
     );
-    Port (
-        d_in_1 : in  std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-        d_in_2 : in  std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-        d_out : out  std_logic_vector(ADC_RESOLUTION_BITS downto 0)
+    port(
+        d_in_1      : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_in_2      : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        ovf         : out std_logic
     );
 end adc_mux;
 
 architecture Behavioral of adc_mux is 
-    signal ovf_flag : std_logic := '0';
-    signal d_out_raw : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
+    signal x_ovf    : std_logic := '0';
+    signal x_d_out  : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
 
 begin
-    d_out <= ovf_flag & d_out_raw;
+    d_out <= x_d_out;
+    ovf <= x_ovf;
 
     process(d_in_1, d_in_2) begin
 
         if d_in_1 < OVERFLOW_VAL then
-            d_out_raw <= d_in_1;
-            ovf_flag <= '0';
+            x_d_out <= d_in_1;
+            x_ovf <= '0';
         else
-            d_out_raw <= d_in_2;
-            ovf_flag <= '1';
+            x_d_out <= d_in_2;
+            x_ovf <= '1';
         end if;
 
     end process;
+
 end Behavioral;

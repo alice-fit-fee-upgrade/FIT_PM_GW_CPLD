@@ -1,12 +1,6 @@
 SRC_DIR = src
 TB_DIR = tb
 
-TEST_DIR = test
-
-VHDL_SRC_PULSE_DELAY = $(TEST_DIR)/pulse_delay.vhd
-TB_SRC_PULSE_DELAY = $(TEST_DIR)/pulse_delay_tb.vhd
-SIM_TOP_PULSE_DELAY = pulse_delay_tb
-
 VHDL_SRC_CNT2 = $(SRC_DIR)/cnt2.vhd
 TB_SRC_CNT2 = $(TB_DIR)/cnt2_tb.vhd
 SIM_TOP_CNT2 = cnt2_tb
@@ -15,9 +9,9 @@ VHDL_SRC_MUX_LATCH = $(SRC_DIR)/mux_latch.vhd $(SRC_DIR)/cnt2.vhd
 TB_SRC_MUX_LATCH = $(TB_DIR)/mux_latch_tb.vhd
 SIM_TOP_MUX_LATCH = mux_latch_tb
 
-VHDL_SRC_AMPL_LOGIC = $(SRC_DIR)/cnt2.vhd $(SRC_DIR)/mux_latch.vhd $(SRC_DIR)/ampl_logic.vhd
-TB_SRC_AMPL_LOGIC = $(TB_DIR)/ampl_logic_tb.vhd
-SIM_TOP_AMPL_LOGIC = ampl_logic_tb
+VHDL_SRC_ADC_CHANELL = $(SRC_DIR)/adc_mux.vhd $(SRC_DIR)/adc_avg.vhd
+TB_SRC_ADC_CHANELL = $(TB_DIR)/adc_chanell_tb.vhd
+SIM_TOP_ADC_CHANELL = adc_chanell_tb
 
 WAVE_FILE = wave.ghw
 
@@ -26,23 +20,15 @@ GTK_WAVE = gtkwave
 
 FLAGS = --std=08 -fsynopsys 
 
-pulse_delay_tb: clean run_pulse_delay view
-
+######## COMMANDS ########
 cnt2_tb: clean run_cnt2 view
 
 mux_latch_tb: clean run_mux_latch view
 
-ampl_logic_tb: clean run_ampl_logic view
+adc_chanell_tb: clean run_adc_chanell view
 
 all: run_cnt2 view
-
-compile_pulse_delay:
-	$(GHDL) -a $(FLAGS) $(VHDL_SRC_PULSE_DELAY)
-	$(GHDL) -a $(FLAGS) $(TB_SRC_PULSE_DELAY)
-	$(GHDL) -e $(FLAGS) $(SIM_TOP_PULSE_DELAY)
-
-run_pulse_delay: compile_pulse_delay
-	$(GHDL) -r $(FLAGS) $(SIM_TOP_PULSE_DELAY) --wave=$(WAVE_FILE)
+##########################
 
 compile_cnt2:
 	$(GHDL) -a $(FLAGS) $(VHDL_SRC_CNT2)
@@ -60,13 +46,13 @@ compile_mux_latch:
 run_mux_latch: compile_mux_latch
 	$(GHDL) -r $(FLAGS) $(SIM_TOP_MUX_LATCH) --wave=$(WAVE_FILE)
 
-compile_ampl_logic:
-	$(GHDL) -a $(FLAGS) $(VHDL_SRC_AMPL_LOGIC)
-	$(GHDL) -a $(FLAGS) $(TB_SRC_AMPL_LOGIC)
-	$(GHDL) -e $(FLAGS) $(SIM_TOP_AMPL_LOGIC)
+compile_adc_chanell:
+	$(GHDL) -a $(FLAGS) $(VHDL_SRC_ADC_CHANELL)
+	$(GHDL) -a $(FLAGS) $(TB_SRC_ADC_CHANELL)
+	$(GHDL) -e $(FLAGS) $(SIM_TOP_ADC_CHANELL)
 
-run_ampl_logic: compile_ampl_logic
-	$(GHDL) -r $(FLAGS) $(SIM_TOP_AMPL_LOGIC) --wave=$(WAVE_FILE)
+run_adc_chanell: compile_adc_chanell
+	$(GHDL) -r $(FLAGS) $(SIM_TOP_ADC_CHANELL) --wave=$(WAVE_FILE)
 
 view:
 	$(GTK_WAVE) $(WAVE_FILE)

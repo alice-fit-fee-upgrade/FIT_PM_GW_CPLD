@@ -22,10 +22,21 @@ architecture bench of mux_latch_tb is
   signal dly_6 : std_logic;
   signal cnt : std_logic_vector (1 downto 0);
 
-  component cnt2 is
-    Port ( CLK : in  STD_LOGIC;
-            O : out  STD_LOGIC_VECTOR (1 downto 0)
-         );
+  component cnt2 
+    port(
+      clk     : in std_logic;
+      o       : out std_logic_vector (1 downto 0)
+    );
+  end component;
+
+  component mux_latch
+    port (
+      clk         : in std_logic;
+      in_a        : in std_logic_vector (11 downto 0);
+      in_b        : in std_logic_vector (11 downto 0);
+      o           : out std_logic_vector (12 downto 0);
+      sel0, sel1  : in std_logic
+    );
   end component;
 
 begin
@@ -36,7 +47,7 @@ begin
     o=>cnt
   );
 
-  mux_latch_inst : entity work.mux_latch
+  mux_latch_inst : mux_latch
   port map (
     clk => clk,
     in_a => in_a,

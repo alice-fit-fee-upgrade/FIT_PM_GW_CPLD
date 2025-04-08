@@ -11,9 +11,17 @@ architecture bench of cnt2_tb is
 
   signal clk : std_logic;
   signal o : std_logic_vector (1 downto 0);
+
+  component cnt2 
+    port(
+      clk     : in std_logic;
+      o       : out std_logic_vector (1 downto 0)
+    );
+  end component;
+
 begin
 
-  cnt2_inst : entity work.cnt2
+  cnt2_inst : cnt2
   port map (
     clk => clk,
     o => o
