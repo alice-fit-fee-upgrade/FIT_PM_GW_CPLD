@@ -1,3 +1,8 @@
+-- adc_mux.vhd
+--
+-- Module is a multiplexer which sets on output depending if `d_in1` exceeds 
+-- `OVERFLOW_VAL`, `ovf` is a overflow flag signal
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
@@ -11,6 +16,7 @@ entity adc_mux is
     port(
         d_in_1      : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         d_in_2      : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+
         d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf         : out std_logic
     );
