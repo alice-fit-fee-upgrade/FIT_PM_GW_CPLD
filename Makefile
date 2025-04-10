@@ -9,7 +9,7 @@ VHDL_SRC_MUX_LATCH = $(SRC_DIR)/mux_latch.vhd $(SRC_DIR)/cnt2.vhd
 TB_SRC_MUX_LATCH = $(TB_DIR)/mux_latch_tb.vhd
 SIM_TOP_MUX_LATCH = mux_latch_tb
 
-VHDL_SRC_ADC_CHANELL = $(SRC_DIR)/adc_mux.vhd $(SRC_DIR)/adc_avg.vhd
+VHDL_SRC_ADC_CHANELL = $(SRC_DIR)/adc_chanell_mux.vhd $(SRC_DIR)/adc_chanell_shift_reg.vhd $(SRC_DIR)/adc_chanell_pipeline.vhd $(SRC_DIR)/adc_chanell_avg.vhd
 TB_SRC_ADC_CHANELL = $(TB_DIR)/adc_chanell_tb.vhd
 SIM_TOP_ADC_CHANELL = adc_chanell_tb
 
