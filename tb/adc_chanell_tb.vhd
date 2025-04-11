@@ -79,6 +79,7 @@ component adc_chanell_pipeline
     );
     port (
         clk         : in std_logic;
+        rstn        : in std_logic;
 
         d_in0       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         d_in1       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
@@ -159,6 +160,7 @@ begin
         )
         port map (
             clk         => clk,
+            rstn        => rstn,
     
             d_in0       => d_sr0,
             d_in1       => d_sr1,

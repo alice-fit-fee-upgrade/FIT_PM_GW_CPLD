@@ -40,16 +40,18 @@ end adc_chanell_avg;
 architecture Behavioral of adc_chanell_avg is
 
     signal x_done_d : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+    signal x_init_d : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
 
 begin
     done_d <= x_done_d(ADC_RESOLUTION_BITS+1 downto 2); -- shift by 2 bits to obtain average calculation for BUFFER_SIZE = 4
+    init_d <= x_init_d;
 
     process(clk, rstn)
         variable temp_sum : unsigned(ADC_RESOLUTION_BITS+1 downto 0);
     begin
 
         if rstn = '0' then
-            init_d <= (others => '0');
+            x_init_d <= (others => '0');
             init_ovf <= '0';
             x_done_d <= (others => '0');
             done_ovf <= '0';
@@ -58,11 +60,11 @@ begin
             
             if init = '1' then
                 temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16);
-                init_d <= std_logic_vector(temp_sum);
+                x_init_d <= std_logic_vector(temp_sum);
                 init_ovf <= ovf_in;
 
             elsif done = '1' then
-                temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16) - unsigned(init_d);
+                temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16) - unsigned(x_init_d);
                 x_done_d <= std_logic_vector(temp_sum);
                 done_ovf <= ovf_in;
             end if;
