@@ -91,7 +91,7 @@ component adc_chanell_avg
         
         init_d      : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
         init_ovf    : out std_logic;
-        done_d      : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         done_ovf    : out std_logic
     );
 end component;
@@ -150,7 +150,7 @@ begin
             
             init_d      => init_d,
             init_ovf    => init_ovf,
-            done_d      => d_out,
+            d_out       => d_out,
             done_ovf    => ovf
         );
 

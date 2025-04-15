@@ -32,18 +32,19 @@ entity adc_chanell_avg is
         
         init_d      : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
         init_ovf    : out std_logic;
-        done_d      : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-        done_ovf    : out std_logic
+        d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_valid     : out std_logic;
+        ovf         : out std_logic
     );
 end adc_chanell_avg;
 
 architecture Behavioral of adc_chanell_avg is
 
-    signal x_done_d : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
     signal x_init_d : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+    signal x_d_out : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
 
 begin
-    done_d <= x_done_d(ADC_RESOLUTION_BITS+1 downto 2); -- shift by 2 bits to obtain average calculation for BUFFER_SIZE = 4
+    d_out <= x_d_out(ADC_RESOLUTION_BITS+1 downto 2); -- shift by 2 bits to obtain average calculation for BUFFER_SIZE = 4
     init_d <= x_init_d;
 
     process(clk, rstn)
@@ -53,8 +54,8 @@ begin
         if rstn = '0' then
             x_init_d <= (others => '0');
             init_ovf <= '0';
-            x_done_d <= (others => '0');
-            done_ovf <= '0';
+            x_d_out <= (others => '0');
+            ovf <= '0';
 
         elsif rising_edge(clk) then
             
@@ -62,11 +63,15 @@ begin
                 temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16);
                 x_init_d <= std_logic_vector(temp_sum);
                 init_ovf <= ovf_in;
+                d_valid <= '1';
 
             elsif done = '1' then
                 temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16) - unsigned(x_init_d);
-                x_done_d <= std_logic_vector(temp_sum);
-                done_ovf <= ovf_in;
+                x_d_out <= std_logic_vector(temp_sum);
+                ovf <= ovf_in;
+                d_valid <= '1';
+            else
+                d_valid <= '0';
             end if;
         end if;
     
