@@ -1,4 +1,4 @@
--- adc_chanell_avg.vhd
+-- adc_channel_avg.vhd
 --
 -- A module with a shift register (length `BUFFER_SIZE`) to which `d_in` is entered,
 -- calculates the average of values stored in `x_d_buff` when a `init` or `done` signal arrives.
@@ -12,7 +12,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity adc_chanell_avg is
+entity adc_channel_avg is
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         BUFFER_SIZE             : integer := 4
@@ -36,9 +36,9 @@ entity adc_chanell_avg is
         d_valid     : out std_logic;
         ovf         : out std_logic
     );
-end adc_chanell_avg;
+end adc_channel_avg;
 
-architecture Behavioral of adc_chanell_avg is
+architecture Behavioral of adc_channel_avg is
 
     signal x_init_d : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
     signal x_d_out : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);

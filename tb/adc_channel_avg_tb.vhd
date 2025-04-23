@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity adc_chanell_tb is
-end adc_chanell_tb;
+entity adc_channel_avg_tb is
+end adc_channel_avg_tb;
 
-architecture Behavioral of adc_chanell_tb is
+architecture Behavioral of adc_channel_avg_tb is
 
     constant CLK_PERIOD : time := 10 ns;
     signal clk_gen_en : boolean := true;
@@ -34,12 +34,13 @@ architecture Behavioral of adc_chanell_tb is
     
     signal init_d       : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
     signal init_ovf     : std_logic;
-    signal done_d       : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-    signal done_ovf     : std_logic;
+    signal d_out        : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+    signal d_valid      : std_logic;
+    signal ovf          : std_logic;
 
     signal counter      : unsigned(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
 
-    component adc_chanell_mux
+    component adc_channel_mux
         generic(
             ADC_RESOLUTION_BITS     : integer := 14;
             OVERFLOW_VAL            : std_logic_vector(13 downto 0) := "00000001111111"
@@ -53,7 +54,7 @@ architecture Behavioral of adc_chanell_tb is
         );
     end component;
 
-    component adc_chanell_shift_reg
+    component adc_channel_shift_reg
         generic(
             ADC_RESOLUTION_BITS     : integer := 14;
             BUFFER_SIZE             : integer := 4
@@ -73,7 +74,7 @@ architecture Behavioral of adc_chanell_tb is
         );
     end component;
 
-component adc_chanell_pipeline
+component adc_channel_pipeline
     generic (
         ADC_RESOLUTION_BITS : integer := 14
     );
@@ -95,7 +96,7 @@ component adc_chanell_pipeline
     );
 end component;
 
-    component adc_chanell_avg
+    component adc_channel_avg
         generic(
             ADC_RESOLUTION_BITS     : integer := 14;
             BUFFER_SIZE             : integer := 4
@@ -115,14 +116,15 @@ end component;
             
             init_d      : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
             init_ovf    : out std_logic;
-            done_d      : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-            done_ovf    : out std_logic
+            d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+            d_valid     : out std_logic;
+            ovf         : out std_logic
         );
     end component;
 
 begin
 
-    mux_0: adc_chanell_mux
+    mux_0: adc_channel_mux
         generic map(
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
             OVERFLOW_VAL => OVERFLOW_VAL
@@ -135,7 +137,7 @@ begin
             ovf         => ovf_mux
         );
 
-    shift_reg_0: adc_chanell_shift_reg
+    shift_reg_0: adc_channel_shift_reg
         generic map(
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
             BUFFER_SIZE => BUFFER_SIZE
@@ -154,7 +156,7 @@ begin
             ovf         => ovf_sr
         );
 
-    pipeline_0: adc_chanell_pipeline
+    pipeline_0: adc_channel_pipeline
         generic map (
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS
         )
@@ -175,7 +177,7 @@ begin
             ovf         => ovf_srp
         );
 
-    avg_0: adc_chanell_avg
+    avg_0: adc_channel_avg
         generic map(
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
             BUFFER_SIZE => BUFFER_SIZE
@@ -195,8 +197,9 @@ begin
             
             init_d      => init_d,
             init_ovf    => init_ovf,
-            done_d      => done_d,
-            done_ovf    => done_ovf
+            d_out       => d_out,
+            d_valid     => d_valid,
+            ovf         => ovf
         );
 
     d_in1 <= std_logic_vector(counter);
@@ -232,7 +235,7 @@ begin
         done <= '0';
         wait for CLK_PERIOD * 4;
         clk_gen_en <= false;
-        report "Adc chanell simulatoin finished";
+        report "Adc channel simulatoin finished";
         wait;
 
     end process;

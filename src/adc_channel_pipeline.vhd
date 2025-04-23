@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity adc_chanell_pipeline is
+entity adc_channel_pipeline is
     generic (
         ADC_RESOLUTION_BITS : integer := 14;
         NUM_PIPELINE_STAGES : integer := 2
@@ -23,9 +23,9 @@ entity adc_chanell_pipeline is
         d_out3_p    : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf         : out std_logic
     );
-end entity adc_chanell_pipeline;
+end entity adc_channel_pipeline;
 
-architecture Behavioral of adc_chanell_pipeline is
+architecture Behavioral of adc_channel_pipeline is
     type reg_array is array (0 to NUM_PIPELINE_STAGES-1) of std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
     signal d_in0_reg, d_in1_reg, d_in2_reg, d_in3_reg : reg_array;
 

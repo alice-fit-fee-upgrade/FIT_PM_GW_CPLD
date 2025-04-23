@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity adc_chanell_shift_reg is
+entity adc_channel_shift_reg is
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         BUFFER_SIZE             : integer := 4
@@ -20,9 +20,9 @@ entity adc_chanell_shift_reg is
         d_out3      : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf         : out std_logic
     );
-end adc_chanell_shift_reg;
+end adc_channel_shift_reg;
 
-architecture Behavioral of adc_chanell_shift_reg is
+architecture Behavioral of adc_channel_shift_reg is
 
     type data_buffer_type is array (0 to BUFFER_SIZE - 1) of std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
     type flag_buffer_type is array (0 to BUFFER_SIZE - 1) of std_logic;

@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity adc_chanell is
+entity adc_channel is
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         OVERFLOW_VAL            : std_logic_vector(13 downto 0) := "00000001111111"
@@ -19,9 +19,9 @@ entity adc_chanell is
         d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf         : out std_logic
     );
-end adc_chanell;
+end adc_channel;
     
-architecture Behavioral of adc_chanell is
+architecture Behavioral of adc_channel is
 
 constant BUFFER_SIZE : integer := 4;
 
@@ -31,13 +31,10 @@ signal ovf_mux      : std_logic;
 signal d_sr0, d_sr1, d_sr2, d_sr3 : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
 signal ovf_sr       : std_logic;
 
-signal d_srp0, d_srp1, d_srp2, d_srp3 : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-signal ovf_srp      : std_logic;
-
 signal init_d       : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
 signal init_ovf     : std_logic;
 
-component adc_chanell_mux
+component adc_channel_mux
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         OVERFLOW_VAL            : std_logic_vector(13 downto 0) := "00000001111111"
@@ -51,7 +48,7 @@ component adc_chanell_mux
     );
 end component;
 
-component adc_chanell_shift_reg
+component adc_channel_shift_reg
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         BUFFER_SIZE             : integer := 4
@@ -71,7 +68,7 @@ component adc_chanell_shift_reg
     );
 end component;
 
-component adc_chanell_avg
+component adc_channel_avg
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         BUFFER_SIZE             : integer := 4
@@ -98,7 +95,7 @@ end component;
 
 begin
 
-    mux_0: adc_chanell_mux
+    mux_0: adc_channel_mux
         generic map(
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
             OVERFLOW_VAL => OVERFLOW_VAL
@@ -111,7 +108,7 @@ begin
             ovf         => ovf_mux
         );
 
-    shift_reg_0: adc_chanell_shift_reg
+    shift_reg_0: adc_channel_shift_reg
         generic map(
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
             BUFFER_SIZE => BUFFER_SIZE
@@ -130,7 +127,7 @@ begin
             ovf         => ovf_sr
         );
 
-    avg_0: adc_chanell_avg
+    avg_0: adc_channel_avg
         generic map(
             ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
             BUFFER_SIZE => BUFFER_SIZE

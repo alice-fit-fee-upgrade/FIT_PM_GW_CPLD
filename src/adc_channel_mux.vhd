@@ -1,4 +1,4 @@
--- adc_chanell_mux.vhd
+-- adc_channel_mux.vhd
 --
 -- Module is a multiplexer which sets on output depending if `d_in1` exceeds 
 -- `OVERFLOW_VAL`, `ovf` is a overflow flag signal
@@ -8,7 +8,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity adc_chanell_mux is
+entity adc_channel_mux is
     generic(
         ADC_RESOLUTION_BITS     : integer := 14;
         OVERFLOW_VAL            : std_logic_vector(13 downto 0) := "00000001111111"
@@ -20,9 +20,9 @@ entity adc_chanell_mux is
         d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf         : out std_logic
     );
-end adc_chanell_mux;
+end adc_channel_mux;
 
-architecture Behavioral of adc_chanell_mux is 
+architecture Behavioral of adc_channel_mux is 
     signal x_ovf    : std_logic := '0';
     signal x_d_out  : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
 
