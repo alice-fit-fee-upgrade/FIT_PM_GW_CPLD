@@ -53,9 +53,8 @@ architecture Frontend of fit_pm_afe_top is
   signal adcA_clk, adcB_clk : std_logic;
   signal adcAA_ddr, adcAB_ddr, adcBA_ddr, adcBB_ddr : std_logic_vector(ADC_DATA_LINES-1 downto 0);
 
-  signal adcAA_d_odd, adcAB_d_odd, adcBA_d_odd, adcBB_d_odd : std_logic_vector(ADC_DATA_LINES-1 downto 0);
-  signal adcAA_d_even, adcAB_d_even, adcBA_d_even, adcBB_d_even : std_logic_vector(ADC_DATA_LINES-1 downto 0);
-  signal adcAA_d_even_ff, adcAB_d_even_ff, adcBA_d_even_ff, adcBB_d_even_ff : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d_q1, adcAB_d_q1, adcBA_d_q1, adcBB_d_q1 : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d_q2, adcAB_d_q2, adcBA_d_q2, adcBB_d_q2 : std_logic_vector(ADC_DATA_LINES-1 downto 0);
 
   signal adcAA_d, adcAB_d, adcBA_d, adcBB_d : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
 
@@ -190,22 +189,10 @@ begin
           C  => adcA_clk,
           CB => adcA_clk,
           D  => adcAA_ddr(i),
-          Q1 => adcAA_d_odd(i),
-          Q2 => adcAA_d_even(i)
+          Q1 => adcAA_d_q1(i),
+          Q2 => adcAA_d_q2(i)
         );
   end generate;
-
-        adcAA_delay: process(adcA_clk, rstn) begin
-          if rstn = '0' then
-            adcAA_d_even_ff <= (others => '0');
-          else
-            if rising_edge(adcA_clk) then
-              for i in 0 to ADC_DATA_LINES-1 loop
-                adcAA_d_even_ff(i) <= adcAA_d_even(i);
-              end loop;
-            end if;
-          end if;
-        end process;
 
         abcAA_align: process(adcA_clk, rstn) begin
           if rstn = '0' then
@@ -213,8 +200,8 @@ begin
           else
             if rising_edge(adcA_clk) then
               for i in 0 to ADC_DATA_LINES-1 loop
-                adcAA_d(2*i) <= adcAA_d_even_ff(i);
-                adcAA_d(2*i+1) <= adcAA_d_odd(i);
+                adcAA_d(2*i) <= adcAA_d_q1(i);
+                adcAA_d(2*i+1) <= adcAA_d_q2(i);
               end loop;
             end if;
           end if;
@@ -237,22 +224,10 @@ begin
           C  => adcA_clk,
           CB => adcA_clk,
           D  => adcAB_ddr(i),
-          Q1 => adcAB_d_odd(i),
-          Q2 => adcAB_d_even(i)
+          Q1 => adcAB_d_q1(i),
+          Q2 => adcAB_d_q2(i)
         );
   end generate;
-
-        adcAB_delay: process(adcA_clk, rstn) begin
-          if rstn = '0' then
-            adcAB_d_even_ff <= (others => '0');
-          else
-            if rising_edge(adcA_clk) then
-              for i in 0 to ADC_DATA_LINES-1 loop
-                adcAB_d_even_ff(i) <= adcAB_d_even(i);
-              end loop;
-            end if;
-          end if;
-        end process;
 
         abcAB_align: process(adcA_clk, rstn) begin
           if rstn = '0' then
@@ -260,8 +235,8 @@ begin
           else
             if rising_edge(adcA_clk) then
               for i in 0 to ADC_DATA_LINES-1 loop
-                adcAB_d(2*i) <= adcAB_d_even_ff(i);
-                adcAB_d(2*i+1) <= adcAB_d_odd(i);
+                adcAB_d(2*i) <= adcAB_d_q1(i);
+                adcAB_d(2*i+1) <= adcAB_d_q2(i);
               end loop;
             end if;
           end if;
@@ -295,22 +270,10 @@ begin
           C  => adcB_clk,
           CB => adcB_clk,
           D  => adcBA_ddr(i),
-          Q1 => adcBA_d_odd(i),
-          Q2 => adcBA_d_even(i)
+          Q1 => adcBA_d_q1(i),
+          Q2 => adcBA_d_q2(i)
         );
   end generate;
-
-        adcBA_delay: process(adcB_clk, rstn) begin
-          if rstn = '0' then
-            adcBA_d_even_ff <= (others => '0');
-          else
-            if rising_edge(adcB_clk) then
-              for i in 0 to ADC_DATA_LINES-1 loop
-                adcBA_d_even_ff(i) <= adcBA_d_even(i);
-              end loop;
-            end if;
-          end if;
-        end process;
 
         abcBA_align: process(adcB_clk, rstn) begin
           if rstn = '0' then
@@ -318,8 +281,8 @@ begin
           else
             if rising_edge(adcB_clk) then
               for i in 0 to ADC_DATA_LINES-1 loop
-                adcBA_d(2*i) <= adcBA_d_even_ff(i);
-                adcBA_d(2*i+1) <= adcBA_d_odd(i);
+                adcBA_d(2*i) <= adcBA_d_q1(i);
+                adcBA_d(2*i+1) <= adcBA_d_q2(i);
               end loop;
             end if;
           end if;
@@ -342,22 +305,10 @@ begin
           C  => adcB_clk,
           CB => adcB_clk,
           D  => adcBB_ddr(i),
-          Q1 => adcBB_d_odd(i),
-          Q2 => adcBB_d_even(i)
+          Q1 => adcBB_d_q1(i),
+          Q2 => adcBB_d_q2(i)
         );
   end generate;
-
-        adcBB_delay: process(adcB_clk, rstn) begin
-          if rstn = '0' then
-            adcBA_d_even_ff <= (others => '0');
-          else
-            if rising_edge(adcB_clk) then
-              for i in 0 to ADC_DATA_LINES-1 loop
-                adcBB_d_even_ff(i) <= adcBB_d_even(i);
-              end loop;
-            end if;
-          end if;
-        end process;
 
         abcBB_align: process(adcB_clk, rstn) begin
           if rstn = '0' then
@@ -365,8 +316,8 @@ begin
           else
             if rising_edge(adcB_clk) then
               for i in 0 to ADC_DATA_LINES-1 loop
-                adcBB_d(2*i) <= adcBB_d_even_ff(i);
-                adcBB_d(2*i+1) <= adcBB_d_odd(i);
+                adcBB_d(2*i) <= adcBB_d_q1(i);
+                adcBB_d(2*i+1) <= adcBB_d_q2(i);
               end loop;
             end if;
           end if;
