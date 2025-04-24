@@ -56,6 +56,7 @@ begin
             init_ovf <= '0';
             x_d_out <= (others => '0');
             ovf <= '0';
+            d_valid <= '0';
 
         elsif rising_edge(clk) then
             
@@ -63,7 +64,6 @@ begin
                 temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16);
                 x_init_d <= std_logic_vector(temp_sum);
                 init_ovf <= ovf_in;
-                d_valid <= '1';
 
             elsif done = '1' then
                 temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16) - unsigned(x_init_d);

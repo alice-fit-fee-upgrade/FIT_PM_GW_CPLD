@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_UNSIGNED.all;
 library UNISIM;
 use UNISIM.vcomponents.all;
 
-entity ampl_top is
+entity fit_pm_afe_top is
   generic (
     ADC_DATA_LINES        : integer := 7;
     ADC_RESOLUTION_BITS   : integer := 14;
@@ -38,9 +38,9 @@ entity ampl_top is
     DV                    : out std_logic;
     DOUT                  : out std_logic_vector (DATA_OUT_W-1 downto 0)
   );
-end ampl_top;
+end fit_pm_afe_top;
 
-architecture Frontend of ampl_top is
+architecture Frontend of fit_pm_afe_top is
 
   signal clk : std_logic;
   signal rstn : std_logic := '0';

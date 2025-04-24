@@ -224,7 +224,7 @@ begin
         wait for 20 ns;
         rstn <= '1';
 
-        wait for CLK_PERIOD * 4;
+        wait for CLK_PERIOD * 8;
         init <= '1';
         wait for CLK_PERIOD;
         init <= '0';
