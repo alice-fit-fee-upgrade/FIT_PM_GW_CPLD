@@ -27,31 +27,31 @@ architecture Behavioral of adc_channel_shift_reg is
     type data_buffer_type is array (0 to BUFFER_SIZE - 1) of std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
     type flag_buffer_type is array (0 to BUFFER_SIZE - 1) of std_logic;
 
-    signal x_d_buff         : data_buffer_type := (others => (others => '0'));
-    signal x_ovf_buff       : flag_buffer_type := (others => '0');
+    signal s_d_buff         : data_buffer_type := (others => (others => '0'));
+    signal s_ovf_buff       : flag_buffer_type := (others => '0');
 
 begin
-    ovf <= x_ovf_buff(0) or x_ovf_buff(1) or x_ovf_buff(2) or x_ovf_buff(3);
-    d_out0 <= x_d_buff(0);
-    d_out1 <= x_d_buff(1);
-    d_out2 <= x_d_buff(2);
-    d_out3 <= x_d_buff(3);
+    ovf <= s_ovf_buff(0) or s_ovf_buff(1) or s_ovf_buff(2) or s_ovf_buff(3);
+    d_out0 <= s_d_buff(0);
+    d_out1 <= s_d_buff(1);
+    d_out2 <= s_d_buff(2);
+    d_out3 <= s_d_buff(3);
 
     process(clk, rstn) begin
 
         if rstn = '0' then
             for i in 0 to BUFFER_SIZE-1 loop
-                x_d_buff(i) <= (others => '0');
+                s_d_buff(i) <= (others => '0');
             end loop;
-            x_ovf_buff <= (others => '0');
+            s_ovf_buff <= (others => '0');
             
         elsif rising_edge(clk) then
             for i in BUFFER_SIZE-1 downto 1 loop
-                x_d_buff(i) <= x_d_buff(i-1);
-                x_ovf_buff(i) <= x_ovf_buff(i - 1);
+                s_d_buff(i) <= s_d_buff(i-1);
+                s_ovf_buff(i) <= s_ovf_buff(i - 1);
             end loop;
-            x_d_buff(0) <= d_in;
-            x_ovf_buff(0) <= ovf_in;
+            s_d_buff(0) <= d_in;
+            s_ovf_buff(0) <= ovf_in;
         end if;
     end process;
 

@@ -35,7 +35,8 @@ architecture Frontend of adc_ddr_top is
 
   signal adcAA_d_q1, adcAB_d_q1 : std_logic_vector(ADC_DATA_LINES-1 downto 0);
   signal adcAA_d_q2, adcAB_d_q2 : std_logic_vector(ADC_DATA_LINES-1 downto 0);
-  signal adcAA_d_q2_ff, adcAB_d_q2_ff : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d_ff, adcAB_d_ff : std_logic_vector(ADC_DATA_LINES-1 downto 0);
+  signal adcAA_d_ff_ff, adcAB_d_ff_ff : std_logic_vector(ADC_DATA_LINES-1 downto 0);
 
   signal adcAA_d, adcAB_d : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
 
@@ -80,11 +81,12 @@ begin
 
         adcAA_delay: process(adcA_clk_out, rstn) begin
           if rstn = '0' then
-            adcAA_d_q2_ff <= (others => '0');
+            adcAA_d_ff <= (others => '0');
           else
             if rising_edge(adcA_clk_out) then
               for i in 0 to ADC_DATA_LINES-1 loop
-                adcAA_d_q2_ff(i) <= adcAA_d_q2(i);
+                adcAA_d_ff(i) <= adcAA_d_q1(i);
+                adcAA_d_ff_ff(i) <= adcAA_d_ff(i);
               end loop;
             end if;
           end if;
@@ -97,7 +99,7 @@ begin
             if rising_edge(adcA_clk_out) then
               for i in 0 to ADC_DATA_LINES-1 loop
                 adcAA_d(2*i) <= adcAA_d_q1(i);
-                adcAA_d(2*i+1) <= adcAA_d_q2_ff(i);
+                adcAA_d(2*i+1) <= adcAA_d_q2(i);
               end loop;
             end if;
           end if;
@@ -127,11 +129,12 @@ begin
 
         adcAB_delay: process(adcA_clk_out, rstn) begin
           if rstn = '0' then
-            adcAB_d_q2_ff <= (others => '0');
+            adcAB_d_ff <= (others => '0');
           else
             if rising_edge(adcA_clk_out) then
               for i in 0 to ADC_DATA_LINES-1 loop
-                adcAB_d_q2_ff(i) <= adcAB_d_q2(i);
+                adcAB_d_ff(i) <= adcAB_d_q1(i);
+                adcAB_d_ff_ff(i) <= adcAB_d_ff(i);
               end loop;
             end if;
           end if;
@@ -144,7 +147,7 @@ begin
             if rising_edge(adcA_clk_out) then
               for i in 0 to ADC_DATA_LINES-1 loop
                 adcAB_d(2*i) <= adcAB_d_q1(i);
-                adcAB_d(2*i+1) <= adcAB_d_q2_ff(i);
+                adcAB_d(2*i+1) <= adcAB_d_q2(i);
               end loop;
             end if;
           end if;

@@ -3,9 +3,9 @@
 -- A module with a shift register (length `BUFFER_SIZE`) to which `d_in` is entered,
 -- calculates the average of values stored in `x_d_buff` when a `init` or `done` signal arrives.
 -- The `init` signal has a single clock length and indicates the start of the measurement
--- and the actual average value is stored in `x_init_d`
+-- and the actual average value is stored in `init_sum`
 -- The `done` signal has a single clock length and arrives when the integration of the input signal
--- is complete and the output value is the subtraction of the actual value and `x_init_d`.
+-- is complete and the output value is the subtraction of the actual value and `init_sum`.
 -- Overflow flags `ovf_in` are also stored in a buffer
 
 library IEEE;
@@ -26,49 +26,51 @@ entity adc_channel_avg is
         d_in2       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         d_in3       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf_in      : in std_logic;
+        
+        d_sum       : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
 
         init        : in std_logic;
         done        : in std_logic;
         
-        init_d      : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+        init_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+        done_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+
         init_ovf    : out std_logic;
-        d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_out_avg   : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         d_valid     : out std_logic;
         ovf         : out std_logic
     );
 end adc_channel_avg;
 
 architecture Behavioral of adc_channel_avg is
-
-    signal x_init_d : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
-    signal x_d_out : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
-
 begin
-    d_out <= x_d_out(ADC_RESOLUTION_BITS+1 downto 2); -- shift by 2 bits to obtain average calculation for BUFFER_SIZE = 4
-    init_d <= x_init_d;
+    d_out_avg <= done_sum(ADC_RESOLUTION_BITS+1 downto 2); -- shift by 2 bits to obtain average calculation for BUFFER_SIZE = 4
 
     process(clk, rstn)
         variable temp_sum : unsigned(ADC_RESOLUTION_BITS+1 downto 0);
     begin
 
         if rstn = '0' then
-            x_init_d <= (others => '0');
+            init_sum <= (others => '0');
             init_ovf <= '0';
-            x_d_out <= (others => '0');
+            done_sum <= (others => '0');
             ovf <= '0';
             d_valid <= '0';
+            temp_sum := to_unsigned(0, temp_sum'length);
+            d_sum <= (others => '0');
 
         elsif rising_edge(clk) then
+            temp_sum := resize(unsigned(d_in0), ADC_RESOLUTION_BITS+2) + resize(unsigned(d_in1), ADC_RESOLUTION_BITS+2) + resize(unsigned(d_in2), ADC_RESOLUTION_BITS+2) + resize(unsigned(d_in3), 16);
+
+            ovf <= ovf_in;
+            d_sum <= std_logic_vector(unsigned(temp_sum));
             
             if init = '1' then
-                temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16);
-                x_init_d <= std_logic_vector(temp_sum);
+                init_sum <= std_logic_vector(temp_sum);
                 init_ovf <= ovf_in;
 
             elsif done = '1' then
-                temp_sum := resize(unsigned(d_in0), 16) + resize(unsigned(d_in1), 16) + resize(unsigned(d_in2), 16) + resize(unsigned(d_in3), 16) - unsigned(x_init_d);
-                x_d_out <= std_logic_vector(temp_sum);
-                ovf <= ovf_in;
+                done_sum <= std_logic_vector(temp_sum - unsigned(init_sum));
                 d_valid <= '1';
             else
                 d_valid <= '0';

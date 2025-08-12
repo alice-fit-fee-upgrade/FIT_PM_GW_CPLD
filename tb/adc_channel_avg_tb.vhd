@@ -28,17 +28,24 @@ architecture Behavioral of adc_channel_avg_tb is
 
     signal d_srp0, d_srp1, d_srp2, d_srp3 : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
     signal ovf_srp      : std_logic;
+
+    signal d_sum        : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
     
     signal init         : std_logic := '0';
     signal done         : std_logic := '0';
     
-    signal init_d       : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+    signal init_sum     : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+    signal done_sum     : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+
     signal init_ovf     : std_logic;
-    signal d_out        : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+    signal d_out_avg    : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
     signal d_valid      : std_logic;
     signal ovf          : std_logic;
 
     signal counter      : unsigned(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
+
+    signal s_data_sum_check : unsigned(ADC_RESOLUTION_BITS+1 downto 0);
+    signal s_init_sum_check : unsigned(ADC_RESOLUTION_BITS+1 downto 0);
 
     component adc_channel_mux
         generic(
@@ -110,13 +117,16 @@ end component;
             d_in2       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
             d_in3       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
             ovf_in      : in std_logic;
+
+            d_sum       : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
     
             init        : in std_logic;
             done        : in std_logic;
             
-            init_d      : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+            init_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+            done_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
             init_ovf    : out std_logic;
-            d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+            d_out_avg   : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
             d_valid     : out std_logic;
             ovf         : out std_logic
         );
@@ -156,9 +166,10 @@ begin
             ovf         => ovf_sr
         );
 
-    pipeline_0: adc_channel_pipeline
-        generic map (
-            ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS
+    avg_0: adc_channel_avg
+        generic map(
+            ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
+            BUFFER_SIZE => BUFFER_SIZE
         )
         port map (
             clk         => clk,
@@ -169,35 +180,17 @@ begin
             d_in2       => d_sr2,
             d_in3       => d_sr3,
             ovf_in      => ovf_sr,
-    
-            d_out0_p    => d_srp0,
-            d_out1_p    => d_srp1,
-            d_out2_p    => d_srp2,
-            d_out3_p    => d_srp3,
-            ovf         => ovf_srp
-        );
 
-    avg_0: adc_channel_avg
-        generic map(
-            ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS,
-            BUFFER_SIZE => BUFFER_SIZE
-        )
-        port map (
-            clk         => clk,
-            rstn        => rstn,
-    
-            d_in0       => d_srp0,
-            d_in1       => d_srp1,
-            d_in2       => d_srp2,
-            d_in3       => d_srp3,
-            ovf_in      => ovf_srp,
+            d_sum       => d_sum,
     
             init        => init,
             done        => done,
             
-            init_d      => init_d,
+            init_sum    => init_sum,
+            done_sum    => done_sum,
+
             init_ovf    => init_ovf,
-            d_out       => d_out,
+            d_out_avg   => d_out_avg,
             d_valid     => d_valid,
             ovf         => ovf
         );
@@ -238,6 +231,34 @@ begin
         report "Adc channel simulatoin finished";
         wait;
 
+    end process;
+
+    data_sum : process
+        variable data_sum_check : unsigned(ADC_RESOLUTION_BITS+1 downto 0);
+    begin
+        wait until falling_edge(clk);
+        data_sum_check := resize(unsigned(d_sr0), 16) + resize(unsigned(d_sr1), 16) +
+                    resize(unsigned(d_sr2), 16) + resize(unsigned(d_sr3), 16);
+        s_data_sum_check <= data_sum_check;
+    end process;
+    
+    init_sum_check : process
+    begin
+        wait until rising_edge(init);
+        wait for 2 ns;
+        s_init_sum_check <= s_data_sum_check;
+        report "Init sum in testbench " & integer'image(to_integer(s_data_sum_check))
+                & " sum in logic " & integer'image(to_integer(unsigned(init_sum)));
+    end process;
+
+    done_sum_check : process
+    begin
+        wait until rising_edge(d_valid);
+        wait for 2 ns;
+        report "(Done sum - Init sum) in testbench " & integer'image(to_integer(s_data_sum_check - s_init_sum_check))
+                & " sum in logic " & integer'image(to_integer(unsigned(done_sum)));
+        report "Average in testbench " & integer'image(to_integer((s_data_sum_check - s_init_sum_check)/4))
+                & " average in logic " & integer'image(to_integer(unsigned(d_out_avg)));
     end process;
 
 end Behavioral;

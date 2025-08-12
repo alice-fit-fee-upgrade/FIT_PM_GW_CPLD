@@ -23,21 +23,21 @@ entity adc_channel_mux is
 end adc_channel_mux;
 
 architecture Behavioral of adc_channel_mux is 
-    signal x_ovf    : std_logic := '0';
-    signal x_d_out  : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
+    signal s_ovf    : std_logic := '0';
+    signal s_d_out  : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
 
 begin
-    d_out <= x_d_out;
-    ovf <= x_ovf;
+    d_out <= s_d_out;
+    ovf <= s_ovf;
 
     process(d_in1, d_in2) begin
 
         if d_in1 < OVERFLOW_VAL then
-            x_d_out <= d_in1;
-            x_ovf <= '0';
+            s_d_out <= d_in1;
+            s_ovf <= '0';
         else
-            x_d_out <= d_in2;
-            x_ovf <= '1';
+            s_d_out <= d_in2;
+            s_ovf <= '1';
         end if;
 
     end process;

@@ -16,7 +16,9 @@ entity adc_channel is
         init        : in std_logic;
         done        : in std_logic;
 
-        d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_sum       : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0); 
+
+        d_out_avg   : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf         : out std_logic
     );
 end adc_channel;
@@ -31,7 +33,8 @@ signal ovf_mux      : std_logic;
 signal d_sr0, d_sr1, d_sr2, d_sr3 : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
 signal ovf_sr       : std_logic;
 
-signal init_d       : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+signal init_sum     : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+signal done_sum     : std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
 signal init_ovf     : std_logic;
 
 component adc_channel_mux
@@ -83,12 +86,16 @@ component adc_channel_avg
         d_in3       : in std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         ovf_in      : in std_logic;
 
+        d_sum       : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+
         init        : in std_logic;
         done        : in std_logic;
         
-        init_d      : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+        init_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+        done_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
+
         init_ovf    : out std_logic;
-        d_out       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+        d_out_avg   : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
         done_ovf    : out std_logic
     );
 end component;
@@ -141,13 +148,17 @@ begin
             d_in2       => d_sr2,
             d_in3       => d_sr3,
             ovf_in      => ovf_sr,
+            
+            d_sum       => d_sum,
     
             init        => init,
             done        => done,
             
-            init_d      => init_d,
+            init_sum    => init_sum,
+            done_sum    => done_sum,
+
             init_ovf    => init_ovf,
-            d_out       => d_out,
+            d_out_avg   => d_out_avg,
             done_ovf    => ovf
         );
 
