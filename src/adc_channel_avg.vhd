@@ -37,7 +37,7 @@ entity adc_channel_avg is
 
         init_ovf    : out std_logic;
         d_out_avg   : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-        d_valid     : out std_logic;
+        d_avg_valid : out std_logic;
         ovf         : out std_logic
     );
 end adc_channel_avg;
@@ -55,7 +55,7 @@ begin
             init_ovf <= '0';
             done_sum <= (others => '0');
             ovf <= '0';
-            d_valid <= '0';
+            d_avg_valid <= '0';
             temp_sum := to_unsigned(0, temp_sum'length);
             d_sum <= (others => '0');
 
@@ -71,9 +71,9 @@ begin
 
             elsif done = '1' then
                 done_sum <= std_logic_vector(temp_sum - unsigned(init_sum));
-                d_valid <= '1';
+                d_avg_valid <= '1';
             else
-                d_valid <= '0';
+                d_avg_valid <= '0';
             end if;
         end if;
     

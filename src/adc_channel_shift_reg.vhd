@@ -33,7 +33,7 @@ architecture Behavioral of adc_channel_shift_reg is
 begin
     ovf <= s_ovf_buff(0) or s_ovf_buff(1) or s_ovf_buff(2) or s_ovf_buff(3);
     d_out0 <= s_d_buff(0);
-    d_out1 <= s_d_buff(1);
+    d_out1 <= s_d_buff(1);  
     d_out2 <= s_d_buff(2);
     d_out3 <= s_d_buff(3);
 

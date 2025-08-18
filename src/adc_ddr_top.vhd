@@ -12,16 +12,16 @@ entity adc_ddr_top is
   port (
     rstn        :in std_logic;
     
-    ADCA_CLK_N  : in std_logic;
-    ADCA_CLK_P  : in std_logic;
-    ADCAA_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCAA_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCAB_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    ADCAB_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
-    
-    ADCA_CLK    : out std_logic;
-    ADCAA       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-    ADCAB       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0)
+    ADC_CLK_N   : in std_logic;
+    ADC_CLK_P   : in std_logic;
+    ADC_A_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADC_A_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADC_B_N     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+    ADC_B_P     : in std_logic_vector (ADC_DATA_LINES-1 downto 0);
+
+    ADC_CLK     : out std_logic;
+    ADC_A       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+    ADC_B       : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0)
 
   );
 end adc_ddr_top;
@@ -42,13 +42,13 @@ architecture Frontend of adc_ddr_top is
 
 begin
 
-  ADCAA <= adcAA_d;
-  ADCAB <= adcAB_d;
-  ADCA_CLK <= adcA_clk_out;
+  ADC_A <= adcAA_d;
+  ADC_B <= adcAB_d;
+  ADC_CLK <= adcA_clk_out;
 
   adcA_clk_ibufds : IBUFDS port map(
-    I  => ADCA_CLK_P,
-    IB => ADCA_CLK_N,
+    I  => ADC_CLK_P,
+    IB => ADC_CLK_N,
     O  => adcA_clk_buff
   );
 
@@ -59,8 +59,8 @@ begin
 
   adcAA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
         adcAA_ibufds : IBUFDS port map(
-          I  => ADCAA_P(i),
-          IB => ADCAA_N(i),
+          I  => ADC_A_P(i),
+          IB => ADC_A_N(i),
           O  => adcAA_ddr(i)
         );
 
@@ -107,8 +107,8 @@ begin
 
   adcA_ddr_IN : for i in 0 to ADC_DATA_LINES-1 generate
         adcAB_ibufds : IBUFDS port map(
-          I  => ADCAB_P(i),
-          IB => ADCAB_N(i),
+          I  => ADC_B_P(i),
+          IB => ADC_B_N(i),
           O  => adcAB_ddr(i)
         );
 

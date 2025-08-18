@@ -39,7 +39,7 @@ architecture Behavioral of adc_channel_avg_tb is
 
     signal init_ovf     : std_logic;
     signal d_out_avg    : std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-    signal d_valid      : std_logic;
+    signal d_avg_valid  : std_logic;
     signal ovf          : std_logic;
 
     signal counter      : unsigned(ADC_RESOLUTION_BITS-1 downto 0) := (others => '0');
@@ -127,7 +127,7 @@ end component;
             done_sum    : out std_logic_vector(ADC_RESOLUTION_BITS+1 downto 0);
             init_ovf    : out std_logic;
             d_out_avg   : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
-            d_valid     : out std_logic;
+            d_avg_valid : out std_logic;
             ovf         : out std_logic
         );
     end component;
@@ -191,7 +191,7 @@ begin
 
             init_ovf    => init_ovf,
             d_out_avg   => d_out_avg,
-            d_valid     => d_valid,
+            d_avg_valid => d_avg_valid,
             ovf         => ovf
         );
 
@@ -253,7 +253,7 @@ begin
 
     done_sum_check : process
     begin
-        wait until rising_edge(d_valid);
+        wait until rising_edge(d_avg_valid);
         wait for 2 ns;
         report "(Done sum - Init sum) in testbench " & integer'image(to_integer(s_data_sum_check - s_init_sum_check))
                 & " sum in logic " & integer'image(to_integer(unsigned(done_sum)));
