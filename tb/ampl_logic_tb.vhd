@@ -21,6 +21,8 @@ architecture bench of ampl_logic_tb is
   signal mux_in_b : std_logic_vector (11 downto 0);
   signal mux_out  : std_logic_vector (12 downto 0);
 
+  signal sr       : std_logic_vector(11 downto 0) := (others => '0');
+
   signal strb     : std_logic;
   signal dv       : std_logic;
   signal en       : std_logic;
@@ -75,14 +77,37 @@ begin
     end if;
   end process;
 
+  shift_reg_proc : process
+    type shift_array is array (0 to 6) of std_logic_vector(11 downto 0); -- 7 x 12 since adc pipeline delay is 7 clock cycles
+    variable shiftreg : shift_array := (others => (others => '0'));
+    variable k : integer := 0;
+  begin
+      while true loop
+          wait until rising_edge(clk20);
+
+          if rstn = '0' then
+              shiftreg := (others => (others => '0'));
+          else
+
+              for i in 6 downto 1 loop
+                  shiftreg(i) := shiftreg(i-1);
+              end loop;
+
+              shiftreg(0) := std_logic_vector(to_unsigned(k, 12));
+              k := k + 1;
+          end if;
+
+          sr <= shiftreg(6);
+      end loop;
+  end process;
+
+
   integrator_values: process
-      variable i : unsigned(11 downto 0) := (others => '0');
   begin
     while clk_gen_en loop
       wait until rising_edge(clk20) or rising_edge(clk20n);
-      mux_in_a <= std_logic_vector(i + x"A00") when clk20 = '0' else x"000";
-      mux_in_b <= std_logic_vector(i + x"B00") when clk20n = '0' else x"000";
-      i := i + 1;
+      mux_in_a <= std_logic_vector(unsigned(sr) + to_unsigned(16#A00#, sr'length)) when clk20n = '0' else (others => '0');
+      mux_in_b <= std_logic_vector(unsigned(sr) + to_unsigned(16#B00#, sr'length)) when clk20 = '0' else (others => '0');
     end loop;
     wait;
   end process;
