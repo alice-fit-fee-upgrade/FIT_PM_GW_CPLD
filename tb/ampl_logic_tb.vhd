@@ -77,7 +77,7 @@ begin
     end if;
   end process;
 
-  shift_reg_proc : process
+  adc_pipeline : process
     type shift_array is array (0 to 6) of std_logic_vector(11 downto 0); -- 7 x 12 since adc pipeline delay is 7 clock cycles
     variable shiftreg : shift_array := (others => (others => '0'));
     variable k : integer := 0;
