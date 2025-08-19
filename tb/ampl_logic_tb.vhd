@@ -75,9 +75,19 @@ begin
     end if;
   end process;
 
+  integrator_values: process
+      variable i : unsigned(11 downto 0) := (others => '0');
+  begin
+    while clk_gen_en loop
+      wait until rising_edge(clk20) or rising_edge(clk20n);
+      mux_in_a <= std_logic_vector(i + x"A00") when clk20 = '0' else x"000";
+      mux_in_b <= std_logic_vector(i + x"B00") when clk20n = '0' else x"000";
+      i := i + 1;
+    end loop;
+    wait;
+  end process;
+
   stimulus: process begin
-    mux_in_a <= x"1A1";
-    mux_in_b <= x"2B2";
 
     -- trigger using event signal
     rstn <= '0';
@@ -98,16 +108,20 @@ begin
     evnt <= '0';
     wait for CLK_PERIOD;
     rstn <= '1';
-    wait for CLK_PERIOD;
+    wait for CLK_PERIOD*4;
+    wait for 1 ns;
     strb <= '1';
-    wait for CLK_PERIOD*6;
+    wait for 3 ns;
     strb <= '0';
+    wait until rising_edge(clk80);
 
     wait for CLK_PERIOD*20;
-    wait for CLK_PERIOD;
+    wait for 1 ns;
     strb <= '1';
-    wait for CLK_PERIOD*6;
+    wait for 3 ns;
     strb <= '0';
+    wait until rising_edge(clk80);
+
 
     wait for CLK_PERIOD*100;
     clk_gen_en <= false;
