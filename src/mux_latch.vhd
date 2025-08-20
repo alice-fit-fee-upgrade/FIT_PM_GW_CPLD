@@ -4,9 +4,9 @@ use IEEE.STD_LOGIC_1164.all;
 entity mux_latch is
   port (
     clk         : in std_logic;
-    in_a        : in std_logic_vector (11 downto 0);
-    in_b        : in std_logic_vector (11 downto 0);
-    o           : out std_logic_vector (12 downto 0);
+    in_a        : in std_logic_vector (11 downto 0) := (others => '0');
+    in_b        : in std_logic_vector (11 downto 0) := (others => '0');
+    o           : out std_logic_vector (12 downto 0) := (others => '0');
     sel0, sel1  : in std_logic
   );
 end mux_latch;

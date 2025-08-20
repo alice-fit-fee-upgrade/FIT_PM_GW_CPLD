@@ -11,9 +11,9 @@ entity ampl_logic is
     clk20     : out std_logic;
     clk20n    : out std_logic;
 
-    mux_in_a  : in std_logic_vector (11 downto 0); -- mux latch input
-    mux_in_b  : in std_logic_vector (11 downto 0); -- mux latch input
-    mux_out   : out std_logic_vector (12 downto 0); -- mux latch output
+    data_a  : in std_logic_vector (11 downto 0); -- mux latch input
+    data_b  : in std_logic_vector (11 downto 0); -- mux latch input
+    data_out   : out std_logic_vector (12 downto 0); -- mux latch output
 
     strb      : in std_logic; -- on f edge & en: str_div = !str_div
     en        : in std_logic; -- enable to activate f edge on strb
@@ -61,9 +61,9 @@ begin
   );
 
   mux_latch_inst : mux_latch port map (
-    in_a  => mux_in_a,
-    in_b  => mux_in_b,
-    o     => mux_out,
+    in_a  => data_a,
+    in_b  => data_b,
+    o     => data_out,
     clk   => clk80,
     sel0  => dly(6),
     sel1  => clk20
