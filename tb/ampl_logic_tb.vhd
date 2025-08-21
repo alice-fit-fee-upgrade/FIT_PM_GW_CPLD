@@ -9,12 +9,14 @@ end;
 architecture bench of ampl_logic_tb is
 
   constant CLK_PERIOD : time := 12.5 ns;
+  constant CLK_SHIFT : time := 12.5 ns/2 - 2 ns; -- rising edge is 2 ns quicker than clk20 rising edge
   constant ADC_PIPELINE_DELAY : integer := 7;
   constant ADC_RESOLUTION : integer := 12;  
 
   type shift_array is array (0 to ADC_PIPELINE_DELAY-1) of std_logic_vector(ADC_RESOLUTION-1 downto 0);
 
   signal clk80            : std_logic := '0';
+  signal clk80_shifted    : std_logic := '0';
   signal rstn             : std_logic := '0';
 
   signal clk40            : std_logic := '0';
@@ -63,6 +65,17 @@ begin
   );
 
   clock_gen: process begin
+    wait for CLK_SHIFT;  
+    while clk_gen_en loop
+      clk80_shifted <= '0';
+      wait for CLK_PERIOD/2;
+      clk80_shifted <= '1';
+      wait for CLK_PERIOD/2;
+    end loop;
+    wait;
+  end process;
+
+  clock_shifted_gen: process begin
       
     while clk_gen_en loop
       clk80 <= '0';
@@ -108,12 +121,12 @@ begin
     wait;
   end process;
 
-  adc_a_pipeline_delay : process
+  adc_pipeline : process
     variable adc_a_val_pipeline : shift_array := (others => (others => '0'));
     variable adc_b_val_pipeline : shift_array := (others => (others => '0'));
   begin
       while true loop
-          wait until rising_edge(clk80);
+          wait until rising_edge(clk80_shifted);
           
           for i in ADC_PIPELINE_DELAY-1 downto 1 loop
             adc_a_val_pipeline(i) := adc_a_val_pipeline(i-1);
