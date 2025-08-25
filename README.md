@@ -46,3 +46,6 @@ There are two ways in which the module can be activated: using event or using st
 ![fit_pm_afe_fpga_block](img/fit_pm_afe_fpga_block.png "fit_pm_afe_fpga_block")
 ![fit_pm_afe_clocks](img/fit_pm_afe_clocks.png "fit_pm_afe_clocks")
 ![fit_pm_afe_chanell_logic](img/fit_pm_afe_chanell_logic.png "fit_pm_afe_chanell_logic")
+
+## FIT PM Dual Range AFE Vivado project
+![fit_pm_dual_range_afe_block_desig](img/fit_pm_dual_range_afe_block_desig.png "fit_pm_dual_range_afe_block_desig")

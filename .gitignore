@@ -2,3 +2,10 @@
 *.exe
 *.ghw
 *.cf
+
+vivado/*/
+vivado/*
+vivado/!*.srcs
+vivado/!*.gen
+vivado/!*.xpr
+vivado/!*.tcl
