@@ -6,7 +6,7 @@ entity fit_pm_afe is
   generic (
     ADC_DATA_LINES        : integer := 7;
     ADC_RESOLUTION_BITS   : integer := 14;
-    DATA_OUT_W            : integer := 13
+    DATA_OUT_W            : integer := 16
   );
   port (
     clk         : in std_logic;
@@ -34,7 +34,7 @@ entity fit_pm_afe is
   );
 end fit_pm_afe;
 
-architecture Frontend of fit_pm_afe is
+architecture Behavioral of fit_pm_afe is
 
 begin
 
