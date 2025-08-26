@@ -6,3 +6,7 @@
 vivado/*.runs
 vivado/*.cache
 vivado/*.sim
+vivado/*.ioplanning
+vivado/*.ip_user_files
+vivado/*.log
+vivado/*.jou
