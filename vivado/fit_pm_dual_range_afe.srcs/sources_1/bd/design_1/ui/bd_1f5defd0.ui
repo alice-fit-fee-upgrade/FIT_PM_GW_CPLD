@@ -1,0 +1,405 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-406,-13",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeInterrupt":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
+   "ExpandedHierarchyInLayout":"",
+   "Interfaces View_Layers":"/clk_wiz_0_clk_40MHz:false|/processor_system/clk_wiz_1_spi_clk:false|/clk_wiz_0_clk_20MHz:false|/processor_system/mdm_1_Interrupt:false|/processor_system/rst_clk_wiz_1_100M_peripheral_aresetn:false|/dual_adc_ddr_top_0_ADCA_CLK:false|/processor_system/rst_clk_wiz_1_100M_bus_struct_reset:false|/CLKA_OUT_P_1:false|/processor_system/util_ds_buf_0_IOBUF_IO_O:false|/processor_system/microblaze_0_Clk:false|/CLKA_OUT_N_1:false|/clk_wiz_0_processor_clk:false|/clk_wiz_0_clk_20MHz_n:false|/CLKB_OUT_N_1:false|/clk_wiz_0_clk_80MHz:false|/CLKB_OUT_P_1:false|/dual_adc_ddr_top_0_ADCB_CLK:false|/processor_system/axi_quad_spi_0_ip2intc_irpt:false|/processor_system/rst_clk_wiz_1_100M_mb_reset:false|/processor_system/axi_uartlite_0_interrupt:false|/processor_system/mdm_1_debug_sys_rst:false|",
+   "Interfaces View_ScaleFactor":"1.0",
+   "Interfaces View_TopLeft":"-670,-308",
+   "No Loops_ExpandedHierarchyInLayout":"",
+   "No Loops_Layout":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port uart_dbg -pg 1 -lvl 5 -x 1240 -y 80 -defaultsOSRD
+preplace port PLL_CLK -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_adc_clk -pg 1 -lvl 5 -x 1240 -y 140 -defaultsOSRD
+preplace port port-id_adc_mosi -pg 1 -lvl 5 -x 1240 -y 120 -defaultsOSRD
+preplace port port-id_adc_miso -pg 1 -lvl 0 -x 0 -y 1640 -defaultsOSRD
+preplace port port-id_Gate_STR1_i -pg 1 -lvl 5 -x 1240 -y 20 -defaultsOSRD
+preplace port port-id_Gate_STR1_o -pg 1 -lvl 0 -x 0 -y 1580 -defaultsOSRD
+preplace port port-id_CLKA_OUT_N -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_CLKA_OUT_P -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port port-id_CLKB_OUT_N -pg 1 -lvl 0 -x 0 -y 960 -defaultsOSRD
+preplace port port-id_CLKB_OUT_P -pg 1 -lvl 0 -x 0 -y 940 -defaultsOSRD
+preplace port port-id_ADCAA_D0_P -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_ADCAA_D2_P -pg 1 -lvl 0 -x 0 -y 420 -defaultsOSRD
+preplace port port-id_ADCAA_D4_P -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port port-id_ADCAA_D6_P -pg 1 -lvl 0 -x 0 -y 500 -defaultsOSRD
+preplace port port-id_ADCAA_D8_P -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_ADCAA_D10_P -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_ADCAA_D12_P -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
+preplace port port-id_ADCAA_D0_N -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
+preplace port port-id_ADCAA_D10_N -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port port-id_ADCAA_D12_N -pg 1 -lvl 0 -x 0 -y 640 -defaultsOSRD
+preplace port port-id_ADCAA_D2_N -pg 1 -lvl 0 -x 0 -y 440 -defaultsOSRD
+preplace port port-id_ADCAA_D4_N -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
+preplace port port-id_ADCAA_D6_N -pg 1 -lvl 0 -x 0 -y 520 -defaultsOSRD
+preplace port port-id_ADCAA_D8_N -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace port port-id_ADCAB_D0_N -pg 1 -lvl 0 -x 0 -y 680 -defaultsOSRD
+preplace port port-id_ADCAB_D0_P -pg 1 -lvl 0 -x 0 -y 660 -defaultsOSRD
+preplace port port-id_ADCAB_D10_N -pg 1 -lvl 0 -x 0 -y 880 -defaultsOSRD
+preplace port port-id_ADCAB_D10_P -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
+preplace port port-id_ADCAB_D12_N -pg 1 -lvl 0 -x 0 -y 920 -defaultsOSRD
+preplace port port-id_ADCAB_D12_P -pg 1 -lvl 0 -x 0 -y 900 -defaultsOSRD
+preplace port port-id_ADCAB_D2_N -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
+preplace port port-id_ADCAB_D2_P -pg 1 -lvl 0 -x 0 -y 700 -defaultsOSRD
+preplace port port-id_ADCAB_D4_N -pg 1 -lvl 0 -x 0 -y 760 -defaultsOSRD
+preplace port port-id_ADCAB_D4_P -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace port port-id_ADCAB_D6_N -pg 1 -lvl 0 -x 0 -y 800 -defaultsOSRD
+preplace port port-id_ADCAB_D6_P -pg 1 -lvl 0 -x 0 -y 780 -defaultsOSRD
+preplace port port-id_ADCAB_D8_N -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD
+preplace port port-id_ADCAB_D8_P -pg 1 -lvl 0 -x 0 -y 820 -defaultsOSRD
+preplace port port-id_ADCBA_D0_N -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
+preplace port port-id_ADCBA_D0_P -pg 1 -lvl 0 -x 0 -y 980 -defaultsOSRD
+preplace port port-id_ADCBA_D10_N -pg 1 -lvl 0 -x 0 -y 1200 -defaultsOSRD
+preplace port port-id_ADCBA_D10_P -pg 1 -lvl 0 -x 0 -y 1180 -defaultsOSRD
+preplace port port-id_ADCBA_D12_N -pg 1 -lvl 0 -x 0 -y 1240 -defaultsOSRD
+preplace port port-id_ADCBA_D12_P -pg 1 -lvl 0 -x 0 -y 1220 -defaultsOSRD
+preplace port port-id_ADCBA_D2_N -pg 1 -lvl 0 -x 0 -y 1040 -defaultsOSRD
+preplace port port-id_ADCBA_D2_P -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
+preplace port port-id_ADCBA_D4_N -pg 1 -lvl 0 -x 0 -y 1080 -defaultsOSRD
+preplace port port-id_ADCBA_D4_P -pg 1 -lvl 0 -x 0 -y 1060 -defaultsOSRD
+preplace port port-id_ADCBA_D6_N -pg 1 -lvl 0 -x 0 -y 1120 -defaultsOSRD
+preplace port port-id_ADCBA_D6_P -pg 1 -lvl 0 -x 0 -y 1100 -defaultsOSRD
+preplace port port-id_ADCBA_D8_N -pg 1 -lvl 0 -x 0 -y 1160 -defaultsOSRD
+preplace port port-id_ADCBA_D8_P -pg 1 -lvl 0 -x 0 -y 1140 -defaultsOSRD
+preplace port port-id_ADCBB_D0_N -pg 1 -lvl 0 -x 0 -y 1280 -defaultsOSRD
+preplace port port-id_ADCBB_D0_P -pg 1 -lvl 0 -x 0 -y 1260 -defaultsOSRD
+preplace port port-id_ADCBB_D10_N -pg 1 -lvl 0 -x 0 -y 1480 -defaultsOSRD
+preplace port port-id_ADCBB_D10_P -pg 1 -lvl 0 -x 0 -y 1460 -defaultsOSRD
+preplace port port-id_ADCBB_D12_N -pg 1 -lvl 0 -x 0 -y 1520 -defaultsOSRD
+preplace port port-id_ADCBB_D12_P -pg 1 -lvl 0 -x 0 -y 1500 -defaultsOSRD
+preplace port port-id_ADCBB_D2_N -pg 1 -lvl 0 -x 0 -y 1320 -defaultsOSRD
+preplace port port-id_ADCBB_D2_P -pg 1 -lvl 0 -x 0 -y 1300 -defaultsOSRD
+preplace port port-id_ADCBB_D4_N -pg 1 -lvl 0 -x 0 -y 1360 -defaultsOSRD
+preplace port port-id_ADCBB_D4_P -pg 1 -lvl 0 -x 0 -y 1340 -defaultsOSRD
+preplace port port-id_ADCBB_D6_N -pg 1 -lvl 0 -x 0 -y 1400 -defaultsOSRD
+preplace port port-id_ADCBB_D6_P -pg 1 -lvl 0 -x 0 -y 1380 -defaultsOSRD
+preplace port port-id_ADCBB_D8_N -pg 1 -lvl 0 -x 0 -y 1440 -defaultsOSRD
+preplace port port-id_ADCBB_D8_P -pg 1 -lvl 0 -x 0 -y 1420 -defaultsOSRD
+preplace port port-id_Event1_N -pg 1 -lvl 0 -x 0 -y 1680 -defaultsOSRD
+preplace port port-id_Event1_P -pg 1 -lvl 0 -x 0 -y 1660 -defaultsOSRD
+preplace port port-id_Event2_N -pg 1 -lvl 0 -x 0 -y 1720 -defaultsOSRD
+preplace port port-id_Event2_P -pg 1 -lvl 0 -x 0 -y 1700 -defaultsOSRD
+preplace port port-id_Event3_N -pg 1 -lvl 0 -x 0 -y 1760 -defaultsOSRD
+preplace port port-id_Event3_P -pg 1 -lvl 0 -x 0 -y 1740 -defaultsOSRD
+preplace port port-id_Event4_N -pg 1 -lvl 0 -x 0 -y 1800 -defaultsOSRD
+preplace port port-id_Event4_P -pg 1 -lvl 0 -x 0 -y 1780 -defaultsOSRD
+preplace port port-id_Calibration_P -pg 1 -lvl 5 -x 1240 -y 1780 -defaultsOSRD
+preplace port port-id_Calibration_N -pg 1 -lvl 5 -x 1240 -y 1800 -defaultsOSRD
+preplace port port-id_LA0_0_0 -pg 1 -lvl 5 -x 1240 -y 1900 -defaultsOSRD
+preplace port port-id_LA0_1_0 -pg 1 -lvl 5 -x 1240 -y 1920 -defaultsOSRD
+preplace port port-id_LA0_10_0 -pg 1 -lvl 5 -x 1240 -y 2100 -defaultsOSRD
+preplace port port-id_LA0_11_0 -pg 1 -lvl 5 -x 1240 -y 2120 -defaultsOSRD
+preplace port port-id_LA0_12_0 -pg 1 -lvl 5 -x 1240 -y 2140 -defaultsOSRD
+preplace port port-id_LA0_13_0 -pg 1 -lvl 5 -x 1240 -y 2160 -defaultsOSRD
+preplace port port-id_LA0_14_0 -pg 1 -lvl 5 -x 1240 -y 2180 -defaultsOSRD
+preplace port port-id_LA0_15_0 -pg 1 -lvl 5 -x 1240 -y 2200 -defaultsOSRD
+preplace port port-id_LA0_2_0 -pg 1 -lvl 5 -x 1240 -y 1940 -defaultsOSRD
+preplace port port-id_LA0_3_0 -pg 1 -lvl 5 -x 1240 -y 1960 -defaultsOSRD
+preplace port port-id_LA0_4_0 -pg 1 -lvl 5 -x 1240 -y 1980 -defaultsOSRD
+preplace port port-id_LA0_5_0 -pg 1 -lvl 5 -x 1240 -y 2000 -defaultsOSRD
+preplace port port-id_LA0_6_0 -pg 1 -lvl 5 -x 1240 -y 2020 -defaultsOSRD
+preplace port port-id_LA0_7_0 -pg 1 -lvl 5 -x 1240 -y 2040 -defaultsOSRD
+preplace port port-id_LA0_8_0 -pg 1 -lvl 5 -x 1240 -y 2060 -defaultsOSRD
+preplace port port-id_LA0_9_0 -pg 1 -lvl 5 -x 1240 -y 2080 -defaultsOSRD
+preplace port port-id_LA1_0_0 -pg 1 -lvl 5 -x 1240 -y 2240 -defaultsOSRD
+preplace port port-id_LA1_1_0 -pg 1 -lvl 5 -x 1240 -y 2260 -defaultsOSRD
+preplace port port-id_LA1_10_0 -pg 1 -lvl 5 -x 1240 -y 2440 -defaultsOSRD
+preplace port port-id_LA1_11_0 -pg 1 -lvl 5 -x 1240 -y 2460 -defaultsOSRD
+preplace port port-id_LA1_12_0 -pg 1 -lvl 5 -x 1240 -y 2480 -defaultsOSRD
+preplace port port-id_LA1_13_0 -pg 1 -lvl 5 -x 1240 -y 2500 -defaultsOSRD
+preplace port port-id_LA1_14_0 -pg 1 -lvl 5 -x 1240 -y 2520 -defaultsOSRD
+preplace port port-id_LA1_15_0 -pg 1 -lvl 5 -x 1240 -y 2540 -defaultsOSRD
+preplace port port-id_LA1_2_0 -pg 1 -lvl 5 -x 1240 -y 2280 -defaultsOSRD
+preplace port port-id_LA1_3_0 -pg 1 -lvl 5 -x 1240 -y 2300 -defaultsOSRD
+preplace port port-id_LA1_4_0 -pg 1 -lvl 5 -x 1240 -y 2320 -defaultsOSRD
+preplace port port-id_LA1_5_0 -pg 1 -lvl 5 -x 1240 -y 2340 -defaultsOSRD
+preplace port port-id_LA1_6_0 -pg 1 -lvl 5 -x 1240 -y 2360 -defaultsOSRD
+preplace port port-id_LA1_7_0 -pg 1 -lvl 5 -x 1240 -y 2380 -defaultsOSRD
+preplace port port-id_LA1_8_0 -pg 1 -lvl 5 -x 1240 -y 2400 -defaultsOSRD
+preplace port port-id_LA1_9_0 -pg 1 -lvl 5 -x 1240 -y 2420 -defaultsOSRD
+preplace port port-id_LACK0_0 -pg 1 -lvl 5 -x 1240 -y 2220 -defaultsOSRD
+preplace port port-id_LACK1_0 -pg 1 -lvl 5 -x 1240 -y 2560 -defaultsOSRD
+preplace portBus S11 -pg 1 -lvl 5 -x 1240 -y 180 -defaultsOSRD
+preplace portBus S21 -pg 1 -lvl 5 -x 1240 -y 280 -defaultsOSRD
+preplace portBus S31 -pg 1 -lvl 5 -x 1240 -y 100 -defaultsOSRD
+preplace portBus S41 -pg 1 -lvl 5 -x 1240 -y 160 -defaultsOSRD
+preplace portBus XIO -pg 1 -lvl 5 -x 1240 -y 240 -defaultsOSRD
+preplace portBus adc_en1 -pg 1 -lvl 5 -x 1240 -y 220 -defaultsOSRD
+preplace portBus adc_en2 -pg 1 -lvl 5 -x 1240 -y 260 -defaultsOSRD
+preplace portBus adc_reset -pg 1 -lvl 5 -x 1240 -y 200 -defaultsOSRD
+preplace inst processor_system -pg 1 -lvl 4 -x 1090 -y 60 -defaultsOSRD -pinDir uart_dbg right -pinY uart_dbg 20R -pinBusDir S31 right -pinBusY S31 40R -pinDir system_clk left -pinY system_clk 20L -pinDir adc_mosi right -pinY adc_mosi 60R -pinDir adc_miso left -pinY adc_miso 1470L -pinDir adc_clk right -pinY adc_clk 80R -pinBusDir S41 right -pinBusY S41 100R -pinBusDir S11 right -pinBusY S11 120R -pinBusDir adc_reset right -pinBusY adc_reset 140R -pinBusDir adc_en1 right -pinBusY adc_en1 160R -pinBusDir XIO right -pinBusY XIO 180R -pinBusDir adc_en2 right -pinBusY adc_en2 200R -pinBusDir S21 right -pinBusY S21 220R
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 150 -y 120 -swap {0 1 2 7 3 8 4 5 6} -defaultsOSRD -pinDir CLK_IN1_D left -pinY CLK_IN1_D 20L -pinDir processor_clk right -pinY processor_clk 100R -pinDir clk_40MHz right -pinY clk_40MHz 20R -pinDir locked right -pinY locked 160R -pinDir clk_20MHz right -pinY clk_20MHz 40R -pinDir clk_20MHz_n right -pinY clk_20MHz_n 60R -pinDir clk_80MHz right -pinY clk_80MHz 80R
+preplace inst io_event_calibration_0 -pg 1 -lvl 4 -x 1090 -y 1600 -swap {2 3 4 5 6 7 8 14 0 9 10 11 12 13 1} -defaultsOSRD -pinDir Event1_P left -pinY Event1_P 60L -pinDir Event1_N left -pinY Event1_N 80L -pinDir Event2_P left -pinY Event2_P 100L -pinDir Event2_N left -pinY Event2_N 120L -pinDir Event3_P left -pinY Event3_P 140L -pinDir Event3_N left -pinY Event3_N 160L -pinDir Event4_P left -pinY Event4_P 180L -pinDir Event4_N left -pinY Event4_N 200L -pinDir Event1 left -pinY Event1 20L -pinDir Event2 right -pinY Event2 20R -pinDir Event3 right -pinY Event3 40R -pinDir Event4 right -pinY Event4 60R -pinDir Calibration_P right -pinY Calibration_P 180R -pinDir Calibration_N right -pinY Calibration_N 200R -pinDir Calibration left -pinY Calibration 40L
+preplace inst dual_adc_ddr_top_0 -pg 1 -lvl 2 -x 430 -y 260 -defaultsOSRD -pinDir rstn left -pinY rstn 20L -pinDir ADCA_CLK_P left -pinY ADCA_CLK_P 80L -pinDir ADCA_CLK_N left -pinY ADCA_CLK_N 100L -pinDir ADCAA_D0_P left -pinY ADCAA_D0_P 120L -pinDir ADCAA_D0_N left -pinY ADCAA_D0_N 140L -pinDir ADCAA_D2_P left -pinY ADCAA_D2_P 160L -pinDir ADCAA_D2_N left -pinY ADCAA_D2_N 180L -pinDir ADCAA_D4_P left -pinY ADCAA_D4_P 200L -pinDir ADCAA_D4_N left -pinY ADCAA_D4_N 220L -pinDir ADCAA_D6_P left -pinY ADCAA_D6_P 240L -pinDir ADCAA_D6_N left -pinY ADCAA_D6_N 260L -pinDir ADCAA_D8_P left -pinY ADCAA_D8_P 280L -pinDir ADCAA_D8_N left -pinY ADCAA_D8_N 300L -pinDir ADCAA_D10_P left -pinY ADCAA_D10_P 320L -pinDir ADCAA_D10_N left -pinY ADCAA_D10_N 340L -pinDir ADCAA_D12_P left -pinY ADCAA_D12_P 360L -pinDir ADCAA_D12_N left -pinY ADCAA_D12_N 380L -pinDir ADCAB_D0_P left -pinY ADCAB_D0_P 400L -pinDir ADCAB_D0_N left -pinY ADCAB_D0_N 420L -pinDir ADCAB_D2_P left -pinY ADCAB_D2_P 440L -pinDir ADCAB_D2_N left -pinY ADCAB_D2_N 460L -pinDir ADCAB_D4_P left -pinY ADCAB_D4_P 480L -pinDir ADCAB_D4_N left -pinY ADCAB_D4_N 500L -pinDir ADCAB_D6_P left -pinY ADCAB_D6_P 520L -pinDir ADCAB_D6_N left -pinY ADCAB_D6_N 540L -pinDir ADCAB_D8_P left -pinY ADCAB_D8_P 560L -pinDir ADCAB_D8_N left -pinY ADCAB_D8_N 580L -pinDir ADCAB_D10_P left -pinY ADCAB_D10_P 600L -pinDir ADCAB_D10_N left -pinY ADCAB_D10_N 620L -pinDir ADCAB_D12_P left -pinY ADCAB_D12_P 640L -pinDir ADCAB_D12_N left -pinY ADCAB_D12_N 660L -pinDir ADCA_CLK right -pinY ADCA_CLK 40R -pinBusDir ADC_AA right -pinBusY ADC_AA 60R -pinBusDir ADC_AB right -pinBusY ADC_AB 80R -pinDir ADCB_CLK_P left -pinY ADCB_CLK_P 680L -pinDir ADCB_CLK_N left -pinY ADCB_CLK_N 700L -pinDir ADCBA_D0_P left -pinY ADCBA_D0_P 720L -pinDir ADCBA_D0_N left -pinY ADCBA_D0_N 740L -pinDir ADCBA_D2_P left -pinY ADCBA_D2_P 760L -pinDir ADCBA_D2_N left -pinY ADCBA_D2_N 780L -pinDir ADCBA_D4_P left -pinY ADCBA_D4_P 800L -pinDir ADCBA_D4_N left -pinY ADCBA_D4_N 820L -pinDir ADCBA_D6_P left -pinY ADCBA_D6_P 840L -pinDir ADCBA_D6_N left -pinY ADCBA_D6_N 860L -pinDir ADCBA_D8_P left -pinY ADCBA_D8_P 880L -pinDir ADCBA_D8_N left -pinY ADCBA_D8_N 900L -pinDir ADCBA_D10_P left -pinY ADCBA_D10_P 920L -pinDir ADCBA_D10_N left -pinY ADCBA_D10_N 940L -pinDir ADCBA_D12_P left -pinY ADCBA_D12_P 960L -pinDir ADCBA_D12_N left -pinY ADCBA_D12_N 980L -pinDir ADCBB_D0_P left -pinY ADCBB_D0_P 1000L -pinDir ADCBB_D0_N left -pinY ADCBB_D0_N 1020L -pinDir ADCBB_D2_P left -pinY ADCBB_D2_P 1040L -pinDir ADCBB_D2_N left -pinY ADCBB_D2_N 1060L -pinDir ADCBB_D4_P left -pinY ADCBB_D4_P 1080L -pinDir ADCBB_D4_N left -pinY ADCBB_D4_N 1100L -pinDir ADCBB_D6_P left -pinY ADCBB_D6_P 1120L -pinDir ADCBB_D6_N left -pinY ADCBB_D6_N 1140L -pinDir ADCBB_D8_P left -pinY ADCBB_D8_P 1160L -pinDir ADCBB_D8_N left -pinY ADCBB_D8_N 1180L -pinDir ADCBB_D10_P left -pinY ADCBB_D10_P 1200L -pinDir ADCBB_D10_N left -pinY ADCBB_D10_N 1220L -pinDir ADCBB_D12_P left -pinY ADCBB_D12_P 1240L -pinDir ADCBB_D12_N left -pinY ADCBB_D12_N 1260L -pinDir ADCB_CLK right -pinY ADCB_CLK 100R -pinBusDir ADC_BA right -pinBusY ADC_BA 120R -pinBusDir ADC_BB right -pinBusY ADC_BB 140R
+preplace inst fit_pm_afe_0 -pg 1 -lvl 3 -x 750 -y 120 -swap {3 2 0 1 4 14 5 7 8 6 9 10 11 12 13 16 15} -defaultsOSRD -pinDir clk left -pinY clk 80L -pinDir rstn left -pinY rstn 60L -pinDir clk_40 left -pinY clk_40 20L -pinDir clk_20 left -pinY clk_20 40L -pinDir clk_20n left -pinY clk_20n 100L -pinDir enai left -pinY enai 1460L -pinDir strb left -pinY strb 160L -pinDir evnt right -pinY evnt 1400R -pinDir evout right -pinY evout 1420R -pinDir clk_inA left -pinY clk_inA 180L -pinBusDir d_inAA left -pinBusY d_inAA 200L -pinBusDir d_inAB left -pinBusY d_inAB 220L -pinDir clk_inB left -pinY clk_inB 240L -pinBusDir d_inBA left -pinBusY d_inBA 260L -pinBusDir d_inBB left -pinBusY d_inBB 280L -pinDir d_val right -pinY d_val 1460R -pinBusDir d_out right -pinBusY d_out 1440R
+preplace inst io_la_outputs_0 -pg 1 -lvl 4 -x 1090 -y 1880 -swap {0 2 1 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37} -defaultsOSRD -pinBusDir data0 left -pinBusY data0 20L -pinDir dv0 left -pinY dv0 60L -pinBusDir data1 left -pinBusY data1 40L -pinDir dv1 left -pinY dv1 80L -pinDir LA0_0 right -pinY LA0_0 20R -pinDir LA0_1 right -pinY LA0_1 40R -pinDir LA0_2 right -pinY LA0_2 60R -pinDir LA0_3 right -pinY LA0_3 80R -pinDir LA0_4 right -pinY LA0_4 100R -pinDir LA0_5 right -pinY LA0_5 120R -pinDir LA0_6 right -pinY LA0_6 140R -pinDir LA0_7 right -pinY LA0_7 160R -pinDir LA0_8 right -pinY LA0_8 180R -pinDir LA0_9 right -pinY LA0_9 200R -pinDir LA0_10 right -pinY LA0_10 220R -pinDir LA0_11 right -pinY LA0_11 240R -pinDir LA0_12 right -pinY LA0_12 260R -pinDir LA0_13 right -pinY LA0_13 280R -pinDir LA0_14 right -pinY LA0_14 300R -pinDir LA0_15 right -pinY LA0_15 320R -pinDir LACK0 right -pinY LACK0 340R -pinDir LA1_0 right -pinY LA1_0 360R -pinDir LA1_1 right -pinY LA1_1 380R -pinDir LA1_2 right -pinY LA1_2 400R -pinDir LA1_3 right -pinY LA1_3 420R -pinDir LA1_4 right -pinY LA1_4 440R -pinDir LA1_5 right -pinY LA1_5 460R -pinDir LA1_6 right -pinY LA1_6 480R -pinDir LA1_7 right -pinY LA1_7 500R -pinDir LA1_8 right -pinY LA1_8 520R -pinDir LA1_9 right -pinY LA1_9 540R -pinDir LA1_10 right -pinY LA1_10 560R -pinDir LA1_11 right -pinY LA1_11 580R -pinDir LA1_12 right -pinY LA1_12 600R -pinDir LA1_13 right -pinY LA1_13 620R -pinDir LA1_14 right -pinY LA1_14 640R -pinDir LA1_15 right -pinY LA1_15 660R -pinDir LACK1 right -pinY LACK1 680R
+preplace netloc ADCAA_D0_N_1 1 0 2 NJ 400 NJ
+preplace netloc ADCAA_D0_P_1 1 0 2 NJ 380 NJ
+preplace netloc ADCAA_D10_N_1 1 0 2 NJ 600 NJ
+preplace netloc ADCAA_D10_P_1 1 0 2 NJ 580 NJ
+preplace netloc ADCAA_D12_N_1 1 0 2 NJ 640 NJ
+preplace netloc ADCAA_D12_P_1 1 0 2 NJ 620 NJ
+preplace netloc ADCAA_D2_N_1 1 0 2 NJ 440 NJ
+preplace netloc ADCAA_D2_P_1 1 0 2 NJ 420 NJ
+preplace netloc ADCAA_D4_N_1 1 0 2 NJ 480 NJ
+preplace netloc ADCAA_D4_P_1 1 0 2 NJ 460 NJ
+preplace netloc ADCAA_D6_N_1 1 0 2 NJ 520 NJ
+preplace netloc ADCAA_D6_P_1 1 0 2 NJ 500 NJ
+preplace netloc ADCAA_D8_N_1 1 0 2 NJ 560 NJ
+preplace netloc ADCAA_D8_P_1 1 0 2 NJ 540 NJ
+preplace netloc ADCAB_D0_N_1 1 0 2 NJ 680 NJ
+preplace netloc ADCAB_D0_P_1 1 0 2 NJ 660 NJ
+preplace netloc ADCAB_D10_N_1 1 0 2 NJ 880 NJ
+preplace netloc ADCAB_D10_P_1 1 0 2 NJ 860 NJ
+preplace netloc ADCAB_D12_N_1 1 0 2 NJ 920 NJ
+preplace netloc ADCAB_D12_P_1 1 0 2 NJ 900 NJ
+preplace netloc ADCAB_D2_N_1 1 0 2 NJ 720 NJ
+preplace netloc ADCAB_D2_P_1 1 0 2 NJ 700 NJ
+preplace netloc ADCAB_D4_N_1 1 0 2 NJ 760 NJ
+preplace netloc ADCAB_D4_P_1 1 0 2 NJ 740 NJ
+preplace netloc ADCAB_D6_N_1 1 0 2 NJ 800 NJ
+preplace netloc ADCAB_D6_P_1 1 0 2 NJ 780 NJ
+preplace netloc ADCAB_D8_N_1 1 0 2 NJ 840 NJ
+preplace netloc ADCAB_D8_P_1 1 0 2 NJ 820 NJ
+preplace netloc ADCBA_D0_N_1 1 0 2 NJ 1000 NJ
+preplace netloc ADCBA_D0_P_1 1 0 2 NJ 980 NJ
+preplace netloc ADCBA_D10_N_1 1 0 2 NJ 1200 NJ
+preplace netloc ADCBA_D10_P_1 1 0 2 NJ 1180 NJ
+preplace netloc ADCBA_D12_N_1 1 0 2 NJ 1240 NJ
+preplace netloc ADCBA_D12_P_1 1 0 2 NJ 1220 NJ
+preplace netloc ADCBA_D2_N_1 1 0 2 NJ 1040 NJ
+preplace netloc ADCBA_D2_P_1 1 0 2 NJ 1020 NJ
+preplace netloc ADCBA_D4_N_1 1 0 2 NJ 1080 NJ
+preplace netloc ADCBA_D4_P_1 1 0 2 NJ 1060 NJ
+preplace netloc ADCBA_D6_N_1 1 0 2 NJ 1120 NJ
+preplace netloc ADCBA_D6_P_1 1 0 2 NJ 1100 NJ
+preplace netloc ADCBA_D8_N_1 1 0 2 NJ 1160 NJ
+preplace netloc ADCBA_D8_P_1 1 0 2 NJ 1140 NJ
+preplace netloc ADCBB_D0_N_1 1 0 2 NJ 1280 NJ
+preplace netloc ADCBB_D0_P_1 1 0 2 NJ 1260 NJ
+preplace netloc ADCBB_D10_N_1 1 0 2 NJ 1480 NJ
+preplace netloc ADCBB_D10_P_1 1 0 2 NJ 1460 NJ
+preplace netloc ADCBB_D12_N_1 1 0 2 NJ 1520 NJ
+preplace netloc ADCBB_D12_P_1 1 0 2 NJ 1500 NJ
+preplace netloc ADCBB_D2_N_1 1 0 2 NJ 1320 NJ
+preplace netloc ADCBB_D2_P_1 1 0 2 NJ 1300 NJ
+preplace netloc ADCBB_D4_N_1 1 0 2 NJ 1360 NJ
+preplace netloc ADCBB_D4_P_1 1 0 2 NJ 1340 NJ
+preplace netloc ADCBB_D6_N_1 1 0 2 NJ 1400 NJ
+preplace netloc ADCBB_D6_P_1 1 0 2 NJ 1380 NJ
+preplace netloc ADCBB_D8_N_1 1 0 2 NJ 1440 NJ
+preplace netloc ADCBB_D8_P_1 1 0 2 NJ 1420 NJ
+preplace netloc CLKA_OUT_N_1 1 0 2 NJ 360 NJ
+preplace netloc CLKA_OUT_P_1 1 0 2 NJ 340 NJ
+preplace netloc CLKB_OUT_N_1 1 0 2 NJ 960 NJ
+preplace netloc CLKB_OUT_P_1 1 0 2 NJ 940 NJ
+preplace netloc Event1_N_0_1 1 0 4 NJ 1680 NJ 1680 NJ 1680 NJ
+preplace netloc Event1_P_0_1 1 0 4 NJ 1660 NJ 1660 NJ 1660 NJ
+preplace netloc Event2_N_0_1 1 0 4 NJ 1720 NJ 1720 NJ 1720 NJ
+preplace netloc Event2_P_0_1 1 0 4 NJ 1700 NJ 1700 NJ 1700 NJ
+preplace netloc Event3_N_0_1 1 0 4 NJ 1760 NJ 1760 NJ 1760 NJ
+preplace netloc Event3_P_0_1 1 0 4 NJ 1740 NJ 1740 NJ 1740 NJ
+preplace netloc Event4_N_0_1 1 0 4 NJ 1800 NJ 1800 NJ 1800 NJ
+preplace netloc Event4_P_0_1 1 0 4 NJ 1780 NJ 1780 NJ 1780 NJ
+preplace netloc Net 1 4 1 NJ 240
+preplace netloc adc_miso_1 1 0 4 NJ 1640 NJ 1640 NJ 1640 960J
+preplace netloc axi_quad_spi_0_io0_o 1 4 1 NJ 120
+preplace netloc axi_quad_spi_0_sck_o 1 4 1 NJ 140
+preplace netloc clk_wiz_0_clk_40MHz 1 1 4 NJ 140 580 20 NJ 20 NJ
+preplace netloc clk_wiz_0_locked 1 1 1 N 280
+preplace netloc clk_wiz_0_processor_clk 1 1 3 N 220 600J 80 NJ
+preplace netloc io_event_calibration_0_Calibration_N 1 4 1 NJ 1800
+preplace netloc io_event_calibration_0_Calibration_P 1 4 1 NJ 1780
+preplace netloc xlslice_0_Dout 1 4 1 NJ 180
+preplace netloc xlslice_1_Dout 1 4 1 NJ 280
+preplace netloc xlslice_2_Dout 1 4 1 NJ 100
+preplace netloc xlslice_3_Dout 1 4 1 NJ 160
+preplace netloc xlslice_adc_en1_Dout 1 4 1 NJ 220
+preplace netloc xlslice_adc_en2_Dout 1 4 1 NJ 260
+preplace netloc xlslice_adc_reset_Dout 1 4 1 NJ 200
+preplace netloc dual_adc_ddr_top_0_ADCA_CLK 1 2 1 N 300
+preplace netloc dual_adc_ddr_top_0_ADC_AA 1 2 1 N 320
+preplace netloc dual_adc_ddr_top_0_ADC_AB 1 2 1 N 340
+preplace netloc dual_adc_ddr_top_0_ADCB_CLK 1 2 1 N 360
+preplace netloc dual_adc_ddr_top_0_ADC_BA 1 2 1 N 380
+preplace netloc dual_adc_ddr_top_0_ADC_BB 1 2 1 N 400
+preplace netloc clk_wiz_0_clk_20MHz 1 1 2 NJ 160 N
+preplace netloc clk_wiz_0_clk_20MHz_n 1 1 2 NJ 180 620
+preplace netloc clk_wiz_0_clk_80MHz 1 1 2 NJ 200 N
+preplace netloc Gate_STR1_o_1 1 0 3 NJ 1580 NJ 1580 NJ
+preplace netloc fit_pm_afe_0_evout 1 3 1 900 1540n
+preplace netloc io_event_calibration_0_Event1 1 3 1 940 1520n
+preplace netloc fit_pm_afe_0_d_out 1 3 1 920 1560n
+preplace netloc fit_pm_afe_0_d_val 1 3 1 880 1580n
+preplace netloc io_la_outputs_0_LA0_0 1 4 1 NJ 1900
+preplace netloc io_la_outputs_0_LA0_1 1 4 1 NJ 1920
+preplace netloc io_la_outputs_0_LA0_10 1 4 1 NJ 2100
+preplace netloc io_la_outputs_0_LA0_11 1 4 1 NJ 2120
+preplace netloc io_la_outputs_0_LA0_12 1 4 1 NJ 2140
+preplace netloc io_la_outputs_0_LA0_13 1 4 1 NJ 2160
+preplace netloc io_la_outputs_0_LA0_14 1 4 1 NJ 2180
+preplace netloc io_la_outputs_0_LA0_15 1 4 1 NJ 2200
+preplace netloc io_la_outputs_0_LA0_2 1 4 1 NJ 1940
+preplace netloc io_la_outputs_0_LA0_3 1 4 1 NJ 1960
+preplace netloc io_la_outputs_0_LA0_4 1 4 1 NJ 1980
+preplace netloc io_la_outputs_0_LA0_5 1 4 1 NJ 2000
+preplace netloc io_la_outputs_0_LA0_6 1 4 1 NJ 2020
+preplace netloc io_la_outputs_0_LA0_7 1 4 1 NJ 2040
+preplace netloc io_la_outputs_0_LA0_8 1 4 1 NJ 2060
+preplace netloc io_la_outputs_0_LA0_9 1 4 1 NJ 2080
+preplace netloc io_la_outputs_0_LA1_0 1 4 1 NJ 2240
+preplace netloc io_la_outputs_0_LA1_1 1 4 1 NJ 2260
+preplace netloc io_la_outputs_0_LA1_10 1 4 1 NJ 2440
+preplace netloc io_la_outputs_0_LA1_11 1 4 1 NJ 2460
+preplace netloc io_la_outputs_0_LA1_12 1 4 1 NJ 2480
+preplace netloc io_la_outputs_0_LA1_13 1 4 1 NJ 2500
+preplace netloc io_la_outputs_0_LA1_14 1 4 1 NJ 2520
+preplace netloc io_la_outputs_0_LA1_15 1 4 1 NJ 2540
+preplace netloc io_la_outputs_0_LA1_2 1 4 1 NJ 2280
+preplace netloc io_la_outputs_0_LA1_3 1 4 1 NJ 2300
+preplace netloc io_la_outputs_0_LA1_4 1 4 1 NJ 2320
+preplace netloc io_la_outputs_0_LA1_5 1 4 1 NJ 2340
+preplace netloc io_la_outputs_0_LA1_6 1 4 1 NJ 2360
+preplace netloc io_la_outputs_0_LA1_7 1 4 1 NJ 2380
+preplace netloc io_la_outputs_0_LA1_8 1 4 1 NJ 2400
+preplace netloc io_la_outputs_0_LA1_9 1 4 1 NJ 2420
+preplace netloc io_la_outputs_0_LACK0 1 4 1 NJ 2220
+preplace netloc io_la_outputs_0_LACK1 1 4 1 NJ 2560
+preplace netloc CLK_IN1_D_0_1 1 0 1 NJ 140
+preplace netloc axi_uartlite_0_UART 1 4 1 NJ 80
+levelinfo -pg 1 0 150 430 750 1090 1240
+pagesize -pg 1 -db -bbox -sgen -160 0 1380 2620
+",
+   "No Loops_ScaleFactor":"0.863861",
+   "No Loops_TopLeft":"-431,1193",
+   "Reduced Jogs_Layers":"/clk_wiz_0_clk_40MHz:true|/processor_system/clk_wiz_1_spi_clk:true|/clk_wiz_0_clk_20MHz:true|/processor_system/mdm_1_Interrupt:true|/processor_system/rst_clk_wiz_1_100M_peripheral_aresetn:true|/dual_adc_ddr_top_0_ADCA_CLK:true|/processor_system/rst_clk_wiz_1_100M_bus_struct_reset:true|/CLKA_OUT_P_1:true|/processor_system/util_ds_buf_0_IOBUF_IO_O:true|/processor_system/microblaze_0_Clk:true|/CLKA_OUT_N_1:true|/clk_wiz_0_processor_clk:true|/clk_wiz_0_clk_20MHz_n:true|/CLKB_OUT_N_1:true|/clk_wiz_0_clk_80MHz:true|/CLKB_OUT_P_1:true|/dual_adc_ddr_top_0_ADCB_CLK:true|/processor_system/axi_quad_spi_0_ip2intc_irpt:true|/processor_system/rst_clk_wiz_1_100M_mb_reset:true|/processor_system/axi_uartlite_0_interrupt:true|/processor_system/mdm_1_debug_sys_rst:true|",
+   "Reduced Jogs_ScaleFactor":"0.324858",
+   "Reduced Jogs_TopLeft":"-2244,3",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port UART_DBG -pg 1 -lvl 4 -x 1040 -y 120 -defaultsOSRD
+preplace port PLL -pg 1 -lvl 0 -x 0 -y 740 -defaultsOSRD
+preplace port port-id_ADC_CLK -pg 1 -lvl 4 -x 1040 -y 300 -defaultsOSRD
+preplace port port-id_ADC_MOSI -pg 1 -lvl 4 -x 1040 -y 320 -defaultsOSRD
+preplace port port-id_ADC_MISO -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port port-id_Gate_STR1_i -pg 1 -lvl 4 -x 1040 -y 750 -defaultsOSRD
+preplace port port-id_Gate_STR1_o -pg 1 -lvl 0 -x 0 -y 630 -defaultsOSRD
+preplace port port-id_CLK_A_OUT_N -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_CLK_A_OUT_P -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_CLK_B_OUT_N -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port port-id_CLK_B_OUT_P -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_Event1_N -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace port port-id_Event1_P -pg 1 -lvl 0 -x 0 -y 470 -defaultsOSRD
+preplace port port-id_Event2_N -pg 1 -lvl 0 -x 0 -y 530 -defaultsOSRD
+preplace port port-id_Event2_P -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port port-id_Event3_N -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace port port-id_Event3_P -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace port port-id_Event4_N -pg 1 -lvl 0 -x 0 -y 610 -defaultsOSRD
+preplace port port-id_Event4_P -pg 1 -lvl 0 -x 0 -y 590 -defaultsOSRD
+preplace port port-id_Calibration_P -pg 1 -lvl 4 -x 1040 -y 380 -defaultsOSRD
+preplace port port-id_Calibration_N -pg 1 -lvl 4 -x 1040 -y 770 -defaultsOSRD
+preplace port port-id_CFD_OUT -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace port port-id_OSC1 -pg 1 -lvl 0 -x 0 -y 890 -defaultsOSRD
+preplace port port-id_INT_A_G_DRV_N -pg 1 -lvl 4 -x 1040 -y 850 -defaultsOSRD
+preplace port port-id_INT_A_G_DRV_P -pg 1 -lvl 4 -x 1040 -y 830 -defaultsOSRD
+preplace port port-id_INT_B_G_DRV_N -pg 1 -lvl 4 -x 1040 -y 890 -defaultsOSRD
+preplace port port-id_INT_B_G_DRV_P -pg 1 -lvl 4 -x 1040 -y 870 -defaultsOSRD
+preplace port port-id_LACK0 -pg 1 -lvl 4 -x 1040 -y 590 -defaultsOSRD
+preplace port port-id_LACK1 -pg 1 -lvl 4 -x 1040 -y 610 -defaultsOSRD
+preplace portBus S11 -pg 1 -lvl 4 -x 1040 -y 140 -defaultsOSRD
+preplace portBus S21 -pg 1 -lvl 4 -x 1040 -y 160 -defaultsOSRD
+preplace portBus S31 -pg 1 -lvl 4 -x 1040 -y 180 -defaultsOSRD
+preplace portBus S41 -pg 1 -lvl 4 -x 1040 -y 200 -defaultsOSRD
+preplace portBus XIO -pg 1 -lvl 4 -x 1040 -y 220 -defaultsOSRD
+preplace portBus ADC_EN1 -pg 1 -lvl 4 -x 1040 -y 240 -defaultsOSRD
+preplace portBus ADC_EN2 -pg 1 -lvl 4 -x 1040 -y 260 -defaultsOSRD
+preplace portBus ADC_RESET -pg 1 -lvl 4 -x 1040 -y 280 -defaultsOSRD
+preplace portBus LA0 -pg 1 -lvl 4 -x 1040 -y 550 -defaultsOSRD
+preplace portBus LA1 -pg 1 -lvl 4 -x 1040 -y 570 -defaultsOSRD
+preplace portBus ADC_AA_N -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus ADC_AA_P -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace portBus ADC_AB_N -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace portBus ADC_AB_P -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus ADC_BA_N -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace portBus ADC_BA_P -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace portBus ADC_BB_N -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
+preplace portBus ADC_BB_P -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace inst processor_system -pg 1 -lvl 3 -x 880 -y 220 -swap {0 1 2 7 4 14 6 13 8 3 12 10 9 11 5} -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 150 -y 740 -swap {0 1 2 4 5 8 6 7 3} -defaultsOSRD
+preplace inst io_event_calibration_0 -pg 1 -lvl 2 -x 450 -y 530 -swap {1 2 3 4 5 6 7 14 8 9 10 11 12 13 0} -defaultsOSRD
+preplace inst fit_pm_afe_0 -pg 1 -lvl 3 -x 880 -y 570 -swap {0 2 1 3 4 13 5 14 8 6 7 9 10 11 12 16 15} -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 150 -y 890 -defaultsOSRD
+preplace inst io_int_g_drv_0 -pg 1 -lvl 3 -x 880 -y 860 -defaultsOSRD
+preplace inst io_dual_adc_ddr_top_0 -pg 1 -lvl 2 -x 450 -y 180 -defaultsOSRD
+preplace netloc ADC_AA_N_0_1 1 0 2 NJ 140 NJ
+preplace netloc ADC_AA_P_0_1 1 0 2 NJ 120 NJ
+preplace netloc ADC_AB_N_0_1 1 0 2 NJ 180 NJ
+preplace netloc ADC_AB_P_0_1 1 0 2 NJ 160 NJ
+preplace netloc ADC_BA_N_0_1 1 0 2 NJ 260 NJ
+preplace netloc ADC_BA_P_0_1 1 0 2 NJ 240 NJ
+preplace netloc ADC_BB_N_0_1 1 0 2 NJ 300 NJ
+preplace netloc ADC_BB_P_0_1 1 0 2 NJ 280 NJ
+preplace netloc CFD_OUT_1 1 0 3 NJ 380 NJ 380 600J
+preplace netloc CLKA_OUT_N_1 1 0 2 NJ 100 NJ
+preplace netloc CLKA_OUT_P_1 1 0 2 NJ 80 NJ
+preplace netloc CLKB_OUT_N_1 1 0 2 NJ 220 NJ
+preplace netloc CLKB_OUT_P_1 1 0 2 NJ 200 NJ
+preplace netloc Event1_N_0_1 1 0 2 NJ 490 NJ
+preplace netloc Event1_P_0_1 1 0 2 NJ 470 NJ
+preplace netloc Event2_N_0_1 1 0 2 NJ 530 NJ
+preplace netloc Event2_P_0_1 1 0 2 NJ 510 NJ
+preplace netloc Event3_N_0_1 1 0 2 NJ 570 NJ
+preplace netloc Event3_P_0_1 1 0 2 NJ 550 NJ
+preplace netloc Event4_N_0_1 1 0 2 NJ 610 NJ
+preplace netloc Event4_P_0_1 1 0 2 NJ 590 NJ
+preplace netloc Gate_STR1_o_1 1 0 3 NJ 630 300J 680 NJ
+preplace netloc Net 1 3 1 NJ 220
+preplace netloc OSC1_1 1 0 1 NJ 890
+preplace netloc adc_miso_1 1 0 3 NJ 360 NJ 360 630J
+preplace netloc axi_quad_spi_0_io0_o 1 3 1 NJ 320
+preplace netloc axi_quad_spi_0_sck_o 1 3 1 NJ 300
+preplace netloc clk_wiz_0_clk_20MHz 1 1 2 NJ 790 730
+preplace netloc clk_wiz_0_clk_20MHz_n 1 1 2 NJ 750 740
+preplace netloc clk_wiz_0_clk_40MHz 1 1 3 NJ 730 720 760 1020J
+preplace netloc clk_wiz_0_clk_80MHz 1 1 2 280 760 660J
+preplace netloc clk_wiz_0_locked 1 1 2 290 670 670
+preplace netloc clk_wiz_0_processor_clk 1 1 2 NJ 710 640
+preplace netloc fit_pm_afe_0_d_out 1 3 1 1020 550n
+preplace netloc fit_pm_afe_0_d_val 1 3 1 1010 590n
+preplace netloc fit_pm_afe_0_evout 1 1 3 300 370 NJ 370 1010
+preplace netloc io_dual_adc_ddr_top_0_ADC_AA 1 2 1 700 150n
+preplace netloc io_dual_adc_ddr_top_0_ADC_AB 1 2 1 690 170n
+preplace netloc io_dual_adc_ddr_top_0_ADC_A_CLK 1 2 1 750 130n
+preplace netloc io_dual_adc_ddr_top_0_ADC_BA 1 2 1 620 210n
+preplace netloc io_dual_adc_ddr_top_0_ADC_BB 1 2 1 610 230n
+preplace netloc io_dual_adc_ddr_top_0_ADC_B_CLK 1 2 1 680 190n
+preplace netloc io_event_calibration_0_Calibration_N 1 2 2 600J 770 NJ
+preplace netloc io_event_calibration_0_Calibration_P 1 2 2 650J 380 NJ
+preplace netloc io_event_calibration_0_Event1 1 2 1 630 480n
+preplace netloc io_int_g_drv_0_INT_A_G_DRV_N 1 3 1 NJ 850
+preplace netloc io_int_g_drv_0_INT_A_G_DRV_P 1 3 1 NJ 830
+preplace netloc io_int_g_drv_0_INT_B_G_DRV_N 1 3 1 NJ 890
+preplace netloc io_int_g_drv_0_INT_B_G_DRV_P 1 3 1 NJ 870
+preplace netloc xlslice_0_Dout 1 3 1 NJ 140
+preplace netloc xlslice_1_Dout 1 3 1 NJ 160
+preplace netloc xlslice_2_Dout 1 3 1 NJ 180
+preplace netloc xlslice_3_Dout 1 3 1 NJ 200
+preplace netloc xlslice_adc_en1_Dout 1 3 1 NJ 240
+preplace netloc xlslice_adc_en2_Dout 1 3 1 NJ 260
+preplace netloc xlslice_adc_reset_Dout 1 3 1 NJ 280
+preplace netloc CLK_IN1_D_0_1 1 0 1 NJ 740
+preplace netloc axi_uartlite_0_UART 1 3 1 NJ 120
+levelinfo -pg 1 0 150 450 880 1040
+pagesize -pg 1 -db -bbox -sgen -160 0 1210 950
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_board_cnt":"6",
+   "da_mb_cnt":"2"
+}

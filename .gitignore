@@ -3,9 +3,6 @@
 *.ghw
 *.cf
 
-vivado/*/
-vivado/*
-vivado/!*.srcs
-vivado/!*.gen
-vivado/!*.xpr
-vivado/!*.tcl
+vivado/*.runs
+vivado/*.cache
+vivado/*.sim

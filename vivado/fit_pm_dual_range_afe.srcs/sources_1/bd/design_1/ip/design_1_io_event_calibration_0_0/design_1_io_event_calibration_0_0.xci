@@ -1,0 +1,57 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_1_io_event_calibration_0_0",
+    "cell_name": "io_event_calibration_0",
+    "component_reference": "xilinx.com:module_ref:io_event_calibration:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "design_1_io_event_calibration_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "kintexuplus" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xcau10p" } ],
+        "PACKAGE": [ { "value": "ffvb676" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "VHDL" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "I" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "Event1_P": [ { "direction": "in" } ],
+        "Event1_N": [ { "direction": "in" } ],
+        "Event2_P": [ { "direction": "in" } ],
+        "Event2_N": [ { "direction": "in" } ],
+        "Event3_P": [ { "direction": "in" } ],
+        "Event3_N": [ { "direction": "in" } ],
+        "Event4_P": [ { "direction": "in" } ],
+        "Event4_N": [ { "direction": "in" } ],
+        "Event1": [ { "direction": "out" } ],
+        "Event2": [ { "direction": "out" } ],
+        "Event3": [ { "direction": "out" } ],
+        "Event4": [ { "direction": "out" } ],
+        "Calibration_P": [ { "direction": "out" } ],
+        "Calibration_N": [ { "direction": "out" } ],
+        "Calibration": [ { "direction": "in" } ]
+      }
+    }
+  }
+}
