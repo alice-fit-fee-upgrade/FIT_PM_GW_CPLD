@@ -38,4 +38,9 @@ architecture Behavioral of fit_pm_afe is
 
 begin
 
-end Frontend;
+process (evnt)
+begin
+    evout <= evnt;
+end process;
+
+end Behavioral;

@@ -38,9 +38,32 @@ end io_dual_adc_ddr_top;
 
 architecture RTL of io_dual_adc_ddr_top is
 
+component adc_ddr_top
+  generic (
+    ADC_DATA_LINES      : integer := 7;
+    ADC_RESOLUTION_BITS : integer := 14
+  );
+  port (
+    rstn      : in std_logic;
+
+    ADC_CLK_N : in std_logic;
+    ADC_CLK_P : in std_logic;
+
+    ADC_A_N   : in std_logic_vector(ADC_DATA_LINES-1 downto 0);
+    ADC_A_P   : in std_logic_vector(ADC_DATA_LINES-1 downto 0);
+
+    ADC_B_N   : in std_logic_vector(ADC_DATA_LINES-1 downto 0);
+    ADC_B_P   : in std_logic_vector(ADC_DATA_LINES-1 downto 0);
+
+    ADC_CLK   : out std_logic;
+    ADC_A     : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0);
+    ADC_B     : out std_logic_vector(ADC_RESOLUTION_BITS-1 downto 0)
+  );
+end component;
+
 begin
 
-  adc_a_inst : entity adc_ddr_top
+  adc_a_inst : adc_ddr_top
     generic map (
       ADC_DATA_LINES      => ADC_DATA_LINES,
       ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS
@@ -58,7 +81,7 @@ begin
       ADC_B     => ADC_AB
     );
 
-  adc_binst : entity adc_ddr_top
+  adc_binst : adc_ddr_top
     generic map (
       ADC_DATA_LINES      => ADC_DATA_LINES,
       ADC_RESOLUTION_BITS => ADC_RESOLUTION_BITS
