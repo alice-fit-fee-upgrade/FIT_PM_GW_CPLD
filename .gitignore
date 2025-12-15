@@ -2,6 +2,7 @@
 *.exe
 *.ghw
 *.cf
+*.vcd
 
 vivado/*.runs
 vivado/*.cache
