@@ -151,15 +151,15 @@ begin
   begin
     evnt <= '0';
     -- baseline measurement
-    -- rstn <= '0';
-    -- CFD_out <= '0';
-    -- wait for CLK_PERIOD/2;
-    -- rstn <= '1';
-    -- evnt <= '0';
-    -- wait for CLK_PERIOD*2;
-    -- evnt <= '1';
-    -- wait until evout = '1';
-    -- wait for CLK_PERIOD*20;
+    rstn <= '0';
+    CFD_out <= '0';
+    wait for CLK_PERIOD/2;
+    rstn <= '1';
+    evnt <= '0';
+    wait for CLK_PERIOD*2;
+    evnt <= '1';
+    wait until evout = '1';
+    wait for CLK_PERIOD*20;
 
     -- CFD_out pulse no 1
     rstn <= '0';

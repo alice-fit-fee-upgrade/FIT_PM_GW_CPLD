@@ -17,7 +17,8 @@ VHDL_SRC_ADC_CHANNEL = $(SRC_DIR)/adc_channel_mux.vhd $(SRC_DIR)/adc_channel_shi
 TB_SRC_ADC_CHANNEL = $(TB_DIR)/adc_channel_avg_tb.vhd
 SIM_TOP_ADC_CHANNEL = adc_channel_avg_tb
 
-WAVE_FILE = wave.ghw
+WAVE_GHW = wave.ghw
+WAVE_VCD = wave.vcd
 
 GHDL = ghdl
 GTK_WAVE = gtkwave
@@ -42,7 +43,7 @@ compile_cnt2:
 	$(GHDL) -e $(FLAGS) $(SIM_TOP_CNT2)
 
 run_cnt2: compile_cnt2
-	$(GHDL) -r $(FLAGS) $(SIM_TOP_CNT2) --wave=$(WAVE_FILE)
+	$(GHDL) -r $(FLAGS) $(SIM_TOP_CNT2) --wave=$(WAVE_GHW) --vcd=$(WAVE_VCD)
 
 compile_mux_latch:
 	$(GHDL) -a $(FLAGS) $(VHDL_SRC_MUX_LATCH)
@@ -50,7 +51,7 @@ compile_mux_latch:
 	$(GHDL) -e $(FLAGS) $(SIM_TOP_MUX_LATCH)
 
 run_mux_latch: compile_mux_latch
-	$(GHDL) -r $(FLAGS) $(SIM_TOP_MUX_LATCH) --wave=$(WAVE_FILE)
+	$(GHDL) -r $(FLAGS) $(SIM_TOP_MUX_LATCH) --wave=$(WAVE_GHW) --vcd=$(WAVE_VCD)
 
 compile_ampl_logic:
 	$(GHDL) -a $(FLAGS) $(VHDL_SRC_AMPL_LOGIC)
@@ -58,7 +59,7 @@ compile_ampl_logic:
 	$(GHDL) -e $(FLAGS) $(SIM_TOP_AMPL_LOGIC)
 
 run_ampl_logic: compile_ampl_logic
-	$(GHDL) -r $(FLAGS) $(SIM_TOP_AMPL_LOGIC) --wave=$(WAVE_FILE)
+	$(GHDL) -r $(FLAGS) $(SIM_TOP_AMPL_LOGIC) --wave=$(WAVE_GHW) --vcd=$(WAVE_VCD)
 
 compile_adc_channel:
 	$(GHDL) -a $(FLAGS) $(VHDL_SRC_ADC_CHANNEL)
@@ -66,12 +67,12 @@ compile_adc_channel:
 	$(GHDL) -e $(FLAGS) $(SIM_TOP_ADC_CHANNEL)
 
 run_adc_channel: compile_adc_channel
-	$(GHDL) -r $(FLAGS) $(SIM_TOP_ADC_CHANNEL) --wave=$(WAVE_FILE)
+	$(GHDL) -r $(FLAGS) $(SIM_TOP_ADC_CHANNEL) --wave=$(WAVE_GHW) --vcd=$(WAVE_VCD)
 
 view:
-	$(GTK_WAVE) $(WAVE_FILE)
+# 	$(GTK_WAVE) $(WAVE_GHW)
 
 clean:
-	rm -f *.o *.cf $(WAVE_FILE) *.exe
+# 	rm -f *.o *.cf $(WAVE_GHW) *.exe
 
 .PHONY: all compile run view clean
