@@ -11,3 +11,11 @@ vivado/*.ioplanning
 vivado/*.ip_user_files
 vivado/*.log
 vivado/*.jou
+
+vivado_test/*.runs
+vivado_test/*.cache
+vivado_test/*.sim
+vivado_test/*.ioplanning
+vivado_test/*.ip_user_files
+vivado_test/*.log
+vivado_test/*.jou
