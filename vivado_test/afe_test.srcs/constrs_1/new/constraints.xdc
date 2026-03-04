@@ -22,9 +22,9 @@ set_property IOSTANDARD LVCMOS18    [get_ports OSC1]
 set_property PACKAGE_PIN AC19       [get_ports OSC1]
 
 set_property IOSTANDARD LVCMOS33    [get_ports UART_DBG_*]
-set_property PACKAGE_PIN A13        [get_ports UART_DBG_rxd]
+set_property PACKAGE_PIN J9         [get_ports UART_DBG_rxd]
 set_false_path -from                [get_ports UART_DBG_rxd]
-set_property PACKAGE_PIN A12        [get_ports UART_DBG_txd]
+set_property PACKAGE_PIN K9         [get_ports UART_DBG_txd]
 set_false_path -to                  [get_ports UART_DBG_txd]
 
 

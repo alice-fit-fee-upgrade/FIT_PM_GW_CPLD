@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Fri Jan 30 11:20:20 2026
+//Date        : Wed Mar  4 22:36:10 2026
 //Host        : KP-LABS98 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=28,numReposBlks=20,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=5,da_mb_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=29,numReposBlks=21,numNonXlnxBlks=0,numHierBlks=8,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=5,da_mb_cnt=2,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (ADC_AA_N,
     ADC_AA_P,
@@ -90,6 +90,7 @@ module design_1
   wire [0:0]vio_0_probe_out0;
   wire [0:0]vio_0_probe_out1;
   wire [0:0]vio_0_probe_out2;
+  wire [0:0]vio_1_probe_out0;
 
   assign ADC_CLK = axi_quad_spi_0_sck_o;
   assign ADC_EN1[0] = vio_0_probe_out1;
@@ -132,6 +133,7 @@ module design_1
         .UART_DBG_rxd(UART_DBG_rxd),
         .UART_DBG_txd(UART_DBG_txd),
         .dcm_locked(clk_wiz_1_locked),
+        .ext_reset_in(vio_1_probe_out0),
         .ext_spi_clk(clk_wiz_1_clk_out2),
         .spi_cs(axi_quad_spi_0_ss_o));
   design_1_system_ila_0_0 system_ila_0
@@ -154,6 +156,10 @@ module design_1
         .probe_out0(vio_0_probe_out0),
         .probe_out1(vio_0_probe_out1),
         .probe_out2(vio_0_probe_out2));
+  design_1_vio_1_0 vio_1
+       (.clk(Net),
+        .probe_in0(clk_wiz_1_locked),
+        .probe_out0(vio_1_probe_out0));
 endmodule
 
 module design_1_microblaze_0_axi_periph_0
@@ -1453,6 +1459,7 @@ module processor_0_imp_8LGH2T
     UART_DBG_rxd,
     UART_DBG_txd,
     dcm_locked,
+    ext_reset_in,
     ext_spi_clk,
     spi_cs);
   output ADC_CLK;
@@ -1461,6 +1468,7 @@ module processor_0_imp_8LGH2T
   input UART_DBG_rxd;
   output UART_DBG_txd;
   input dcm_locked;
+  input ext_reset_in;
   input ext_spi_clk;
   output [0:0]spi_cs;
 
@@ -1472,6 +1480,7 @@ module processor_0_imp_8LGH2T
   wire axi_quad_spi_0_ip2intc_irpt;
   wire axi_uartlite_0_interrupt;
   wire dcm_locked;
+  wire ext_reset_in;
   wire ext_spi_clk;
   wire mdm_1_Interrupt;
   wire mdm_1_debug_sys_rst;
@@ -1894,7 +1903,7 @@ module processor_0_imp_8LGH2T
        (.aux_reset_in(1'b1),
         .bus_struct_reset(rst_clk_wiz_1_100M_bus_struct_reset),
         .dcm_locked(dcm_locked),
-        .ext_reset_in(dcm_locked),
+        .ext_reset_in(ext_reset_in),
         .mb_debug_sys_rst(mdm_1_debug_sys_rst),
         .mb_reset(rst_clk_wiz_1_100M_mb_reset),
         .peripheral_aresetn(rst_clk_wiz_1_100M_peripheral_aresetn),

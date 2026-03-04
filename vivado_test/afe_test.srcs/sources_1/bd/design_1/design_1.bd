@@ -41,7 +41,8 @@
       "io_dual_adc_ddr_top_0": "",
       "system_ila_1": "",
       "system_ila_2": "",
-      "clk_wiz_1": ""
+      "clk_wiz_1": "",
+      "vio_1": ""
     },
     "interface_ports": {
       "UART_DBG": {
@@ -450,6 +451,10 @@
             "direction": "O",
             "left": "0",
             "right": "0"
+          },
+          "ext_reset_in": {
+            "type": "rst",
+            "direction": "I"
           }
         },
         "components": {
@@ -1406,7 +1411,12 @@
           "clk_wiz_1_locked": {
             "ports": [
               "dcm_locked",
-              "rst_clk_wiz_1_100M/dcm_locked",
+              "rst_clk_wiz_1_100M/dcm_locked"
+            ]
+          },
+          "ext_reset_in_1": {
+            "ports": [
+              "ext_reset_in",
               "rst_clk_wiz_1_100M/ext_reset_in"
             ]
           },
@@ -1728,6 +1738,13 @@
             "value": "false"
           }
         }
+      },
+      "vio_1": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "ip_revision": "26",
+        "xci_name": "design_1_vio_1_0",
+        "xci_path": "ip\\design_1_vio_1_0\\design_1_vio_1_0.xci",
+        "inst_hier_path": "vio_1"
       }
     },
     "interface_nets": {
@@ -1822,7 +1839,8 @@
           "clk_wiz_1/clk_out1",
           "system_ila_0/clk",
           "vio_0/clk",
-          "processor_0/Clk"
+          "processor_0/Clk",
+          "vio_1/clk"
         ]
       },
       "OSC1_1": {
@@ -1868,7 +1886,8 @@
           "clk_wiz_1/locked",
           "processor_0/dcm_locked",
           "io_dual_adc_ddr_top_0/rstn",
-          "vio_0/probe_in1"
+          "vio_0/probe_in1",
+          "vio_1/probe_in0"
         ]
       },
       "io_dual_adc_ddr_top_0_ADC_AA": {
@@ -1923,6 +1942,12 @@
         "ports": [
           "vio_0/probe_out2",
           "ADC_EN2"
+        ]
+      },
+      "vio_1_probe_out0": {
+        "ports": [
+          "vio_1/probe_out0",
+          "processor_0/ext_reset_in"
         ]
       }
     },
