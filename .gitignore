@@ -19,3 +19,15 @@ vivado_test/*.ioplanning
 vivado_test/*.ip_user_files
 vivado_test/*.log
 vivado_test/*.jou
+
+vitis_test/**
+!vitis_test/aft_test_app/
+!vitis_test/aft_test_app/src/
+!vitis_test/aft_test_app/src/main.c
+!vitis_test/aft_test_app/Debug/
+!vitis_test/aft_test_app/Debug/*.elf
+!vitis_test/afe_test_platform/
+!vitis_test/afe_test_platform/export/
+!vitis_test/afe_test_platform/export/afe_test_platform/
+!vitis_test/afe_test_platform/export/afe_test_platform/hw/
+!vitis_test/afe_test_platform/export/afe_test_platform/hw/*.xsa
