@@ -6,8 +6,6 @@
 
 (* BLOCK_STUB = "true" *)
 module design_1 (
-  UART_DBG_rxd,
-  UART_DBG_txd,
   PLL_clk_n,
   PLL_clk_p,
   ADC_MOSI,
@@ -27,14 +25,11 @@ module design_1 (
   ADC_BB_N,
   ADC_BB_P,
   ADC_B_CLK_N,
-  ADC_B_CLK_P
+  ADC_B_CLK_P,
+  UART_DBG_rxd,
+  UART_DBG_txd
 );
 
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_DBG RxD" *)
-  (* X_INTERFACE_MODE = "master UART_DBG" *)
-  input UART_DBG_rxd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_DBG TxD" *)
-  output UART_DBG_txd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 PLL CLK_N" *)
   (* X_INTERFACE_MODE = "slave PLL" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PLL, CAN_DEBUG false, FREQ_HZ 100000000" *)
@@ -87,6 +82,10 @@ module design_1 (
   (* X_INTERFACE_MODE = "slave CLK.ADC_B_CLK_P" *)
   (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ADC_B_CLK_P, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_ADC_B_CLK_P_0, INSERT_VIP 0" *)
   input ADC_B_CLK_P;
+  (* X_INTERFACE_IGNORE = "true" *)
+  input UART_DBG_rxd;
+  (* X_INTERFACE_IGNORE = "true" *)
+  output UART_DBG_txd;
 
   // stub module has no contents
 

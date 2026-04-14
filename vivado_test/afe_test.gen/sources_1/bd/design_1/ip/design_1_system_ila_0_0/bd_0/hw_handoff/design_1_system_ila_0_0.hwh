@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar  4 22:36:12 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 14 09:58:04 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="kintexuplus" DEVICE="xcau10p" NAME="bd_f60c" PACKAGE="ffvb676" SPEEDGRADE="-2"/>
 
@@ -22,6 +22,16 @@
     <PORT DIR="I" LEFT="0" NAME="probe2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe2">
       <CONNECTIONS>
         <CONNECTION INSTANCE="ila_lib" PORT="probe2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ila_lib" PORT="probe3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe4">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ila_lib" PORT="probe4"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -61,7 +71,7 @@
         <PARAMETER NAME="C_MU_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_NEXT_SLAVE" VALUE="0"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="3"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="5"/>
         <PARAMETER NAME="C_PIPE_IFACE" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="0"/>
@@ -3187,6 +3197,16 @@
         <PORT DIR="I" LEFT="0" NAME="probe2" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe2">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="probe2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="probe3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe4" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_probe4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="probe4"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

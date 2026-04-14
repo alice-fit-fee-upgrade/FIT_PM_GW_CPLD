@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x99FEF21E8C92242B",
+      "boundary_crc": "0x99FEF21EE9F89C34",
       "device": "xcau10p-ffvb676-2-i",
       "gen_directory": "../../../../afe_test.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -45,21 +45,6 @@
       "vio_1": ""
     },
     "interface_ports": {
-      "UART_DBG": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:uart:1.0",
-        "vlnv": "xilinx.com:interface:uart_rtl:1.0",
-        "port_maps": {
-          "RxD": {
-            "physical_name": "UART_DBG_rxd",
-            "direction": "I"
-          },
-          "TxD": {
-            "physical_name": "UART_DBG_txd",
-            "direction": "O"
-          }
-        }
-      },
       "PLL": {
         "mode": "Slave",
         "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
@@ -277,6 +262,12 @@
             "value_src": "default"
           }
         }
+      },
+      "UART_DBG_rxd": {
+        "direction": "I"
+      },
+      "UART_DBG_txd": {
+        "direction": "O"
       }
     },
     "components": {
@@ -297,7 +288,7 @@
             "value": "NATIVE"
           },
           "C_NUM_OF_PROBES": {
-            "value": "3"
+            "value": "5"
           }
         }
       },
@@ -1744,7 +1735,12 @@
         "ip_revision": "26",
         "xci_name": "design_1_vio_1_0",
         "xci_path": "ip\\design_1_vio_1_0\\design_1_vio_1_0.xci",
-        "inst_hier_path": "vio_1"
+        "inst_hier_path": "vio_1",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1752,12 +1748,6 @@
         "interface_ports": [
           "PLL",
           "clk_wiz_0/CLK_IN1_D"
-        ]
-      },
-      "axi_uartlite_0_UART": {
-        "interface_ports": [
-          "UART_DBG",
-          "processor_0/UART_DBG"
         ]
       }
     },
@@ -1849,6 +1839,13 @@
           "clk_wiz_1/clk_in1"
         ]
       },
+      "UART_DBG_rxd_1": {
+        "ports": [
+          "UART_DBG_rxd",
+          "system_ila_0/probe3",
+          "processor_0/UART_DBG_rxd"
+        ]
+      },
       "axi_quad_spi_0_io0_o": {
         "ports": [
           "processor_0/ADC_MOSI",
@@ -1926,6 +1923,13 @@
           "system_ila_2/clk"
         ]
       },
+      "processor_0_UART_DBG_txd": {
+        "ports": [
+          "processor_0/UART_DBG_txd",
+          "system_ila_0/probe4",
+          "UART_DBG_txd"
+        ]
+      },
       "vio_0_probe_out0": {
         "ports": [
           "vio_0/probe_out0",
@@ -1947,7 +1951,8 @@
       "vio_1_probe_out0": {
         "ports": [
           "vio_1/probe_out0",
-          "processor_0/ext_reset_in"
+          "processor_0/ext_reset_in",
+          "vio_1/probe_in1"
         ]
       }
     },

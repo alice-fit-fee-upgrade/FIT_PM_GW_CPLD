@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Wed Mar  4 22:36:10 2026
+//Date        : Tue Apr 14 09:58:02 2026
 //Host        : KP-LABS98 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -54,8 +54,8 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.OSC1 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.OSC1, CLK_DOMAIN design_1_clk_in1_0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input OSC1;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 PLL CLK_N" *) (* X_INTERFACE_MODE = "Slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME PLL, CAN_DEBUG false, FREQ_HZ 100000000" *) input PLL_clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 PLL CLK_P" *) input PLL_clk_p;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_DBG RxD" *) (* X_INTERFACE_MODE = "Master" *) input UART_DBG_rxd;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 UART_DBG TxD" *) output UART_DBG_txd;
+  input UART_DBG_rxd;
+  output UART_DBG_txd;
 
   wire [6:0]ADC_AA_N;
   wire [6:0]ADC_AA_P;
@@ -73,8 +73,7 @@ module design_1
   wire OSC1;
   wire PLL_clk_n;
   wire PLL_clk_p;
-  wire UART_DBG_rxd;
-  wire UART_DBG_txd;
+  wire UART_DBG_rxd_1;
   wire axi_quad_spi_0_io0_o;
   wire axi_quad_spi_0_sck_o;
   wire [0:0]axi_quad_spi_0_ss_o;
@@ -87,6 +86,7 @@ module design_1
   wire [13:0]io_dual_adc_ddr_top_0_ADC_BA;
   wire [13:0]io_dual_adc_ddr_top_0_ADC_BB;
   wire io_dual_adc_ddr_top_0_ADC_B_CLK;
+  wire processor_0_UART_DBG_txd;
   wire [0:0]vio_0_probe_out0;
   wire [0:0]vio_0_probe_out1;
   wire [0:0]vio_0_probe_out2;
@@ -97,6 +97,8 @@ module design_1
   assign ADC_EN2[0] = vio_0_probe_out2;
   assign ADC_MOSI = axi_quad_spi_0_io0_o;
   assign ADC_RESET[0] = vio_0_probe_out0;
+  assign UART_DBG_rxd_1 = UART_DBG_rxd;
+  assign UART_DBG_txd = processor_0_UART_DBG_txd;
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_in1_n(PLL_clk_n),
         .clk_in1_p(PLL_clk_p),
@@ -130,8 +132,8 @@ module design_1
        (.ADC_CLK(axi_quad_spi_0_sck_o),
         .ADC_MOSI(axi_quad_spi_0_io0_o),
         .Clk(Net),
-        .UART_DBG_rxd(UART_DBG_rxd),
-        .UART_DBG_txd(UART_DBG_txd),
+        .UART_DBG_rxd(UART_DBG_rxd_1),
+        .UART_DBG_txd(processor_0_UART_DBG_txd),
         .dcm_locked(clk_wiz_1_locked),
         .ext_reset_in(vio_1_probe_out0),
         .ext_spi_clk(clk_wiz_1_clk_out2),
@@ -140,7 +142,9 @@ module design_1
        (.clk(Net),
         .probe0(axi_quad_spi_0_io0_o),
         .probe1(axi_quad_spi_0_sck_o),
-        .probe2(axi_quad_spi_0_ss_o));
+        .probe2(axi_quad_spi_0_ss_o),
+        .probe3(UART_DBG_rxd_1),
+        .probe4(processor_0_UART_DBG_txd));
   design_1_system_ila_1_0 system_ila_1
        (.clk(io_dual_adc_ddr_top_0_ADC_A_CLK),
         .probe0(io_dual_adc_ddr_top_0_ADC_AA),
@@ -159,6 +163,7 @@ module design_1
   design_1_vio_1_0 vio_1
        (.clk(Net),
         .probe_in0(clk_wiz_1_locked),
+        .probe_in1(vio_1_probe_out0),
         .probe_out0(vio_1_probe_out0));
 endmodule
 

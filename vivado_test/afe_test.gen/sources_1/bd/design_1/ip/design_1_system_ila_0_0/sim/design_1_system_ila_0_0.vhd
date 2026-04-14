@@ -58,7 +58,9 @@ ENTITY design_1_system_ila_0_0 IS
     clk : IN STD_LOGIC;
     probe0 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     probe1 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
+    probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe3 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe4 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
   );
 END design_1_system_ila_0_0;
 
@@ -70,7 +72,9 @@ ARCHITECTURE design_1_system_ila_0_0_arch OF design_1_system_ila_0_0 IS
       clk : IN STD_LOGIC;
       probe0 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       probe1 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-      probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
+      probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      probe3 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      probe4 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
     );
   END COMPONENT bd_f60c;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -85,6 +89,8 @@ BEGIN
       clk => clk,
       probe0 => probe0,
       probe1 => probe1,
-      probe2 => probe2
+      probe2 => probe2,
+      probe3 => probe3,
+      probe4 => probe4
     );
 END design_1_system_ila_0_0_arch;

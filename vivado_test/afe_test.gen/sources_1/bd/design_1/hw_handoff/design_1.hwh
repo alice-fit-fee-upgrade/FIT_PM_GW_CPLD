@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar  4 22:36:14 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr 14 09:58:06 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="kintexuplus" DEVICE="xcau10p" NAME="design_1" PACKAGE="ffvb676" SPEEDGRADE="-2"/>
 
@@ -104,25 +104,15 @@
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1_p"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="UART_DBG_rxd" SIGIS="undef" SIGNAME="processor_0_axi_uartlite_0_rx">
+    <PORT DIR="I" NAME="UART_DBG_rxd" SIGIS="undef" SIGNAME="External_Ports_UART_DBG_rxd">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="processor_0_axi_uartlite_0" PORT="rx"/>
+        <CONNECTION INSTANCE="system_ila_0" PORT="probe3"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="UART_DBG_txd" SIGIS="undef" SIGNAME="processor_0_axi_uartlite_0_tx">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="processor_0_axi_uartlite_0" PORT="tx"/>
-      </CONNECTIONS>
-    </PORT>
+    <PORT DIR="O" NAME="UART_DBG_txd" SIGIS="undef"/>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
-    <BUSINTERFACE BUSNAME="processor_0_axi_uartlite_0_UART" NAME="UART_DBG" TYPE="INITIATOR">
-      <PORTMAPS>
-        <PORTMAP LOGICAL="RxD" PHYSICAL="UART_DBG_rxd"/>
-        <PORTMAP LOGICAL="TxD" PHYSICAL="UART_DBG_txd"/>
-      </PORTMAPS>
-    </BUSINTERFACE>
     <BUSINTERFACE BUSNAME="External_Interface_PLL" NAME="PLL" TYPE="TARGET">
       <PARAMETER NAME="CAN_DEBUG" VALUE="false"/>
       <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
@@ -2697,11 +2687,7 @@
             <CONNECTION INSTANCE="processor_0_microblaze_0_xlconcat" PORT="In0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rx" SIGIS="undef" SIGNAME="processor_0_axi_uartlite_0_rx">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="design_1_imp" PORT="UART_DBG_rxd"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="rx" SIGIS="undef"/>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
@@ -2797,11 +2783,7 @@
             <CONNECTION INSTANCE="processor_0_microblaze_0_axi_periph" PORT="M02_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="tx" SIGIS="undef" SIGNAME="processor_0_axi_uartlite_0_tx">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="design_1_imp" PORT="UART_DBG_txd"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="tx" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="processor_0_microblaze_0_axi_periph_M02_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
@@ -2856,7 +2838,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="s_axi_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="processor_0_axi_uartlite_0_UART" NAME="UART" TYPE="INITIATOR" VLNV="xilinx.com:interface:uart:1.0">
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="UART" TYPE="INITIATOR" VLNV="xilinx.com:interface:uart:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="RxD" PHYSICAL="rx"/>
             <PORTMAP LOGICAL="TxD" PHYSICAL="tx"/>
@@ -8403,7 +8385,7 @@
         <PARAMETER NAME="C_INPUT_PIPE_STAGES" VALUE="2"/>
         <PARAMETER NAME="C_MON_TYPE" VALUE="NATIVE"/>
         <PARAMETER NAME="C_NUM_MONITOR_SLOTS" VALUE="1"/>
-        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="3"/>
+        <PARAMETER NAME="C_NUM_OF_PROBES" VALUE="5"/>
         <PARAMETER NAME="C_PROBE0_MU_CNT" VALUE="1"/>
         <PARAMETER NAME="C_PROBE0_TYPE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE0_WIDTH" VALUE="1"/>
@@ -12387,6 +12369,12 @@
             <CONNECTION INSTANCE="processor_0_axi_quad_spi_0" PORT="ss_o"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe3" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_UART_DBG_rxd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="UART_DBG_rxd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe4" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -21240,7 +21228,7 @@
         <PARAMETER NAME="C_MAJOR_VERSION" VALUE="2013"/>
         <PARAMETER NAME="C_MINOR_VERSION" VALUE="1"/>
         <PARAMETER NAME="C_NEXT_SLAVE" VALUE="0"/>
-        <PARAMETER NAME="C_NUM_PROBE_IN" VALUE="1"/>
+        <PARAMETER NAME="C_NUM_PROBE_IN" VALUE="2"/>
         <PARAMETER NAME="C_NUM_PROBE_OUT" VALUE="1"/>
         <PARAMETER NAME="C_PIPE_IFACE" VALUE="0"/>
         <PARAMETER NAME="C_PROBE_IN0_WIDTH" VALUE="1"/>
@@ -22029,9 +22017,15 @@
             <CONNECTION INSTANCE="clk_wiz_1" PORT="locked"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="0" NAME="probe_in1" RIGHT="0" SIGIS="undef" SIGNAME="vio_1_probe_out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="vio_1" PORT="probe_out0"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="0" NAME="probe_out0" RIGHT="0" SIGIS="undef" SIGNAME="vio_1_probe_out0">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processor_0_rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
+            <CONNECTION INSTANCE="vio_1" PORT="probe_in1"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

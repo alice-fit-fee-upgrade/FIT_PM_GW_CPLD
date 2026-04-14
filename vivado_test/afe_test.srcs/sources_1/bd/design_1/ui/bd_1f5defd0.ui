@@ -1,22 +1,23 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-799,-29",
+   "Default View_TopLeft":"-361,-18",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
-preplace port UART_DBG -pg 1 -lvl 5 -x 1110 -y 420 -defaultsOSRD
-preplace port PLL -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
-preplace port port-id_ADC_MOSI -pg 1 -lvl 5 -x 1110 -y 440 -defaultsOSRD
-preplace port port-id_ADC_CLK -pg 1 -lvl 5 -x 1110 -y 620 -defaultsOSRD
-preplace port port-id_OSC1 -pg 1 -lvl 0 -x 0 -y 460 -defaultsOSRD
+preplace port PLL -pg 1 -lvl 0 -x 0 -y 700 -defaultsOSRD
+preplace port port-id_ADC_MOSI -pg 1 -lvl 5 -x 1120 -y 640 -defaultsOSRD
+preplace port port-id_ADC_CLK -pg 1 -lvl 5 -x 1120 -y 620 -defaultsOSRD
+preplace port port-id_OSC1 -pg 1 -lvl 0 -x 0 -y 480 -defaultsOSRD
 preplace port port-id_ADC_A_CLK_N -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
 preplace port port-id_ADC_A_CLK_P -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
 preplace port port-id_ADC_B_CLK_N -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
 preplace port port-id_ADC_B_CLK_P -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
-preplace portBus ADC_RESET -pg 1 -lvl 5 -x 1110 -y 680 -defaultsOSRD
-preplace portBus ADC_EN1 -pg 1 -lvl 5 -x 1110 -y 700 -defaultsOSRD
-preplace portBus ADC_EN2 -pg 1 -lvl 5 -x 1110 -y 720 -defaultsOSRD
+preplace port port-id_UART_DBG_rxd -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
+preplace port port-id_UART_DBG_txd -pg 1 -lvl 5 -x 1120 -y 660 -defaultsOSRD
+preplace portBus ADC_RESET -pg 1 -lvl 5 -x 1120 -y 720 -defaultsOSRD
+preplace portBus ADC_EN1 -pg 1 -lvl 5 -x 1120 -y 740 -defaultsOSRD
+preplace portBus ADC_EN2 -pg 1 -lvl 5 -x 1120 -y 760 -defaultsOSRD
 preplace portBus ADC_AA_N -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
 preplace portBus ADC_AA_P -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
 preplace portBus ADC_AB_N -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
@@ -25,15 +26,15 @@ preplace portBus ADC_BA_N -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
 preplace portBus ADC_BA_P -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
 preplace portBus ADC_BB_N -pg 1 -lvl 0 -x 0 -y 300 -defaultsOSRD
 preplace portBus ADC_BB_P -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 4 -x 950 -y 530 -defaultsOSRD
-preplace inst vio_0 -pg 1 -lvl 4 -x 950 -y 700 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 640 -y 620 -defaultsOSRD
-preplace inst processor_0 -pg 1 -lvl 3 -x 640 -y 450 -defaultsOSRD
-preplace inst io_dual_adc_ddr_top_0 -pg 1 -lvl 3 -x 640 -y 180 -defaultsOSRD
-preplace inst system_ila_1 -pg 1 -lvl 4 -x 950 -y 150 -defaultsOSRD
-preplace inst system_ila_2 -pg 1 -lvl 4 -x 950 -y 290 -defaultsOSRD
-preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 110 -y 460 -defaultsOSRD
-preplace inst vio_1 -pg 1 -lvl 2 -x 340 -y 530 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 4 -x 970 -y 510 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 4 -x 970 -y 740 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -x 650 -y 700 -defaultsOSRD
+preplace inst processor_0 -pg 1 -lvl 3 -x 650 -y 470 -defaultsOSRD
+preplace inst io_dual_adc_ddr_top_0 -pg 1 -lvl 3 -x 650 -y 180 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 4 -x 970 -y 150 -defaultsOSRD
+preplace inst system_ila_2 -pg 1 -lvl 4 -x 970 -y 290 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 1 -x 110 -y 480 -defaultsOSRD
+preplace inst vio_1 -pg 1 -lvl 2 -x 350 -y 390 -defaultsOSRD
 preplace netloc ADC_AA_N_0_1 1 0 3 NJ 140 NJ 140 NJ
 preplace netloc ADC_AA_P_0_1 1 0 3 NJ 120 NJ 120 NJ
 preplace netloc ADC_AB_N_0_1 1 0 3 NJ 180 NJ 180 NJ
@@ -46,28 +47,29 @@ preplace netloc ADC_BB_N_0_1 1 0 3 NJ 300 NJ 300 NJ
 preplace netloc ADC_BB_P_0_1 1 0 3 NJ 280 NJ 280 NJ
 preplace netloc ADC_B_CLK_N_0_1 1 0 3 NJ 220 NJ 220 NJ
 preplace netloc ADC_B_CLK_P_0_1 1 0 3 NJ 200 NJ 200 NJ
-preplace netloc Net 1 1 3 200 440 470 720 800
-preplace netloc OSC1_1 1 0 1 NJ 460
-preplace netloc axi_quad_spi_0_io0_o 1 3 2 810 430 1090J
-preplace netloc axi_quad_spi_0_sck_o 1 3 2 820 440 1080J
-preplace netloc axi_quad_spi_0_ss_o 1 3 1 790 480n
-preplace netloc clk_wiz_0_locked 1 3 1 790J 660n
-preplace netloc clk_wiz_1_clk_out2 1 1 2 N 460 NJ
-preplace netloc clk_wiz_1_locked 1 1 3 210 450 480 730 820J
+preplace netloc Net 1 1 3 210 470 500 580 820
+preplace netloc OSC1_1 1 0 1 NJ 480
+preplace netloc axi_quad_spi_0_io0_o 1 3 2 840 640 NJ
+preplace netloc axi_quad_spi_0_sck_o 1 3 2 830 620 NJ
+preplace netloc axi_quad_spi_0_ss_o 1 3 1 N 520
+preplace netloc clk_wiz_0_locked 1 3 1 NJ 740
+preplace netloc clk_wiz_1_clk_out2 1 1 2 N 480 NJ
+preplace netloc clk_wiz_1_locked 1 1 3 200 310 480 600 800J
 preplace netloc io_dual_adc_ddr_top_0_ADC_AA 1 3 1 N 150
 preplace netloc io_dual_adc_ddr_top_0_ADC_AB 1 3 1 N 170
 preplace netloc io_dual_adc_ddr_top_0_ADC_A_CLK 1 3 1 N 130
 preplace netloc io_dual_adc_ddr_top_0_ADC_BA 1 3 1 810 210n
-preplace netloc io_dual_adc_ddr_top_0_ADC_BB 1 3 1 790 230n
-preplace netloc io_dual_adc_ddr_top_0_ADC_B_CLK 1 3 1 820 190n
-preplace netloc vio_0_probe_out0 1 4 1 NJ 680
-preplace netloc vio_0_probe_out1 1 4 1 NJ 700
-preplace netloc vio_0_probe_out2 1 4 1 NJ 720
-preplace netloc vio_1_probe_out0 1 2 1 490 480n
-preplace netloc CLK_IN1_D_0_1 1 0 3 NJ 620 NJ 620 NJ
-preplace netloc axi_uartlite_0_UART 1 3 2 NJ 420 NJ
-levelinfo -pg 1 0 110 340 640 950 1110
-pagesize -pg 1 -db -bbox -sgen -160 0 1280 780
+preplace netloc io_dual_adc_ddr_top_0_ADC_BB 1 3 1 800 230n
+preplace netloc io_dual_adc_ddr_top_0_ADC_B_CLK 1 3 1 840 190n
+preplace netloc vio_0_probe_out0 1 4 1 NJ 720
+preplace netloc vio_0_probe_out1 1 4 1 NJ 740
+preplace netloc vio_0_probe_out2 1 4 1 NJ 760
+preplace netloc vio_1_probe_out0 1 1 2 220 490 490
+preplace netloc UART_DBG_rxd_1 1 0 4 NJ 570 NJ 570 NJ 570 800
+preplace netloc processor_0_UART_DBG_txd 1 3 2 810 660 NJ
+preplace netloc CLK_IN1_D_0_1 1 0 3 NJ 700 NJ 700 NJ
+levelinfo -pg 1 0 110 350 650 970 1120
+pagesize -pg 1 -db -bbox -sgen -160 0 1290 820
 "
 }
 {
