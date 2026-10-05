@@ -1,89 +1,93 @@
-# CoolRunner-II FIT PM12 recovery
+# CoolRunner-II firmware recovery for FIT PM12
 
-Aktywny golden: `original/readback-2026/pm_cpld_gold_2026.jed`, dostarczony jako odczyt fizycznego CPLD. SHA256: `1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95`.
+English is the primary project language. Additional Polish documentation is available in [README.pl.md](README.pl.md) and [docs/reproduce_step_by_step.pl.md](docs/reproduce_step_by_step.pl.md). The recovered HDL and implementation-tool comments are in English. Original inputs, historical sources and recorded logs retain their original content.
 
-**Nowy readback różni się od historycznego HDL/baseline o 1412 fuse i ma potwierdzone różnice funkcjonalne. Odzyskano nowy czytelny VHDL; jego faktyczny wynik kompilacji ISE ma 49/49 funkcji przejścia zgodnych z golden, wraz z init/clocks. Sam native fitter pozostawia 346 fuse różnic. Dodatkowy jawny implementation lock VM6 + hprep6 daje 0/55341 fuse różnic względem golden. Timing equivalence nie została wykazana.**
+The active golden reference is `original/readback-2026/pm_cpld_gold_2026.jed`, supplied as a readback from the physical XC2C128 CPLD. SHA-256:
 
-Poprzedni załącznik `original/amplcpld.jed` (hash 89a231fd…645e6) pozostaje zachowany. Dla niego oba poprzednie buildy miały zero różnic; ten wynik nie dotyczy nowego golden. Poprzednie źródła/decode/raporty są pod `*/previous-input/`. Oryginalne dane nie zostały zmienione. Sprzętu nie programowano.
+```text
+1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95
+```
 
-## Odtworzenie
+**The final implementation-locked JED matches all 55,341 QF fuses and all decoded configuration fields.** The native ISE fitter alone still produces 346 differing fuses. Zero differences require an explicit post-fit VM6 implementation template derived from the golden configuration, followed by Xilinx `hprep6`. This is not a claim that the original source text or original compiler settings have been recovered.
+
+The historical HDL differs from this golden reference by 1,412 fuses and has confirmed functional differences. The recovered readable HDL, its actual native fitted JED and its implementation-locked JED have been checked separately. No physical CPLD has been programmed. Physical timing measurements and security/DONE/USERCODE outside QF remain unverified.
+
+## Installation and reproduction
+
+Follow the complete [step-by-step setup guide](docs/reproduce_step_by_step.md) for Ubuntu 24.04, Rust, pinned decoders, local GHDL/Python dependencies, ISE 14.7 installation or configuration, compatibility libraries, building and final verification.
+
+From the repository root:
 
 ```bash
 cd coolrunner2-recovery
 make bootstrap
-make reproduce
+ISE_SETTINGS=/path/to/14.7/ISE_DS/settings64.sh make reproduce
 ```
 
-To wykonuje historyczny baseline, dekodowanie nowego golden i bezstratny roundtrip, strukturalny diff, SAT wszystkich 49 register transitions, symulację rzeczywistego recovered VHDL na 67430 wektorach, nowy build ISE, SAT faktycznego fitted JED oraz końcowe raporty. Workflow sprawdza również 0 fuse różnic po implementation lock. Sam native fitter nie jest bit-identical. `reports/status.json` jawnie zawiera `vhdl_bit_identity_verified=false`.
+`ISE_SETTINGS` can be omitted when ISE is installed at `$HOME/.local/opt/xilinx/14.7/ISE_DS`. ISE binaries, the installer and licenses are supplied separately; they are not redistributed in this repository. See [docs/ise.md](docs/ise.md).
 
-Ze świeżego checkoutu: Linux x86_64/glibc ≥2.38 dla zachowanych GHDL packages; git, make, Python3, dpkg-deb, C/C++ build tools, Rust/rustup 1.99.0. `make bootstrap` odtwarza przypięte decoder sources, Cargo locks, hashed Python dependencies, GHDL i compatibility libraries oraz pełne mirrors z Git bundles. Rust bootstrap jest w toolchain/rustup-init.sh. Biblioteki są rozpakowane lokalnie, bez sudo. Bootstrap wymaga internetu.
+`make reproduce` performs the historical baseline build, golden decoding and lossless round-trip, all-register transition proofs, actual recovered VHDL simulation on 67,430 golden vectors, native ISE build and proof, VM6 implementation locking, vendor JED generation and final zero-difference checks. Native and implementation-locked status are reported separately.
 
-ISE dostarczony osobno: na tym hoście `$HOME/.local/opt/xilinx/14.7/ISE_DS`. Instalator, hash, userspace i obejścia opisano w [docs/ise.md](docs/ise.md). Inny prefix: `ISE_SETTINGS=/path/to/ISE_DS/settings64.sh make reproduce`. Vendor binaries/license nie są redystrybuowane. Na tym hoście CLI działa bez dodatkowego pliku licencji.
+For an already bootstrapped workspace with the decoded golden available, `make implementation-locked` runs the native build and locking stage. It does not replace the complete workflow for a fresh setup. `make reproduce-previous` reproduces the earlier experiment against the previous input without replacing the active recovered artifacts.
 
-Historyczny workflow dla poprzedniego wejścia: `make reproduce-previous`. Nie nadpisuje aktualnych głównych recovered/decode/raportów.
+## Main artifacts
 
-## Artefakty
+| Artifact | Purpose |
+|---|---|
+| [recovered/amplcpld_recovered.vhd](recovered/amplcpld_recovered.vhd) | Readable recovered HDL |
+| [recovered/amplcpld.ucf](recovered/amplcpld.ucf) | Physical pins, register placement and I/O configuration |
+| [recovered/amplcpld.ptlock.json](recovered/amplcpld.ptlock.json) | Explicit golden-derived PLA allocation and literal-cover template |
+| [recovered/amplcpld_recovered.jed](recovered/amplcpld_recovered.jed) | Native ISE output: 346 differing fuses |
+| [recovered/amplcpld_implementation_locked.jed](recovered/amplcpld_implementation_locked.jed) | Final output: zero differing QF fuses |
+| [decoded/original.json](decoded/original.json), [original.txt](decoded/original.txt) | Complete decoded FB/MC equations and configuration |
+| [decoded/state_map.json](decoded/state_map.json) | Recovered signal-to-resource mapping |
+| [reports/implementation_lock.md](reports/implementation_lock.md) | Implementation-lock method, evidence and limitations |
+| [reports/baseline_comparison.md](reports/baseline_comparison.md), [semantic_delta.md](reports/semantic_delta.md), [final_equivalence.md](reports/final_equivalence.md) | Detailed historical and verification evidence |
+| `experiments/ise-readback-2026/` | Native synthesis/fitter artifacts, VM6, JED and comparisons |
+| `experiments/vm6-locked-2026/` | Locked VM6, final JED, zero-difference comparisons and proof |
+| `tests/readback-2026/` | Transition proofs, simulation vectors and GHDL evidence |
+| `tools/jedtool`, `decode_xc2c128`, `compare_jed` | JEDEC parsing, canonical decoding and fuse comparison |
 
-- [recovered/amplcpld_recovered.vhd](recovered/amplcpld_recovered.vhd), [amplcpld.ucf](recovered/amplcpld.ucf) i wynikowy JED — dotyczą nowego golden; kopie w recovered/readback-2026.
-- [decoded/original.json](decoded/original.json), [original.txt](decoded/original.txt), state_map.json — nowy golden, wszystkie FB/MC/equations/configuration.
-- [reports/baseline_comparison.md](reports/baseline_comparison.md), [semantic_delta.md](reports/semantic_delta.md), [final_equivalence.md](reports/final_equivalence.md) i [remaining_differences.md](reports/remaining_differences.md).
-- experiments/readback-2026/remaining-fuses.json — każdy pozostały różny fuse, region i wyjaśnienie; experiments/ise-readback-2026 — pełny final fit/VM6/NGC/NGD/JED/logs/configuration/diff.
-- tests/readback-2026 — golden i fitted SAT, wektory, GHDL evidence. Dowód EV_OUT=EV_IN: tests/readback-2026-ev-proof.json.
-- tools/jedtool, decode_xc2c128, compare_jed, compare_config.py — narzędzia porównań. Główny decoder: Project Combine; xc2bit XC2C128 ZIA table jest niekompletna, zachowano jego wynik jako untrusted.
-- known_hdl/*.bundle — pełna historia upstream i publicznego forka; variants.json i reports/history.md — źródła/hashes/historyczne artefakty.
+Some historical evidence reports retain their original Polish text; the primary setup guide, architecture description and implementation-lock report are in English. Every remaining native fuse difference is listed in `experiments/readback-2026/remaining-fuses.json`. Tool commands, exit codes and logs are recorded in `experiments/commands.jsonl` and `experiments/logs/`.
 
-PDF ma 34 arkusze, CPLD na 10, gate circuit na 12. P64/Gate_STR1_o jest ENA input; P81/Gate_STR1_i jest CLK40 output. Luźna adnotacja CLK40 out przy P64 jest sprzeczna z połączeniami. Pełny pinout100: reports/pinout.md.
+`known_hdl/*.bundle` preserves the complete available upstream/fork histories. Sources and hashes are inventoried in `known_hdl/variants.json` and `reports/history.md`. The schematic has 34 sheets; the CPLD is on sheet 10 and the gate circuit on sheet 12. The complete physical pin table is in `reports/pinout.md`.
 
-Polecenia/exit codes: experiments/commands.jsonl; logi: experiments/logs. Pierwsze discovery jest opisane osobno w docs/session_commands.md, bez udawania pełnego transcriptu. Plan testów fizycznych: docs/hardware_validation.md. Fizyczny security/DONE/USERCODE poza QF, readback reader/IDCODE/session log oraz analogowe zachowanie pozostają nieweryfikowane.
+## What was recovered from the firmware
 
-Eksperymenty dalszego dopasowania: [matching_experiments.md](reports/readback-2026/matching_experiments.md). Pozostałe 346 fuse są wyłącznie w PLA AND/OR FB1/FB2; ZIA i wszystkie pola MC są już zgodne. Analiza permutacji terms: `experiments/ise-readback-2026/pt-allocation.json`.
+The following description applies to the active 2026 golden reference. Internal names are names assigned to the recovered model, not evidence of the original source identifiers. Functions, FF modes and resource assignments come from fuse decoding and SAT checks. “Calibration” and “inhibit” describe the observed logic and historical context; their application-level interpretation has not been independently confirmed on hardware.
 
-Próby dyrektyw: [directive_placement.md](reports/readback-2026/directive_placement.md).
+### Clock divider and polarity
 
-## Wymuszona implementacja
+The two-bit `CNT` increments on the **falling edge** of `CLK80`. `CLK40=CNT(0)` and `CLK20_P=CNT(1)`, giving divide-by-two and divide-by-four outputs for a periodic input. If the input is actually 80 MHz, the outputs are 40 MHz and 20 MHz; the signal name is not a physical frequency measurement.
 
-Dodatkowy backend VM6 daje **0/55341 fuse różnic**: [raport](reports/implementation_lock.md). Plik: `recovered/amplcpld_implementation_locked.jed`. `make reproduce` wykonuje również ten krok; `make implementation-locked` wykonuje native build i lock. Native fitter bez tego kroku nadal daje 346 różnic. Template `recovered/amplcpld.ptlock.json` zawiera alokację i równoważne równania PLA odczytane z golden; nie jest to samo UCF ani dowód odzyskania historycznego źródła.
+`CLK20_N` is a separate register clocked on the same falling edge. Its input is `not(CNT(1) xor CNT(0))`, evaluated from the **old** counter state. With the decoded initial state, its output after the edge is the complement of the updated `CNT(1)`. The recovered HDL retains this actual register rather than replacing it with an output inverter. GCK2/FCLK2 is enabled; the other global clocks and the global clock divider/delay are disabled.
 
-## Instalacja i konfiguracja krok po kroku
+### ENA-qualified STR measurement path
 
-Pełna instrukcja: **[docs/reproduce_step_by_step.md](docs/reproduce_step_by_step.md)**. Obejmuje Ubuntu 24.04, Rust, przypięte decodery, lokalne GHDL/Python, instalację lub podłączenie ISE 14.7, compatibility libraries, konfigurację prefixów, build i niezależne sprawdzenie finalnych fuse. Zawiera również ograniczenia testów instalatora i rozwiązywanie napotkanych problemów.
+On each falling edge of `STR`, `str_div` toggles only when `ENA=1`. The subsequent path is:
 
-## Co rzeczywiście znaleziono w firmware
+1. `str1` samples `str_div` on a falling CLK80 edge when the old `CNT(0)=0`.
+2. `str2` samples `str1` on a rising CLK80 edge.
+3. On a rising CLK80 edge, `dly(0)` registers `str1 xor str2`, and `dly(1..6)` shifts the pulse onward.
 
-Poniższy opis dotyczy `pm_cpld_gold_2026.jed` o SHA256 `1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95`. Nazwy wewnętrzne są nazwami odzyskanego modelu, nie dowodem oryginalnego nazewnictwa. Funkcje, tryby FF i przypisanie zasobów pochodzą z fuse/dekodowania oraz porównań SAT. Nazwy „kalibracja” i „inhibit” opisują zaobserwowane działanie i historyczny kontekst; nie zastępują fizycznego testu zastosowania.
+This detects changes of the synchronized STR state, with ENA qualification at the first toggle. Clocked processes use the previous FF state at an edge; replacing these assignments with immediate updates would change cycle delays.
 
-### 1. Dzielnik i polaryzacje zegarów
+### Second STR path, independent of ENA
 
-Dwubitowy `CNT` zwiększa się na **opadającym** zboczu `CLK80`. `CLK40=CNT(0)`, `CLK20_P=CNT(1)`. Zatem przy okresowym wejściu są to podziały przez 2 i 4. Jeżeli wejściowy zegar rzeczywiście ma 80 MHz, odpowiadają 40 i 20 MHz; nazwa sygnału nie jest pomiarem częstotliwości płytki.
+The golden configuration contains an additional `raw_str_toggle`, toggled by every falling STR edge even when `ENA=0`. This path is absent from the historical HDL.
 
-`CLK20_N` jest osobnym rejestrem, również na opadającym CLK80, z wejściem `not(CNT(1) xor CNT(0))` obliczanym ze **starego** stanu licznika. Dla wykazanego stanu początkowego jego wyjście po krawędzi jest komplementarne do nowego `CNT(1)`. Czytelny HDL zachowuje rzeczywisty rejestr zamiast zastępować go samym inwerterem wyjściowym. Nie znaleziono aktywnego global clock divider/delay: włączony jest GCK2/FCLK2, pozostałe global clocks są wyłączone.
+- `raw_sync(0..2)` is a three-register synchronizer updated on rising CLK80 edges.
+- `raw_edge` registers `raw_sync(1) xor raw_sync(2)`.
+- When `CNT(0)=0`, `raw_stretch` samples the OR of the previous `raw_edge` and the current synchronizer XOR. Otherwise it holds its state.
+- Four `inhibit_pipe` bits shift `raw_stretch` only when `CNT(0)=0`.
 
-### 2. STR zależny od ENA — tor pomiarowy
+The timer cannot restart while any `inhibit_pipe` bit is set. ENA suppresses the measurement path, but it does not remove STR activity from this mechanism. The three synchronizer registers were recovered from the configuration; no physical metastability/MTBF analysis was performed.
 
-Na opadającym `STR` rejestr `str_div` przełącza się tylko przy `ENA=1`. Następnie:
+### Ten-bit timer and restart
 
-1. `str1` próbkuje `str_div` na opadającym CLK80, gdy stary `CNT(0)=0`.
-2. `str2` próbkuje `str1` na narastającym CLK80.
-3. Na narastającym CLK80 `dly(0)` rejestruje `str1 xor str2`; bity `dly(1..6)` przesuwają ten impuls.
+`c_count` is a **ten-bit saturating counter**. It increments only when the old `CNT="11"` and holds at 1023. The historical HDL used seven bits, a terminal value of 127 and a different increment condition.
 
-Jest to detekcja zmiany synchronizowanego stanu STR, z kwalifikacją ENA w pierwszym toggle. W kodzie procesy używają semantyki starego stanu FF na krawędzi; przepisanie na natychmiastowe aktualizacje zmieniłoby opóźnienie o cykle.
-
-### 3. Drugi tor STR — niezależny od ENA
-
-W golden istnieje dodatkowy `raw_str_toggle`, przełączany na każdym opadającym STR, również przy `ENA=0`. W historycznym HDL tego toru nie było.
-
-- `raw_sync(0..2)` to trzy rejestry aktualizowane na narastającym CLK80.
-- `raw_edge` rejestruje `raw_sync(1) xor raw_sync(2)`.
-- `raw_stretch` przy `CNT(0)=0` przyjmuje OR starego `raw_edge` i bieżącego XOR synchronizatora; w pozostałych fazach trzyma stan.
-- Cztery bity `inhibit_pipe` przesuwają `raw_stretch` tylko przy `CNT(0)=0`.
-
-Dopóki `inhibit_pipe` nie jest całe zerowe, timer nie może wykonać restartu kalibracji. ENA blokuje tor pomiarowy, ale nie usuwa aktywności STR z tego mechanizmu. Trzy rejestry odtworzono z konfiguracji; nie wykonano analizy metastability/MTBF na fizycznym układzie.
-
-### 4. Timer 10-bitowy i restart
-
-`c_count` jest **10-bitowym licznikiem saturującym**: rośnie tylko przy starym `CNT="11"` i zatrzymuje się na 1023. Oryginalny historyczny HDL miał 7 bitów, terminal 127 i inny warunek inkrementacji.
-
-Restart wymaga jednocześnie:
+Restart requires all of the following:
 
 ```vhdl
 CNT(0) = '1'
@@ -92,90 +96,89 @@ inhibit_pipe = "0000"
 cal_phase = CNT(1)
 ```
 
-Przy restarcie licznik przechodzi do 0, a `cal_phase` się przełącza. W recovered HDL licznik zapisano jako jawne toggles poszczególnych bitów, aby odtworzyć TFF w golden. Przy terminalnym stanie wszystkie bity są 1, więc przełączenie wszystkich ładuje 0. Dla zwykłej inkrementacji bit przełącza się, jeśli wszystkie niższe bity były 1.
+Restart loads the counter with zero and toggles `cal_phase`. The recovered HDL expresses the counter as explicit per-bit toggles to retain the golden TFF implementation. At the terminal state all counter bits are one, so toggling every bit loads zero. During ordinary increments, each bit toggles when all lower bits were one.
 
-Nie podajemy jednego „okresu kalibracji” wyłącznie z szerokości licznika: restart zależy także od fazy i całego inhibit pipeline. Zachowanie wynika z pokazanej relacji przejścia.
+A single calibration interval cannot be inferred from the counter width alone: restart also depends on phase and the inhibit pipeline. The behavior is defined by the recovered transition relation.
 
-### 5. Impuls kalibracji, DV i zapis ADC
+### Calibration pulse, DV and ADC capture
 
-`cal_sample` ustawia się przy restarcie, a zeruje przy `CNT(0)=0`. Ostatnie dopasowanie źródła zapisuje clear tylko wtedy, gdy `cal_sample` było 1. Zewnętrzne zachowanie pozostaje identyczne, natomiast fitter odtwarza literal cover sygnału enable tego FF zgodny z golden.
+`cal_sample` is set on restart and cleared when `CNT(0)=0`. The final source refinement clears it only if its previous value was one. The register behavior remains the same, while the fitter reproduces the golden literal cover of its enable signal.
 
-Sygnał zapisu danych jest oddzielony od STR delay chain:
+The data-capture enable is separate from the STR delay chain:
 
 ```vhdl
 data_enable <= dly(6) or cal_sample;
 ```
 
-Na narastającym CLK80:
+On each rising CLK80 edge:
 
-- `DV` rejestruje `data_enable`;
-- gdy stare `data_enable=1` i stare `CNT(1)=1`, `DOUT(11:0)` przyjmuje ADC0, a `DOUT(12)=0`;
-- gdy `data_enable=1` i `CNT(1)=0`, przyjmuje ADC1, a `DOUT(12)=1`;
-- przy `data_enable=0` DOUT trzyma poprzednie dane.
+- `DV` registers `data_enable`.
+- If the old `data_enable=1` and old `CNT(1)=1`, `DOUT(11:0)` captures ADC0 and `DOUT(12)=0`.
+- If `data_enable=1` and `CNT(1)=0`, it captures ADC1 and `DOUT(12)=1`.
+- When `data_enable=0`, DOUT retains the previous data.
 
-Historyczny kod wprowadzał kalibrację do początku łańcucha STR razem z XOR. Golden ma osobny `cal_sample` dołączony przy końcowym enable. Samego podobieństwa liczby stopni delay nie należy traktować jako zgodności tych mechanizmów.
+The historical code injected calibration into the beginning of the STR delay chain alongside the XOR. The golden configuration instead adds a separate `cal_sample` at the final enable. Similar delay-chain lengths do not establish equivalence of these mechanisms.
 
-### 6. Event-chain jest kombinacyjny
+### Combinational event chain
 
-Golden zawiera **`EV_out <= EV`**, bez rejestru i bez uzależnienia od timera. Osobny SAT dowodzi tej relacji. Historyczny HDL synchronizował EV, sterował nim kalibracją i wystawiał EV_OUT przez rejestr.
+The golden configuration implements **`EV_out <= EV`**, with no register or timer qualification. A separate SAT proof establishes this relation. The historical HDL synchronized EV, used it to control calibration and drove EV_OUT through a register.
 
-Jest to potwierdzona różnica funkcjonalna względem historycznego źródła, nie kosmetyczna zmiana stylu VHDL. Kombinacyjne przekazanie ma fizyczny propagation delay; model Boolean go nie mierzy.
+This is a confirmed functional difference from the historical source, not just a source-style change. The physical combinational path has propagation delay, which the Boolean model does not measure.
 
-### 7. Rejestry i stany początkowe
+### Registers and initial state
 
-W golden zidentyfikowano **49 użytych FF**:
+The golden configuration uses **49 FFs**:
 
-| Grupa | Liczba FF |
+| Group | FF count |
 |---|---:|
-| CNT i osobny CLK20_N | 3 |
+| CNT and separate CLK20_N | 3 |
 | str_div, str1, str2 | 3 |
-| dly[6:0] i DV | 8 |
+| dly[6:0] and DV | 8 |
 | DOUT[12:0] | 13 |
 | raw_str_toggle, raw_sync[2:0], raw_edge, raw_stretch | 6 |
 | inhibit_pipe[3:0] | 4 |
 | c_count[9:0], cal_phase, cal_sample | 12 |
-| **Razem** | **49** |
+| **Total** | **49** |
 
-48 FF ma INIT=1; CLK20_N ma INIT=0. Dlatego m.in. CNT startuje od 3, timer od 1023, a DOUT od samych jedynek. Nie ma aktywnego asynchronicznego set/reset. Global GSR/GTS są wyłączone. Stan po włączeniu jest częścią konfiguracji, nie dopisanym założeniem testbencha.
+48 FFs have INIT=1; CLK20_N has INIT=0. CNT therefore starts at 3, the timer at 1023 and DOUT at all ones. No asynchronous set/reset is active. Global GSR/GTS are disabled. These initial values are part of the decoded configuration, not assumptions added to the testbench.
 
-Mapa każdego FF do FB/MC: [decoded/state_map.json](decoded/state_map.json). Przykłady: c_count9=FB1/MC7, cal_phase=FB1/MC8, cal_sample=FB2/MC16, raw_str_toggle=FB3/MC8. CLK80 używa GCK2 na pinie 27; STR jest pinem 63 i zegarem dwóch toggle FF. Inicjalizacja i event clocks są objęte porównaniem formalnym.
+See [decoded/state_map.json](decoded/state_map.json) for every FB/MC assignment. Examples: c_count9=FB1/MC7, cal_phase=FB1/MC8, cal_sample=FB2/MC16 and raw_str_toggle=FB3/MC8. CLK80 uses GCK2 on pin 27; STR is on pin 63 and clocks two toggle FFs. Initialization and event clocks are included in formal comparisons.
 
-### 8. I/O i schemat
+### I/O configuration and schematic findings
 
-Schemat potwierdza target VQ100/-7; nowy JEDEC podaje `xc2c128-XXXXX`, więc sam nie potwierdza package ani speed grade. Szczegółowa tabela wszystkich pinów jest w [reports/pinout.md](reports/pinout.md).
+The schematic establishes the VQ100/-7 target. The new JEDEC identifies `xc2c128-XXXXX`, so package and speed grade are not established by that file alone. See `reports/pinout.md` for the full table.
 
-- P64 `Gate_STR1_o` to wejście ENA; P81 `Gate_STR1_i` to wyjście CLK40. Luźna adnotacja CLK40 przy P64 jest sprzeczna z przewodami; sprzeczność została opisana, bez cichego odwrócenia pinów.
-- CLK40/P81 ma **FAST slew**, podczas gdy poprzedni plik miał SLOW.
-- EV/P60 ma wejście **SCHMITT**, poprzedni plik miał PLAIN.
-- Oba banki mają HIGH selection dla input/output buffers; poprzedni plik miał LOW.
-- 54 nieużywane pads mają programmed ground `IS_GND` i wyłączoną termination, zamiast poprzedniego keeper/output-disabled.
-- Global clock divider i jego delay, DataGate oraz VREF są wyłączone.
+- P64, `Gate_STR1_o`, is the ENA input; P81, `Gate_STR1_i`, is the CLK40 output. A loose CLK40 annotation near P64 conflicts with the wiring; the discrepancy is documented rather than silently swapping pins.
+- CLK40/P81 uses **FAST slew**; the previous file used SLOW.
+- EV/P60 uses a **SCHMITT** input; the previous file used PLAIN.
+- Both banks select HIGH for input/output buffer configuration; the previous file selected LOW.
+- 54 unused pads use programmed ground `IS_GND` with termination disabled, instead of the previous keeper/output-disabled configuration.
+- The global clock divider and its delay, DataGate and VREF are disabled.
 
-HIGH/LOW w decoderze jest polem wyboru bufora, nie pomiarem napięcia. Schemat wskazuje VCCIO bank0=3.3 V i bank1=1.8 V. Konfigurację golden zachowano, a nie „naprawiono” według domysłu. Nie przypisujemy liczbowego analogowego opóźnienia do FAST/SLOW bez pomiaru/danych timingowych.
+The decoder’s HIGH/LOW labels are buffer-selection fields, not voltage measurements. The schematic indicates bank0 VCCIO=3.3 V and bank1 VCCIO=1.8 V. The golden configuration was preserved rather than “corrected” based on an assumption. No numerical analog FAST/SLOW delay is claimed without measurement or timing evidence.
 
-## Jak doszliśmy do identycznych fuse
+## How the fuse-identical result was obtained
 
-| Etap | Różnica względem nowego golden |
+| Stage | Difference from the active golden |
 |---|---:|
-| Historyczny HDL + właściwy pinout + ISE 14.7 | 1412 fuse, także różne funkcje |
-| Odzyskany HDL, placement i właściwe I/O, density fitter | 976 fuse |
-| Speed fitter | 380 fuse |
-| Jawny golden-style clear cal_sample | 346 fuse |
-| Native VM6 + implementation lock + Xilinx hprep6 | **0 fuse, 0 canonical fields** |
+| Historical HDL + correct pinout + ISE 14.7 | 1,412 fuses, including functional differences |
+| Recovered HDL, placement and I/O, density fitter | 976 fuses |
+| Speed fitter | 380 fuses |
+| Explicit golden-style cal_sample clear | 346 fuses |
+| Native VM6 + implementation lock + Xilinx hprep6 | **0 fuses, 0 canonical fields** |
 
-Przy native 346 wszystkie MC/IOB fields, ZIA, init/clocks, placement i globals już są identyczne. Różnice pozostają w AND/OR FB1/FB2: kolejności physical PT rows i jednej alternatywnej postaci cover wejścia T najwyższego bitu timera. Testowane UCF KEEP/COLLAPSE/MAXPT/NOREDUCE nie pozwoliły wymusić exact row assignment; próba LOC pojedynczego PT została odrzucona.
+At the native 346-fuse stage, all MC/IOB fields, ZIA, initialization/clocks, placement and globals already match. Remaining differences are in FB1/FB2 AND/OR: physical PT-row ordering and an alternative cover of the highest timer bit’s T input. Tested UCF KEEP/COLLAPSE/MAXPT/NOREDUCE constraints did not force exact row assignment; a probe LOC for a single PT was rejected.
 
-`tools/lock_vm6_placement.py` wykorzystuje jawny `recovered/amplcpld.ptlock.json` pochodzący z golden. Template zawiera **alokację oraz literal cover równań**, nie tylko współrzędne placement. Backend sprawdza zgodność dotychczasowych konfiguracji i pozostałych sum covers, dowodzi SAT równoważności zmienianego wejścia T, przypisuje physical PLA rows i przekazuje rzeczywisty zmodyfikowany VM6 do vendor `hprep6`. To odtwarzalna blokada implementacji, nie odzyskanie bajtów oryginalnego źródła ani bit-identical wynik samego fittera.
+`tools/lock_vm6_placement.py` uses the explicit golden-derived `recovered/amplcpld.ptlock.json`. This template contains **allocation and literal covers**, not just placement coordinates. The backend checks the existing configuration and other sum covers, proves equivalence of the changed T input with SAT, assigns physical PLA rows and passes the actual modified fitter VM6 to vendor `hprep6`. This is a reproducible implementation lock, not recovery of the original source bytes or a fuse-identical result from the native fitter alone.
 
-Po tym kroku ponownie sprawdzamy całe JED: 55 341 fuse identycznych z golden, zero canonical field differences i 49/49 zgodnych transitions/init/clocks. Nie kopiujemy golden JED do output. Pliki pozostają rozdzielone:
+The final JED is then checked again: all 55,341 QF fuses match the golden reference, canonical field differences are zero and 49/49 transitions/init/clocks agree. The golden JED is not copied into the output. Native and locked artifacts remain separate.
 
-- `amplcpld_recovered.jed`: native fitter, 346 różnic;
-- `amplcpld_implementation_locked.jed`: wynik po jawnym lock, 0 różnic.
+Method and evidence: [reports/implementation_lock.md](reports/implementation_lock.md), [reports/final_equivalence.md](reports/final_equivalence.md) and [reports/readback-2026/directive_placement.md](reports/readback-2026/directive_placement.md).
 
-Dowody i zakres: [reports/implementation_lock.md](reports/implementation_lock.md), [reports/final_equivalence.md](reports/final_equivalence.md), [reports/readback-2026/directive_placement.md](reports/readback-2026/directive_placement.md).
+## Evidence and remaining limitations
 
-## Co potwierdzono, a czego nie
+Confirmed: original SHA-256 preservation, valid JEDEC checksums, full QF coverage, lossless decode→assemble, all 49 local transition relations for every Boolean state/input, initialization and clocks, actual recovered VHDL simulation on 67,430 vectors and final locked-JED fuse identity. Next-state models use raw AND/OR fuses and Project Combine routing. Native and locked JEDs were proved separately. There is no separate formal VHDL-frontend proof; the compiled result has SAT proofs and the source has simulation evidence.
 
-Potwierdzono ochronę SHA256 oryginałów, poprawne JEDEC checksums, pełne QF, bezstratny decode→assemble, wszystkie 49 lokalnych relacji przejścia dla wszystkich Boolean states/inputs, init i clocks, symulację faktycznego recovered VHDL na 67 430 wektorach oraz bit identity końcowego locked JED. Modele next-state korzystają z raw AND/OR fuse i routingu Project Combine; native i locked JED były sprawdzane oddzielnie. Sam frontend VHDL nie ma osobnego formal proof; jego rzeczywisty skompilowany wynik ma SAT proof, a źródło ma symulację.
+Not confirmed: physical timings, metastability, setup/hold across clock-domain edges or a post-programming hardware test. No CPLD was programmed. Identity applies to QF fuses, not text-container timestamps/headers or security/DONE/USERCODE outside QF. The readback tool/command/IDCODE session remains undocumented. `N VERSION P.20131013` in the previous file does not establish the original firmware compiler; the new readback has no such record.
 
-Nie potwierdzono fizycznych timingów, metastability, setup/hold przy krawędziach domen ani sprzętowego testu po programowaniu. Nie programowano CPLD. Identyczność dotyczy QF fuse, nie dat/nagłówków tekstowego kontenera ani security/DONE/USERCODE poza QF. Narzędzie/komenda/IDCODE sesji readback nadal nie są udokumentowane. `N VERSION P.20131013` w poprzednim pliku nie dowodzi kompilatora oryginalnego firmware; nowy odczyt nie zawiera tego record.
+The previous attachment, `original/amplcpld.jed` (SHA-256 beginning `89a231fd`), is preserved. Earlier zero-difference native builds apply only to that input. Their sources, decoding and reports are retained under `*/previous-input/`. Hardware validation planning is described in [docs/hardware_validation.md](docs/hardware_validation.md).

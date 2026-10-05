@@ -1,14 +1,16 @@
-# Od świeżego systemu do JED identycznego w fuse
+# Step-by-step setup and fuse-identical JEDEC reproduction
 
-Ta instrukcja dotyczy **nowego odczytu `pm_cpld_gold_2026.jed`**, nie wcześniejszego `amplcpld.jed`. Wszystkie polecenia wykonuj w Bash. Build nie uruchamia programatora.
+Additional Polish version: [reproduce_step_by_step.pl.md](reproduce_step_by_step.pl.md).
 
-Wynik docelowy: `recovered/amplcpld_implementation_locked.jed`, 0 różnic we wszystkich 55 341 QF fuse. Pipeline korzysta z jawnego szablonu implementacji odczytanego z golden; samo VHDL + native fitter ISE pozostawia 346 różnic. Nagłówki/daty kontenera JEDEC mogą się różnić. Security/DONE/USERCODE poza QF nie są objęte wynikiem.
+This guide targets the **new `pm_cpld_gold_2026.jed` readback**, not the earlier `amplcpld.jed`. Run commands in Bash. The build does not invoke a programmer.
 
-## 1. System i podstawowe pakiety
+The target output is `recovered/amplcpld_implementation_locked.jed`, with zero differences across all 55,341 QF fuses. The workflow uses an explicit golden-derived implementation template; native VHDL + ISE fitting alone leaves 346 differences. JEDEC container headers/timestamps may differ. Security/DONE/USERCODE outside QF are not covered.
 
-Potwierdzone środowisko: Ubuntu 24.04.4 LTS, Linux x86_64, Python 3.12. Dostarczone pakiety GHDL wymagają glibc >= 2.38. Inne systemy, kontener z `toolchain/ise-userspace` i VM nie były zweryfikowane w pełnym workflow.
+## 1. Operating system and base packages
 
-Na Ubuntu 24.04:
+Verified environment: Ubuntu 24.04.4 LTS, Linux x86_64, Python 3.12. The supplied GHDL packages require glibc >= 2.38. Other distributions, the optional `toolchain/ise-userspace` container and VM configurations have not been verified through the complete workflow.
+
+On Ubuntu 24.04:
 
 ```bash
 sudo apt-get update
@@ -18,20 +20,20 @@ getconf GNU_LIBC_VERSION
 python3 --version
 ```
 
-Oczekuj `x86_64`, glibc przynajmniej 2.38 i Python 3.12. Potrzebny jest internet do pobrania Rust, źródeł decoderów i zależności. Instalacja ISE oraz kompilacja Rust zajmują dużo miejsca; sprawdź wolny dysk przed rozpoczęciem. Nie podajemy niezmierzonego minimalnego wymaganego rozmiaru.
+Expect `x86_64`, glibc at least 2.38 and Python 3.12. Internet access is required for Rust, decoder sources and dependencies. ISE installation and Rust compilation require substantial disk space; check available storage first. No unmeasured minimum disk requirement is claimed.
 
-## 2. Pobranie repozytorium
+## 2. Clone the repository
 
-Do czasu merge PR #2 użyj gałęzi recovery:
+Until PR #2 is merged, use the recovery branch:
 
 ```bash
 git clone --branch recovery/xc2c128-golden-2026 https://github.com/alice-fit-fee-upgrade/FIT_PM_GW_CPLD.git
 cd FIT_PM_GW_CPLD/coolrunner2-recovery
 ```
 
-Po merge można pobrać `main`; katalog pozostaje `coolrunner2-recovery`. Wszystkie dalsze ścieżki są względem tego katalogu.
+After merge, `main` can be used; the workspace remains `coolrunner2-recovery`. All subsequent paths are relative to this directory.
 
-Sprawdź oryginalne dane i dostarczone pakiety:
+Verify original inputs and supplied packages:
 
 ```bash
 sha256sum -c original/readback-2026/SHA256SUMS
@@ -42,11 +44,11 @@ sha256sum -c toolchain/ise-compat/SHA256SUMS
 sha256sum -c docs/PUBLICATION_SHA256SUMS
 ```
 
-Każda pozycja musi dać `OK`. Manifest publikacji dotyczy stanu plików przy checkout, przed regenerowaniem logów/raportów przez build. Nie jest manifestem późniejszego stanu wygenerowanych plików.
+Every entry must report `OK`. The publication manifest covers the checked-out publication snapshot, before a build regenerates logs/reports. It does not describe subsequently regenerated files.
 
-## 3. Rust i bootstrap narzędzi
+## 3. Rust and tool bootstrap
 
-Jeśli nie masz `rustup`, zainstaluj go dostarczonym skryptem. Skrypt pobiera instalator przez internet, a nie zawiera binariów Rust:
+If `rustup` is not installed, use the supplied script. It downloads the installer from the internet; the repository does not include Rust binaries:
 
 ```bash
 sh toolchain/rustup-init.sh -y --profile minimal --default-toolchain none
@@ -57,20 +59,20 @@ cargo +1.99.0 --version
 make bootstrap
 ```
 
-Jeśli masz `rustup`, pomiń tylko pierwsze polecenie. Potwierdzone wersje: rustc/cargo 1.99.0, GHDL 4.1.0, sympy 1.14.0, mpmath 1.3.0, z3-solver 5.1.0.0. Szczegóły: `toolchain/versions.txt`, `toolchain/requirements.lock` i Cargo locks.
+If `rustup` is already installed, skip only the first command. Verified versions: rustc/cargo 1.99.0, GHDL 4.1.0, sympy 1.14.0, mpmath 1.3.0 and z3-solver 5.1.0.0. Details are in `toolchain/versions.txt`, `toolchain/requirements.lock` and the Cargo locks.
 
 `make bootstrap`:
 
-1. Pobiera Project Combine commit `234343d23e737e57f2727630e19008b509d7d522` oraz openfpga commit `f9ae535d0372c246075d1bb05a409adaed0135e7`.
-2. Kopiuje przypięte Cargo locks i kompiluje decoder/assembler CoolRunner-II.
-3. Tworzy `toolchain/venv` i instaluje Python dependencies z weryfikacją hashy.
-4. Weryfikuje i rozpakowuje GHDL/GNAT `.deb` lokalnie w `toolchain/ghdl`.
-5. Odtwarza pełne mirrors historycznego HDL z `known_hdl/*.bundle`.
-6. Rozpakowuje ncurses5/tinfo5 dla ISE w `toolchain/ise-compat/root`.
+1. Fetches Project Combine commit `234343d23e737e57f2727630e19008b509d7d522` and openfpga commit `f9ae535d0372c246075d1bb05a409adaed0135e7`.
+2. Copies pinned Cargo locks and builds the CoolRunner-II decoder/assembler.
+3. Creates `toolchain/venv` and installs Python dependencies with hash verification.
+4. Verifies and extracts the GHDL/GNAT `.deb` packages locally into `toolchain/ghdl`.
+5. Restores complete historical HDL mirrors from `known_hdl/*.bundle`.
+6. Extracts ncurses5/tinfo5 for ISE into `toolchain/ise-compat/root`.
 
-xc2bit pozostaje narzędziem diagnostycznym: jego mapa ZIA XC2C128 okazała się niekompletna. Autorytatywny decoder/assembler w tym workflow to przypięty Project Combine.
+xc2bit is retained for diagnostics: its XC2C128 ZIA mapping proved incomplete. The authoritative decoder/assembler in this workflow is the pinned Project Combine implementation.
 
-Kontrola po bootstrap:
+Check the bootstrap result:
 
 ```bash
 tools/ghdl --version
@@ -80,28 +82,28 @@ test -x toolchain/prjcombine/target/release/coolrunner2_as
 tools/jedtool original/readback-2026/pm_cpld_gold_2026.jed
 ```
 
-Ostatnie polecenie parsuje JEDEC i pokazuje metadata/checksums, bez operacji sprzętowych. Zasady instalacji `rustup`: [oficjalna dokumentacja](https://rust-lang.github.io/rustup/installation/index.html).
+The last command parses JEDEC metadata/checksums without hardware operations. See the [official rustup installation documentation](https://rust-lang.github.io/rustup/installation/index.html).
 
-## 4. Xilinx ISE 14.7 — istniejąca instalacja
+## 4. Xilinx ISE 14.7: use an existing installation
 
-ISE nie jest dołączone do repo. Jeśli masz już działającą Linux x86_64 instalację ISE 14.7:
+ISE is not included in this repository. If you already have a working Linux x86_64 ISE 14.7 installation:
 
 ```bash
-export ISE_SETTINGS=/twoja/sciezka/14.7/ISE_DS/settings64.sh
+export ISE_SETTINGS=/your/path/14.7/ISE_DS/settings64.sh
 test -f "$ISE_SETTINGS"
 ```
 
-Przejdź do kroku 6. Domyślnie narzędzia używają `$HOME/.local/opt/xilinx/14.7/ISE_DS/settings64.sh`.
+Proceed to step 6. The default location is `$HOME/.local/opt/xilinx/14.7/ISE_DS/settings64.sh`.
 
-## 5. Xilinx ISE 14.7 — nowa instalacja
+## 5. Xilinx ISE 14.7: install from a separately supplied archive
 
-Dostarcz osobno legalnie uzyskany Linux installer `Xilinx_ISE_DS_Lin_14.7_1015_1.tar`. Sprawdzony hash archiwum:
+Supply a legally obtained Linux installer, `Xilinx_ISE_DS_Lin_14.7_1015_1.tar`. The verified archive SHA-256 is:
 
 ```text
 cee0b046c1bbcfafcae59a96c7596c55c5477628c39bafefff8992cb8d33adaa
 ```
 
-Poniższa ścieżka jest przykładem; zmień wartość zmiennej na lokalny plik:
+The following archive path is an example. Adjust it to your local file:
 
 ```bash
 export CPLD_ISE_ARCHIVE=/tmp/Xilinx_ISE_DS_Lin_14.7_1015_1.tar
@@ -120,7 +122,7 @@ mkdir -p "$HOME/.local/opt/ise-installer"
 tar -xf "$CPLD_ISE_ARCHIVE" -C "$HOME/.local/opt/ise-installer"
 ```
 
-Przygotuj config z katalogiem instalacji swojego użytkownika. Nie używaj w ciemno dostarczonej ścieżki `/home/codex-hil`:
+Generate a configuration for your own user account. Do not blindly use the supplied `/home/codex-hil` destination:
 
 ```bash
 python3 - <<'PY'
@@ -133,7 +135,7 @@ print(destination)
 PY
 ```
 
-Config wybiera WebPACK, wyłącza cable drivers, System Generator i GUI license manager. Helper PTY odpowiada na warunki instalacji producenta; jego uruchomienie oznacza ich akceptację. Odczytaj warunki producenta przed użyciem.
+The configuration selects WebPACK and disables cable drivers, System Generator and the GUI license manager. The PTY helper responds to the vendor’s installation terms; invoking it constitutes acceptance. Read those terms before using the helper.
 
 ```bash
 python3 tools/install_ise_cli.py \
@@ -143,13 +145,13 @@ export ISE_SETTINGS="$HOME/.local/opt/xilinx/14.7/ISE_DS/settings64.sh"
 test -f "$ISE_SETTINGS"
 ```
 
-Sprawdzona instalacja na tym hoście została wykonana w PTY. Helper odtwarza obsługę promptów, ale nie był sprawdzony przez drugą pełną instalację ISE. Log helpera: `experiments/logs/ise-install-pty.log`. Nie należy przedstawiać tej ścieżki instalatora jako osobno przetestowanej świeżej instalacji.
+The verified installation on the recovery host was performed in a PTY. The helper reproduces prompt handling but was not tested through a second complete ISE installation. Its log is `experiments/logs/ise-install-pty.log`; this helper path must not be represented as an independently verified fresh installation.
 
-Dla sprawdzonego WebPACK build nie wymagał dodatkowego pliku licencji. Jeśli Twoja instalacja go wymaga, ustaw zwykłe `XILINXD_LICENSE_FILE`/`LM_LICENSE_FILE` na lokalną licencję zgodnie z warunkami producenta. Nie dodawaj jej do Git.
+The verified WebPACK build did not require an additional license file. If your installation requires one, configure `XILINXD_LICENSE_FILE`/`LM_LICENSE_FILE` for your local license under the vendor’s terms. Do not commit licensing material.
 
-## 6. Kontrola CLI ISE w izolowanym shellu
+## 6. Check ISE CLI in an isolated shell
 
-Nie source'uj settings64 globalnie do shellu uruchamiającego Z3. Stare biblioteki ISE mogą kolidować z jego bibliotekami C++. Użyj subshell:
+Do not source settings64 globally into the shell running Z3. Legacy ISE libraries can conflict with its C++ libraries. Use a subshell:
 
 ```bash
 (
@@ -162,36 +164,36 @@ Nie source'uj settings64 globalnie do shellu uruchamiającego Z3. Stare bibliote
 )
 ```
 
-Ważne: drugi argument `source` musi być prefixem `ISE_DS`. Bez niego settings64 może uznać argument skryptu, np. `baseline`, za katalog instalacji. Wrappery projektu już obsługują prefix i compatibility libraries.
+The second `source` argument must be the `ISE_DS` prefix. Otherwise settings64 may interpret a script argument, such as `baseline`, as the installation directory. Project wrappers already handle the prefix and compatibility libraries.
 
-## 7. Pełne odtworzenie
+## 7. Run complete reproduction
 
 ```bash
 make reproduce > experiments/logs/reproduce-local.log 2>&1
 ```
 
-Proces kończy się kodem 0 wyłącznie po zaliczeniu checks. Log można obserwować z drugiego terminala przez `tail -f experiments/logs/reproduce-local.log`.
+The workflow returns exit code zero only after its checks pass. Monitor it from another terminal with `tail -f experiments/logs/reproduce-local.log`.
 
-Sekwencja:
+Sequence:
 
-1. Historyczny HDL → ISE baseline.
-2. Parsowanie i dekodowanie nowego golden; decode→assemble roundtrip.
-3. SAT wszystkich 49 funkcji przejścia golden i kontrola clocks/init.
-4. Symulacja rzeczywistego recovered VHDL: 67 430 golden vectors.
-5. Recovered VHDL/UCF → XST → ngdbuild → cpldfit → hprep6; native fit: 346 fuse różnic.
-6. SAT wszystkich 49 funkcji przejścia faktycznego native JED.
-7. Jawny lock FB1/FB2 PLA w VM6 i równoważnego wejścia T `c_count(9)`.
-8. Xilinx hprep6 → locked JED; raw/canonical comparison wymagają 0, SAT ponownie 49/49.
+1. Historical HDL → ISE baseline.
+2. Parse/decode the active golden and run a decode→assemble round-trip.
+3. Prove all 49 golden transitions with SAT and check initialization/clocks.
+4. Simulate actual recovered VHDL on 67,430 golden vectors.
+5. Recovered VHDL/UCF → XST → ngdbuild → cpldfit → hprep6; native fit: 346 differing fuses.
+6. Prove all 49 transitions of the actual native JED with SAT.
+7. Explicitly lock FB1/FB2 PLA allocation in VM6 and the equivalent `c_count(9)` T-input cover.
+8. Xilinx hprep6 → locked JED; raw/canonical comparisons must both be zero and SAT must pass 49/49 again.
 
-Szybszy wariant, gdy decoder/zależności i dotychczasowe decoded golden już są przygotowane:
+For an already prepared workspace with tools/dependencies and the decoded golden available:
 
 ```bash
 make implementation-locked
 ```
 
-Ten target wykonuje native build i lock; nie zastępuje pełnego `make reproduce` ze świeżego środowiska.
+This target performs the native build and lock. It does not replace complete `make reproduce` from a fresh environment.
 
-## 8. Samodzielne sprawdzenie bit identity
+## 8. Independently verify fuse identity
 
 ```bash
 tools/compare_jed \
@@ -212,31 +214,31 @@ PY
 sha256sum -c original/readback-2026/SHA256SUMS
 ```
 
-Nie używaj `cmp` ani równości SHA256 dwóch tekstowych JED jako kryterium konfiguracji: nagłówki zawierają daty i ścieżki. SHA256 golden służy ochronie materiału wejściowego; fuse diff sprawdza konfigurację urządzenia.
+Do not use `cmp` or matching SHA-256 values of the two text JED files as the configuration criterion: headers contain timestamps and paths. Golden SHA-256 protects the input; fuse comparison checks the device configuration.
 
-## 9. Gdzie są wyniki
+## 9. Output locations
 
-| Plik/katalog | Znaczenie |
+| File/directory | Meaning |
 |---|---|
-| `recovered/amplcpld_recovered.vhd`, `amplcpld.ucf` | Czytelny HDL i pin/placement/config constraints |
-| `recovered/amplcpld.ptlock.json` | Jawny template PLA z golden, zawierający też literal cover |
-| `recovered/amplcpld_recovered.jed` | Native ISE output, 346 różnic |
+| `recovered/amplcpld_recovered.vhd`, `amplcpld.ucf` | Readable HDL and pin/placement/configuration constraints |
+| `recovered/amplcpld.ptlock.json` | Explicit golden-derived PLA template, including literal covers |
+| `recovered/amplcpld_recovered.jed` | Native ISE output: 346 differences |
 | `recovered/amplcpld_implementation_locked.jed` | Final QF fuse-identical output |
-| `experiments/vm6-locked-2026/design.vm6` | Faktyczny VM6 po lock |
-| `experiments/vm6-locked-2026/raw-diff.json` | Raw Hamming=0 |
+| `experiments/vm6-locked-2026/design.vm6` | Actual locked VM6 |
+| `experiments/vm6-locked-2026/raw-diff.json` | Raw Hamming distance=0 |
 | `experiments/vm6-locked-2026/structural-diff.json` | Canonical difference count=0 |
-| `experiments/vm6-locked-2026/transition-proof.json` | 49/49 UNSAT, zgodne init/clocks |
+| `experiments/vm6-locked-2026/transition-proof.json` | 49/49 UNSAT with matching initialization/clocks |
 | `tests/readback-2026/ghdl-equivalence.log` | PASS: 67430 golden vectors |
-| `reports/implementation_lock.md` | Zakres i ograniczenia wyniku |
-| `experiments/commands.jsonl`, `experiments/logs/` | Polecenia, exit codes i logi |
+| `reports/implementation_lock.md` | Method, scope and limitations |
+| `experiments/commands.jsonl`, `experiments/logs/` | Commands, exit codes and logs |
 
-## 10. Typowe problemy
+## 10. Troubleshooting
 
-- `cargo`/`rustup` nie znalezione: ustaw `PATH="$HOME/.cargo/bin:$PATH"`; build używa przypiętej wersji 1.99.0.
-- GHDL zgłasza `GLIBC_x.y not found`: użyj Ubuntu 24.04/glibc >=2.38; dostarczone `.deb` nie są uniwersalne.
-- ISE nie znajduje ncurses5/tinfo5: wykonaj `make bootstrap`; wrapper dodaje lokalne compatibility directories, bez zastępowania bibliotek systemowych.
-- Z3 zgłasza `libz3.so.5.1 not found` po source settings64: uruchom workflow w nowym shellu. Nie eksportuj starych ISE library paths globalnie. `build_locked_ise` uruchamia ISE w subshell.
-- `ISE missing`: ustaw pełne `ISE_SETTINGS`, nie ścieżkę do samego `xst`.
-- Guard blokady VM6 albo SAT odrzuca build: zachowaj log. Nie wyłączaj guard i nie podstawiaj gotowego golden JED. Zmieniony HDL/opcje mogą nie spełniać założeń template.
-- 346 różnic w native JED to oczekiwany wynik. Zero ma dać osobny `amplcpld_implementation_locked.jed`.
-- Pobranie ISE/Rust/dependencies nie działa: zachowane artefakty pozwalają sprawdzić final JED bez reinstalacji, lecz pełny rebuild wymaga narzędzi.
+- `cargo`/`rustup` not found: set `PATH="$HOME/.cargo/bin:$PATH"`. Builds use pinned version 1.99.0.
+- GHDL reports `GLIBC_x.y not found`: use Ubuntu 24.04/glibc >=2.38; the supplied `.deb` packages are not universal.
+- ISE cannot find ncurses5/tinfo5: run `make bootstrap`. Wrappers add local compatibility directories without replacing system libraries.
+- Z3 reports `libz3.so.5.1 not found` after sourcing settings64: start the workflow in a fresh shell. Do not export legacy ISE library paths globally. `build_locked_ise` invokes ISE in a subshell.
+- `ISE missing`: set the complete `ISE_SETTINGS` path, not just the path to `xst`.
+- A VM6-lock guard or SAT check rejects the build: preserve the log. Do not disable guards or substitute the golden JED as output. Modified HDL/options may violate template assumptions.
+- 346 differences in the native JED are expected. Zero differences must be obtained in the separate `amplcpld_implementation_locked.jed`.
+- ISE/Rust/dependency retrieval fails: preserved artifacts allow final JED verification without reinstalling, but a full rebuild requires the tools.
