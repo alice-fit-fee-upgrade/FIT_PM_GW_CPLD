@@ -1,0 +1,74 @@
+{
+  "name": "speed-hold-negative",
+  "source_sha256": "c7f7654e9a6a0af70e2f1b899edb10a8547df9a3db837301abed7f9defb85ad4",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 0,
+  "raw_distance": 916,
+  "canonical_difference_count": 941,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:55:59.276122+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/speed-hold-negative-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:03.067048+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-hold-negative-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:05.756324+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-hold-negative-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:07.054492+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/speed-hold-negative-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "2852bac6cdf0813aab01cb94f3ece9e0cfd51c0bf046a9370b0da473f2bfa786"
+}

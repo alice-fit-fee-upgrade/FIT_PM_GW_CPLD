@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+cd "$root"
+build="$root/experiments/vm6-locked-2026"
+mkdir -p "$build"
+# Re-prove the actual native fitter output before applying implementation template.
+CPLD_PROOF_BUILD="$root/experiments/ise-readback-2026" CPLD_PROOF_IR="$root/experiments/ise-readback-2026/configuration.json" CPLD_PROOF_JED="$root/experiments/ise-readback-2026/readback-2026.jed" toolchain/venv/bin/python tools/verify_readback_2026.py > "$build/pre-lock-proof.log"
+python3 tools/run_logged.py vm6-placement-lock toolchain/venv/bin/python tools/lock_vm6_placement.py experiments/ise-readback-2026/design.vm6 experiments/ise-readback-2026/configuration.json decoded/readback-2026/original.json "$build/design.vm6" --constraints recovered/amplcpld.ptlock.json
+(
+settings=${ISE_SETTINGS:-$HOME/.local/opt/xilinx/14.7/ISE_DS/settings64.sh}
+set +u
+source "$settings" "$(dirname "$settings")"
+set -u
+export LD_LIBRARY_PATH="$root/toolchain/ise-compat/root/lib/x86_64-linux-gnu:$root/toolchain/ise-compat/root/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+cd "$build"
+python3 "$root/tools/run_logged.py" vm6-locked-hprep6 hprep6 -i design.vm6
+)
+cd "$build"
+"$root/tools/compare_jed" "$root/original/readback-2026/pm_cpld_gold_2026.jed" design.jed > raw-diff.json
+"$root/tools/decode_xc2c128" design.jed > configuration.json
+python3 "$root/tools/compare_config.py" "$root/decoded/readback-2026/original.json" configuration.json > structural-diff.json
+cp "$root/experiments/ise-readback-2026/design.rpt" design.rpt
+cd "$root"
+CPLD_PROOF_BUILD="$build" CPLD_PROOF_IR="$build/configuration.json" CPLD_PROOF_JED="$build/design.jed" toolchain/venv/bin/python tools/verify_readback_2026.py > "$build/proof.log"
+python3 - <<'PY'
+import json,shutil
+from pathlib import Path
+b=Path('experiments/vm6-locked-2026')
+assert json.loads((b/'raw-diff.json').read_text())['hamming_distance']==0
+assert json.loads((b/'structural-diff.json').read_text())['structural_difference_count']==0
+assert json.loads((b/'transition-proof.json').read_text())['all_passed']
+shutil.copyfile(b/'design.jed','recovered/amplcpld_implementation_locked.jed')
+print('POST-FIT VM6 LOCK: 0 fuse, 0 canonical differences; 49/49 state proofs. Native fitter remains separate.')
+PY
+python3 tools/report_locked_implementation.py

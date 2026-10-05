@@ -1,0 +1,13 @@
+Collecting sympy==1.14.0
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting z3-solver==5.1.0.0
+  Using cached z3_solver-5.1.0.0-py3-none-manylinux_2_27_x86_64.whl.metadata (777 bytes)
+Collecting mpmath==1.3.0
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached z3_solver-5.1.0.0-py3-none-manylinux_2_27_x86_64.whl (33.1 MB)
+Saved ./toolchain/wheels/sympy-1.14.0-py3-none-any.whl
+Saved ./toolchain/wheels/mpmath-1.3.0-py3-none-any.whl
+Saved ./toolchain/wheels/z3_solver-5.1.0.0-py3-none-manylinux_2_27_x86_64.whl
+Successfully downloaded sympy mpmath z3-solver

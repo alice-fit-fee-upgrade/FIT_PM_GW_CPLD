@@ -1,0 +1,7 @@
+{
+  "file": "original/readback-2026/pm_cpld_gold_2026.jed",
+  "sha256": "1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95",
+  "provenance": "User states this is the readback from physical CPLD; reader/tool log pending",
+  "supersedes_as_target": "original/amplcpld.jed",
+  "previous_bit_identity_applies_to_new_golden": false
+}

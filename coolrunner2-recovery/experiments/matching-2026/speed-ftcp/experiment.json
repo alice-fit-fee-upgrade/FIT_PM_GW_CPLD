@@ -1,0 +1,74 @@
+{
+  "name": "speed-ftcp",
+  "source_sha256": "cb145b76df994b8e51e9c3d4104fc4742838fb2849b94318d739054adaae9052",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 0,
+  "raw_distance": 387,
+  "canonical_difference_count": 490,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:55:22.832174+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/speed-ftcp-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:26.570372+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-ftcp-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:29.344015+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-ftcp-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:30.604403+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/speed-ftcp-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+}

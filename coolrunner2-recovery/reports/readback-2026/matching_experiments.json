@@ -1,0 +1,3414 @@
+[
+  {
+    "name": "adc-explicit-fd",
+    "source_sha256": "06f9be09af562e411543e04b2757a8ceaf6ab9b74b990958b229e959e4b31760",
+    "build_exit": 0,
+    "proof_exit": 0,
+    "raw_distance": 978,
+    "canonical_difference_count": 952,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:34:22.298527+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/adc-explicit-fd",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:34:26.159245+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/adc-explicit-fd",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:34:28.877522+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/adc-explicit-fd",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-nomlopt",
+          "-optimize",
+          "density",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:34:30.169178+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/adc-explicit-fd",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "count0-maxdelay-speed",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:50:46.935800+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/count0-maxdelay-speed",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/count0-maxdelay-speed-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:50:50.630505+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/count0-maxdelay-speed",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/count0-maxdelay-speed-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:50:53.358655+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/count0-maxdelay-speed",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/count0-maxdelay-speed-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:50:54.602542+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/count0-maxdelay-speed",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/count0-maxdelay-speed-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "0c41aae51dbfafdb71a04c0d46d449c5db53528ec21d9b1b57268ff63f08df00"
+  },
+  {
+    "name": "counter-ascending",
+    "source_sha256": "6379dd1792d9b4bf5cdce692390b3f0ffd216fff9fa0dc8260fa34eb17672fd5",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:57:06.695304+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/counter-ascending-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:57:10.443002+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter-ascending-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:57:13.149856+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter-ascending-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:57:14.403416+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/counter-ascending-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "counter-explicit-ftcp",
+    "source_sha256": "cb145b76df994b8e51e9c3d4104fc4742838fb2849b94318d739054adaae9052",
+    "build_exit": 0,
+    "proof_exit": 0,
+    "raw_distance": 979,
+    "canonical_difference_count": 947,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:38:12.717916+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-explicit-ftcp",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:38:16.450040+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-explicit-ftcp",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:38:19.183646+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-explicit-ftcp",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-nomlopt",
+          "-optimize",
+          "density",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:38:20.424788+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-explicit-ftcp",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "counter-split-terminal",
+    "source_sha256": "7c39ea7dd772e5bd1537bfdf86c2b6b67fd60d346a08bce1d97ffa4f56a63148",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 730,
+    "canonical_difference_count": 863,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:57:15.801142+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-split-terminal",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/counter-split-terminal-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:57:19.501531+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-split-terminal",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter-split-terminal-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:57:22.212020+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-split-terminal",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter-split-terminal-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:57:23.454195+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-split-terminal",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/counter-split-terminal-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "counter-xor-terminal",
+    "source_sha256": "f7491146b4ae2e35b8ed641be63c22858805ee5be69a2c9d4b1de65f356799f4",
+    "build_exit": 0,
+    "proof_exit": 0,
+    "raw_distance": 976,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:36:01.565683+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:36:05.262999+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:36:07.955947+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-nomlopt",
+          "-optimize",
+          "density",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:36:09.224674+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "counter9-cover",
+    "source_sha256": "1d40850ffc7dc754b1e8df4529718beda440f5f1e354f53a409546af7cf81e25",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 736,
+    "canonical_difference_count": 861,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:59:41.709722+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-cover",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/counter9-cover-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:59:45.420796+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-cover",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter9-cover-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:59:48.180816+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-cover",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter9-cover-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:59:49.445627+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-cover",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/counter9-cover-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "counter9-noreduce",
+    "source_sha256": "1d40850ffc7dc754b1e8df4529718beda440f5f1e354f53a409546af7cf81e25",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 728,
+    "canonical_difference_count": 839,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:59:50.841687+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-noreduce",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/counter9-noreduce-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:59:54.556441+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-noreduce",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter9-noreduce-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:59:57.298097+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-noreduce",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/counter9-noreduce-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:59:58.552726+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter9-noreduce",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/counter9-noreduce-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "d4de6f703cfe2fc4a08b13f5a55d57618eca7e32defd9a5ce8e5d32985ca117e"
+  },
+  {
+    "name": "directive-ce-golden",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 346,
+    "canonical_difference_count": 471,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:35:37.481648+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-ce-golden",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-ce-golden-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:41.212388+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-ce-golden",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-ce-golden-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:43.957979+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-ce-golden",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-ce-golden-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:45.212749+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-ce-golden",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-ce-golden-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "directive-counter-collapse",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 346,
+    "canonical_difference_count": 471,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:37:15.966082+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-collapse",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-counter-collapse-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:19.796053+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-collapse",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-counter-collapse-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:22.545864+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-collapse",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-counter-collapse-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:23.834444+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-collapse",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-counter-collapse-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "50d7ec55d6f9d614d6c53c2ab581d8221814913f61fd66c9a8f4967115b9651c"
+  },
+  {
+    "name": "directive-counter-maxpt",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 346,
+    "canonical_difference_count": 471,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:37:25.239114+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-counter-maxpt-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:29.020975+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-counter-maxpt-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:31.793673+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-counter-maxpt-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:33.079980+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-counter-maxpt-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "80d9c36054dd51db01e8f4a64344077693bb5e411c033d741f6ab77d4ca8f64b"
+  },
+  {
+    "name": "directive-fb2-noreduce",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 348,
+    "canonical_difference_count": 471,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:37:06.684832+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-fb2-noreduce",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-fb2-noreduce-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:10.536437+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-fb2-noreduce",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-fb2-noreduce-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:13.288737+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-fb2-noreduce",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-fb2-noreduce-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:14.559754+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-fb2-noreduce",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-fb2-noreduce-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "2342398ff6a77e473e1f01a950b19175b445c441aa256e5e8f5e9221012c3f8f"
+  },
+  {
+    "name": "directive-keep-cal",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 346,
+    "canonical_difference_count": 471,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:35:55.805072+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-keep-cal-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:59.549895+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-keep-cal-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:36:02.259088+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-keep-cal-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:36:03.545315+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-keep-cal-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "57d4496aa7a4c8db80694b85915f820a729c8de010edf06bcf5f2da4fe344930"
+  },
+  {
+    "name": "directive-maxpt-cal",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 868,
+    "canonical_difference_count": 915,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:36:04.971797+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-maxpt-cal",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-maxpt-cal-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:36:08.763490+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-maxpt-cal",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-maxpt-cal-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:36:11.482507+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-maxpt-cal",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-maxpt-cal-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:36:12.803460+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-maxpt-cal",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-maxpt-cal-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "1e3b257e9085e36079533bf80d6f45944fa3229205b75ff4debb78f7c8690d5b"
+  },
+  {
+    "name": "directive-pt-loc-probe",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 245,
+    "fit_environment": {},
+    "commands": [
+      {
+        "utc": "2026-10-05T06:36:58.019911+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-pt-loc-probe",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-pt-loc-probe-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:01.751423+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-pt-loc-probe",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-pt-loc-probe-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:37:04.443750+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-pt-loc-probe",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-pt-loc-probe-cpldfit.log",
+        "exit_code": -11
+      }
+    ],
+    "source_ucf_sha256": "42fdbd471609bdad90da1bf1fb877c38da9dce3a38e3d7f6972dfe3e463fb1f4"
+  },
+  {
+    "name": "directive-selective-noreduce",
+    "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 822,
+    "canonical_difference_count": 890,
+    "commands": [
+      {
+        "utc": "2026-10-05T06:35:46.617140+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/directive-selective-noreduce-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:50.408897+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-selective-noreduce-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:53.135152+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/directive-selective-noreduce-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-05T06:35:54.390099+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/directive-selective-noreduce-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "eac38229f413babeee4afea84afdc94eed4841adbfa8bcc83ada3947d73330c0"
+  },
+  {
+    "name": "hold-data-negative",
+    "source_sha256": "c7f7654e9a6a0af70e2f1b899edb10a8547df9a3db837301abed7f9defb85ad4",
+    "build_exit": 0,
+    "proof_exit": 0,
+    "raw_distance": 979,
+    "canonical_difference_count": 943,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:36:10.642278+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:36:14.332539+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:36:17.046029+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-nomlopt",
+          "-optimize",
+          "density",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:36:18.316239+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "2852bac6cdf0813aab01cb94f3ece9e0cfd51c0bf046a9370b0da473f2bfa786"
+  },
+  {
+    "name": "init-high",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_INIT_HIGH": "1"
+    },
+    "proof_exit": 0,
+    "raw_distance": 976,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:39:19.308918+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/init-high",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:23.043927+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/init-high",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:25.791193+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/init-high",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "-init",
+          "high",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:27.068176+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/init-high",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "keep-collapse-enable",
+    "source_sha256": "cc59a4bcb7d89d85afe065e1ac74b9381c687f910c9e287634e4ee79fd6f497a",
+    "build_exit": 0,
+    "proof_exit": 0,
+    "raw_distance": 976,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:33:33.589287+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:33:37.308966+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:33:40.084863+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-nomlopt",
+          "-optimize",
+          "density",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:33:41.349369+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "d55c38fe5c6cd6522f7ae404b2922f9ef7bd61881b8a66e995fc0dd242e25b3e"
+  },
+  {
+    "name": "nested-counter-default",
+    "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 1039,
+    "canonical_difference_count": 992,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:41:03.770315+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:07.477629+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:10.216833+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:11.466219+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "nested-counter-reg-t",
+    "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+    "build_exit": 2,
+    "fit_environment": {},
+    "commands": [
+      {
+        "utc": "2026-10-04T20:40:57.345356+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-t",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:01.054353+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-t",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 2
+      }
+    ],
+    "source_ucf_sha256": "dff181fc4326f657d8d9fe9feddce81aacb6cec37b684fb900ce83373d28bc2f"
+  },
+  {
+    "name": "nested-counter-reg-tff",
+    "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 1006,
+    "canonical_difference_count": 960,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:42:08.941161+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:42:12.651165+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:42:15.386538+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:42:16.614015+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "710e8ae2257677d3371b7528d8ac59332170cc245a8b9143fed79fd7af820218"
+  },
+  {
+    "name": "period80-speed",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:50:37.754376+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/period80-speed-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:50:41.452885+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/period80-speed-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:50:44.166959+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/period80-speed-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:50:45.504971+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/period80-speed-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "16186775518c135978917363f2ed56a25bd94d8a80d96039bb37625b776179f8"
+  },
+  {
+    "name": "rename-inhibit",
+    "source_sha256": "e4b4b09d6a15a6ffc7c9b4185d0e4197cc888c85d0c912d28a73f36df02f8ec4",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 1,
+    "raw_distance": 392,
+    "canonical_difference_count": 513,
+    "aliased_proof_exit": 0,
+    "proof_aliases": {
+      "raw_edge": "str_raw_edge",
+      "raw_stretch": "str_raw_stretch",
+      "inhibit_pipe": "str_raw_dly"
+    },
+    "commands": [
+      {
+        "utc": "2026-10-04T20:56:32.828230+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/rename-inhibit-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:36.565137+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-inhibit-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:39.256563+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-inhibit-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:40.509404+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/rename-inhibit-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "6f9856755e23980c53868375a67c92fccc921dadbf1d7ed5fae312a80f325d92"
+  },
+  {
+    "name": "rename-phase",
+    "source_sha256": "4f7249d6adbe7129724073805ae701083199a7bfb5aa2f8a7c5d648f2bdcfd15",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 1,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "aliased_proof_exit": 0,
+    "proof_aliases": {
+      "cal_phase": "cal_str",
+      "cal_sample": "cal_str1"
+    },
+    "commands": [
+      {
+        "utc": "2026-10-04T20:56:41.837248+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/rename-phase-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:45.544897+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-phase-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:48.259693+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-phase-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:49.516464+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/rename-phase-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "6268837d934140fcd99620ff94e98e614862c2a48e3301cd14b2bad79660964b"
+  },
+  {
+    "name": "rename-prior",
+    "source_sha256": "5e26e86661f38f7178b850aecdca6e07a5e2c70fe000259c63c94c063a408415",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 1,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "aliased_proof_exit": 0,
+    "proof_aliases": {
+      "c_count": "cal_cnt",
+      "raw_edge": "str3",
+      "raw_stretch": "str4",
+      "cal_phase": "cal_str",
+      "cal_sample": "cal_str1"
+    },
+    "commands": [
+      {
+        "utc": "2026-10-04T20:56:50.887745+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/rename-prior-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:54.615598+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-prior-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:57.328460+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-prior-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:58.597933+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/rename-prior-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "31086ca421fa764f2562cc0b455463a07c0f8351d21c4632b592951298fff38e"
+  },
+  {
+    "name": "rename-timer",
+    "source_sha256": "0fe49c18555b8dc396839cc3ce7209764a7ed1c1c217680e2f7c39a49d23859b",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 1,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "aliased_proof_exit": 0,
+    "proof_aliases": {
+      "c_count": "cal_cnt"
+    },
+    "commands": [
+      {
+        "utc": "2026-10-04T20:56:23.770439+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/rename-timer-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:27.509625+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-timer-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:30.235764+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/rename-timer-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:31.492530+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/rename-timer-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "7bb1d72f2c17e918a4a03537c6fe87695ff160cb4c59855bd4bf772ae5d5ada0"
+  },
+  {
+    "name": "speed-area",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed",
+      "ISE_XST_OPT_MODE": "Area"
+    },
+    "proof_exit": 0,
+    "raw_distance": 388,
+    "canonical_difference_count": 498,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:54:10.633632+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-area",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-area-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:14.356812+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-area",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-area-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:17.032416+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-area",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-area-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:18.277637+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-area",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-area-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "speed-counter-xor",
+    "source_sha256": "f7491146b4ae2e35b8ed641be63c22858805ee5be69a2c9d4b1de65f356799f4",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:54:57.745824+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-counter-xor",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-counter-xor-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:01.446111+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-counter-xor",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-counter-xor-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:04.167293+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-counter-xor",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-counter-xor-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:05.401314+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-counter-xor",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-counter-xor-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "speed-ftcp",
+    "source_sha256": "cb145b76df994b8e51e9c3d4104fc4742838fb2849b94318d739054adaae9052",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 387,
+    "canonical_difference_count": 490,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:55:22.832174+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-ftcp-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:26.570372+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-ftcp-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:29.344015+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-ftcp-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:30.604403+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-ftcp",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-ftcp-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "speed-hold-negative",
+    "source_sha256": "c7f7654e9a6a0af70e2f1b899edb10a8547df9a3db837301abed7f9defb85ad4",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 916,
+    "canonical_difference_count": 941,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:55:59.276122+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-hold-negative-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:03.067048+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-hold-negative-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:05.756324+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-hold-negative-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:07.054492+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-hold-negative-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "2852bac6cdf0813aab01cb94f3ece9e0cfd51c0bf046a9370b0da473f2bfa786"
+  },
+  {
+    "name": "speed-mlopt",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed",
+      "ISE_FIT_NOMLOPT": "0"
+    },
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:54:19.672907+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-mlopt",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-mlopt-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:23.398924+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-mlopt",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-mlopt-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:26.121633+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-mlopt",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-mlopt-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:27.384356+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-mlopt",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-mlopt-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "speed-nested-tff",
+    "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+    "build_exit": 127,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "commands": [
+      {
+        "utc": "2026-10-04T20:55:06.805843+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-nested-tff-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:10.524355+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-nested-tff-ngdbuild.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "710e8ae2257677d3371b7528d8ac59332170cc245a8b9143fed79fd7af820218"
+  },
+  {
+    "name": "speed-nested-tff-retry",
+    "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 424,
+    "canonical_difference_count": 528,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:55:50.176386+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-nested-tff-retry-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:53.878527+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-nested-tff-retry-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:56.613587+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-nested-tff-retry-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:57.849723+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-nested-tff-retry-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "710e8ae2257677d3371b7528d8ac59332170cc245a8b9143fed79fd7af820218"
+  },
+  {
+    "name": "speed-only",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:54:01.548060+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-only",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-only-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:05.293549+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-only",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-only-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:08.002367+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-only",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-only-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:54:09.242006+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-only",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-only-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "speed-technology",
+    "source_sha256": "fdf9957323c6d1636da7c2dde9bd60014f84a6251460fd305484eb8f48ec4151",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed"
+    },
+    "proof_exit": 0,
+    "raw_distance": 927,
+    "canonical_difference_count": 1001,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:55:13.370188+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-technology-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:17.313459+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-technology-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:20.082569+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-technology-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:55:21.434826+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-technology-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "65010ef7c39aaef3650444f897355c84ee0967b8365a89c0593f31ba6d8026b9"
+  },
+  {
+    "name": "speed-xor-flag",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_OPTIMIZE": "speed",
+      "NO_OPTX_PRESERVE_XOR": "1"
+    },
+    "proof_exit": 0,
+    "raw_distance": 380,
+    "canonical_difference_count": 504,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:56:08.462187+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/speed-xor-flag-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:12.169912+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-xor-flag-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:14.902804+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "speed",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/speed-xor-flag-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:56:16.149290+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/speed-xor-flag-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "technology-kept-sop-xor",
+    "source_sha256": "fdf9957323c6d1636da7c2dde9bd60014f84a6251460fd305484eb8f48ec4151",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 1022,
+    "canonical_difference_count": 986,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:45:58.429685+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:46:02.220174+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:46:04.946081+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:46:06.266513+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "65010ef7c39aaef3650444f897355c84ee0967b8365a89c0593f31ba6d8026b9"
+  },
+  {
+    "name": "technology-noreduce",
+    "source_sha256": "fdf9957323c6d1636da7c2dde9bd60014f84a6251460fd305484eb8f48ec4151",
+    "build_exit": 0,
+    "fit_environment": {},
+    "proof_exit": 0,
+    "raw_distance": 974,
+    "canonical_difference_count": 1009,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:48:11.323755+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:48:15.193611+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:48:17.907731+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:48:19.174666+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "ded29239adad5034a81084d174ffd5c9b0439b98c93a239b3f5b65d9ced447af"
+  },
+  {
+    "name": "technology-sop-xor",
+    "source_sha256": "0196f11d0e75a72a77dd3192f33322c71fb1871e4df962c40ea6bb8e81fa3d76",
+    "build_exit": 2,
+    "fit_environment": {},
+    "commands": [
+      {
+        "utc": "2026-10-04T20:44:56.510590+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:45:00.362510+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 2
+      }
+    ],
+    "source_ucf_sha256": "65010ef7c39aaef3650444f897355c84ee0967b8365a89c0593f31ba6d8026b9"
+  },
+  {
+    "name": "weight-inputs-zero",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "WEMAP_INPUT_FACTOR": "0"
+    },
+    "proof_exit": 0,
+    "raw_distance": 976,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:47:43.368413+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-inputs-zero",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:47.066293+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-inputs-zero",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:49.762709+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-inputs-zero",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:51.052507+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-inputs-zero",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "weight-pterms-zero",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "WEMAP_PTERM_FACTOR": "0"
+    },
+    "proof_exit": 0,
+    "raw_distance": 976,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:47:34.281141+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-pterms-zero",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:37.989732+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-pterms-zero",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:40.714000+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-pterms-zero",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:41.962011+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-pterms-zero",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "weight-speed-high",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "WEMAP_SPEED_FACTOR": "100"
+    },
+    "proof_exit": 0,
+    "raw_distance": 976,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:47:52.510917+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-speed-high",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:56.229078+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-speed-high",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:47:58.976445+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-speed-high",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:48:00.255852+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/weight-speed-high",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "wysiwyg-flat",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_WYSIWYG": "1"
+    },
+    "proof_exit": 0,
+    "raw_distance": 1002,
+    "canonical_difference_count": 967,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:39:10.175711+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-flat",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:13.909242+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-flat",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:16.595806+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-flat",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "-wysiwyg",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:17.864689+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-flat",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "wysiwyg-mlopt",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_FIT_WYSIWYG": "1",
+      "ISE_FIT_NOMLOPT": "0"
+    },
+    "proof_exit": 0,
+    "raw_distance": 1002,
+    "canonical_difference_count": 967,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:39:28.480140+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-mlopt",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:32.159047+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-mlopt",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:34.884179+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-mlopt",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-wysiwyg",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:39:36.161508+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/wysiwyg-mlopt",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "xst-area-level1",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_XST_OPT_MODE": "Area"
+    },
+    "proof_exit": 0,
+    "raw_distance": 966,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:41:38.662790+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:42.317919+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:45.038561+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:46.321809+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "xst-area-level2",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_XST_OPT_MODE": "Area",
+      "ISE_XST_OPT_LEVEL": "2"
+    },
+    "proof_exit": 0,
+    "raw_distance": 968,
+    "canonical_difference_count": 957,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:41:56.875809+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level2",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:42:00.613616+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level2",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:42:03.344569+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level2",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:42:04.580420+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level2",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  },
+  {
+    "name": "xst-speed-level2",
+    "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+    "build_exit": 0,
+    "fit_environment": {
+      "ISE_XST_OPT_LEVEL": "2"
+    },
+    "proof_exit": 0,
+    "raw_distance": 978,
+    "canonical_difference_count": 958,
+    "commands": [
+      {
+        "utc": "2026-10-04T20:41:47.783173+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-speed-level2",
+        "argv": [
+          "xst",
+          "-ifn",
+          "design.xst",
+          "-ofn",
+          "design.syr"
+        ],
+        "log": "experiments/logs/readback-2026-xst.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:51.493250+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-speed-level2",
+        "argv": [
+          "ngdbuild",
+          "-p",
+          "xc2c128-7-vq100",
+          "-uc",
+          "design.ucf",
+          "design.ngc",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-ngdbuild.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:54.194820+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-speed-level2",
+        "argv": [
+          "cpldfit",
+          "-p",
+          "xc2c128-7-vq100",
+          "-unused",
+          "ground",
+          "-terminate",
+          "keeper",
+          "-iostd",
+          "LVCMOS33",
+          "-optimize",
+          "density",
+          "-nomlopt",
+          "design.ngd"
+        ],
+        "log": "experiments/logs/readback-2026-cpldfit.log",
+        "exit_code": 0
+      },
+      {
+        "utc": "2026-10-04T20:41:55.460130+00:00",
+        "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-speed-level2",
+        "argv": [
+          "hprep6",
+          "-i",
+          "design.vm6"
+        ],
+        "log": "experiments/logs/readback-2026-hprep6.log",
+        "exit_code": 0
+      }
+    ],
+    "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+  }
+]

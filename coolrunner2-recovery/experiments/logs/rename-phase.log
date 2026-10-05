@@ -1,0 +1,9 @@
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+rename-phase-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/rename-phase-xst.log
+rename-phase-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/rename-phase-ngdbuild.log
+rename-phase-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/rename-phase-cpldfit.log
+rename-phase-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/rename-phase-hprep6.log
+readback-2026: raw=380, canonical=504; reports/readback-2026_structural_diff.md

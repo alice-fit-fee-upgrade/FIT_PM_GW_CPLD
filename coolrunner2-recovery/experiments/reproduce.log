@@ -1,0 +1,24 @@
+sha256sum -c original/SHA256SUMS
+original/amplcpld.jed: OK
+sha256sum -c schematic/SHA256SUMS
+schematic/FIT_PM12.pdf: OK
+tools/jedtool original/amplcpld.jed > decoded/jed_metadata.json
+tools/decode_xc2c128 original/amplcpld.jed > decoded/original.json
+toolchain/prjcombine/target/release/coolrunner2_dis toolchain/prjcombine/databases/coolrunner2.zstd original/amplcpld.jed > decoded/original.combine.txt
+toolchain/prjcombine/target/release/coolrunner2_as toolchain/prjcombine/databases/coolrunner2.zstd decoded/original.combine.txt decoded/combine-roundtrip.jed
+tools/compare_jed original/amplcpld.jed decoded/combine-roundtrip.jed > decoded/combine-roundtrip-diff.json
+python3 -c 'import json; assert json.load(open("decoded/combine-roundtrip-diff.json"))["hamming_distance"] == 0'
+python3 tools/history.py
+python3 tools/pinout.py
+toolchain/venv/bin/python tools/verify_transition.py > tests/transition-proof.json
+python3 tools/render_decode.py
+python3 tools/gen_vectors.py > tests/vector-generation.log
+mkdir -p experiments/ghdl
+cd experiments/ghdl && python3 ../../tools/run_logged.py ghdl-analyze ../../tools/ghdl -a --std=08 ../../recovered/amplcpld_recovered.vhd ../../tests/recovered_tb.vhd
+ghdl-analyze: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/ghdl-analyze.log
+cd experiments/ghdl && python3 ../../tools/run_logged.py ghdl-elaborate ../../tools/ghdl -e --std=08 recovered_tb
+ghdl-elaborate: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/ghdl-elaborate.log
+cd experiments/ghdl && python3 ../../tools/run_logged.py ghdl-run ../../tools/ghdl -r --std=08 recovered_tb --assert-level=error
+ghdl-run: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/ghdl-run.log
+cp experiments/logs/ghdl-run.log tests/ghdl-equivalence.log
+python3 tools/write_reports.py

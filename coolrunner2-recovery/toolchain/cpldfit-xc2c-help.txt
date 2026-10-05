@@ -1,0 +1,88 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Usage: cpldfit [-p <part>] [-intstyle ise|xflow|silent] [-optimize
+density|speed] [-nomlopt] [-ignoretspec] [-init low|high|fpga] [-slew
+fast|slow|auto] [-loc on|off|try] [-log <logfile>] [-wysiwyg] [-keepio] [-ofmt
+abel|vhdl|verilog] [-exhaust] [-inputs <limit:4,40>] [-pterms <limit:3,56>]
+[-inreg on|off] [-nogclkopt] [-nogsropt] [-nogtsopt] [-ignoredatagate] [-unused
+ground|pullup|keeper|float] [-terminate pullup|keeper|float] [-iostd
+LVTTL|LVCMOS18|LVCMOS18_ANY|LVCMOS25|LVCMOS33|SSTL2_I|SSTL3_I|HSTL_I|LVCMOS15]
+[-blkfanin <limit:4,40>] ] ] ] ] ] [-filter <filter_file[.filter]>]
+<design[.ngd]>
+ 
+Where:
+  -blkfanin <limit:4,40>
+		Specify maximum fanin for Function Blocks (default is 38).
+
+  -exhaust	Enable exhaustive fitting.
+
+  -f <cmdfile>  Read command line arguments from cmdfile.
+
+  -ignoretspec	Ignore all timing specifications.
+  
+  -ignoredatagate
+		Ignore DATA_GATE attributes in design.
+
+  -init low|high|fpga
+		Set power up value of device to low, high or fpga (high
+		only on flip-flops with a SET but no RST (default is low).
+
+  -inputs <limit:4,40>
+                Number of inputs to use during optimization.  No equation
+                produced during optimization will exceed this limit (default 
+		is 32).
+
+  -inreg on|off	Turn on or off fast input for input registers (default is on).
+
+  -iostd LVTTL|LVCMOS18|LVCMOS25|LVCOMS33|SSTL2_I|SSTL3_I|HSTL_I|LVCMOS15
+		Specify default I/O Standard (default is LVCMOS18).
+
+  -keepio	Prevent unused inputs from being optimized away.
+
+  -loc on|off|try 
+		Keep location constraints specified by user, ignore 
+		them or try to keep them, ignoring them if a fit is 
+		not otherwise possible (default is on).
+		
+  -log <logfile> 
+                Log all messages into specified logfile.
+
+  -nogclkopt	Disable global clock optimization.
+  
+  -nogsropt	Disable global set/reset optimization.
+  
+  -nogtsopt	Disable global tristate optimization.
+
+  -nomlopt      Disable multi-level logic optimization.
+  
+  -optimize density|speed
+                Optimize logic for density or speed (default is speed).
+
+  -p <part>     Xilinx CPLD part to use.
+
+                xc2c = CoolRunner II family device (auto selection);
+                "xc2cddd[-ss][ppppp]" = specific device (ddd),
+                speed (-ss), package (ppppp);
+
+  -pterms <limit:3,56>      
+                Number of pterms to use during optimization.  No equation
+                produced during optimization will exceed this limit (default 
+		is 36).
+
+  -slew fast|slow|auto
+		Set slew rate of outputs to fast, slow or auto (fitter
+		changes slew rate on paths with timespecs to slow if
+		doing so does not violate any timespec) (default is fast).
+
+  -terminate pullup|keeper|float
+  		Globally set all tristate outputs or I/O to the specified 
+  		termination mode (default is float). 
+
+  -unused ground|pullup|keeper|float
+  		Sets all unused I/O pads to the named termination mode 
+		(default is ground).
+  
+  -wysiwyg	Enable WYSIWYG mode.
+
+  design[.ngd]  Input design file.
+

@@ -1,0 +1,7 @@
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+speed-nested-tff-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/speed-nested-tff-xst.log
+speed-nested-tff-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/speed-nested-tff-ngdbuild.log
+/home/codex-hil/coolrunner2-recovery/tools/build_ise: line 60: thon3: command not found

@@ -1,0 +1,2675 @@
+XC2C128 golden configuration; FB/MC numbering is 1-based.
+Decoder: Project Combine 234343d23e737e57f2727630e19008b509d7d522
+Security bits are outside this logical JEDEC representation.
+Global configuration:
+  BANK0_IBUF_VOLT: LOW
+  BANK0_OBUF_VOLT: LOW
+  BANK1_IBUF_VOLT: LOW
+  BANK1_OBUF_VOLT: LOW
+  CLKDIV_DELAY_ENABLE: 0
+  CLKDIV_DIV: 16
+  CLKDIV_ENABLE: 0
+  DGE_ENABLE: 0
+  FCLK0_ENABLE: 0
+  FCLK1_ENABLE: 0
+  FCLK2_ENABLE: 1
+  FOE0_MUX: NONE
+  FOE1_MUX: NONE
+  FOE2_MUX: NONE
+  FOE3_MUX: NONE
+  FSR_ENABLE: 0
+  FSR_INV: 1
+  TERM_MODE: KEEPER
+  VREF_ENABLE: 0
+
+FB1 ZIA:
+  row 0: MC_C0B0MC10
+  row 1: MC_C0B1MC6
+  row 2: MC_C0B0MC4
+  row 3: MC_C0B0MC13
+  row 4: MC_C0B0MC14
+  row 5: MC_C0B0MC15
+  row 6: MC_C0B5MC0
+  row 7: MC_C0B0MC3
+  row 8: MC_C0B0MC2
+  row 9: MC_C0B6MC5
+  row 10: MC_C0B0MC1
+  row 11: MC_C0B0MC5
+  row 12: VCC
+  row 13: MC_C0B0MC8
+  row 14: MC_C0B0MC7
+  row 15: VCC
+  row 16: MC_C0B0MC11
+  row 17: VCC
+  row 18: MC_C0B0MC9
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: IOB_C0B5MC3
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: MC_C0B0MC6
+  row 29: VCC
+  row 30: VCC
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB1/MC1 (C0B0MC0):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 13, net: NC, recovered name: dly_4
+  equation: (0) xor (MC_C0B0MC2)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B0MC2)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC2 (C0B0MC1):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: c_count_0
+  equation: (not MC_C0B1MC6 and not MC_C0B6MC5 and MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B6MC5 and not MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6)
+  registered: True; mode: DFF; init: 0
+  register input: (not MC_C0B1MC6 and not MC_C0B6MC5 and MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B6MC5 and not MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC3 (C0B0MC2):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 12, net: NC, recovered name: dly_3
+  equation: (0) xor (MC_C0B0MC3)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B0MC3)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC4 (C0B0MC3):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 11, net: NC, recovered name: dly_2
+  equation: (0) xor (MC_C0B0MC4)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B0MC4)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC5 (C0B0MC4):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 10, net: NC, recovered name: dly_1
+  equation: (0) xor (MC_C0B0MC11)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B0MC11)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC6 (C0B0MC5):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 9, net: NC, recovered name: str1
+  equation: (MC_C0B5MC0)
+  registered: True; mode: DFFCE; init: 0
+  register input: (MC_C0B5MC0)
+  clock: FCLK2; polarity: falling; DDR: 0
+  CE: not MC_C0B6MC5; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC7 (C0B0MC6):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: c_count_6
+  equation: (not MC_C0B1MC6 and MC_C0B0MC6) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6)
+  registered: True; mode: DFF; init: 0
+  register input: (not MC_C0B1MC6 and MC_C0B0MC6) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB1/MC8 (C0B0MC7):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: c_count_3
+  equation: ((not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC7) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC6)) xor (not MC_C0B1MC6 and MC_C0B0MC7)
+  registered: True; mode: DFF; init: 0
+  register input: ((not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC7) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC6)) xor (not MC_C0B1MC6 and MC_C0B0MC7)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB1/MC9 (C0B0MC8):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: c_count_5
+  equation: (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6) or (MC_C0B1MC6 and MC_C0B0MC8)
+  registered: True; mode: TFF; init: 0
+  register input: (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6) or (MC_C0B1MC6 and MC_C0B0MC8)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB1/MC10 (C0B0MC9):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: c_count_4
+  equation: ((not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6)) xor (not MC_C0B1MC6 and MC_C0B0MC9)
+  registered: True; mode: DFF; init: 0
+  register input: ((not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6)) xor (not MC_C0B1MC6 and MC_C0B0MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB1/MC11 (C0B0MC10):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 8, net: NC, recovered name: str2
+  equation: (0) xor (MC_C0B0MC5)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B0MC5)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC12 (C0B0MC11):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 7, net: NC, recovered name: dly_0
+  equation: (MC_C0B0MC13 and MC_C0B6MC5) or (MC_C0B0MC10 and not MC_C0B0MC5) or (not MC_C0B0MC10 and MC_C0B0MC5)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B0MC13 and MC_C0B6MC5) or (MC_C0B0MC10 and not MC_C0B0MC5) or (not MC_C0B0MC10 and MC_C0B0MC5)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC13 (C0B0MC12):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 6, net: NC, recovered name: —
+  equation: (not IOB_C0B5MC3) or (MC_C0B0MC13 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6)
+  registered: False; mode: DFF; init: 0
+  register input: (not IOB_C0B5MC3) or (MC_C0B0MC13 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6)
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC14 (C0B0MC13):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: cal_str
+  equation: ((not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6) or (not MC_C0B1MC6 and not MC_C0B0MC13)) xor (1)
+  registered: True; mode: DFF; init: 0
+  register input: ((not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6) or (not MC_C0B1MC6 and not MC_C0B0MC13)) xor (1)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC15 (C0B0MC14):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 4, net: NC, recovered name: c_count_2
+  equation: (not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B6MC5) or (not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B0MC15) or (not MC_C0B1MC6 and not MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6)
+  registered: True; mode: DFF; init: 0
+  register input: (not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B6MC5) or (not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B0MC15) or (not MC_C0B1MC6 and not MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1) or (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB1/MC16 (C0B0MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 3, net: NC, recovered name: c_count_1
+  equation: (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6) or (not MC_C0B1MC6 and MC_C0B0MC15 and not MC_C0B6MC5) or (not MC_C0B1MC6 and MC_C0B0MC15 and MC_C0B6MC5 and not MC_C0B0MC1) or (not MC_C0B1MC6 and not MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1)
+  registered: True; mode: DFF; init: 0
+  register input: (not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6) or (not MC_C0B1MC6 and MC_C0B0MC15 and not MC_C0B6MC5) or (not MC_C0B1MC6 and MC_C0B0MC15 and MC_C0B6MC5 and not MC_C0B0MC1) or (not MC_C0B1MC6 and not MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+All product terms:
+  PT0: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6
+  PT1: not MC_C0B1MC6 and not MC_C0B0MC13
+  PT2: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC9
+  PT3: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9
+  PT4: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6
+  PT5: MC_C0B1MC6 and MC_C0B0MC8
+  PT6: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC7
+  PT7: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and not MC_C0B0MC8 and MC_C0B0MC7
+  PT8: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC7 and not MC_C0B0MC6
+  PT9: not MC_C0B1MC6 and MC_C0B0MC6
+  PT10: MC_C0B0MC2
+  PT11: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and not MC_C0B0MC6
+  PT12: not MC_C0B1MC6 and not MC_C0B6MC5 and MC_C0B0MC1
+  PT13: not MC_C0B1MC6 and MC_C0B6MC5 and not MC_C0B0MC1
+  PT14: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6
+  PT15: not MC_C0B1MC6 and MC_C0B0MC15 and not MC_C0B6MC5
+  PT16: MC_C0B0MC3
+  PT17: not MC_C0B1MC6 and MC_C0B0MC15 and MC_C0B6MC5 and not MC_C0B0MC1
+  PT18: not MC_C0B1MC6 and not MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1
+  PT19: MC_C0B0MC4
+  PT20: not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B6MC5
+  PT21: not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B0MC1
+  PT22: MC_C0B0MC11
+  PT23: not MC_C0B1MC6 and MC_C0B0MC14 and not MC_C0B0MC15
+  PT24: not MC_C0B1MC6 and not MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B6MC5 and MC_C0B0MC1
+  PT25: not MC_C0B6MC5
+  PT26: not MC_C0B1MC6 and MC_C0B0MC14 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6
+  PT27: not IOB_C0B5MC3
+  PT28: MC_C0B0MC13 and MC_C0B0MC14 and MC_C0B0MC15 and MC_C0B0MC1 and MC_C0B0MC8 and MC_C0B0MC7 and MC_C0B0MC9 and MC_C0B0MC6
+  PT29: MC_C0B0MC13 and MC_C0B6MC5
+  PT30: MC_C0B0MC10 and not MC_C0B0MC5
+  PT31: not MC_C0B1MC6 and MC_C0B0MC7
+  PT32: not MC_C0B0MC10 and MC_C0B0MC5
+  PT33: MC_C0B5MC0
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: not MC_C0B1MC6 and MC_C0B0MC9
+  PT38: 1
+  PT39: 1
+  PT40: MC_C0B0MC5
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB2 ZIA:
+  row 0: IOB_C0B5MC3
+  row 1: VCC
+  row 2: MC_C0B0MC12
+  row 3: VCC
+  row 4: MC_C0B1MC11
+  row 5: MC_C0B0MC0
+  row 6: VCC
+  row 7: VCC
+  row 8: MC_C0B5MC3
+  row 9: MC_C0B1MC7
+  row 10: VCC
+  row 11: VCC
+  row 12: VCC
+  row 13: VCC
+  row 14: VCC
+  row 15: VCC
+  row 16: MC_C0B1MC8
+  row 17: VCC
+  row 18: VCC
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: VCC
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: VCC
+  row 29: VCC
+  row 30: VCC
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB2/MC1 (C0B1MC0):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC2 (C0B1MC1):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 14, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC3 (C0B1MC2):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 15, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC4 (C0B1MC3):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 16, net: EV_OUT_, recovered name: EVOUT
+  equation: (IOB_C0B5MC3)
+  registered: True; mode: DFFCE; init: 0
+  register input: (IOB_C0B5MC3)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: MC_C0B0MC12; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB2/MC5 (C0B1MC4):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 17, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC6 (C0B1MC5):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 18, net: ADCA_D11, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC7 (C0B1MC6):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: (0) xor (not MC_C0B1MC7 and MC_C0B1MC8)
+  registered: False; mode: DFF; init: 0
+  register input: (0) xor (not MC_C0B1MC7 and MC_C0B1MC8)
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB2/MC8 (C0B1MC7):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: evnt_i_2
+  equation: (0) xor (MC_C0B1MC8)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B1MC8)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB2/MC9 (C0B1MC8):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: evnt_i_1
+  equation: (0) xor (MC_C0B5MC3)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B5MC3)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB2/MC10 (C0B1MC9):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: dly_6
+  equation: (0) xor (MC_C0B1MC11)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B1MC11)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB2/MC11 (C0B1MC10):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 19, net: ADCA_D10, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC12 (C0B1MC11):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: dly_5
+  equation: (0) xor (MC_C0B0MC0)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B0MC0)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC13 (C0B1MC12):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 22, net: ADCA_D9, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC14 (C0B1MC13):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 23, net: ADCA_D7, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC15 (C0B1MC14):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 24, net: ADCA_D8, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB2/MC16 (C0B1MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 27, net: ADC_CLK, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+All product terms:
+  PT0: IOB_C0B5MC3
+  PT1: 1
+  PT2: 1
+  PT3: 1
+  PT4: 1
+  PT5: 1
+  PT6: 1
+  PT7: 1
+  PT8: 1
+  PT9: 1
+  PT10: 1
+  PT11: 1
+  PT12: 1
+  PT13: 1
+  PT14: 1
+  PT15: 1
+  PT16: 1
+  PT17: 1
+  PT18: 1
+  PT19: MC_C0B0MC12
+  PT20: 1
+  PT21: 1
+  PT22: 1
+  PT23: 1
+  PT24: 1
+  PT25: 1
+  PT26: 1
+  PT27: 1
+  PT28: not MC_C0B1MC7 and MC_C0B1MC8
+  PT29: 1
+  PT30: 1
+  PT31: MC_C0B1MC8
+  PT32: 1
+  PT33: 1
+  PT34: MC_C0B5MC3
+  PT35: 1
+  PT36: 1
+  PT37: MC_C0B1MC11
+  PT38: 1
+  PT39: 1
+  PT40: 1
+  PT41: 1
+  PT42: 1
+  PT43: MC_C0B0MC0
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB3 ZIA:
+  row 0: IOB_C0B7MC15
+  row 1: MC_C0B2MC13
+  row 2: IOB_C0B7MC11
+  row 3: MC_C0B2MC12
+  row 4: MC_C0B2MC4
+  row 5: MC_C0B2MC15
+  row 6: IOB_C0B1MC13
+  row 7: MC_C0B2MC10
+  row 8: MC_C0B2MC5
+  row 9: MC_C0B2MC3
+  row 10: MC_C0B7MC1
+  row 11: VCC
+  row 12: MC_C0B2MC6
+  row 13: MC_C0B1MC9
+  row 14: IOB_C0B7MC3
+  row 15: IOB_C0B3MC15
+  row 16: IOB_C0B3MC3
+  row 17: MC_C0B2MC14
+  row 18: IOB_C0B3MC6
+  row 19: IOB_C0B7MC5
+  row 20: IOB_C0B7MC2
+  row 21: IOB_C0B3MC4
+  row 22: IOB_C0B3MC11
+  row 23: IOB_C0B7MC14
+  row 24: VCC
+  row 25: IOB_C0B7MC12
+  row 26: IOB_C0B3MC5
+  row 27: VCC
+  row 28: VCC
+  row 29: IOB_C0B1MC14
+  row 30: VCC
+  row 31: IOB_C0B7MC13
+  row 32: VCC
+  row 33: IOB_C0B3MC0
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: IOB_C0B3MC10
+  row 38: VCC
+  row 39: VCC
+
+FB3/MC1 (C0B2MC0):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB3/MC2 (C0B2MC1):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 2, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB3/MC3 (C0B2MC2):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 1, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB3/MC4 (C0B2MC3):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 99, net: DI0_, recovered name: O_0
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC11) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC2) or (MC_C0B2MC3 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC11) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC2) or (MC_C0B2MC3 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC5 (C0B2MC4):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 97, net: DI1_, recovered name: O_1
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC10) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC3) or (MC_C0B2MC4 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC10) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC3) or (MC_C0B2MC4 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC6 (C0B2MC5):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 96, net: DI2_, recovered name: O_2
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC6) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC5) or (MC_C0B2MC5 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC6) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC5) or (MC_C0B2MC5 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC7 (C0B2MC6):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 95, net: DI3_, recovered name: O_3
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC5) or (IOB_C0B7MC11 and not MC_C0B7MC1 and MC_C0B1MC9) or (MC_C0B2MC6 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC5) or (IOB_C0B7MC11 and not MC_C0B7MC1 and MC_C0B1MC9) or (MC_C0B2MC6 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC8 (C0B2MC7):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB3/MC9 (C0B2MC8):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB3/MC10 (C0B2MC9):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB3/MC11 (C0B2MC10):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 94, net: DI4_, recovered name: O_4
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC4) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC12) or (MC_C0B2MC10 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC4) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC12) or (MC_C0B2MC10 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC12 (C0B2MC11):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB3/MC13 (C0B2MC12):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 93, net: DI5_, recovered name: O_5
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC3) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC13) or (MC_C0B2MC12 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC3) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC13) or (MC_C0B2MC12 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC14 (C0B2MC13):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 92, net: DI6_, recovered name: O_6
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC0) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC14) or (MC_C0B2MC13 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC0) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC14) or (MC_C0B2MC13 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC15 (C0B2MC14):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 91, net: DI7_, recovered name: O_7
+  equation: (IOB_C0B1MC13 and MC_C0B7MC1 and MC_C0B1MC9) or (IOB_C0B7MC15 and not MC_C0B7MC1 and MC_C0B1MC9) or (not MC_C0B1MC9 and MC_C0B2MC14)
+  registered: True; mode: DFF; init: 0
+  register input: (IOB_C0B1MC13 and MC_C0B7MC1 and MC_C0B1MC9) or (IOB_C0B7MC15 and not MC_C0B7MC1 and MC_C0B1MC9) or (not MC_C0B1MC9 and MC_C0B2MC14)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB3/MC16 (C0B2MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 90, net: DI8_, recovered name: O_8
+  equation: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B1MC14) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC15) or (MC_C0B2MC15 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B1MC14) or (not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC15) or (MC_C0B2MC15 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+All product terms:
+  PT0: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC11
+  PT1: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC2
+  PT2: MC_C0B2MC3 and not MC_C0B1MC9
+  PT3: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC10
+  PT4: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC3
+  PT5: MC_C0B2MC4 and not MC_C0B1MC9
+  PT6: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC6
+  PT7: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC5
+  PT8: MC_C0B2MC5 and not MC_C0B1MC9
+  PT9: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC5
+  PT10: IOB_C0B7MC11 and not MC_C0B7MC1 and MC_C0B1MC9
+  PT11: MC_C0B2MC6 and not MC_C0B1MC9
+  PT12: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC4
+  PT13: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC12
+  PT14: MC_C0B2MC10 and not MC_C0B1MC9
+  PT15: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC3
+  PT16: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC13
+  PT17: MC_C0B2MC12 and not MC_C0B1MC9
+  PT18: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC0
+  PT19: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B7MC14
+  PT20: MC_C0B2MC13 and not MC_C0B1MC9
+  PT21: IOB_C0B1MC13 and MC_C0B7MC1 and MC_C0B1MC9
+  PT22: IOB_C0B7MC15 and not MC_C0B7MC1 and MC_C0B1MC9
+  PT23: not MC_C0B1MC9 and MC_C0B2MC14
+  PT24: MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B1MC14
+  PT25: not MC_C0B7MC1 and MC_C0B1MC9 and IOB_C0B3MC15
+  PT26: MC_C0B2MC15 and not MC_C0B1MC9
+  PT27: 1
+  PT28: 1
+  PT29: 1
+  PT30: 1
+  PT31: 1
+  PT32: 1
+  PT33: 1
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: 1
+  PT38: 1
+  PT39: 1
+  PT40: 1
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB4 ZIA:
+  row 0: VCC
+  row 1: VCC
+  row 2: VCC
+  row 3: VCC
+  row 4: VCC
+  row 5: VCC
+  row 6: VCC
+  row 7: VCC
+  row 8: VCC
+  row 9: VCC
+  row 10: VCC
+  row 11: VCC
+  row 12: VCC
+  row 13: VCC
+  row 14: VCC
+  row 15: VCC
+  row 16: VCC
+  row 17: VCC
+  row 18: VCC
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: VCC
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: VCC
+  row 29: VCC
+  row 30: VCC
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB4/MC1 (C0B3MC0):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 28, net: ADCA_D6, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC2 (C0B3MC1):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC3 (C0B3MC2):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC4 (C0B3MC3):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 29, net: ADCA_D5, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC5 (C0B3MC4):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 30, net: ADCA_D4, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC6 (C0B3MC5):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 32, net: ADCA_D3, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC7 (C0B3MC6):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 33, net: ADCA_D2, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC8 (C0B3MC7):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB4/MC9 (C0B3MC8):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB4/MC10 (C0B3MC9):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB4/MC11 (C0B3MC10):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 34, net: ADCA_D1, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC12 (C0B3MC11):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 35, net: ADCA_D0, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC13 (C0B3MC12):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 36, net: ADCB_D11, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC14 (C0B3MC13):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 37, net: ADCB_D10, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC15 (C0B3MC14):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 39, net: ADCB_D9, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB4/MC16 (C0B3MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 40, net: ADCB_D8, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+All product terms:
+  PT0: 1
+  PT1: 1
+  PT2: 1
+  PT3: 1
+  PT4: 1
+  PT5: 1
+  PT6: 1
+  PT7: 1
+  PT8: 1
+  PT9: 1
+  PT10: 1
+  PT11: 1
+  PT12: 1
+  PT13: 1
+  PT14: 1
+  PT15: 1
+  PT16: 1
+  PT17: 1
+  PT18: 1
+  PT19: 1
+  PT20: 1
+  PT21: 1
+  PT22: 1
+  PT23: 1
+  PT24: 1
+  PT25: 1
+  PT26: 1
+  PT27: 1
+  PT28: 1
+  PT29: 1
+  PT30: 1
+  PT31: 1
+  PT32: 1
+  PT33: 1
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: 1
+  PT38: 1
+  PT39: 1
+  PT40: 1
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB5 ZIA:
+  row 0: VCC
+  row 1: VCC
+  row 2: VCC
+  row 3: VCC
+  row 4: VCC
+  row 5: VCC
+  row 6: VCC
+  row 7: VCC
+  row 8: VCC
+  row 9: VCC
+  row 10: VCC
+  row 11: VCC
+  row 12: VCC
+  row 13: VCC
+  row 14: VCC
+  row 15: VCC
+  row 16: VCC
+  row 17: VCC
+  row 18: VCC
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: VCC
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: VCC
+  row 29: VCC
+  row 30: VCC
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB5/MC1 (C0B4MC0):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 65, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC2 (C0B4MC1):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 66, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC3 (C0B4MC2):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 67, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC4 (C0B4MC3):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC5 (C0B4MC4):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 68, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC6 (C0B4MC5):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC7 (C0B4MC6):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 70, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC8 (C0B4MC7):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB5/MC9 (C0B4MC8):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB5/MC10 (C0B4MC9):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB5/MC11 (C0B4MC10):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 71, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC12 (C0B4MC11):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 72, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC13 (C0B4MC12):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 73, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC14 (C0B4MC13):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 74, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC15 (C0B4MC14):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 76, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB5/MC16 (C0B4MC15):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+All product terms:
+  PT0: 1
+  PT1: 1
+  PT2: 1
+  PT3: 1
+  PT4: 1
+  PT5: 1
+  PT6: 1
+  PT7: 1
+  PT8: 1
+  PT9: 1
+  PT10: 1
+  PT11: 1
+  PT12: 1
+  PT13: 1
+  PT14: 1
+  PT15: 1
+  PT16: 1
+  PT17: 1
+  PT18: 1
+  PT19: 1
+  PT20: 1
+  PT21: 1
+  PT22: 1
+  PT23: 1
+  PT24: 1
+  PT25: 1
+  PT26: 1
+  PT27: 1
+  PT28: 1
+  PT29: 1
+  PT30: 1
+  PT31: 1
+  PT32: 1
+  PT33: 1
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: 1
+  PT38: 1
+  PT39: 1
+  PT40: 1
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB6 ZIA:
+  row 0: VCC
+  row 1: VCC
+  row 2: VCC
+  row 3: VCC
+  row 4: VCC
+  row 5: VCC
+  row 6: VCC
+  row 7: IOB_C0B5MC1
+  row 8: VCC
+  row 9: MC_C0B6MC5
+  row 10: MC_C0B7MC1
+  row 11: VCC
+  row 12: VCC
+  row 13: VCC
+  row 14: VCC
+  row 15: VCC
+  row 16: VCC
+  row 17: VCC
+  row 18: VCC
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: VCC
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: VCC
+  row 29: VCC
+  row 30: VCC
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB6/MC1 (C0B5MC0):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 64, net: Gate_STR1_o, recovered name: str_div
+  equation: 0
+  registered: True; mode: TFF; init: 0
+  register input: IOB_C0B5MC0
+  clock: IOB_C0B5MC1; polarity: falling; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC2 (C0B5MC1):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 63, net: CFD_OUT, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC3 (C0B5MC2):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 61, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC4 (C0B5MC3):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 60, net: EV_IN_, recovered name: evnt_i_0
+  equation: 0
+  registered: True; mode: DFF; init: 0
+  register input: IOB_C0B5MC3
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC5 (C0B5MC4):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 59, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC6 (C0B5MC5):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 58, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC7 (C0B5MC6):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB6/MC8 (C0B5MC7):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB6/MC9 (C0B5MC8):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB6/MC10 (C0B5MC9):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB6/MC11 (C0B5MC10):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC12 (C0B5MC11):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 56, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC13 (C0B5MC12):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC14 (C0B5MC13):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 55, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC15 (C0B5MC14):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB6/MC16 (C0B5MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 54, net: INTB_G_DRV, recovered name: CLK20_N_reg
+  equation: (MC_C0B6MC5 and MC_C0B7MC1) or (not MC_C0B6MC5 and not MC_C0B7MC1)
+  registered: True; mode: DFF; init: 1
+  register input: (MC_C0B6MC5 and MC_C0B7MC1) or (not MC_C0B6MC5 and not MC_C0B7MC1)
+  clock: FCLK2; polarity: falling; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+All product terms:
+  PT0: MC_C0B6MC5 and MC_C0B7MC1
+  PT1: not MC_C0B6MC5 and not MC_C0B7MC1
+  PT2: 1
+  PT3: 1
+  PT4: IOB_C0B5MC1
+  PT5: 1
+  PT6: 1
+  PT7: 1
+  PT8: 1
+  PT9: 1
+  PT10: 1
+  PT11: 1
+  PT12: 1
+  PT13: 1
+  PT14: 1
+  PT15: 1
+  PT16: 1
+  PT17: 1
+  PT18: 1
+  PT19: 1
+  PT20: 1
+  PT21: 1
+  PT22: 1
+  PT23: 1
+  PT24: 1
+  PT25: 1
+  PT26: 1
+  PT27: 1
+  PT28: 1
+  PT29: 1
+  PT30: 1
+  PT31: 1
+  PT32: 1
+  PT33: 1
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: 1
+  PT38: 1
+  PT39: 1
+  PT40: 1
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB7 ZIA:
+  row 0: VCC
+  row 1: MC_C0B6MC13
+  row 2: MC_C0B6MC15
+  row 3: MC_C0B1MC9
+  row 4: IOB_C0B1MC5
+  row 5: MC_C0B6MC14
+  row 6: IOB_C0B3MC14
+  row 7: IOB_C0B3MC13
+  row 8: VCC
+  row 9: VCC
+  row 10: MC_C0B7MC1
+  row 11: VCC
+  row 12: VCC
+  row 13: VCC
+  row 14: IOB_C0B3MC12
+  row 15: VCC
+  row 16: VCC
+  row 17: VCC
+  row 18: IOB_C0B1MC10
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: VCC
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: VCC
+  row 29: VCC
+  row 30: IOB_C0B1MC12
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB7/MC1 (C0B6MC0):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 77, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC2 (C0B6MC1):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 78, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC3 (C0B6MC2):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC4 (C0B6MC3):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 79, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC5 (C0B6MC4):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: 80, net: NC, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC6 (C0B6MC5):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 81, net: Gate_STR1_i, recovered name: CNT_0
+  equation: (0) xor (1)
+  registered: True; mode: TFF; init: 0
+  register input: (0) xor (1)
+  clock: FCLK2; polarity: falling; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB7/MC7 (C0B6MC6):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC8 (C0B6MC7):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB7/MC9 (C0B6MC8):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB7/MC10 (C0B6MC9):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB7/MC11 (C0B6MC10):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 82, net: STR1_, recovered name: dly_7
+  equation: (0) xor (MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (0) xor (MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB7/MC12 (C0B6MC11):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB7/MC13 (C0B6MC12):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 85, net: DI12_, recovered name: O_12
+  equation: (not MC_C0B7MC1)
+  registered: True; mode: DFFCE; init: 0
+  register input: (not MC_C0B7MC1)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: MC_C0B1MC9; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB7/MC14 (C0B6MC13):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 86, net: DI11_, recovered name: O_11
+  equation: (MC_C0B1MC9 and IOB_C0B1MC5 and MC_C0B7MC1) or (MC_C0B1MC9 and not MC_C0B7MC1 and IOB_C0B3MC12) or (MC_C0B6MC13 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B1MC9 and IOB_C0B1MC5 and MC_C0B7MC1) or (MC_C0B1MC9 and not MC_C0B7MC1 and IOB_C0B3MC12) or (MC_C0B6MC13 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB7/MC15 (C0B6MC14):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 87, net: DI10_, recovered name: O_10
+  equation: (MC_C0B1MC9 and MC_C0B7MC1 and IOB_C0B1MC10) or (MC_C0B1MC9 and IOB_C0B3MC13 and not MC_C0B7MC1) or (not MC_C0B1MC9 and MC_C0B6MC14)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B1MC9 and MC_C0B7MC1 and IOB_C0B1MC10) or (MC_C0B1MC9 and IOB_C0B3MC13 and not MC_C0B7MC1) or (not MC_C0B1MC9 and MC_C0B6MC14)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB7/MC16 (C0B6MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 89, net: DI9_, recovered name: O_9
+  equation: (MC_C0B1MC9 and MC_C0B7MC1 and IOB_C0B1MC12) or (MC_C0B1MC9 and IOB_C0B3MC14 and not MC_C0B7MC1) or (MC_C0B6MC15 and not MC_C0B1MC9)
+  registered: True; mode: DFF; init: 0
+  register input: (MC_C0B1MC9 and MC_C0B7MC1 and IOB_C0B1MC12) or (MC_C0B1MC9 and IOB_C0B3MC14 and not MC_C0B7MC1) or (MC_C0B6MC15 and not MC_C0B1MC9)
+  clock: FCLK2; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+All product terms:
+  PT0: MC_C0B1MC9 and MC_C0B7MC1 and IOB_C0B1MC10
+  PT1: MC_C0B1MC9 and IOB_C0B3MC13 and not MC_C0B7MC1
+  PT2: not MC_C0B1MC9 and MC_C0B6MC14
+  PT3: MC_C0B1MC9 and IOB_C0B1MC5 and MC_C0B7MC1
+  PT4: MC_C0B1MC9 and not MC_C0B7MC1 and IOB_C0B3MC12
+  PT5: MC_C0B6MC13 and not MC_C0B1MC9
+  PT6: MC_C0B1MC9 and MC_C0B7MC1 and IOB_C0B1MC12
+  PT7: MC_C0B1MC9 and IOB_C0B3MC14 and not MC_C0B7MC1
+  PT8: MC_C0B6MC15 and not MC_C0B1MC9
+  PT9: not MC_C0B7MC1
+  PT10: 1
+  PT11: 1
+  PT12: 1
+  PT13: 1
+  PT14: 1
+  PT15: 1
+  PT16: 1
+  PT17: 1
+  PT18: 1
+  PT19: 1
+  PT20: 1
+  PT21: 1
+  PT22: 1
+  PT23: 1
+  PT24: 1
+  PT25: 1
+  PT26: 1
+  PT27: 1
+  PT28: 1
+  PT29: 1
+  PT30: 1
+  PT31: 1
+  PT32: 1
+  PT33: 1
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: 1
+  PT38: 1
+  PT39: 1
+  PT40: MC_C0B1MC9
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: MC_C0B1MC9
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1
+
+FB8 ZIA:
+  row 0: VCC
+  row 1: VCC
+  row 2: VCC
+  row 3: VCC
+  row 4: VCC
+  row 5: VCC
+  row 6: VCC
+  row 7: VCC
+  row 8: VCC
+  row 9: MC_C0B6MC5
+  row 10: VCC
+  row 11: VCC
+  row 12: VCC
+  row 13: VCC
+  row 14: VCC
+  row 15: VCC
+  row 16: VCC
+  row 17: VCC
+  row 18: VCC
+  row 19: VCC
+  row 20: VCC
+  row 21: VCC
+  row 22: VCC
+  row 23: VCC
+  row 24: VCC
+  row 25: VCC
+  row 26: VCC
+  row 27: VCC
+  row 28: VCC
+  row 29: VCC
+  row 30: VCC
+  row 31: VCC
+  row 32: VCC
+  row 33: VCC
+  row 34: VCC
+  row 35: VCC
+  row 36: VCC
+  row 37: VCC
+  row 38: VCC
+  row 39: VCC
+
+FB8/MC1 (C0B7MC0):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC2 (C0B7MC1):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 53, net: INTA_G_DRV, recovered name: CNT_1
+  equation: (0) xor (MC_C0B6MC5)
+  registered: True; mode: TFF; init: 0
+  register input: (0) xor (MC_C0B6MC5)
+  clock: FCLK2; polarity: falling; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: SLOW
+  IOB_TERM_ENABLE: 0
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: REG
+  OE_MUX: VCC
+
+FB8/MC3 (C0B7MC2):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 52, net: ADCB_D0, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC4 (C0B7MC3):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 50, net: ADCB_D1, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC5 (C0B7MC4):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC6 (C0B7MC5):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 49, net: ADCB_D2, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC7 (C0B7MC6):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB8/MC8 (C0B7MC7):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB8/MC9 (C0B7MC8):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB8/MC10 (C0B7MC9):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+
+FB8/MC11 (C0B7MC10):
+  used: False (configured sinks/routing; not full cone-of-influence)
+  pin: None, net: buried, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: SCHMITT
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: NONE
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC12 (C0B7MC11):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 46, net: ADCB_D3, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC13 (C0B7MC12):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 44, net: ADCB_D4, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC14 (C0B7MC13):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 43, net: ADCB_D5, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC15 (C0B7MC14):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 42, net: ADCB_D6, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+FB8/MC16 (C0B7MC15):
+  used: True (configured sinks/routing; not full cone-of-influence)
+  pin: 41, net: ADCB_D7, recovered name: —
+  equation: 0
+  registered: False; mode: DFF; init: 1
+  register input: 0
+  clock: FCLK0; polarity: rising; DDR: 0
+  CE: 1; reset: 0; set: 0
+  DGE_ENABLE: 0
+  IBUF_MODE: PLAIN
+  IOB_SLEW: FAST
+  IOB_TERM_ENABLE: 1
+  IOB_ZIA_MUX: IBUF
+  MC_IOB_MUX: XOR
+  OE_MUX: GND
+
+All product terms:
+  PT0: 1
+  PT1: 1
+  PT2: 1
+  PT3: 1
+  PT4: 1
+  PT5: 1
+  PT6: 1
+  PT7: 1
+  PT8: 1
+  PT9: 1
+  PT10: 1
+  PT11: 1
+  PT12: 1
+  PT13: MC_C0B6MC5
+  PT14: 1
+  PT15: 1
+  PT16: 1
+  PT17: 1
+  PT18: 1
+  PT19: 1
+  PT20: 1
+  PT21: 1
+  PT22: 1
+  PT23: 1
+  PT24: 1
+  PT25: 1
+  PT26: 1
+  PT27: 1
+  PT28: 1
+  PT29: 1
+  PT30: 1
+  PT31: 1
+  PT32: 1
+  PT33: 1
+  PT34: 1
+  PT35: 1
+  PT36: 1
+  PT37: 1
+  PT38: 1
+  PT39: 1
+  PT40: 1
+  PT41: 1
+  PT42: 1
+  PT43: 1
+  PT44: 1
+  PT45: 1
+  PT46: 1
+  PT47: 1
+  PT48: 1
+  PT49: 1
+  PT50: 1
+  PT51: 1
+  PT52: 1
+  PT53: 1
+  PT54: 1
+  PT55: 1

@@ -1,0 +1,39 @@
+{
+  "name": "speed-nested-tff",
+  "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+  "build_exit": 127,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "commands": [
+    {
+      "utc": "2026-10-04T20:55:06.805843+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/speed-nested-tff-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:10.524355+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-nested-tff-ngdbuild.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "710e8ae2257677d3371b7528d8ac59332170cc245a8b9143fed79fd7af820218"
+}

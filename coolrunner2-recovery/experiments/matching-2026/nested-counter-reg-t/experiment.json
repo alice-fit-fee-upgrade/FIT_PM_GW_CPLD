@@ -1,0 +1,37 @@
+{
+  "name": "nested-counter-reg-t",
+  "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+  "build_exit": 2,
+  "fit_environment": {},
+  "commands": [
+    {
+      "utc": "2026-10-04T20:40:57.345356+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-t",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:01.054353+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-t",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 2
+    }
+  ],
+  "source_ucf_sha256": "dff181fc4326f657d8d9fe9feddce81aacb6cec37b684fb900ce83373d28bc2f"
+}

@@ -1,0 +1,129 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+10- 4-2026  9:57PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  amplcpld.ngd
+output file: amplcpld_pad.csv
+Part type:   xc2c128
+Speed grade: -7
+Package:     vq100
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,PGND,,I/O/GTS2,,,2,,,,,,,
+P2,PGND,,I/O/GTS3,,,2,,,,,,,
+P3,PGND,,I/O/GTS0,,,2,,,,,,,
+P4,PGND,,I/O/GTS1,,,2,,,,,,,
+P5,,VCCAUX,VAUX,,,,,,,,,,
+P6,PGND,,I/O,,,2,,,,,,,
+P7,PGND,,I/O,,,2,,,,,,,
+P8,PGND,,I/O,,,2,,,,,,,
+P9,PGND,,I/O,,,2,,,,,,,
+P10,PGND,,I/O,,,2,,,,,,,
+P11,PGND,,I/O,,,2,,,,,,,
+P12,PGND,,I/O,,,2,,,,,,,
+P13,PGND,,I/O,,,2,,,,,,,
+P14,PGND,,I/O,,,1,,,,,,,
+P15,PGND,,I/O,,,1,,,,,,,
+P16,EV_out,O,I/O,OUTPUT,LVCMOS33,1,,SLOW,,,,
+P17,PGND,,I/O,,,1,,,,,,,
+P18,ADC0<11>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P19,ADC0<10>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P20,,VCCIO-3.3,VCCIO,,,1,,,,,,,
+P21,GND,,GND,,,,,,,,,,
+P22,ADC0<9>,I,I/O/GCK0,INPUT,LVCMOS33,1,,FAST,,,,
+P23,ADC0<7>,I,I/O/GCK1,INPUT,LVCMOS33,1,,FAST,,,,
+P24,ADC0<8>,I,I/O/CDR,INPUT,LVCMOS33,1,,FAST,,,,
+P25,GND,,GND,,,,,,,,,,
+P26,,VCC,VCC,,,,,,,,,,
+P27,CLK80,GCK,I/O/GCK2,,LVCMOS33,1,,FAST,,,,
+P28,ADC0<6>,I,I/O/DGE0,INPUT,LVCMOS33,1,,FAST,,,,
+P29,ADC0<5>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P30,ADC0<4>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P31,GND,,GND,,,,,,,,,,
+P32,ADC0<3>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P33,ADC0<2>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P34,ADC0<1>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P35,ADC0<0>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P36,ADC1<11>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P37,ADC1<10>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P38,,VCCIO-3.3,VCCIO,,,1,,,,,,,
+P39,ADC1<9>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P40,ADC1<8>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P41,ADC1<7>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P42,ADC1<6>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P43,ADC1<5>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P44,ADC1<4>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P45,TDI,,TDI,,,,,,,,,,
+P46,ADC1<3>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P47,TMS,,TMS,,,,,,,,,,
+P48,TCK,,TCK,,,,,,,,,,
+P49,ADC1<2>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P50,ADC1<1>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P51,,VCCIO-3.3,VCCIO,,,1,,,,,,,
+P52,ADC1<0>,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P53,CLK20_P,O,I/O,OUTPUT,LVCMOS33,1,,SLOW,,,,
+P54,CLK20_N,O,I/O,OUTPUT,LVCMOS33,1,,SLOW,,,,
+P55,PGND,,I/O,,,1,,,,,,,
+P56,PGND,,I/O,,,1,,,,,,,
+P57,,VCC,VCC,,,,,,,,,,
+P58,PGND,,I/O,,,1,,,,,,,
+P59,PGND,,I/O,,,1,,,,,,,
+P60,EV,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P61,PGND,,I/O,,,1,,,,,,,
+P62,GND,,GND,,,,,,,,,,
+P63,STR,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P64,ENA,I,I/O,INPUT,LVCMOS33,1,,FAST,,,,
+P65,PGND,,I/O,,,2,,,,,,,
+P66,PGND,,I/O,,,2,,,,,,,
+P67,PGND,,I/O,,,2,,,,,,,
+P68,PGND,,I/O,,,2,,,,,,,
+P69,GND,,GND,,,,,,,,,,
+P70,PGND,,I/O,,,2,,,,,,,
+P71,PGND,,I/O,,,2,,,,,,,
+P72,PGND,,I/O,,,2,,,,,,,
+P73,PGND,,I/O,,,2,,,,,,,
+P74,PGND,,I/O,,,2,,,,,,,
+P75,GND,,GND,,,,,,,,,,
+P76,PGND,,I/O,,,2,,,,,,,
+P77,PGND,,I/O,,,2,,,,,,,
+P78,PGND,,I/O,,,2,,,,,,,
+P79,PGND,,I/O,,,2,,,,,,,
+P80,PGND,,I/O,,,2,,,,,,,
+P81,CLK40,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P82,DV,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P83,TDO,,TDO,,,,,,,,,,
+P84,GND,,GND,,,,,,,,,,
+P85,DOUT<12>,O,I/O/DGE1,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P86,DOUT<11>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P87,DOUT<10>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P88,,VCCIO-3.3,VCCIO,,,2,,,,,,,
+P89,DOUT<9>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P90,DOUT<8>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P91,DOUT<7>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P92,DOUT<6>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P93,DOUT<5>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P94,DOUT<4>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P95,DOUT<3>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P96,DOUT<2>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P97,DOUT<1>,O,I/O,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P98,,VCCIO-3.3,VCCIO,,,2,,,,,,,
+P99,DOUT<0>,O,I/O/GSR,OUTPUT,LVCMOS33,2,,SLOW,,,,
+P100,GND,,GND,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

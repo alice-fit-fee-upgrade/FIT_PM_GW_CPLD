@@ -1,0 +1,71 @@
+{
+  "name": "hold-data-negative",
+  "source_sha256": "c7f7654e9a6a0af70e2f1b899edb10a8547df9a3db837301abed7f9defb85ad4",
+  "build_exit": 0,
+  "proof_exit": 0,
+  "raw_distance": 979,
+  "canonical_difference_count": 943,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:36:10.642278+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:36:14.332539+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:36:17.046029+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-nomlopt",
+        "-optimize",
+        "density",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:36:18.316239+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/hold-data-negative",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "2852bac6cdf0813aab01cb94f3ece9e0cfd51c0bf046a9370b0da473f2bfa786"
+}

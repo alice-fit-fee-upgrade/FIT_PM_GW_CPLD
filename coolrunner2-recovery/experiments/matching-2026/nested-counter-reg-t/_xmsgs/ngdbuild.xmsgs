@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(147): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(148): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(149): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(150): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(151): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(152): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(153): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(154): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(155): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+<msg type="error" file="ConstraintSystem:300" num="0" >In file: design.ucf(156): Constraint &apos;REG&apos; has a value &apos;T&apos; which is invalid. Use the following:
+Text that matches the regular expression: *i:ce|tff
+Please see the Constraints Guide for more information on this constraint.
+</msg>
+
+</messages>
+

@@ -1,0 +1,18 @@
+vm6-placement-lock: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/vm6-placement-lock.log
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+vm6-locked-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/vm6-locked-hprep6.log
+Traceback (most recent call last):
+  File "/home/codex-hil/coolrunner2-recovery/tools/verify_readback_2026.py", line 3, in <module>
+    from prove_readback_2026 import *
+  File "/home/codex-hil/coolrunner2-recovery/tools/prove_readback_2026.py", line 5, in <module>
+    import z3 as z
+  File "/home/codex-hil/coolrunner2-recovery/toolchain/venv/lib/python3.12/site-packages/z3/__init__.py", line 1, in <module>
+    from .z3 import *
+  File "/home/codex-hil/coolrunner2-recovery/toolchain/venv/lib/python3.12/site-packages/z3/z3.py", line 46, in <module>
+    from . import z3core
+  File "/home/codex-hil/coolrunner2-recovery/toolchain/venv/lib/python3.12/site-packages/z3/z3core.py", line 89, in <module>
+    raise Z3Exception("%s not found." % _lib_name)
+z3.z3types.Z3Exception: libz3.so.5.1 not found.

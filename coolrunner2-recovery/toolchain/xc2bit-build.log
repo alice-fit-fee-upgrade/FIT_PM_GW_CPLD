@@ -1,0 +1,55 @@
+    Updating crates.io index
+     Locking 19 packages to highest compatible versions
+ Downloading crates ...
+  Downloaded erased-serde v0.3.31
+  Downloaded itoa v1.0.18
+  Downloaded rustversion v1.0.23
+  Downloaded quote v1.0.47
+  Downloaded proc-macro2 v1.0.107
+  Downloaded unicode-ident v1.0.26
+  Downloaded anyhow v1.0.104
+  Downloaded serde_core v1.0.229
+  Downloaded serde_derive v1.0.229
+  Downloaded zmij v1.0.23
+  Downloaded slog v2.8.2
+  Downloaded memchr v2.8.3
+  Downloaded serde v1.0.229
+  Downloaded serde_json v1.0.151
+  Downloaded syn v1.0.109
+  Downloaded syn v3.0.6
+   Compiling proc-macro2 v1.0.107
+   Compiling quote v1.0.47
+   Compiling serde_core v1.0.229
+   Compiling unicode-ident v1.0.26
+   Compiling rustversion v1.0.23
+   Compiling serde v1.0.229
+   Compiling zmij v1.0.23
+   Compiling syn v1.0.109
+   Compiling serde_json v1.0.151
+   Compiling itoa v1.0.18
+   Compiling memchr v2.8.3
+   Compiling xc2bit v0.0.4 (/home/codex-hil/coolrunner2-recovery/toolchain/openfpga/src/xc2bit)
+   Compiling jedec v0.0.3 (/home/codex-hil/coolrunner2-recovery/toolchain/openfpga/src/jedec)
+   Compiling slog v2.8.2
+   Compiling syn v3.0.6
+   Compiling serde_derive v1.0.229
+   Compiling bittwiddler v0.0.2 (/home/codex-hil/coolrunner2-recovery/toolchain/openfpga/src/bittwiddler)
+   Compiling erased-serde v0.3.31
+   Compiling yosys-netlist-json v0.0.3 (/home/codex-hil/coolrunner2-recovery/toolchain/openfpga/src/yosys-netlist-json)
+warning: hiding a lifetime that's elided elsewhere is confusing
+  --> src/util.rs:48:17
+   |
+48 |     pub fn iter(&self) -> LinebreakSetIter {
+   |                 ^^^^^     ^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+   |                 |
+   |                 the lifetime is elided here
+   |
+   = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+   = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+   |
+48 |     pub fn iter(&self) -> LinebreakSetIter<'_> {
+   |                                           ++++
+
+warning: `xc2bit` (lib) generated 1 warning (run `cargo fix --lib -p xc2bit` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 20.80s

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+cd "$root"
+sha256sum -c original/readback-2026/SHA256SUMS
+tools/jedtool original/readback-2026/pm_cpld_gold_2026.jed > decoded/readback-2026/jed_metadata.json
+tools/decode_xc2c128 original/readback-2026/pm_cpld_gold_2026.jed > decoded/readback-2026/original.json
+toolchain/prjcombine/target/release/coolrunner2_dis toolchain/prjcombine/databases/coolrunner2.zstd original/readback-2026/pm_cpld_gold_2026.jed > decoded/readback-2026/original.combine.txt
+toolchain/prjcombine/target/release/coolrunner2_as toolchain/prjcombine/databases/coolrunner2.zstd decoded/readback-2026/original.combine.txt decoded/readback-2026/roundtrip.jed
+tools/compare_jed original/readback-2026/pm_cpld_gold_2026.jed decoded/readback-2026/roundtrip.jed > decoded/readback-2026/roundtrip-diff.json
+tools/compare_jed original/readback-2026/pm_cpld_gold_2026.jed original/amplcpld.jed > experiments/readback-2026/previous-input-diff.json
+tools/compare_jed original/readback-2026/pm_cpld_gold_2026.jed experiments/ise-baseline/baseline.jed > experiments/readback-2026/baseline-raw-diff.json
+python3 tools/compare_config.py decoded/readback-2026/original.json experiments/ise-baseline/configuration.json > experiments/readback-2026/baseline-structural-diff.json
+python3 tools/render_decode.py decoded/readback-2026
+python3 tools/report_readback_2026.py
+
+toolchain/venv/bin/python tools/prove_readback_2026.py

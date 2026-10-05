@@ -1,0 +1,7 @@
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+directive-pt-loc-probe-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-pt-loc-probe-xst.log
+directive-pt-loc-probe-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-pt-loc-probe-ngdbuild.log
+directive-pt-loc-probe-cpldfit: exit -11, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-pt-loc-probe-cpldfit.log

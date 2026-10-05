@@ -1,0 +1,67 @@
+#!/usr/bin/env bash
+# CLI flow based on Project Combine re/xilinx/cpld/src/{v2vm6,hprep6}.rs.
+# Requires a user-provided licensed ISE installation; no hardware commands.
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+mode=${1:-baseline}
+settings=${ISE_SETTINGS:-$HOME/.local/opt/xilinx/14.7/ISE_DS/settings64.sh}
+if [[ -z "$settings" || ! -f "$settings" ]]; then
+  echo 'ISE missing: set ISE_SETTINGS=/path/to/14.7/ISE_DS/settings64.sh' >&2
+  exit 3
+fi
+set +u
+source "$settings" "$(dirname "$settings")"
+set -u
+export LD_LIBRARY_PATH="$root/toolchain/ise-compat/root/lib/x86_64-linux-gnu:$root/toolchain/ise-compat/root/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+for program in xst ngdbuild cpldfit hprep6; do command -v "$program" > /dev/null; done
+[[ "$mode" == baseline || "$mode" == recovered || "$mode" == readback-2026 ]] || { echo 'Mode must be baseline, recovered or readback-2026' >&2;exit 2; }
+golden="$root/original/amplcpld.jed"
+golden_ir="$root/decoded/previous-input/original.json"
+unused=keeper
+fit_extra=()
+if [[ "$mode" == readback-2026 ]]; then
+  golden="$root/original/readback-2026/pm_cpld_gold_2026.jed"
+  golden_ir="$root/decoded/readback-2026/original.json"
+  unused=ground
+  fit_extra=(-iostd LVCMOS33 -optimize "${ISE_FIT_OPTIMIZE:-speed}")
+  if [[ ${ISE_FIT_NOMLOPT:-1} == 1 ]]; then fit_extra+=(-nomlopt); fi
+  if [[ ${ISE_FIT_WYSIWYG:-0} == 1 ]]; then fit_extra+=(-wysiwyg); fi
+  if [[ ${ISE_FIT_INIT_HIGH:-0} == 1 ]]; then fit_extra+=(-init high); fi
+fi
+build=${CPLD_BUILD_DIR:-"$root/experiments/ise-$mode"}
+log_prefix=${CPLD_LOG_PREFIX:-$mode}
+mkdir -p "$build"
+cd "$build"
+if [[ "$mode" == baseline ]]; then
+  cp "$root/known_hdl/baseline/amplcpld.vhd" amplcpld.vhd
+  cp "$root/known_hdl/baseline/comps.vhd" comps.vhd
+  printf 'vhdl work "comps.vhd"\nvhdl work "amplcpld.vhd"\n' > design.prj
+else
+  if [[ "$mode" == readback-2026 ]]; then cp "${CPLD_SOURCE:-$root/recovered/readback-2026/amplcpld_recovered.vhd}" amplcpld.vhd
+  else cp "$root/recovered/previous-input/amplcpld_recovered.vhd" amplcpld.vhd; fi
+  printf 'vhdl work "amplcpld.vhd"\n' > design.prj
+fi
+if [[ "$mode" == baseline ]]; then cp "$root/known_hdl/baseline.ucf" design.ucf
+elif [[ "$mode" == readback-2026 ]]; then cp "${CPLD_UCF:-$root/recovered/readback-2026/amplcpld.ucf}" design.ucf
+else cp "$root/recovered/previous-input/amplcpld.ucf" design.ucf; fi
+cat > design.xst <<EOF
+run
+-ifn design.prj
+-ifmt mixed
+-ofn design
+-ofmt NGC
+-p xc2c128-7-vq100
+-top amplcpld
+-opt_mode ${ISE_XST_OPT_MODE:-Speed}
+-opt_level ${ISE_XST_OPT_LEVEL:-1}
+EOF
+python3 "$root/tools/run_logged.py" "$log_prefix-xst" xst -ifn design.xst -ofn design.syr
+python3 "$root/tools/run_logged.py" "$log_prefix-ngdbuild" ngdbuild -p xc2c128-7-vq100 -uc design.ucf design.ngc design.ngd
+python3 "$root/tools/run_logged.py" "$log_prefix-cpldfit" cpldfit -p xc2c128-7-vq100 -unused "$unused" -terminate keeper "${fit_extra[@]}" design.ngd
+python3 "$root/tools/run_logged.py" "$log_prefix-hprep6" hprep6 -i design.vm6
+test -s design.jed
+cp design.jed "$mode.jed"
+"$root/tools/compare_jed" "$golden" "$mode.jed" > raw-diff.json
+"$root/tools/decode_xc2c128" "$mode.jed" > configuration.json
+python3 "$root/tools/compare_config.py" "$golden_ir" configuration.json > structural-diff.json
+python3 "$root/tools/summarize_fit.py" "$mode" "$golden_ir" "$build"

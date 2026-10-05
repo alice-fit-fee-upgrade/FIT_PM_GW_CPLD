@@ -1,0 +1,72 @@
+{
+  "name": "nested-counter-reg-tff",
+  "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 1006,
+  "canonical_difference_count": 960,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:42:08.941161+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:42:12.651165+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:42:15.386538+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "density",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:42:16.614015+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-reg-tff",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "710e8ae2257677d3371b7528d8ac59332170cc245a8b9143fed79fd7af820218"
+}

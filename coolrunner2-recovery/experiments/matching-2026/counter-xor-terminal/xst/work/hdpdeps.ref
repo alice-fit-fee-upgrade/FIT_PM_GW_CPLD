@@ -1,0 +1,8 @@
+V3 3
+FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal/amplcpld.vhd 2026/10/04.21:36:01 P.20131013
+EN work/amplcpld 1791146163 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal/amplcpld.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/amplcpld/recovered_2026 1791146164 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal/amplcpld.vhd \
+      EN work/amplcpld 1791146163

@@ -1,0 +1,37 @@
+{
+  "name": "technology-sop-xor",
+  "source_sha256": "0196f11d0e75a72a77dd3192f33322c71fb1871e4df962c40ea6bb8e81fa3d76",
+  "build_exit": 2,
+  "fit_environment": {},
+  "commands": [
+    {
+      "utc": "2026-10-04T20:44:56.510590+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:45:00.362510+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 2
+    }
+  ],
+  "source_ucf_sha256": "65010ef7c39aaef3650444f897355c84ee0967b8365a89c0593f31ba6d8026b9"
+}

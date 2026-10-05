@@ -1,0 +1,1 @@
+init-high: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/init-high.log

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "prjcombine",
+    "url": "https://github.com/prjunnamed/prjcombine.git",
+    "commit": "234343d23e737e57f2727630e19008b509d7d522",
+    "database_sha256": "7ec21d18e71d359bc09e375bac867cbf5a838870cac86dd511e905d35176b395"
+  },
+  {
+    "name": "openfpga",
+    "url": "https://github.com/azonenberg/openfpga.git",
+    "commit": "f9ae535d0372c246075d1bb05a409adaed0135e7"
+  },
+  {
+    "name": "schematic/upstream",
+    "url": "https://github.com/alice-fit-fee-upgrade/FIT_PM12_PCB.git",
+    "commit": "07cb1acb0d8c65f0ff899f4cbfd5474c3ecae7ce"
+  }
+]

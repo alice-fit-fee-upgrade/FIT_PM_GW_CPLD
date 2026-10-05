@@ -1,0 +1,534 @@
+MDF Database:  version 1.0
+MDF_INFO | amplcpld | XC2C128-7-VQ100
+MACROCELL | 5 | 15 | CLK20_N_MC
+ATTRIBUTES | 8684294 | 0
+INPUTS | 2 | CLK40  | CLK20_P
+INPUTMC | 2 | 6 | 5 | 7 | 1
+EQ | 3 | 
+   CLK20_N := CLK40 & CLK20_P
+	# !CLK40 & !CLK20_P;	// (2 pt, 2 inp)
+   CLK20_N.CLK  =  !CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 6 | 5 | CLK40_MC
+ATTRIBUTES | 2151973634 | 0
+OUTPUTMC | 12 | 7 | 1 | 5 | 15 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 5 | 0 | 11
+INPUTS | 0
+EQ | 2 | 
+   !CLK40.T := Gnd;	// (0 pt, 0 inp)
+   CLK40.CLK  =  !CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 7 | 1 | CLK20_P_MC
+ATTRIBUTES | 2151973634 | 0
+OUTPUTMC | 14 | 5 | 15 | 2 | 3 | 6 | 14 | 6 | 13 | 6 | 12 | 2 | 4 | 2 | 5 | 2 | 6 | 2 | 10 | 2 | 12 | 2 | 13 | 2 | 14 | 2 | 15 | 6 | 15
+INPUTS | 1 | CLK40
+INPUTMC | 1 | 6 | 5
+EQ | 2 | 
+   CLK20_P.T := CLK40;	// (1 pt, 1 inp)
+   CLK20_P.CLK  =  !CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 3 | DOUT<0>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 3
+INPUTS | 5 | dly<6>  | DOUT<0>  | CLK20_P  | ADC0<0>  | ADC1<0>
+INPUTMC | 3 | 1 | 9 | 2 | 3 | 7 | 1
+INPUTP | 2 | 43 | 64
+EQ | 4 | 
+   DOUT<0> := !dly<6> & DOUT<0>
+	# CLK20_P & ADC0<0> & dly<6>
+	# !CLK20_P & dly<6> & ADC1<0>;	// (3 pt, 5 inp)
+   DOUT<0>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 1 | 9 | dly<6>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 14 | 2 | 3 | 6 | 14 | 6 | 13 | 6 | 12 | 2 | 4 | 2 | 5 | 2 | 6 | 2 | 10 | 2 | 12 | 2 | 13 | 2 | 14 | 2 | 15 | 6 | 15 | 6 | 10
+INPUTS | 1 | dly<5>
+INPUTMC | 1 | 1 | 11
+EQ | 2 | 
+   dly<6> := dly<5>;	// (1 pt, 1 inp)
+   dly<6>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 1 | 11 | dly<5>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 1 | 9
+INPUTS | 1 | dly<4>
+INPUTMC | 1 | 0 | 0
+EQ | 2 | 
+   dly<5> := dly<4>;	// (1 pt, 1 inp)
+   dly<5>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 0 | dly<4>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 1 | dly<3>
+INPUTMC | 1 | 0 | 2
+EQ | 2 | 
+   dly<4> := dly<3>;	// (1 pt, 1 inp)
+   dly<4>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 2 | dly<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 1 | dly<2>
+INPUTMC | 1 | 0 | 3
+EQ | 2 | 
+   dly<3> := dly<2>;	// (1 pt, 1 inp)
+   dly<3>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 3 | dly<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 1 | dly<1>
+INPUTMC | 1 | 0 | 4
+EQ | 2 | 
+   dly<2> := dly<1>;	// (1 pt, 1 inp)
+   dly<2>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 4 | dly<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 1 | dly<0>
+INPUTMC | 1 | 0 | 11
+EQ | 2 | 
+   dly<1> := dly<0>;	// (1 pt, 1 inp)
+   dly<1>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 11 | dly<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 4 | CLK40  | cal_str  | str1  | str2
+INPUTMC | 4 | 6 | 5 | 0 | 13 | 0 | 5 | 0 | 10
+EQ | 4 | 
+   dly<0> := CLK40 & cal_str
+	# str1 & !str2
+	# !str1 & str2;	// (3 pt, 4 inp)
+   dly<0>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 13 | cal_str_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 3 | 0 | 13 | 0 | 11 | 0 | 12
+INPUTS | 10 | cal_str  | N_PZ_191  | CLK40  | c_count<0>  | c_count<1>  | c_count<2>  | c_count<3>  | c_count<4>  | c_count<5>  | c_count<6>
+INPUTMC | 10 | 0 | 13 | 1 | 6 | 6 | 5 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 9 | 0 | 8 | 0 | 6
+EQ | 5 | 
+   !cal_str := !cal_str & !N_PZ_191
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & c_count<4> & c_count<5> & 
+	c_count<6>;	// (2 pt, 10 inp)
+   cal_str.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 1 | c_count<0>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | CLK40  | c_count<0>  | N_PZ_191  | c_count<1>  | c_count<2>  | c_count<3>  | c_count<4>  | c_count<5>  | c_count<6>
+INPUTMC | 9 | 6 | 5 | 0 | 1 | 1 | 6 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 9 | 0 | 8 | 0 | 6
+EQ | 5 | 
+   c_count<0> := CLK40 & !c_count<0> & !N_PZ_191
+	# !CLK40 & c_count<0> & !N_PZ_191
+	# c_count<0> & !N_PZ_191 & c_count<1> & c_count<2> & 
+	c_count<3> & c_count<4> & c_count<5> & c_count<6>;	// (3 pt, 9 inp)
+   c_count<0>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 1 | 6 | N_PZ_191_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 8 | 0 | 7 | 0 | 9 | 0 | 6 | 0 | 8 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13
+INPUTS | 2 | evnt_i<1>  | evnt_i<2>
+INPUTMC | 2 | 1 | 8 | 1 | 7
+EQ | 1 | 
+   N_PZ_191 = evnt_i<1> & !evnt_i<2>;	// (1 pt, 2 inp)
+
+MACROCELL | 1 | 8 | evnt_i<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 2 | 1 | 7 | 1 | 6
+INPUTS | 1 | evnt_i<0>
+INPUTMC | 1 | 5 | 3
+EQ | 2 | 
+   evnt_i<1> := evnt_i<0>;	// (1 pt, 1 inp)
+   evnt_i<1>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 5 | 3 | evnt_i<0>_MC
+ATTRIBUTES | 2155905024 | 4
+OUTPUTMC | 1 | 1 | 8
+INPUTS | 0 
+EQ | 4 | 
+   
+// Direct Input Register
+evnt_i<0> := EV;	// (0 pt, 0 inp)
+   evnt_i<0>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 1 | 7 | evnt_i<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 1 | evnt_i<1>
+INPUTMC | 1 | 1 | 8
+EQ | 2 | 
+   evnt_i<2> := evnt_i<1>;	// (1 pt, 1 inp)
+   evnt_i<2>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 15 | c_count<1>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | CLK40  | N_PZ_191  | c_count<1>  | c_count<0>  | c_count<2>  | c_count<3>  | c_count<4>  | c_count<5>  | c_count<6>
+INPUTMC | 9 | 6 | 5 | 1 | 6 | 0 | 15 | 0 | 1 | 0 | 14 | 0 | 7 | 0 | 9 | 0 | 8 | 0 | 6
+EQ | 6 | 
+   c_count<1> := !CLK40 & !N_PZ_191 & c_count<1>
+	# CLK40 & c_count<0> & !N_PZ_191 & !c_count<1>
+	# CLK40 & !c_count<0> & !N_PZ_191 & c_count<1>
+	# c_count<0> & !N_PZ_191 & c_count<1> & c_count<2> & 
+	c_count<3> & c_count<4> & c_count<5> & c_count<6>;	// (4 pt, 9 inp)
+   c_count<1>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 14 | c_count<2>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | CLK40  | N_PZ_191  | c_count<2>  | c_count<0>  | c_count<1>  | c_count<3>  | c_count<4>  | c_count<5>  | c_count<6>
+INPUTMC | 9 | 6 | 5 | 1 | 6 | 0 | 14 | 0 | 1 | 0 | 15 | 0 | 7 | 0 | 9 | 0 | 8 | 0 | 6
+EQ | 8 | 
+   c_count<2> := !CLK40 & !N_PZ_191 & c_count<2>
+	# !c_count<0> & !N_PZ_191 & c_count<2>
+	# !N_PZ_191 & !c_count<1> & c_count<2>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	!c_count<2>
+	# !N_PZ_191 & c_count<2> & c_count<3> & c_count<4> & 
+	c_count<5> & c_count<6>;	// (5 pt, 9 inp)
+   c_count<2>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 7 | c_count<3>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 0 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | N_PZ_191  | c_count<3>  | CLK40  | c_count<0>  | c_count<1>  | c_count<2>  | c_count<4>  | c_count<5>  | c_count<6>
+INPUTMC | 9 | 1 | 6 | 0 | 7 | 6 | 5 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 9 | 0 | 8 | 0 | 6
+EQ | 10 | 
+   c_count<3> := !N_PZ_191 & c_count<3>
+	$ CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & !c_count<3>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & !c_count<4>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & !c_count<5>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & !c_count<6>;	// (5 pt, 9 inp)
+   c_count<3>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 9 | c_count<4>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 0 | 9 | 0 | 6 | 0 | 8 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | N_PZ_191  | c_count<4>  | CLK40  | c_count<0>  | c_count<1>  | c_count<2>  | c_count<3>  | c_count<5>  | c_count<6>
+INPUTMC | 9 | 1 | 6 | 0 | 9 | 6 | 5 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 8 | 0 | 6
+EQ | 8 | 
+   c_count<4> := !N_PZ_191 & c_count<4>
+	$ CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & !c_count<4>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & c_count<4> & !c_count<5>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & c_count<4> & !c_count<6>;	// (4 pt, 9 inp)
+   c_count<4>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 8 | c_count<5>_MC
+ATTRIBUTES | 2151711488 | 0
+OUTPUTMC | 9 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | N_PZ_191  | c_count<5>  | CLK40  | c_count<0>  | c_count<1>  | c_count<2>  | c_count<3>  | c_count<4>  | c_count<6>
+INPUTMC | 9 | 1 | 6 | 0 | 8 | 6 | 5 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 9 | 0 | 6
+EQ | 6 | 
+   c_count<5>.T := N_PZ_191 & c_count<5>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & c_count<4> & !c_count<5>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & c_count<4> & !c_count<6>;	// (3 pt, 9 inp)
+   c_count<5>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 6 | c_count<6>_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 9 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 12
+INPUTS | 9 | N_PZ_191  | c_count<6>  | CLK40  | c_count<0>  | c_count<1>  | c_count<2>  | c_count<3>  | c_count<4>  | c_count<5>
+INPUTMC | 9 | 1 | 6 | 0 | 6 | 6 | 5 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 9 | 0 | 8
+EQ | 5 | 
+   c_count<6> := !N_PZ_191 & c_count<6>
+	# CLK40 & c_count<0> & !N_PZ_191 & c_count<1> & 
+	c_count<2> & c_count<3> & c_count<4> & c_count<5> & 
+	!c_count<6>;	// (2 pt, 9 inp)
+   c_count<6>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 5 | str1_MC
+ATTRIBUTES | 2155905856 | 0
+OUTPUTMC | 2 | 0 | 10 | 0 | 11
+INPUTS | 2 | str_div  | CLK40
+INPUTMC | 2 | 5 | 0 | 6 | 5
+EQ | 3 | 
+   str1 := str_div;	// (1 pt, 1 inp)
+   str1.CLK  =  !CLK80;	// GCK	(0 pt, 0 inp)
+    str1.CE = !CLK40;	// (1 pt, 1 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 5 | 0 | str_div_MC
+ATTRIBUTES | 2285895680 | 4
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 0 
+LCT | 1 | 2 | Internal_Name
+EQ | 4 | 
+   
+// Direct Input Register
+str_div.T := ENA;	// (0 pt, 0 inp)
+    str_div.CLK = !(STR);	// CTC	(1 pt, 1 inp)
+
+MACROCELL | 0 | 10 | str2_MC
+ATTRIBUTES | 2155905792 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 1 | str1
+INPUTMC | 1 | 0 | 5
+EQ | 2 | 
+   str2 := str1;	// (1 pt, 1 inp)
+   str2.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 6 | 14 | DOUT<10>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 6 | 14
+INPUTS | 5 | dly<6>  | DOUT<10>  | CLK20_P  | ADC0<10>  | ADC1<10>
+INPUTMC | 3 | 1 | 9 | 6 | 14 | 7 | 1
+INPUTP | 2 | 24 | 45
+EQ | 4 | 
+   DOUT<10> := !dly<6> & DOUT<10>
+	# CLK20_P & dly<6> & ADC0<10>
+	# !CLK20_P & dly<6> & ADC1<10>;	// (3 pt, 5 inp)
+   DOUT<10>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 6 | 13 | DOUT<11>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 6 | 13
+INPUTS | 5 | dly<6>  | DOUT<11>  | CLK20_P  | ADC0<11>  | ADC1<11>
+INPUTMC | 3 | 1 | 9 | 6 | 13 | 7 | 1
+INPUTP | 2 | 23 | 44
+EQ | 4 | 
+   DOUT<11> := !dly<6> & DOUT<11>
+	# CLK20_P & dly<6> & ADC0<11>
+	# !CLK20_P & dly<6> & ADC1<11>;	// (3 pt, 5 inp)
+   DOUT<11>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 6 | 12 | DOUT<12>_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 2 | CLK20_P  | dly<6>
+INPUTMC | 2 | 7 | 1 | 1 | 9
+EQ | 3 | 
+   DOUT<12> := !CLK20_P;	// (1 pt, 1 inp)
+   DOUT<12>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+    DOUT<12>.CE = dly<6>;	// (1 pt, 1 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 4 | DOUT<1>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 5 | dly<6>  | DOUT<1>  | CLK20_P  | ADC0<1>  | ADC1<1>
+INPUTMC | 3 | 1 | 9 | 2 | 4 | 7 | 1
+INPUTP | 2 | 42 | 61
+EQ | 4 | 
+   DOUT<1> := !dly<6> & DOUT<1>
+	# CLK20_P & dly<6> & ADC0<1>
+	# !CLK20_P & dly<6> & ADC1<1>;	// (3 pt, 5 inp)
+   DOUT<1>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 5 | DOUT<2>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 5
+INPUTS | 5 | dly<6>  | DOUT<2>  | CLK20_P  | ADC0<2>  | ADC1<2>
+INPUTMC | 3 | 1 | 9 | 2 | 5 | 7 | 1
+INPUTP | 2 | 41 | 59
+EQ | 4 | 
+   DOUT<2> := !dly<6> & DOUT<2>
+	# CLK20_P & dly<6> & ADC0<2>
+	# !CLK20_P & dly<6> & ADC1<2>;	// (3 pt, 5 inp)
+   DOUT<2>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 6 | DOUT<3>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 6
+INPUTS | 5 | dly<6>  | DOUT<3>  | CLK20_P  | ADC0<3>  | ADC1<3>
+INPUTMC | 3 | 1 | 9 | 2 | 6 | 7 | 1
+INPUTP | 2 | 40 | 55
+EQ | 4 | 
+   DOUT<3> := !dly<6> & DOUT<3>
+	# CLK20_P & dly<6> & ADC0<3>
+	# !CLK20_P & dly<6> & ADC1<3>;	// (3 pt, 5 inp)
+   DOUT<3>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 10 | DOUT<4>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 10
+INPUTS | 5 | dly<6>  | DOUT<4>  | CLK20_P  | ADC0<4>  | ADC1<4>
+INPUTMC | 3 | 1 | 9 | 2 | 10 | 7 | 1
+INPUTP | 2 | 38 | 52
+EQ | 4 | 
+   DOUT<4> := !dly<6> & DOUT<4>
+	# CLK20_P & dly<6> & ADC0<4>
+	# !CLK20_P & dly<6> & ADC1<4>;	// (3 pt, 5 inp)
+   DOUT<4>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 12 | DOUT<5>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 12
+INPUTS | 5 | dly<6>  | DOUT<5>  | CLK20_P  | ADC0<5>  | ADC1<5>
+INPUTMC | 3 | 1 | 9 | 2 | 12 | 7 | 1
+INPUTP | 2 | 37 | 51
+EQ | 4 | 
+   DOUT<5> := !dly<6> & DOUT<5>
+	# CLK20_P & dly<6> & ADC0<5>
+	# !CLK20_P & dly<6> & ADC1<5>;	// (3 pt, 5 inp)
+   DOUT<5>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 13 | DOUT<6>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 13
+INPUTS | 5 | dly<6>  | DOUT<6>  | CLK20_P  | ADC0<6>  | ADC1<6>
+INPUTMC | 3 | 1 | 9 | 2 | 13 | 7 | 1
+INPUTP | 2 | 34 | 50
+EQ | 4 | 
+   DOUT<6> := !dly<6> & DOUT<6>
+	# CLK20_P & dly<6> & ADC0<6>
+	# !CLK20_P & dly<6> & ADC1<6>;	// (3 pt, 5 inp)
+   DOUT<6>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 14 | DOUT<7>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 14
+INPUTS | 5 | dly<6>  | DOUT<7>  | CLK20_P  | ADC0<7>  | ADC1<7>
+INPUTMC | 3 | 1 | 9 | 2 | 14 | 7 | 1
+INPUTP | 2 | 29 | 49
+EQ | 4 | 
+   DOUT<7> := !dly<6> & DOUT<7>
+	# CLK20_P & dly<6> & ADC0<7>
+	# !CLK20_P & dly<6> & ADC1<7>;	// (3 pt, 5 inp)
+   DOUT<7>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 2 | 15 | DOUT<8>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 5 | dly<6>  | DOUT<8>  | CLK20_P  | ADC0<8>  | ADC1<8>
+INPUTMC | 3 | 1 | 9 | 2 | 15 | 7 | 1
+INPUTP | 2 | 30 | 48
+EQ | 4 | 
+   DOUT<8> := !dly<6> & DOUT<8>
+	# CLK20_P & dly<6> & ADC0<8>
+	# !CLK20_P & dly<6> & ADC1<8>;	// (3 pt, 5 inp)
+   DOUT<8>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 6 | 15 | DOUT<9>_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 1 | 6 | 15
+INPUTS | 5 | dly<6>  | DOUT<9>  | CLK20_P  | ADC0<9>  | ADC1<9>
+INPUTMC | 3 | 1 | 9 | 6 | 15 | 7 | 1
+INPUTP | 2 | 28 | 47
+EQ | 4 | 
+   DOUT<9> := !dly<6> & DOUT<9>
+	# CLK20_P & dly<6> & ADC0<9>
+	# !CLK20_P & dly<6> & ADC1<9>;	// (3 pt, 5 inp)
+   DOUT<9>.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 6 | 10 | DV_MC
+ATTRIBUTES | 8684290 | 0
+INPUTS | 1 | dly<6>
+INPUTMC | 1 | 1 | 9
+EQ | 2 | 
+   DV := dly<6>;	// (1 pt, 1 inp)
+   DV.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 1 | 3 | EV_out_MC
+ATTRIBUTES | 8684354 | 0
+INPUTS | 2 | EV  | EVOUT__or0000
+INPUTMC | 1 | 0 | 12
+INPUTP | 1 | 76
+EQ | 3 | 
+   EV_out := EV;	// (1 pt, 1 inp)
+   EV_out.CLK  =  CLK80;	// GCK	(0 pt, 0 inp)
+    EV_out.CE = EVOUT__or0000;	// (1 pt, 1 inp)
+GLOBALS | 1 | 2 | CLK80
+
+MACROCELL | 0 | 12 | EVOUT__or0000_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 1 | 1 | 3
+INPUTS | 9 | EV  | cal_str  | c_count<0>  | c_count<1>  | c_count<2>  | c_count<3>  | c_count<4>  | c_count<5>  | c_count<6>
+INPUTMC | 8 | 0 | 13 | 0 | 1 | 0 | 15 | 0 | 14 | 0 | 7 | 0 | 9 | 0 | 8 | 0 | 6
+INPUTP | 1 | 76
+EQ | 3 | 
+   EVOUT__or0000 = !EV
+	# cal_str & c_count<0> & c_count<1> & c_count<2> & 
+	c_count<3> & c_count<4> & c_count<5> & c_count<6>;	// (2 pt, 9 inp)
+
+PIN | ADC0<0> | 64 | 16 | LVCMOS18 | 43 | 1 | 2 | 3
+PIN | ADC0<10> | 64 | 16 | LVCMOS18 | 24 | 1 | 6 | 14
+PIN | ADC0<11> | 64 | 16 | LVCMOS18 | 23 | 1 | 6 | 13
+PIN | ADC0<1> | 64 | 16 | LVCMOS18 | 42 | 1 | 2 | 4
+PIN | ADC0<2> | 64 | 16 | LVCMOS18 | 41 | 1 | 2 | 5
+PIN | ADC0<3> | 64 | 16 | LVCMOS18 | 40 | 1 | 2 | 6
+PIN | ADC0<4> | 64 | 16 | LVCMOS18 | 38 | 1 | 2 | 10
+PIN | ADC0<5> | 64 | 16 | LVCMOS18 | 37 | 1 | 2 | 12
+PIN | ADC0<6> | 64 | 16 | LVCMOS18 | 34 | 1 | 2 | 13
+PIN | ADC0<7> | 64 | 16 | LVCMOS18 | 29 | 1 | 2 | 14
+PIN | ADC0<8> | 64 | 16 | LVCMOS18 | 30 | 1 | 2 | 15
+PIN | ADC0<9> | 64 | 16 | LVCMOS18 | 28 | 1 | 6 | 15
+PIN | ADC1<0> | 64 | 16 | LVCMOS18 | 64 | 1 | 2 | 3
+PIN | ADC1<10> | 64 | 16 | LVCMOS18 | 45 | 1 | 6 | 14
+PIN | ADC1<11> | 64 | 16 | LVCMOS18 | 44 | 1 | 6 | 13
+PIN | ADC1<1> | 64 | 16 | LVCMOS18 | 61 | 1 | 2 | 4
+PIN | ADC1<2> | 64 | 16 | LVCMOS18 | 59 | 1 | 2 | 5
+PIN | ADC1<3> | 64 | 16 | LVCMOS18 | 55 | 1 | 2 | 6
+PIN | ADC1<4> | 64 | 16 | LVCMOS18 | 52 | 1 | 2 | 10
+PIN | ADC1<5> | 64 | 16 | LVCMOS18 | 51 | 1 | 2 | 12
+PIN | ADC1<6> | 64 | 16 | LVCMOS18 | 50 | 1 | 2 | 13
+PIN | ADC1<7> | 64 | 16 | LVCMOS18 | 49 | 1 | 2 | 14
+PIN | ADC1<8> | 64 | 16 | LVCMOS18 | 48 | 1 | 2 | 15
+PIN | ADC1<9> | 64 | 16 | LVCMOS18 | 47 | 1 | 6 | 15
+PIN | CLK80 | 16384 | 16 | LVCMOS18 | 33 | 38 | 6 | 5 | 7 | 1 | 5 | 15 | 5 | 3 | 1 | 8 | 1 | 7 | 0 | 6 | 0 | 8 | 0 | 9 | 0 | 7 | 0 | 14 | 0 | 15 | 0 | 1 | 0 | 13 | 0 | 5 | 0 | 10 | 0 | 11 | 0 | 4 | 0 | 3 | 0 | 2 | 0 | 0 | 1 | 11 | 1 | 9 | 2 | 3 | 6 | 14 | 6 | 13 | 6 | 12 | 2 | 4 | 2 | 5 | 2 | 6 | 2 | 10 | 2 | 12 | 2 | 13 | 2 | 14 | 2 | 15 | 6 | 15 | 6 | 10 | 1 | 3
+PIN | STR | 64 | 16 | LVCMOS18 | 80 | 0
+PIN | EV | 64 | 16 | LVCMOS18 | 76 | 3 | 1 | 3 | 0 | 12 | 5 | 3
+PIN | ENA | 64 | 16 | LVCMOS18 | 81 | 1 | 5 | 0
+PIN | CLK20_N | 536871040 | 0 | LVCMOS18 | 67
+PIN | CLK20_P | 536871040 | 0 | LVCMOS18 | 65
+PIN | CLK40 | 536871040 | 0 | LVCMOS18 | 104
+PIN | DOUT<0> | 536871040 | 0 | LVCMOS18 | 125
+PIN | DOUT<10> | 536871040 | 0 | LVCMOS18 | 112
+PIN | DOUT<11> | 536871040 | 0 | LVCMOS18 | 111
+PIN | DOUT<12> | 536871040 | 0 | LVCMOS18 | 110
+PIN | DOUT<1> | 536871040 | 0 | LVCMOS18 | 123
+PIN | DOUT<2> | 536871040 | 0 | LVCMOS18 | 122
+PIN | DOUT<3> | 536871040 | 0 | LVCMOS18 | 121
+PIN | DOUT<4> | 536871040 | 0 | LVCMOS18 | 120
+PIN | DOUT<5> | 536871040 | 0 | LVCMOS18 | 118
+PIN | DOUT<6> | 536871040 | 0 | LVCMOS18 | 117
+PIN | DOUT<7> | 536871040 | 0 | LVCMOS18 | 116
+PIN | DOUT<8> | 536871040 | 0 | LVCMOS18 | 115
+PIN | DOUT<9> | 536871040 | 0 | LVCMOS18 | 114
+PIN | DV | 536871040 | 0 | LVCMOS18 | 106
+PIN | EV_out | 536871040 | 0 | LVCMOS18 | 21

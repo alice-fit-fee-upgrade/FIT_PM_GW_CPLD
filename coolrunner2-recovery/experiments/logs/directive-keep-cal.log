@@ -1,0 +1,9 @@
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+directive-keep-cal-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-keep-cal-xst.log
+directive-keep-cal-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-keep-cal-ngdbuild.log
+directive-keep-cal-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-keep-cal-cpldfit.log
+directive-keep-cal-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/directive-keep-cal-hprep6.log
+readback-2026: raw=346, canonical=471; reports/readback-2026_structural_diff.md

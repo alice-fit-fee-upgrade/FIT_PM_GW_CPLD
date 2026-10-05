@@ -1,0 +1,74 @@
+{
+  "name": "xst-area-level1",
+  "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_XST_OPT_MODE": "Area"
+  },
+  "proof_exit": 0,
+  "raw_distance": 966,
+  "canonical_difference_count": 957,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:41:38.662790+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:42.317919+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:45.038561+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "density",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:46.321809+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/xst-area-level1",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+}

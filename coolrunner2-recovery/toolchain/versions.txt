@@ -1,0 +1,13 @@
+rustc 1.99.0 (b940084d7 2026-09-28)
+cargo 1.99.0 (5f94df478 2026-08-27)
+GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]
+ Compiled with GNAT Version: 13.3.0
+ static elaboration, mcode JIT code generator
+Written by Tristan Gingold.
+
+Copyright (C) 2003 - 2024 Tristan Gingold.
+GHDL is free software, covered by the GNU General Public License.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+4330d1535e2102aac3efcefdc71fff653d2290bb8f0a0b6fb2d6d7ade1dfcd17  toolchain/ghdl-common_4.1.0+dfsg-0ubuntu2.1_amd64.deb
+12f4d8a400f5178700320a707c3977eb9812f13e494712eba93cb09ccbd3e87c  toolchain/ghdl-mcode_4.1.0+dfsg-0ubuntu2.1_amd64.deb
+883852c57f5e290bd4f34c3a7c3f2a42bf0f5f833f3d3199a521595710f446c0  toolchain/libgnat-13_13.3.0-6ubuntu2~24.04.1_amd64.deb

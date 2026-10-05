@@ -1,0 +1,72 @@
+{
+  "name": "directive-counter-maxpt",
+  "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 346,
+  "canonical_difference_count": 471,
+  "commands": [
+    {
+      "utc": "2026-10-05T06:37:25.239114+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/directive-counter-maxpt-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:37:29.020975+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/directive-counter-maxpt-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:37:31.793673+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/directive-counter-maxpt-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:37:33.079980+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-counter-maxpt",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/directive-counter-maxpt-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "80d9c36054dd51db01e8f4a64344077693bb5e411c033d741f6ab77d4ca8f64b"
+}

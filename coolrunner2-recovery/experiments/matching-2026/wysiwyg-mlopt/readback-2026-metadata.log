@@ -1,0 +1,20 @@
+{
+  "sha256": "1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95",
+  "qf": 55341,
+  "default": 0,
+  "covered_fuses": 55341,
+  "fuse_checksum": 44119,
+  "declared_checksum": 44119,
+  "checksum_valid": true,
+  "transmission_checksum": 59515,
+  "transmission_calculated": 59515,
+  "records": [
+    "QF55341",
+    "QP0",
+    "F0",
+    "X0",
+    "N DEVICE xc2c128-XXXXX",
+    "CAC57"
+  ],
+  "header": "JEDEC Programming File for /home/ise/Desktop/bits/pm_cpld_gold_2026.jed\nDate: Fri Jul 10 10:09:57 2026\n\n"
+}

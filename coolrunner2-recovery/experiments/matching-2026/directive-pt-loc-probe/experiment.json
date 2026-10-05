@@ -1,0 +1,58 @@
+{
+  "name": "directive-pt-loc-probe",
+  "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+  "build_exit": 245,
+  "fit_environment": {},
+  "commands": [
+    {
+      "utc": "2026-10-05T06:36:58.019911+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-pt-loc-probe",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/directive-pt-loc-probe-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:37:01.751423+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-pt-loc-probe",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/directive-pt-loc-probe-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:37:04.443750+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-pt-loc-probe",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/directive-pt-loc-probe-cpldfit.log",
+      "exit_code": -11
+    }
+  ],
+  "source_ucf_sha256": "42fdbd471609bdad90da1bf1fb877c38da9dce3a38e3d7f6972dfe3e463fb1f4"
+}

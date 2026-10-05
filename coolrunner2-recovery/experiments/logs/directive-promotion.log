@@ -1,0 +1,23 @@
+toolchain/venv/bin/python tools/verify_readback_2026.py > tests/readback-2026/transition-proof.log
+python3 tools/render_decode.py decoded/readback-2026
+python3 tools/gen_vectors.py --readback-2026 > tests/readback-2026/vector-generation.log
+mkdir -p experiments/ghdl-readback-2026
+cd experiments/ghdl-readback-2026 && python3 ../../tools/run_logged.py new-ghdl-analyze ../../tools/ghdl -a --std=08 ../../recovered/readback-2026/amplcpld_recovered.vhd ../../tests/recovered_tb.vhd
+new-ghdl-analyze: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/new-ghdl-analyze.log
+cd experiments/ghdl-readback-2026 && python3 ../../tools/run_logged.py new-ghdl-elaborate ../../tools/ghdl -e --std=08 recovered_tb
+new-ghdl-elaborate: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/new-ghdl-elaborate.log
+cd experiments/ghdl-readback-2026 && python3 ../../tools/run_logged.py new-ghdl-run ../../tools/ghdl -r --std=08 recovered_tb -gvector_path=../../tests/readback-2026/vectors.txt --assert-level=error
+new-ghdl-run: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/new-ghdl-run.log
+cp experiments/logs/new-ghdl-run.log tests/readback-2026/ghdl-equivalence.log
+tools/build_ise readback-2026
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+readback-2026-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/readback-2026-xst.log
+readback-2026-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/readback-2026-ngdbuild.log
+readback-2026-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/readback-2026-cpldfit.log
+readback-2026-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/readback-2026-hprep6.log
+readback-2026: raw=346, canonical=471; reports/readback-2026_structural_diff.md
+CPLD_PROOF_IR="/home/codex-hil/coolrunner2-recovery/experiments/ise-readback-2026/configuration.json" CPLD_PROOF_JED="/home/codex-hil/coolrunner2-recovery/experiments/ise-readback-2026/readback-2026.jed" CPLD_PROOF_BUILD="/home/codex-hil/coolrunner2-recovery/experiments/ise-readback-2026" toolchain/venv/bin/python tools/verify_readback_2026.py > tests/readback-2026/fit-transition-proof.log
+cp experiments/ise-readback-2026/transition-proof.json tests/readback-2026/fit-transition-proof.json

@@ -1,0 +1,9 @@
+run
+-ifn design.prj
+-ifmt mixed
+-ofn design
+-ofmt NGC
+-p xc2c128-7-vq100
+-top amplcpld
+-opt_mode Area
+-opt_level 2

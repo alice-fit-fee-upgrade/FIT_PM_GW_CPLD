@@ -1,0 +1,13 @@
+tools/build_ise baseline
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+baseline-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-xst.log
+baseline-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-ngdbuild.log
+baseline-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-cpldfit.log
+baseline-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-hprep6.log
+baseline: raw=0, canonical=0; reports/baseline_structural_diff.md
+python3 tools/write_reports.py
+python3 tools/run_logged.py readback-2026-analysis tools/analyze_readback_2026
+readback-2026-analysis: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/readback-2026-analysis.log

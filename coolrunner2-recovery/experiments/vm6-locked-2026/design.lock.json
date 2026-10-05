@@ -1,0 +1,17 @@
+{
+  "kind": "post-fit VM6 implementation lock",
+  "native_fitter_bit_identity": false,
+  "changed_blocks": [
+    {
+      "fb": 1,
+      "explicit_rows": 56
+    },
+    {
+      "fb": 2,
+      "explicit_rows": 24
+    }
+  ],
+  "counter9_cover_equivalence": "UNSAT",
+  "template": "recovered/amplcpld.ptlock.json",
+  "input_vm6": "experiments/ise-readback-2026/design.vm6"
+}

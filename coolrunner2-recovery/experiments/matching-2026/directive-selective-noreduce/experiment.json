@@ -1,0 +1,72 @@
+{
+  "name": "directive-selective-noreduce",
+  "source_sha256": "7de4ac9ea465a535def6e849bc6b33b1b34d18f516f7fc8307a4669044f72aca",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 822,
+  "canonical_difference_count": 890,
+  "commands": [
+    {
+      "utc": "2026-10-05T06:35:46.617140+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/directive-selective-noreduce-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:35:50.408897+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/directive-selective-noreduce-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:35:53.135152+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/directive-selective-noreduce-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-05T06:35:54.390099+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-selective-noreduce",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/directive-selective-noreduce-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "eac38229f413babeee4afea84afdc94eed4841adbfa8bcc83ada3947d73330c0"
+}

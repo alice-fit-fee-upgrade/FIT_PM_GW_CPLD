@@ -1,0 +1,74 @@
+{
+  "name": "speed-nested-tff-retry",
+  "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 0,
+  "raw_distance": 424,
+  "canonical_difference_count": 528,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:55:50.176386+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/speed-nested-tff-retry-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:53.878527+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-nested-tff-retry-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:56.613587+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-nested-tff-retry-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:57.849723+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-nested-tff-retry",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/speed-nested-tff-retry-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "710e8ae2257677d3371b7528d8ac59332170cc245a8b9143fed79fd7af820218"
+}
