@@ -1,0 +1,25 @@
+bash tools/bootstrap
+info: syncing channel updates for 1.99.0-x86_64-unknown-linux-gnu
+info: latest update on 2026-10-01 for version 1.99.0 (b940084d7 2026-09-28)
+info: downloading 3 components
+
+  1.99.0-x86_64-unknown-linux-gnu installed - rustc 1.99.0 (b940084d7 2026-09-28)
+
+info: checking for self-update (current version: 1.29.1)
+xc2bit-build: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/xc2bit-build.log
+prjcombine-build: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/prjcombine-build.log
+Requirement already satisfied: mpmath==1.3.0 in ./toolchain/venv/lib/python3.12/site-packages (from -r toolchain/requirements.lock (line 1)) (1.3.0)
+Requirement already satisfied: sympy==1.14.0 in ./toolchain/venv/lib/python3.12/site-packages (from -r toolchain/requirements.lock (line 2)) (1.14.0)
+Requirement already satisfied: z3-solver==5.1.0.0 in ./toolchain/venv/lib/python3.12/site-packages (from -r toolchain/requirements.lock (line 3)) (5.1.0.0)
+toolchain/ghdl-common_4.1.0+dfsg-0ubuntu2.1_amd64.deb: OK
+toolchain/ghdl-mcode_4.1.0+dfsg-0ubuntu2.1_amd64.deb: OK
+toolchain/libgnat-13_13.3.0-6ubuntu2~24.04.1_amd64.deb: OK
+GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]
+ Compiled with GNAT Version: 13.3.0
+ static elaboration, mcode JIT code generator
+Written by Tristan Gingold.
+
+Copyright (C) 2003 - 2024 Tristan Gingold.
+GHDL is free software, covered by the GNU General Public License.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Bootstrap complete. Run make reproduce. ISE is supplied separately.

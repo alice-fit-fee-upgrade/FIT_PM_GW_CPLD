@@ -1,0 +1,8 @@
+V3 3
+FL /home/codex-hil/coolrunner2-recovery/experiments/ise-readback-2026/amplcpld.vhd 2026/10/04.21:15:15 P.20131013
+EN work/amplcpld 1791144917 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-readback-2026/amplcpld.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/amplcpld/recovered_2026 1791144918 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-readback-2026/amplcpld.vhd \
+      EN work/amplcpld 1791144917

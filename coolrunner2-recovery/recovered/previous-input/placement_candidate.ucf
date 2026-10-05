@@ -1,0 +1,23 @@
+# Candidate ISE CPLD LOC constraints; unvalidated without ISE.
+# NET constraints require preserved synthesis net names; check fitter warnings.
+NET "dly<4>" LOC = "FB1_1"; # C0B0MC0
+NET "c_count<0>" LOC = "FB1_2"; # C0B0MC1
+NET "str2" LOC = "FB1_11"; # C0B0MC10
+NET "dly<0>" LOC = "FB1_12"; # C0B0MC11
+NET "cal_str" LOC = "FB1_14"; # C0B0MC13
+NET "c_count<2>" LOC = "FB1_15"; # C0B0MC14
+NET "c_count<1>" LOC = "FB1_16"; # C0B0MC15
+NET "dly<3>" LOC = "FB1_3"; # C0B0MC2
+NET "dly<2>" LOC = "FB1_4"; # C0B0MC3
+NET "dly<1>" LOC = "FB1_5"; # C0B0MC4
+NET "str1" LOC = "FB1_6"; # C0B0MC5
+NET "c_count<6>" LOC = "FB1_7"; # C0B0MC6
+NET "c_count<3>" LOC = "FB1_8"; # C0B0MC7
+NET "c_count<5>" LOC = "FB1_9"; # C0B0MC8
+NET "c_count<4>" LOC = "FB1_10"; # C0B0MC9
+NET "dly<5>" LOC = "FB2_12"; # C0B1MC11
+NET "evnt_i<2>" LOC = "FB2_8"; # C0B1MC7
+NET "evnt_i<1>" LOC = "FB2_9"; # C0B1MC8
+NET "dly<6>" LOC = "FB2_10"; # C0B1MC9
+NET "str_div" LOC = "FB6_1"; # C0B5MC0
+NET "evnt_i<0>" LOC = "FB6_4"; # C0B5MC3

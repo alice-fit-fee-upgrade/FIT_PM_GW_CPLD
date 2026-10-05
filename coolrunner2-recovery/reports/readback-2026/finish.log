@@ -1,0 +1,15 @@
+{
+  "active_golden": "original/readback-2026/pm_cpld_gold_2026.jed",
+  "sha256": "1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95",
+  "historical_baseline_raw_distance": 1412,
+  "recovered_raw_distance": 346,
+  "canonical_difference_count": 471,
+  "golden_transition_SAT_count": 49,
+  "fitted_transition_SAT_count": 49,
+  "vhdl_vectors": 67430,
+  "functional_boolean_model_equivalence_verified": true,
+  "vhdl_bit_identity_verified": false,
+  "timing_equivalence_verified": false,
+  "hardware_programmed": false,
+  "physical_security_verified": false
+}

@@ -1,0 +1,1565 @@
+assert111.........
+name = ddddddd..
+assert333.........
+NDEBUG is defined
+__STDC__ is defined
+__MSVC__ is NOT defined
+XPLA_BORLANDC is NOT defined
+
+---------------------
+|  D E F A U L T S  |
+---------------------
+max_pt=36, min_pt=3
+max_fi=32, min_fi=4
+
+-----------------
+|  H E A D E R  |
+-----------------
+#$ MODULE amplcpld
+#$ PINS 6 "CLK80":27 "STR":63 "ENA":64 "CLK40":81 "DOUT<0>":99 "DOUT<10>":87 
+#$ PINS 5 "DOUT<11>":86 "DOUT<12>":85 "CLK20_P":53 "DOUT<1>":97 "DOUT<2>":96 
+#$ PINS 5 "DOUT<3>":95 "DOUT<4>":94 "DOUT<5>":93 "DOUT<6>":92 "DOUT<7>":91 
+#$ PINS 5 "DOUT<8>":90 "DOUT<9>":89 "ADC0<0>":35 "ADC1<0>":52 "ADC0<10>":19 
+#$ PINS 4 "ADC1<10>":37 "ADC0<11>":18 "ADC1<11>":36 "ADC0<1>":34 
+#$ PINS 5 "ADC1<1>":50 "ADC0<2>":33 "ADC1<2>":49 "ADC0<3>":32 "ADC1<3>":46 
+#$ PINS 5 "ADC0<4>":30 "ADC1<4>":44 "ADC0<5>":29 "ADC1<5>":43 "ADC0<6>":28 
+#$ PINS 5 "ADC1<6>":42 "ADC0<7>":23 "ADC1<7>":41 "ADC0<8>":24 "ADC1<8>":40 
+#$ PINS 6 "ADC0<9>":22 "ADC1<9>":39 "CLK20_N":54 "DV":82 "EV_out":16 "EV":60 
+#$ NODES 3 "c_count<1>":FB1_10 "c_count<2>":FB1_9 "c_count<3>":FB1_11 
+#$ NODES 3 "c_count<4>":FB1_12 "c_count<5>":FB1_13 "c_count<6>":FB1_15 
+#$ NODES 3 "c_count<7>":FB1_16 "c_count<8>":FB1_2 "c_count<0>":FB1_14 
+#$ NODES 2 "inhibit_pipe<0>":FB2_1 "inhibit_pipe<1>":FB1_5 
+#$ NODES 3 "inhibit_pipe<2>":FB2_15 "inhibit_pipe<3>":FB2_14 "str_div":FB6_1 
+#$ NODES 3 "c_count<9>":FB1_7 "cal_phase":FB1_8 "raw_stretch":FB2_7 
+#$ NODES 4 "str1":FB2_13 "cal_sample":FB2_16 "raw_edge":FB2_8 "dly<6>":FB3_12 
+#$ NODES 3 "raw_str_toggle":FB3_8 "raw_sync<1>":FB2_10 "raw_sync<2>":FB2_9 
+#$ NODES 4 "raw_sync<0>":FB2_12 "dly<0>":FB3_9 "str2":FB3_10 "dly<1>":FB2_11 
+#$ NODES 4 "dly<2>":FB2_6 "dly<3>":FB2_5 "dly<4>":FB2_3 "dly<5>":FB2_2 
+
+--------------------------------------
+|  P I N    T a b l e    [count=78]  |
+--------------------------------------
+ dly<3> ADC0<6> DOUT<11> dly<0> raw_sync<0> ADC0<3> CLK80 ADC0<0> inhibit_pipe<0> 
+ DOUT<1> inhibit_pipe<3> DOUT<4> c_count<7> ADC1<0> ADC1<3> DOUT<7> c_count<4> ADC1<11> 
+ ADC1<6> c_count<1> dly<5> ADC1<9> ADC0<8> dly<2> raw_sync<2> cal_phase DOUT<12> 
+ ADC0<11> ADC0<5> raw_edge ADC0<2> DV CLK40 str2 c_count<9> inhibit_pipe<1> DOUT<2> 
+ str1 ADC1<1> DOUT<5> c_count<6> raw_stretch ADC1<4> DOUT<8> c_count<3> ADC1<10> 
+ ADC1<7> c_count<0> dly<4> ADC0<7> DOUT<10> dly<1> raw_sync<1> ADC0<4> ADC0<10> EV_out 
+ raw_str_toggle EV STR ADC0<1> DOUT<0> inhibit_pipe<2> DOUT<3> c_count<8> CLK20_P 
+ DOUT<6> c_count<5> ADC1<2> cal_sample DOUT<9> c_count<2> CLK20_N ADC1<5> dly<6> 
+ str_div ENA ADC0<9> ADC1<8>
+
+------------------------------------------
+|  P I N    E q n l i s t    [count=46]  |
+------------------------------------------
+CLK80 (fi=0): 
+STR (fi=0): 
+ENA (fi=0): 
+CLK40 (fi=1): (CLK40.CLK/N_PZ_100, net=amplcpld) (CLK40.T/N_PZ_139, net=amplcpld) 
+DOUT<0> (fi=7): (DOUT<0>.CLK/N_PZ_58, net=amplcpld) (DOUT<0>.D/N_PZ_211, net=amplcpld) 
+DOUT<10> (fi=7): (DOUT<10>.CLK/N_PZ_61, net=amplcpld) (DOUT<10>.D/N_PZ_212, net=amplcpld) 
+DOUT<11> (fi=7): (DOUT<11>.CLK/N_PZ_64, net=amplcpld) (DOUT<11>.D/N_PZ_213, net=amplcpld) 
+DOUT<12> (fi=4): (DOUT<12>.D/N_PZ_66, net=amplcpld) (DOUT<12>.CLK/N_PZ_67, net=amplcpld) (DOUT<12>.CE/N_PZ_68, net=amplcpld) 
+CLK20_P (fi=2): (CLK20_P.CLK/N_PZ_98, net=amplcpld) (CLK20_P.T/N_PZ_152, net=amplcpld) 
+DOUT<1> (fi=7): (DOUT<1>.CLK/N_PZ_70, net=amplcpld) (DOUT<1>.D/N_PZ_214, net=amplcpld) 
+DOUT<2> (fi=7): (DOUT<2>.CLK/N_PZ_73, net=amplcpld) (DOUT<2>.D/N_PZ_215, net=amplcpld) 
+DOUT<3> (fi=7): (DOUT<3>.CLK/N_PZ_76, net=amplcpld) (DOUT<3>.D/N_PZ_216, net=amplcpld) 
+DOUT<4> (fi=7): (DOUT<4>.CLK/N_PZ_79, net=amplcpld) (DOUT<4>.D/N_PZ_217, net=amplcpld) 
+DOUT<5> (fi=7): (DOUT<5>.CLK/N_PZ_82, net=amplcpld) (DOUT<5>.D/N_PZ_218, net=amplcpld) 
+DOUT<6> (fi=7): (DOUT<6>.CLK/N_PZ_85, net=amplcpld) (DOUT<6>.D/N_PZ_219, net=amplcpld) 
+DOUT<7> (fi=7): (DOUT<7>.CLK/N_PZ_88, net=amplcpld) (DOUT<7>.D/N_PZ_220, net=amplcpld) 
+DOUT<8> (fi=7): (DOUT<8>.CLK/N_PZ_91, net=amplcpld) (DOUT<8>.D/N_PZ_221, net=amplcpld) 
+DOUT<9> (fi=7): (DOUT<9>.CLK/N_PZ_94, net=amplcpld) (DOUT<9>.D/N_PZ_222, net=amplcpld) 
+ADC0<0> (fi=0): 
+ADC1<0> (fi=0): 
+ADC0<10> (fi=0): 
+ADC1<10> (fi=0): 
+ADC0<11> (fi=0): 
+ADC1<11> (fi=0): 
+ADC0<1> (fi=0): 
+ADC1<1> (fi=0): 
+ADC0<2> (fi=0): 
+ADC1<2> (fi=0): 
+ADC0<3> (fi=0): 
+ADC1<3> (fi=0): 
+ADC0<4> (fi=0): 
+ADC1<4> (fi=0): 
+ADC0<5> (fi=0): 
+ADC1<5> (fi=0): 
+ADC0<6> (fi=0): 
+ADC1<6> (fi=0): 
+ADC0<7> (fi=0): 
+ADC1<7> (fi=0): 
+ADC0<8> (fi=0): 
+ADC1<8> (fi=0): 
+ADC0<9> (fi=0): 
+ADC1<9> (fi=0): 
+CLK20_N (fi=3): (CLK20_N.CLK/N_PZ_131, net=amplcpld) (CLK20_N.D/N_PZ_138, net=amplcpld) 
+DV (fi=3): (DV.D/N_PZ_132, net=amplcpld) (DV.CLK/N_PZ_133, net=amplcpld) 
+EV_out (fi=1): (EV_out/N_PZ_134, net=amplcpld) 
+EV (fi=0): 
+
+--------------------------------------------
+|  N O D E    E q n l i s t    [count=32]  |
+--------------------------------------------
+c_count<1> (fi=18): c_count<1>.CLK/N_PZ_4 c_count<1>.T/N_PZ_157 
+c_count<2> (fi=18): c_count<2>.CLK/N_PZ_7 c_count<2>.T/N_PZ_158 
+c_count<3> (fi=18): c_count<3>.CLK/N_PZ_10 c_count<3>.T/N_PZ_159 
+c_count<4> (fi=18): c_count<4>.CLK/N_PZ_13 c_count<4>.T/N_PZ_160 
+c_count<5> (fi=18): c_count<5>.CLK/N_PZ_16 c_count<5>.T/N_PZ_161 
+c_count<6> (fi=18): c_count<6>.CLK/N_PZ_19 c_count<6>.T/N_PZ_162 
+c_count<7> (fi=18): c_count<7>.CLK/N_PZ_22 c_count<7>.T/N_PZ_163 
+c_count<8> (fi=18): c_count<8>.CLK/N_PZ_25 c_count<8>.T/N_PZ_164 
+c_count<0> (fi=18): c_count<0>.CLK/N_PZ_1 c_count<0>.T/N_PZ_156 
+inhibit_pipe<0> (fi=3): inhibit_pipe<0>.D/N_PZ_36 inhibit_pipe<0>.CLK/N_PZ_37 inhibit_pipe<0>.CE/N_PZ_38 
+inhibit_pipe<1> (fi=3): inhibit_pipe<1>.D/N_PZ_39 inhibit_pipe<1>.CLK/N_PZ_40 inhibit_pipe<1>.CE/N_PZ_41 
+inhibit_pipe<2> (fi=3): inhibit_pipe<2>.D/N_PZ_42 inhibit_pipe<2>.CLK/N_PZ_43 inhibit_pipe<2>.CE/N_PZ_44 
+inhibit_pipe<3> (fi=3): inhibit_pipe<3>.D/N_PZ_51 inhibit_pipe<3>.CLK/N_PZ_52 inhibit_pipe<3>.CE/N_PZ_53 
+str_div (fi=2): str_div.CLK/N_PZ_28 str_div.T/N_PZ_165 
+c_count<9> (fi=18): c_count<9>.CLK/N_PZ_31 c_count<9>.T/N_PZ_166 
+cal_phase (fi=18): cal_phase.CLK/N_PZ_34 cal_phase.T/N_PZ_167 
+raw_stretch (fi=6): raw_stretch.CLK/N_PZ_55 raw_stretch.D/N_PZ_210 
+str1 (fi=3): str1.D/N_PZ_45 str1.CLK/N_PZ_46 str1.CE/N_PZ_47 
+cal_sample (fi=18): cal_sample.D/N_PZ_48 cal_sample.CLK/N_PZ_49 cal_sample.CE/N_PZ_50 
+raw_edge (fi=3): raw_edge.CLK/N_PZ_122 raw_edge.D/N_PZ_137 
+dly<6> (fi=2): dly<6>.D/N_PZ_118 dly<6>.CLK/N_PZ_119 
+raw_str_toggle (fi=1): raw_str_toggle.CLK/N_PZ_102 raw_str_toggle.T/N_PZ_140 
+raw_sync<1> (fi=2): raw_sync<1>.D/N_PZ_103 raw_sync<1>.CLK/N_PZ_104 
+raw_sync<2> (fi=2): raw_sync<2>.D/N_PZ_125 raw_sync<2>.CLK/N_PZ_126 
+raw_sync<0> (fi=2): raw_sync<0>.D/N_PZ_123 raw_sync<0>.CLK/N_PZ_124 
+dly<0> (fi=3): dly<0>.CLK/N_PZ_107 dly<0>.D/N_PZ_136 
+str2 (fi=2): str2.D/N_PZ_127 str2.CLK/N_PZ_128 
+dly<1> (fi=2): dly<1>.D/N_PZ_108 dly<1>.CLK/N_PZ_109 
+dly<2> (fi=2): dly<2>.D/N_PZ_110 dly<2>.CLK/N_PZ_111 
+dly<3> (fi=2): dly<3>.D/N_PZ_112 dly<3>.CLK/N_PZ_113 
+dly<4> (fi=2): dly<4>.D/N_PZ_114 dly<4>.CLK/N_PZ_115 
+dly<5> (fi=2): dly<5>.D/N_PZ_116 dly<5>.CLK/N_PZ_117 
+
+---------------------------------
+|  D a t a   S t r u c t u r e  |
+---------------------------------
+PI ( 74) =  CLK80 STR ENA CLK40.Q CLK20_P.Q ADC0<0> ADC1<0> ADC0<10> ADC1<10> ADC0<11> 
+            ADC1<11> ADC0<1> ADC1<1> ADC0<2> ADC1<2> ADC0<3> ADC1<3> ADC0<4> ADC1<4> 
+            ADC0<5> ADC1<5> ADC0<6> ADC1<6> ADC0<7> ADC1<7> ADC0<8> ADC1<8> ADC0<9> 
+            ADC1<9> EV c_count<0>.Q c_count<1>.Q c_count<2>.Q c_count<3>.Q c_count<4>.Q 
+            c_count<5>.Q c_count<6>.Q c_count<7>.Q c_count<8>.Q str_div.Q c_count<9>.Q 
+            cal_phase.Q inhibit_pipe<0>.Q inhibit_pipe<1>.Q inhibit_pipe<2>.Q str1.Q 
+            cal_sample.Q inhibit_pipe<3>.Q raw_stretch.Q raw_str_toggle.Q raw_sync<1>.Q 
+            dly<1>.Q dly<2>.Q dly<3>.Q dly<4>.Q dly<5>.Q dly<6>.Q raw_sync<0>.Q 
+            raw_sync<2>.Q str2.Q dly<0>.Q raw_edge.Q DOUT<0>.Q DOUT<10>.Q DOUT<11>.Q 
+            DOUT<1>.Q DOUT<2>.Q DOUT<3>.Q DOUT<4>.Q DOUT<5>.Q DOUT<6>.Q DOUT<7>.Q 
+            DOUT<8>.Q DOUT<9>.Q
+
+PO (106) =  c_count<0>.CLK c_count<1>.CLK c_count<2>.CLK c_count<3>.CLK c_count<4>.CLK 
+            c_count<5>.CLK c_count<6>.CLK c_count<7>.CLK c_count<8>.CLK str_div.CLK 
+            c_count<9>.CLK cal_phase.CLK inhibit_pipe<0>.D inhibit_pipe<0>.CLK 
+            inhibit_pipe<0>.CE inhibit_pipe<1>.D inhibit_pipe<1>.CLK inhibit_pipe<1>.CE 
+            inhibit_pipe<2>.D inhibit_pipe<2>.CLK inhibit_pipe<2>.CE str1.D str1.CLK 
+            str1.CE cal_sample.D cal_sample.CLK cal_sample.CE inhibit_pipe<3>.D 
+            inhibit_pipe<3>.CLK inhibit_pipe<3>.CE raw_stretch.CLK DOUT<0>.CLK 
+            DOUT<10>.CLK DOUT<11>.CLK DOUT<12>.D DOUT<12>.CLK DOUT<12>.CE DOUT<1>.CLK 
+            DOUT<2>.CLK DOUT<3>.CLK DOUT<4>.CLK DOUT<5>.CLK DOUT<6>.CLK DOUT<7>.CLK 
+            DOUT<8>.CLK DOUT<9>.CLK CLK20_P.CLK CLK40.CLK raw_str_toggle.CLK 
+            raw_sync<1>.D raw_sync<1>.CLK dly<0>.CLK dly<1>.D dly<1>.CLK dly<2>.D 
+            dly<2>.CLK dly<3>.D dly<3>.CLK dly<4>.D dly<4>.CLK dly<5>.D dly<5>.CLK 
+            dly<6>.D dly<6>.CLK raw_edge.CLK raw_sync<0>.D raw_sync<0>.CLK 
+            raw_sync<2>.D raw_sync<2>.CLK str2.D str2.CLK CLK20_N.CLK DV.D DV.CLK 
+            EV_out dly<0>.D raw_edge.D CLK20_N.D CLK40.T raw_str_toggle.T CLK20_P.T 
+            c_count<0>.T c_count<1>.T c_count<2>.T c_count<3>.T c_count<4>.T 
+            c_count<5>.T c_count<6>.T c_count<7>.T c_count<8>.T str_div.T c_count<9>.T 
+            cal_phase.T raw_stretch.D DOUT<0>.D DOUT<10>.D DOUT<11>.D DOUT<1>.D 
+            DOUT<2>.D DOUT<3>.D DOUT<4>.D DOUT<5>.D DOUT<6>.D DOUT<7>.D DOUT<8>.D 
+            DOUT<9>.D
+
+INT = (106) N_PZ_1 N_PZ_4 N_PZ_7 N_PZ_10 N_PZ_13 N_PZ_16 N_PZ_19 N_PZ_22 N_PZ_25 
+            N_PZ_28 N_PZ_31 N_PZ_34 N_PZ_36 N_PZ_37 N_PZ_38 N_PZ_39 N_PZ_40 N_PZ_41 
+            N_PZ_42 N_PZ_43 N_PZ_44 N_PZ_45 N_PZ_46 N_PZ_47 N_PZ_48 N_PZ_49 N_PZ_50 
+            N_PZ_51 N_PZ_52 N_PZ_53 N_PZ_55 N_PZ_58 N_PZ_61 N_PZ_64 N_PZ_66 N_PZ_67 
+            N_PZ_68 N_PZ_70 N_PZ_73 N_PZ_76 N_PZ_79 N_PZ_82 N_PZ_85 N_PZ_88 N_PZ_91 
+            N_PZ_94 N_PZ_98 N_PZ_100 N_PZ_102 N_PZ_103 N_PZ_104 N_PZ_107 N_PZ_108 
+            N_PZ_109 N_PZ_110 N_PZ_111 N_PZ_112 N_PZ_113 N_PZ_114 N_PZ_115 N_PZ_116 
+            N_PZ_117 N_PZ_118 N_PZ_119 N_PZ_122 N_PZ_123 N_PZ_124 N_PZ_125 N_PZ_126 
+            N_PZ_127 N_PZ_128 N_PZ_131 N_PZ_132 N_PZ_133 N_PZ_134 N_PZ_136 N_PZ_137 
+            N_PZ_138 N_PZ_139 N_PZ_140 N_PZ_152 N_PZ_156 N_PZ_157 N_PZ_158 N_PZ_159 
+            N_PZ_160 N_PZ_161 N_PZ_162 N_PZ_163 N_PZ_164 N_PZ_165 N_PZ_166 N_PZ_167 
+            N_PZ_210 N_PZ_211 N_PZ_212 N_PZ_213 N_PZ_214 N_PZ_215 N_PZ_216 N_PZ_217 
+            N_PZ_218 N_PZ_219 N_PZ_220 N_PZ_221 N_PZ_222
+
+PINT= (  0)
+
+AINT= (106) N_PZ_1 N_PZ_4 N_PZ_7 N_PZ_10 N_PZ_13 N_PZ_16 N_PZ_19 N_PZ_22 N_PZ_25 
+            N_PZ_28 N_PZ_31 N_PZ_34 N_PZ_36 N_PZ_37 N_PZ_38 N_PZ_39 N_PZ_40 N_PZ_41 
+            N_PZ_42 N_PZ_43 N_PZ_44 N_PZ_45 N_PZ_46 N_PZ_47 N_PZ_48 N_PZ_49 N_PZ_50 
+            N_PZ_51 N_PZ_52 N_PZ_53 N_PZ_55 N_PZ_58 N_PZ_61 N_PZ_64 N_PZ_66 N_PZ_67 
+            N_PZ_68 N_PZ_70 N_PZ_73 N_PZ_76 N_PZ_79 N_PZ_82 N_PZ_85 N_PZ_88 N_PZ_91 
+            N_PZ_94 N_PZ_98 N_PZ_100 N_PZ_102 N_PZ_103 N_PZ_104 N_PZ_107 N_PZ_108 
+            N_PZ_109 N_PZ_110 N_PZ_111 N_PZ_112 N_PZ_113 N_PZ_114 N_PZ_115 N_PZ_116 
+            N_PZ_117 N_PZ_118 N_PZ_119 N_PZ_122 N_PZ_123 N_PZ_124 N_PZ_125 N_PZ_126 
+            N_PZ_127 N_PZ_128 N_PZ_131 N_PZ_132 N_PZ_133 N_PZ_134 N_PZ_136 N_PZ_137 
+            N_PZ_138 N_PZ_139 N_PZ_140 N_PZ_152 N_PZ_156 N_PZ_157 N_PZ_158 N_PZ_159 
+            N_PZ_160 N_PZ_161 N_PZ_162 N_PZ_163 N_PZ_164 N_PZ_165 N_PZ_166 N_PZ_167 
+            N_PZ_210 N_PZ_211 N_PZ_212 N_PZ_213 N_PZ_214 N_PZ_215 N_PZ_216 N_PZ_217 
+            N_PZ_218 N_PZ_219 N_PZ_220 N_PZ_221 N_PZ_222
+
+
+----------------------------
+|  D F S    N e t w o r k  |
+----------------------------
+CLK80 N_PZ_1 c_count<0>.CLK N_PZ_4 c_count<1>.CLK N_PZ_7 c_count<2>.CLK N_PZ_10  
+c_count<3>.CLK N_PZ_13 c_count<4>.CLK N_PZ_16 c_count<5>.CLK N_PZ_19 c_count<6>.CLK  
+N_PZ_22 c_count<7>.CLK N_PZ_25 c_count<8>.CLK STR N_PZ_28 str_div.CLK N_PZ_31  
+c_count<9>.CLK N_PZ_34 cal_phase.CLK raw_stretch.Q N_PZ_36 inhibit_pipe<0>.D N_PZ_37  
+inhibit_pipe<0>.CLK CLK40.Q N_PZ_38 inhibit_pipe<0>.CE inhibit_pipe<0>.Q N_PZ_39  
+inhibit_pipe<1>.D N_PZ_40 inhibit_pipe<1>.CLK N_PZ_41 inhibit_pipe<1>.CE  
+inhibit_pipe<1>.Q N_PZ_42 inhibit_pipe<2>.D N_PZ_43 inhibit_pipe<2>.CLK N_PZ_44  
+inhibit_pipe<2>.CE str_div.Q N_PZ_45 str1.D N_PZ_46 str1.CLK N_PZ_47 str1.CE N_PZ_48  
+cal_sample.D N_PZ_49 cal_sample.CLK CLK20_P.Q c_count<0>.Q c_count<1>.Q c_count<2>.Q  
+c_count<3>.Q c_count<4>.Q c_count<5>.Q c_count<6>.Q c_count<7>.Q c_count<8>.Q  
+c_count<9>.Q cal_phase.Q inhibit_pipe<2>.Q inhibit_pipe<3>.Q N_PZ_50 cal_sample.CE  
+N_PZ_51 inhibit_pipe<3>.D N_PZ_52 inhibit_pipe<3>.CLK N_PZ_53 inhibit_pipe<3>.CE  
+N_PZ_55 raw_stretch.CLK N_PZ_58 DOUT<0>.CLK N_PZ_61 DOUT<10>.CLK N_PZ_64 DOUT<11>.CLK  
+N_PZ_66 DOUT<12>.D N_PZ_67 DOUT<12>.CLK cal_sample.Q dly<6>.Q N_PZ_68 DOUT<12>.CE  
+N_PZ_70 DOUT<1>.CLK N_PZ_73 DOUT<2>.CLK N_PZ_76 DOUT<3>.CLK N_PZ_79 DOUT<4>.CLK  
+N_PZ_82 DOUT<5>.CLK N_PZ_85 DOUT<6>.CLK N_PZ_88 DOUT<7>.CLK N_PZ_91 DOUT<8>.CLK  
+N_PZ_94 DOUT<9>.CLK N_PZ_98 CLK20_P.CLK N_PZ_100 CLK40.CLK N_PZ_102 raw_str_toggle.CLK  
+raw_sync<0>.Q N_PZ_103 raw_sync<1>.D N_PZ_104 raw_sync<1>.CLK N_PZ_107 dly<0>.CLK  
+dly<0>.Q N_PZ_108 dly<1>.D N_PZ_109 dly<1>.CLK dly<1>.Q N_PZ_110 dly<2>.D N_PZ_111  
+dly<2>.CLK dly<2>.Q N_PZ_112 dly<3>.D N_PZ_113 dly<3>.CLK dly<3>.Q N_PZ_114 dly<4>.D  
+N_PZ_115 dly<4>.CLK dly<4>.Q N_PZ_116 dly<5>.D N_PZ_117 dly<5>.CLK dly<5>.Q N_PZ_118  
+dly<6>.D N_PZ_119 dly<6>.CLK N_PZ_122 raw_edge.CLK raw_str_toggle.Q N_PZ_123  
+raw_sync<0>.D N_PZ_124 raw_sync<0>.CLK raw_sync<1>.Q N_PZ_125 raw_sync<2>.D N_PZ_126  
+raw_sync<2>.CLK str1.Q N_PZ_127 str2.D N_PZ_128 str2.CLK N_PZ_131 CLK20_N.CLK N_PZ_132  
+DV.D N_PZ_133 DV.CLK EV N_PZ_134 EV_out str2.Q N_PZ_136 dly<0>.D raw_sync<2>.Q  
+N_PZ_137 raw_edge.D N_PZ_138 CLK20_N.D N_PZ_139 CLK40.T N_PZ_140 raw_str_toggle.T  
+N_PZ_152 CLK20_P.T N_PZ_156 c_count<0>.T N_PZ_157 c_count<1>.T N_PZ_158 c_count<2>.T  
+N_PZ_159 c_count<3>.T N_PZ_160 c_count<4>.T N_PZ_161 c_count<5>.T N_PZ_162  
+c_count<6>.T N_PZ_163 c_count<7>.T N_PZ_164 c_count<8>.T ENA N_PZ_165 str_div.T  
+N_PZ_166 c_count<9>.T N_PZ_167 cal_phase.T raw_edge.Q N_PZ_210 raw_stretch.D ADC0<0>  
+ADC1<0> DOUT<0>.Q N_PZ_211 DOUT<0>.D ADC0<10> ADC1<10> DOUT<10>.Q N_PZ_212 DOUT<10>.D  
+ADC0<11> ADC1<11> DOUT<11>.Q N_PZ_213 DOUT<11>.D ADC0<1> ADC1<1> DOUT<1>.Q N_PZ_214  
+DOUT<1>.D ADC0<2> ADC1<2> DOUT<2>.Q N_PZ_215 DOUT<2>.D ADC0<3> ADC1<3> DOUT<3>.Q  
+N_PZ_216 DOUT<3>.D ADC0<4> ADC1<4> DOUT<4>.Q N_PZ_217 DOUT<4>.D ADC0<5> ADC1<5>  
+DOUT<5>.Q N_PZ_218 DOUT<5>.D ADC0<6> ADC1<6> DOUT<6>.Q N_PZ_219 DOUT<6>.D ADC0<7>  
+ADC1<7> DOUT<7>.Q N_PZ_220 DOUT<7>.D ADC0<8> ADC1<8> DOUT<8>.Q N_PZ_221 DOUT<8>.D  
+ADC0<9> ADC1<9> DOUT<9>.Q N_PZ_222 DOUT<9>.D 
+
+                                  Short Name                 Collapsible
+          Name       Base   Ext   | TypePolOld pt/th fi/FI fo | min          Pair        pxapin
+         CLK80      CLK80         n   PI  -  -  -| -  -| - 47 -   -             -             -
+           STR        STR         y   PI  -  -  -| -  -| -  2 -   -             -             -
+           ENA        ENA         z   PI  -  -  -| -  -| -  1 -   -             -             -
+       CLK40.Q      CLK40    .Q  f0   PI  -  -  -| -  -| - 21 -   -             -             -
+     CLK20_P.Q    CLK20_P    .Q  q0   PI  -  -  -| -  -| - 26 -   -             -             -
+       ADC0<0>    ADC0<0>        e2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<0>    ADC1<0>        f2   PI  -  -  -| -  -| -  1 -   -             -             -
+      ADC0<10>   ADC0<10>        g2   PI  -  -  -| -  -| -  1 -   -             -             -
+      ADC1<10>   ADC1<10>        h2   PI  -  -  -| -  -| -  1 -   -             -             -
+      ADC0<11>   ADC0<11>        i2   PI  -  -  -| -  -| -  1 -   -             -             -
+      ADC1<11>   ADC1<11>        j2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<1>    ADC0<1>        k2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<1>    ADC1<1>        l2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<2>    ADC0<2>        m2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<2>    ADC1<2>        n2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<3>    ADC0<3>        o2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<3>    ADC1<3>        p2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<4>    ADC0<4>        q2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<4>    ADC1<4>        r2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<5>    ADC0<5>        s2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<5>    ADC1<5>        t2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<6>    ADC0<6>        u2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<6>    ADC1<6>        v2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<7>    ADC0<7>        w2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<7>    ADC1<7>        x2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<8>    ADC0<8>        y2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<8>    ADC1<8>        z2   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC0<9>    ADC0<9>        a3   PI  -  -  -| -  -| -  1 -   -             -             -
+       ADC1<9>    ADC1<9>        b3   PI  -  -  -| -  -| -  1 -   -             -             -
+            EV         EV        o4   PI  -  -  -| -  -| -  1 -   -             -             -
+        N_PZ_1     N_PZ_1     -  z9 AINT  -  -  1|36  1|32  1 -   -c_count<0>.CLK             -
+        N_PZ_4     N_PZ_4     - c10 AINT  -  -  1|36  1|32  1 -   -c_count<1>.CLK             -
+        N_PZ_7     N_PZ_7     - f10 AINT  -  -  1|36  1|32  1 -   -c_count<2>.CLK             -
+       N_PZ_10    N_PZ_10     - i10 AINT  -  -  1|36  1|32  1 -   -c_count<3>.CLK             -
+       N_PZ_13    N_PZ_13     - l10 AINT  -  -  1|36  1|32  1 -   -c_count<4>.CLK             -
+       N_PZ_16    N_PZ_16     - o10 AINT  -  -  1|36  1|32  1 -   -c_count<5>.CLK             -
+       N_PZ_19    N_PZ_19     - r10 AINT  -  -  1|36  1|32  1 -   -c_count<6>.CLK             -
+       N_PZ_22    N_PZ_22     - u10 AINT  -  -  1|36  1|32  1 -   -c_count<7>.CLK             -
+       N_PZ_25    N_PZ_25     - x10 AINT  -  -  1|36  1|32  1 -   -c_count<8>.CLK             -
+       N_PZ_28    N_PZ_28     - a11 AINT  L  -  1|36  1|32  1 -   -   str_div.CLK             -
+       N_PZ_31    N_PZ_31     - d11 AINT  -  -  1|36  1|32  1 -   -c_count<9>.CLK             -
+       N_PZ_34    N_PZ_34     - g11 AINT  -  -  1|36  1|32  1 -   - cal_phase.CLK             -
+       N_PZ_36    N_PZ_36     - i11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<0>.D             -
+       N_PZ_37    N_PZ_37     - j11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<0>.CLK             -
+       N_PZ_38    N_PZ_38     - k11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<0>.CE             -
+       N_PZ_39    N_PZ_39     - l11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<1>.D             -
+       N_PZ_40    N_PZ_40     - m11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<1>.CLK             -
+       N_PZ_41    N_PZ_41     - n11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<1>.CE             -
+       N_PZ_42    N_PZ_42     - o11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<2>.D             -
+       N_PZ_43    N_PZ_43     - p11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<2>.CLK             -
+       N_PZ_44    N_PZ_44     - q11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<2>.CE             -
+       N_PZ_45    N_PZ_45     - r11 AINT  -  -  1|36  1|32  1 -   -        str1.D             -
+       N_PZ_46    N_PZ_46     - s11 AINT  L  -  1|36  1|32  1 -   -      str1.CLK             -
+       N_PZ_47    N_PZ_47     - t11 AINT  -  -  1|36  1|32  1 -   -       str1.CE             -
+       N_PZ_48    N_PZ_48     - u11 AINT  -  -  1|36  1|32  1 -   -  cal_sample.D             -
+       N_PZ_49    N_PZ_49     - v11 AINT  -  -  1|36  1|32  1 -   -cal_sample.CLK             -
+       N_PZ_50    N_PZ_50     - w11 AINT  -  -  3|36 17|32  1 -   - cal_sample.CE             -
+       N_PZ_51    N_PZ_51     - x11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<3>.D             -
+       N_PZ_52    N_PZ_52     - y11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<3>.CLK             -
+       N_PZ_53    N_PZ_53     - z11 AINT  -  -  1|36  1|32  1 -   -inhibit_pipe<3>.CE             -
+       N_PZ_55    N_PZ_55     - b12 AINT  -  -  1|36  1|32  1 -   -raw_stretch.CLK             -
+       N_PZ_58    N_PZ_58     - e12 AINT  -  -  1|36  1|32  1 -   -   DOUT<0>.CLK             -
+       N_PZ_61    N_PZ_61     - h12 AINT  -  -  1|36  1|32  1 -   -  DOUT<10>.CLK             -
+       N_PZ_64    N_PZ_64     - k12 AINT  -  -  1|36  1|32  1 -   -  DOUT<11>.CLK             -
+       N_PZ_66    N_PZ_66     - m12 AINT  -  -  1|36  1|32  1 -   -    DOUT<12>.D             -
+       N_PZ_67    N_PZ_67     - n12 AINT  -  -  1|36  1|32  1 -   -  DOUT<12>.CLK             -
+       N_PZ_68    N_PZ_68     - o12 AINT  L  -  1|36  2|32  1 -   -   DOUT<12>.CE             -
+       N_PZ_70    N_PZ_70     - q12 AINT  -  -  1|36  1|32  1 -   -   DOUT<1>.CLK             -
+       N_PZ_73    N_PZ_73     - t12 AINT  -  -  1|36  1|32  1 -   -   DOUT<2>.CLK             -
+       N_PZ_76    N_PZ_76     - w12 AINT  -  -  1|36  1|32  1 -   -   DOUT<3>.CLK             -
+       N_PZ_79    N_PZ_79     - z12 AINT  -  -  1|36  1|32  1 -   -   DOUT<4>.CLK             -
+       N_PZ_82    N_PZ_82     - c13 AINT  -  -  1|36  1|32  1 -   -   DOUT<5>.CLK             -
+       N_PZ_85    N_PZ_85     - f13 AINT  -  -  1|36  1|32  1 -   -   DOUT<6>.CLK             -
+       N_PZ_88    N_PZ_88     - i13 AINT  -  -  1|36  1|32  1 -   -   DOUT<7>.CLK             -
+       N_PZ_91    N_PZ_91     - l13 AINT  -  -  1|36  1|32  1 -   -   DOUT<8>.CLK             -
+       N_PZ_94    N_PZ_94     - o13 AINT  -  -  1|36  1|32  1 -   -   DOUT<9>.CLK             -
+       N_PZ_98    N_PZ_98     - s13 AINT  L  -  1|36  1|32  1 -   -   CLK20_P.CLK             -
+      N_PZ_100   N_PZ_100     - u13 AINT  L  -  1|36  1|32  1 -   -     CLK40.CLK             -
+      N_PZ_102   N_PZ_102     - w13 AINT  L  -  1|36  1|32  1 -   -raw_str_toggle.CLK             -
+      N_PZ_103   N_PZ_103     - x13 AINT  -  -  1|36  1|32  1 -   - raw_sync<1>.D             -
+      N_PZ_104   N_PZ_104     - y13 AINT  -  -  1|36  1|32  1 -   -raw_sync<1>.CLK             -
+      N_PZ_107   N_PZ_107     - b14 AINT  -  -  1|36  1|32  1 -   -    dly<0>.CLK             -
+      N_PZ_108   N_PZ_108     - c14 AINT  -  -  1|36  1|32  1 -   -      dly<1>.D             -
+      N_PZ_109   N_PZ_109     - d14 AINT  -  -  1|36  1|32  1 -   -    dly<1>.CLK             -
+      N_PZ_110   N_PZ_110     - e14 AINT  -  -  1|36  1|32  1 -   -      dly<2>.D             -
+      N_PZ_111   N_PZ_111     - f14 AINT  -  -  1|36  1|32  1 -   -    dly<2>.CLK             -
+      N_PZ_112   N_PZ_112     - g14 AINT  -  -  1|36  1|32  1 -   -      dly<3>.D             -
+      N_PZ_113   N_PZ_113     - h14 AINT  -  -  1|36  1|32  1 -   -    dly<3>.CLK             -
+      N_PZ_114   N_PZ_114     - i14 AINT  -  -  1|36  1|32  1 -   -      dly<4>.D             -
+      N_PZ_115   N_PZ_115     - j14 AINT  -  -  1|36  1|32  1 -   -    dly<4>.CLK             -
+      N_PZ_116   N_PZ_116     - k14 AINT  -  -  1|36  1|32  1 -   -      dly<5>.D             -
+      N_PZ_117   N_PZ_117     - l14 AINT  -  -  1|36  1|32  1 -   -    dly<5>.CLK             -
+      N_PZ_118   N_PZ_118     - m14 AINT  -  -  1|36  1|32  1 -   -      dly<6>.D             -
+      N_PZ_119   N_PZ_119     - n14 AINT  -  -  1|36  1|32  1 -   -    dly<6>.CLK             -
+      N_PZ_122   N_PZ_122     - q14 AINT  -  -  1|36  1|32  1 -   -  raw_edge.CLK             -
+      N_PZ_123   N_PZ_123     - r14 AINT  -  -  1|36  1|32  1 -   - raw_sync<0>.D             -
+      N_PZ_124   N_PZ_124     - s14 AINT  -  -  1|36  1|32  1 -   -raw_sync<0>.CLK             -
+      N_PZ_125   N_PZ_125     - t14 AINT  -  -  1|36  1|32  1 -   - raw_sync<2>.D             -
+      N_PZ_126   N_PZ_126     - u14 AINT  -  -  1|36  1|32  1 -   -raw_sync<2>.CLK             -
+      N_PZ_127   N_PZ_127     - v14 AINT  -  -  1|36  1|32  1 -   -        str2.D             -
+      N_PZ_128   N_PZ_128     - w14 AINT  -  -  1|36  1|32  1 -   -      str2.CLK             -
+      N_PZ_131   N_PZ_131     - z14 AINT  L  -  1|36  1|32  1 -   -   CLK20_N.CLK             -
+      N_PZ_132   N_PZ_132     - a15 AINT  L  -  1|36  2|32  1 -   -          DV.D             -
+      N_PZ_133   N_PZ_133     - b15 AINT  -  -  1|36  1|32  1 -   -        DV.CLK             -
+      N_PZ_134   N_PZ_134     - c15 AINT  -  -  1|36  1|32  1 -   -        EV_out             -
+c_count<0>.CLK c_count<0>  .CLK  q4   PO  -  -  -| -  -| -  0 -   -        N_PZ_1    c_count<0>
+c_count<1>.CLK c_count<1>  .CLK  t4   PO  -  -  -| -  -| -  0 -   -        N_PZ_4    c_count<1>
+c_count<2>.CLK c_count<2>  .CLK  w4   PO  -  -  -| -  -| -  0 -   -        N_PZ_7    c_count<2>
+c_count<3>.CLK c_count<3>  .CLK  z4   PO  -  -  -| -  -| -  0 -   -       N_PZ_10    c_count<3>
+c_count<4>.CLK c_count<4>  .CLK  c5   PO  -  -  -| -  -| -  0 -   -       N_PZ_13    c_count<4>
+c_count<5>.CLK c_count<5>  .CLK  f5   PO  -  -  -| -  -| -  0 -   -       N_PZ_16    c_count<5>
+c_count<6>.CLK c_count<6>  .CLK  i5   PO  -  -  -| -  -| -  0 -   -       N_PZ_19    c_count<6>
+c_count<7>.CLK c_count<7>  .CLK  l5   PO  -  -  -| -  -| -  0 -   -       N_PZ_22    c_count<7>
+c_count<8>.CLK c_count<8>  .CLK  o5   PO  -  -  -| -  -| -  0 -   -       N_PZ_25    c_count<8>
+   str_div.CLK    str_div  .CLK  r5   PO  -  -  -| -  -| -  0 -   -       N_PZ_28       str_div
+c_count<9>.CLK c_count<9>  .CLK  u5   PO  -  -  -| -  -| -  0 -   -       N_PZ_31    c_count<9>
+ cal_phase.CLK  cal_phase  .CLK  x5   PO  -  -  -| -  -| -  0 -   -       N_PZ_34     cal_phase
+inhibit_pipe<0>.Dinhibit_pipe<0>    .D  z5   PO  -  -  -| -  -| -  0 -   -       N_PZ_36inhibit_pipe<0>
+inhibit_pipe<0>.CLKinhibit_pipe<0>  .CLK  a6   PO  -  -  -| -  -| -  0 -   -       N_PZ_37inhibit_pipe<0>
+inhibit_pipe<0>.CEinhibit_pipe<0>   .CE  b6   PO  -  -  -| -  -| -  0 -   -       N_PZ_38inhibit_pipe<0>
+inhibit_pipe<1>.Dinhibit_pipe<1>    .D  c6   PO  -  -  -| -  -| -  0 -   -       N_PZ_39inhibit_pipe<1>
+inhibit_pipe<1>.CLKinhibit_pipe<1>  .CLK  d6   PO  -  -  -| -  -| -  0 -   -       N_PZ_40inhibit_pipe<1>
+inhibit_pipe<1>.CEinhibit_pipe<1>   .CE  e6   PO  -  -  -| -  -| -  0 -   -       N_PZ_41inhibit_pipe<1>
+inhibit_pipe<2>.Dinhibit_pipe<2>    .D  f6   PO  -  -  -| -  -| -  0 -   -       N_PZ_42inhibit_pipe<2>
+inhibit_pipe<2>.CLKinhibit_pipe<2>  .CLK  g6   PO  -  -  -| -  -| -  0 -   -       N_PZ_43inhibit_pipe<2>
+inhibit_pipe<2>.CEinhibit_pipe<2>   .CE  h6   PO  -  -  -| -  -| -  0 -   -       N_PZ_44inhibit_pipe<2>
+        str1.D       str1    .D  i6   PO  -  -  -| -  -| -  0 -   -       N_PZ_45          str1
+      str1.CLK       str1  .CLK  j6   PO  -  -  -| -  -| -  0 -   -       N_PZ_46          str1
+       str1.CE       str1   .CE  k6   PO  -  -  -| -  -| -  0 -   -       N_PZ_47          str1
+  cal_sample.D cal_sample    .D  l6   PO  -  -  -| -  -| -  0 -   -       N_PZ_48    cal_sample
+cal_sample.CLK cal_sample  .CLK  m6   PO  -  -  -| -  -| -  0 -   -       N_PZ_49    cal_sample
+ cal_sample.CE cal_sample   .CE  n6   PO  -  -  -| -  -| -  0 -   -       N_PZ_50    cal_sample
+inhibit_pipe<3>.Dinhibit_pipe<3>    .D  o6   PO  -  -  -| -  -| -  0 -   -       N_PZ_51inhibit_pipe<3>
+inhibit_pipe<3>.CLKinhibit_pipe<3>  .CLK  p6   PO  -  -  -| -  -| -  0 -   -       N_PZ_52inhibit_pipe<3>
+inhibit_pipe<3>.CEinhibit_pipe<3>   .CE  q6   PO  -  -  -| -  -| -  0 -   -       N_PZ_53inhibit_pipe<3>
+raw_stretch.CLKraw_stretch  .CLK  s6   PO  -  -  -| -  -| -  0 -   -       N_PZ_55   raw_stretch
+   DOUT<0>.CLK    DOUT<0>  .CLK  v6   PO  -  -  -| -  -| -  0 -   -       N_PZ_58       DOUT<0>
+  DOUT<10>.CLK   DOUT<10>  .CLK  y6   PO  -  -  -| -  -| -  0 -   -       N_PZ_61      DOUT<10>
+  DOUT<11>.CLK   DOUT<11>  .CLK  b7   PO  -  -  -| -  -| -  0 -   -       N_PZ_64      DOUT<11>
+    DOUT<12>.D   DOUT<12>    .D  d7   PO  -  -  -| -  -| -  0 -   -       N_PZ_66      DOUT<12>
+  DOUT<12>.CLK   DOUT<12>  .CLK  e7   PO  -  -  -| -  -| -  0 -   -       N_PZ_67      DOUT<12>
+   DOUT<12>.CE   DOUT<12>   .CE  f7   PO  -  -  -| -  -| -  0 -   -       N_PZ_68      DOUT<12>
+   DOUT<1>.CLK    DOUT<1>  .CLK  h7   PO  -  -  -| -  -| -  0 -   -       N_PZ_70       DOUT<1>
+   DOUT<2>.CLK    DOUT<2>  .CLK  k7   PO  -  -  -| -  -| -  0 -   -       N_PZ_73       DOUT<2>
+   DOUT<3>.CLK    DOUT<3>  .CLK  n7   PO  -  -  -| -  -| -  0 -   -       N_PZ_76       DOUT<3>
+   DOUT<4>.CLK    DOUT<4>  .CLK  q7   PO  -  -  -| -  -| -  0 -   -       N_PZ_79       DOUT<4>
+   DOUT<5>.CLK    DOUT<5>  .CLK  t7   PO  -  -  -| -  -| -  0 -   -       N_PZ_82       DOUT<5>
+   DOUT<6>.CLK    DOUT<6>  .CLK  w7   PO  -  -  -| -  -| -  0 -   -       N_PZ_85       DOUT<6>
+   DOUT<7>.CLK    DOUT<7>  .CLK  z7   PO  -  -  -| -  -| -  0 -   -       N_PZ_88       DOUT<7>
+   DOUT<8>.CLK    DOUT<8>  .CLK  c8   PO  -  -  -| -  -| -  0 -   -       N_PZ_91       DOUT<8>
+   DOUT<9>.CLK    DOUT<9>  .CLK  f8   PO  -  -  -| -  -| -  0 -   -       N_PZ_94       DOUT<9>
+   CLK20_P.CLK    CLK20_P  .CLK  j8   PO  -  -  -| -  -| -  0 -   -       N_PZ_98       CLK20_P
+     CLK40.CLK      CLK40  .CLK  l8   PO  -  -  -| -  -| -  0 -   -      N_PZ_100         CLK40
+raw_str_toggle.CLKraw_str_toggle  .CLK  n8   PO  -  -  -| -  -| -  0 -   -      N_PZ_102raw_str_toggle
+ raw_sync<1>.Draw_sync<1>    .D  q8   PO  -  -  -| -  -| -  0 -   -      N_PZ_103   raw_sync<1>
+raw_sync<1>.CLKraw_sync<1>  .CLK  r8   PO  -  -  -| -  -| -  0 -   -      N_PZ_104   raw_sync<1>
+    dly<0>.CLK     dly<0>  .CLK  u8   PO  -  -  -| -  -| -  0 -   -      N_PZ_107        dly<0>
+      dly<1>.D     dly<1>    .D  v8   PO  -  -  -| -  -| -  0 -   -      N_PZ_108        dly<1>
+    dly<1>.CLK     dly<1>  .CLK  w8   PO  -  -  -| -  -| -  0 -   -      N_PZ_109        dly<1>
+      dly<2>.D     dly<2>    .D  x8   PO  -  -  -| -  -| -  0 -   -      N_PZ_110        dly<2>
+    dly<2>.CLK     dly<2>  .CLK  y8   PO  -  -  -| -  -| -  0 -   -      N_PZ_111        dly<2>
+      dly<3>.D     dly<3>    .D  z8   PO  -  -  -| -  -| -  0 -   -      N_PZ_112        dly<3>
+    dly<3>.CLK     dly<3>  .CLK  a9   PO  -  -  -| -  -| -  0 -   -      N_PZ_113        dly<3>
+      dly<4>.D     dly<4>    .D  b9   PO  -  -  -| -  -| -  0 -   -      N_PZ_114        dly<4>
+    dly<4>.CLK     dly<4>  .CLK  c9   PO  -  -  -| -  -| -  0 -   -      N_PZ_115        dly<4>
+      dly<5>.D     dly<5>    .D  d9   PO  -  -  -| -  -| -  0 -   -      N_PZ_116        dly<5>
+    dly<5>.CLK     dly<5>  .CLK  e9   PO  -  -  -| -  -| -  0 -   -      N_PZ_117        dly<5>
+      dly<6>.D     dly<6>    .D  f9   PO  -  -  -| -  -| -  0 -   -      N_PZ_118        dly<6>
+    dly<6>.CLK     dly<6>  .CLK  g9   PO  -  -  -| -  -| -  0 -   -      N_PZ_119        dly<6>
+  raw_edge.CLK   raw_edge  .CLK  j9   PO  -  -  -| -  -| -  0 -   -      N_PZ_122      raw_edge
+ raw_sync<0>.Draw_sync<0>    .D  k9   PO  -  -  -| -  -| -  0 -   -      N_PZ_123   raw_sync<0>
+raw_sync<0>.CLKraw_sync<0>  .CLK  l9   PO  -  -  -| -  -| -  0 -   -      N_PZ_124   raw_sync<0>
+ raw_sync<2>.Draw_sync<2>    .D  m9   PO  -  -  -| -  -| -  0 -   -      N_PZ_125   raw_sync<2>
+raw_sync<2>.CLKraw_sync<2>  .CLK  n9   PO  -  -  -| -  -| -  0 -   -      N_PZ_126   raw_sync<2>
+        str2.D       str2    .D  q9   PO  -  -  -| -  -| -  0 -   -      N_PZ_127          str2
+      str2.CLK       str2  .CLK  r9   PO  -  -  -| -  -| -  0 -   -      N_PZ_128          str2
+   CLK20_N.CLK    CLK20_N  .CLK  u9   PO  -  -  -| -  -| -  0 -   -      N_PZ_131       CLK20_N
+          DV.D         DV    .D  v9   PO  -  -  -| -  -| -  0 -   -      N_PZ_132            DV
+        DV.CLK         DV  .CLK  w9   PO  -  -  -| -  -| -  0 -   -      N_PZ_133            DV
+        EV_out     EV_out        x9   PO  -  -  -| -  -| -  0 -   -      N_PZ_134        EV_out
+      N_PZ_136   N_PZ_136     - i15 AINT  -  -  2|36  2|32  1 -   -      dly<0>.D             -
+      N_PZ_137   N_PZ_137     - j15 AINT  -  -  2|36  2|32  1 -   -    raw_edge.D             -
+      N_PZ_138   N_PZ_138     - k15 AINT  -  -  2|36  2|32  1 -   -     CLK20_N.D             -
+      dly<0>.D     dly<0>    .D e15   PO  -  -  -| -  -| -  0 -   -      N_PZ_136        dly<0>
+    raw_edge.D   raw_edge    .D f15   PO  -  -  -| -  -| -  0 -   -      N_PZ_137      raw_edge
+     CLK20_N.D    CLK20_N    .D g15   PO  -  -  -| -  -| -  0 -   -      N_PZ_138       CLK20_N
+  c_count<0>.Q c_count<0>    .Q l15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<1>.Q c_count<1>    .Q m15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<2>.Q c_count<2>    .Q n15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<3>.Q c_count<3>    .Q o15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<4>.Q c_count<4>    .Q p15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<5>.Q c_count<5>    .Q q15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<6>.Q c_count<6>    .Q r15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<7>.Q c_count<7>    .Q s15   PI  -  -  -| -  -| - 12 -   -             -             -
+  c_count<8>.Q c_count<8>    .Q t15   PI  -  -  -| -  -| - 12 -   -             -             -
+     str_div.Q    str_div    .Q u15   PI  -  -  -| -  -| -  1 -   -             -             -
+  c_count<9>.Q c_count<9>    .Q v15   PI  -  -  -| -  -| - 12 -   -             -             -
+   cal_phase.Q  cal_phase    .Q w15   PI  -  -  -| -  -| - 12 -   -             -             -
+inhibit_pipe<0>.Qinhibit_pipe<0>    .Q x15   PI  -  -  -| -  -| - 13 -   -             -             -
+inhibit_pipe<1>.Qinhibit_pipe<1>    .Q y15   PI  -  -  -| -  -| - 13 -   -             -             -
+inhibit_pipe<2>.Qinhibit_pipe<2>    .Q z15   PI  -  -  -| -  -| - 13 -   -             -             -
+        str1.Q       str1    .Q a16   PI  -  -  -| -  -| -  2 -   -             -             -
+  cal_sample.Q cal_sample    .Q b16   PI  -  -  -| -  -| - 14 -   -             -             -
+inhibit_pipe<3>.Qinhibit_pipe<3>    .Q c16   PI  -  -  -| -  -| - 12 -   -             -             -
+ raw_stretch.Qraw_stretch    .Q d16   PI  -  -  -| -  -| -  2 -   -             -             -
+raw_str_toggle.Qraw_str_toggle    .Q e16   PI  -  -  -| -  -| -  1 -   -             -             -
+ raw_sync<1>.Qraw_sync<1>    .Q f16   PI  -  -  -| -  -| -  3 -   -             -             -
+      dly<1>.Q     dly<1>    .Q g16   PI  -  -  -| -  -| -  1 -   -             -             -
+      dly<2>.Q     dly<2>    .Q h16   PI  -  -  -| -  -| -  1 -   -             -             -
+      dly<3>.Q     dly<3>    .Q i16   PI  -  -  -| -  -| -  1 -   -             -             -
+      dly<4>.Q     dly<4>    .Q j16   PI  -  -  -| -  -| -  1 -   -             -             -
+      dly<5>.Q     dly<5>    .Q k16   PI  -  -  -| -  -| -  1 -   -             -             -
+      dly<6>.Q     dly<6>    .Q l16   PI  -  -  -| -  -| - 14 -   -             -             -
+ raw_sync<0>.Qraw_sync<0>    .Q m16   PI  -  -  -| -  -| -  1 -   -             -             -
+ raw_sync<2>.Qraw_sync<2>    .Q n16   PI  -  -  -| -  -| -  2 -   -             -             -
+        str2.Q       str2    .Q o16   PI  -  -  -| -  -| -  1 -   -             -             -
+      dly<0>.Q     dly<0>    .Q p16   PI  -  -  -| -  -| -  1 -   -             -             -
+    raw_edge.Q   raw_edge    .Q q16   PI  -  -  -| -  -| -  1 -   -             -             -
+      N_PZ_139   N_PZ_139     - k17 AINT  -  -  1|36  0|32  1 -   -       CLK40.T             -
+      N_PZ_140   N_PZ_140     - l17 AINT  -  -  1|36  0|32  1 -   -raw_str_toggle.T             -
+      N_PZ_152   N_PZ_152     - x17 AINT  -  -  1|36  1|32  1 -   -     CLK20_P.T             -
+       CLK40.T      CLK40    .T r16   PO  -  -  -| -  -| -  0 -   -      N_PZ_139         CLK40
+raw_str_toggle.Traw_str_toggle    .T s16   PO  -  -  -| -  -| -  0 -   -      N_PZ_140raw_str_toggle
+     CLK20_P.T    CLK20_P    .T f17   PO  -  -  -| -  -| -  0 -   -      N_PZ_152       CLK20_P
+      N_PZ_156   N_PZ_156     - c18 AINT  -  - 12|36 17|32  1 -   -  c_count<0>.T             -
+  c_count<0>.T c_count<0>    .T b18   PO  -  -  -| -  -| -  0 -   -      N_PZ_156    c_count<0>
+      N_PZ_157   N_PZ_157     - e18 AINT  -  - 11|36 17|32  1 -   -  c_count<1>.T             -
+  c_count<1>.T c_count<1>    .T d18   PO  -  -  -| -  -| -  0 -   -      N_PZ_157    c_count<1>
+      N_PZ_158   N_PZ_158     - g18 AINT  -  - 10|36 17|32  1 -   -  c_count<2>.T             -
+  c_count<2>.T c_count<2>    .T f18   PO  -  -  -| -  -| -  0 -   -      N_PZ_158    c_count<2>
+      N_PZ_159   N_PZ_159     - i18 AINT  -  -  9|36 17|32  1 -   -  c_count<3>.T             -
+  c_count<3>.T c_count<3>    .T h18   PO  -  -  -| -  -| -  0 -   -      N_PZ_159    c_count<3>
+      N_PZ_160   N_PZ_160     - k18 AINT  -  -  8|36 17|32  1 -   -  c_count<4>.T             -
+  c_count<4>.T c_count<4>    .T j18   PO  -  -  -| -  -| -  0 -   -      N_PZ_160    c_count<4>
+      N_PZ_161   N_PZ_161     - m18 AINT  -  -  7|36 17|32  1 -   -  c_count<5>.T             -
+  c_count<5>.T c_count<5>    .T l18   PO  -  -  -| -  -| -  0 -   -      N_PZ_161    c_count<5>
+      N_PZ_162   N_PZ_162     - o18 AINT  -  -  6|36 17|32  1 -   -  c_count<6>.T             -
+  c_count<6>.T c_count<6>    .T n18   PO  -  -  -| -  -| -  0 -   -      N_PZ_162    c_count<6>
+      N_PZ_163   N_PZ_163     - q18 AINT  -  -  5|36 17|32  1 -   -  c_count<7>.T             -
+  c_count<7>.T c_count<7>    .T p18   PO  -  -  -| -  -| -  0 -   -      N_PZ_163    c_count<7>
+      N_PZ_164   N_PZ_164     - s18 AINT  -  -  4|36 17|32  1 -   -  c_count<8>.T             -
+  c_count<8>.T c_count<8>    .T r18   PO  -  -  -| -  -| -  0 -   -      N_PZ_164    c_count<8>
+      N_PZ_165   N_PZ_165     - u18 AINT  -  -  1|36  1|32  1 -   -     str_div.T             -
+     str_div.T    str_div    .T t18   PO  -  -  -| -  -| -  0 -   -      N_PZ_165       str_div
+      N_PZ_166   N_PZ_166     - w18 AINT  -  -  3|36 17|32  1 -   -  c_count<9>.T             -
+  c_count<9>.T c_count<9>    .T v18   PO  -  -  -| -  -| -  0 -   -      N_PZ_166    c_count<9>
+      N_PZ_167   N_PZ_167     - y18 AINT  -  -  2|36 17|32  1 -   -   cal_phase.T             -
+   cal_phase.T  cal_phase    .T x18   PO  -  -  -| -  -| -  0 -   -      N_PZ_167     cal_phase
+     DOUT<0>.Q    DOUT<0>    .Q b19   PI  -  -  -| -  -| -  1 -   -             -             -
+    DOUT<10>.Q   DOUT<10>    .Q e19   PI  -  -  -| -  -| -  1 -   -             -             -
+    DOUT<11>.Q   DOUT<11>    .Q h19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<1>.Q    DOUT<1>    .Q k19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<2>.Q    DOUT<2>    .Q n19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<3>.Q    DOUT<3>    .Q q19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<4>.Q    DOUT<4>    .Q t19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<5>.Q    DOUT<5>    .Q w19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<6>.Q    DOUT<6>    .Q z19   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<7>.Q    DOUT<7>    .Q c20   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<8>.Q    DOUT<8>    .Q f20   PI  -  -  -| -  -| -  1 -   -             -             -
+     DOUT<9>.Q    DOUT<9>    .Q i20   PI  -  -  -| -  -| -  1 -   -             -             -
+      N_PZ_210   N_PZ_210     - g23 AINT  L  -  3|36  5|32  1 -   - raw_stretch.D             -
+      N_PZ_211   N_PZ_211     - h23 AINT  L  -  5|36  6|32  1 -   -     DOUT<0>.D             -
+      N_PZ_212   N_PZ_212     - i23 AINT  L  -  5|36  6|32  1 -   -    DOUT<10>.D             -
+      N_PZ_213   N_PZ_213     - j23 AINT  L  -  5|36  6|32  1 -   -    DOUT<11>.D             -
+      N_PZ_214   N_PZ_214     - k23 AINT  L  -  5|36  6|32  1 -   -     DOUT<1>.D             -
+      N_PZ_215   N_PZ_215     - l23 AINT  L  -  5|36  6|32  1 -   -     DOUT<2>.D             -
+      N_PZ_216   N_PZ_216     - m23 AINT  L  -  5|36  6|32  1 -   -     DOUT<3>.D             -
+      N_PZ_217   N_PZ_217     - n23 AINT  L  -  5|36  6|32  1 -   -     DOUT<4>.D             -
+      N_PZ_218   N_PZ_218     - o23 AINT  L  -  5|36  6|32  1 -   -     DOUT<5>.D             -
+      N_PZ_219   N_PZ_219     - p23 AINT  L  -  5|36  6|32  1 -   -     DOUT<6>.D             -
+      N_PZ_220   N_PZ_220     - q23 AINT  L  -  5|36  6|32  1 -   -     DOUT<7>.D             -
+      N_PZ_221   N_PZ_221     - r23 AINT  L  -  5|36  6|32  1 -   -     DOUT<8>.D             -
+      N_PZ_222   N_PZ_222     - s23 AINT  L  -  5|36  6|32  1 -   -     DOUT<9>.D             -
+ raw_stretch.Draw_stretch    .D q21   PO  -  -  -| -  -| -  0 -   -      N_PZ_210   raw_stretch
+     DOUT<0>.D    DOUT<0>    .D r21   PO  -  -  -| -  -| -  0 -   -      N_PZ_211       DOUT<0>
+    DOUT<10>.D   DOUT<10>    .D s21   PO  -  -  -| -  -| -  0 -   -      N_PZ_212      DOUT<10>
+    DOUT<11>.D   DOUT<11>    .D t21   PO  -  -  -| -  -| -  0 -   -      N_PZ_213      DOUT<11>
+     DOUT<1>.D    DOUT<1>    .D u21   PO  -  -  -| -  -| -  0 -   -      N_PZ_214       DOUT<1>
+     DOUT<2>.D    DOUT<2>    .D v21   PO  -  -  -| -  -| -  0 -   -      N_PZ_215       DOUT<2>
+     DOUT<3>.D    DOUT<3>    .D w21   PO  -  -  -| -  -| -  0 -   -      N_PZ_216       DOUT<3>
+     DOUT<4>.D    DOUT<4>    .D x21   PO  -  -  -| -  -| -  0 -   -      N_PZ_217       DOUT<4>
+     DOUT<5>.D    DOUT<5>    .D y21   PO  -  -  -| -  -| -  0 -   -      N_PZ_218       DOUT<5>
+     DOUT<6>.D    DOUT<6>    .D z21   PO  -  -  -| -  -| -  0 -   -      N_PZ_219       DOUT<6>
+     DOUT<7>.D    DOUT<7>    .D a22   PO  -  -  -| -  -| -  0 -   -      N_PZ_220       DOUT<7>
+     DOUT<8>.D    DOUT<8>    .D b22   PO  -  -  -| -  -| -  0 -   -      N_PZ_221       DOUT<8>
+     DOUT<9>.D    DOUT<9>    .D c22   PO  -  -  -| -  -| -  0 -   -      N_PZ_222       DOUT<9>
+
+---------------------------------------------------------
+|  PinCnt = 46, NodeCnt = 32, Total = 78, TotalPt = 227 |
+---------------------------------------------------------
+CLK80,net=amplcpld: PI
+  <--0-- 
+  --47--> (N_PZ_1, amplcpld) (N_PZ_4, amplcpld) (N_PZ_7, amplcpld) (N_PZ_10, amplcpld)  
+          (N_PZ_13, amplcpld) (N_PZ_16, amplcpld) (N_PZ_19, amplcpld)  
+          (N_PZ_22, amplcpld) (N_PZ_25, amplcpld) (N_PZ_31, amplcpld)  
+          (N_PZ_34, amplcpld) (N_PZ_37, amplcpld) (N_PZ_40, amplcpld)  
+          (N_PZ_43, amplcpld) (N_PZ_46, amplcpld) (N_PZ_49, amplcpld)  
+          (N_PZ_52, amplcpld) (N_PZ_55, amplcpld) (N_PZ_58, amplcpld)  
+          (N_PZ_61, amplcpld) (N_PZ_64, amplcpld) (N_PZ_67, amplcpld)  
+          (N_PZ_70, amplcpld) (N_PZ_73, amplcpld) (N_PZ_76, amplcpld)  
+          (N_PZ_79, amplcpld) (N_PZ_82, amplcpld) (N_PZ_85, amplcpld)  
+          (N_PZ_88, amplcpld) (N_PZ_91, amplcpld) (N_PZ_94, amplcpld)  
+          (N_PZ_98, amplcpld) (N_PZ_100, amplcpld) (N_PZ_104, amplcpld)  
+          (N_PZ_107, amplcpld) (N_PZ_109, amplcpld) (N_PZ_111, amplcpld)  
+          (N_PZ_113, amplcpld) (N_PZ_115, amplcpld) (N_PZ_117, amplcpld)  
+          (N_PZ_119, amplcpld) (N_PZ_122, amplcpld) (N_PZ_124, amplcpld)  
+          (N_PZ_126, amplcpld) (N_PZ_128, amplcpld) (N_PZ_131, amplcpld)  
+          (N_PZ_133, amplcpld) 
+STR,net=amplcpld: PI
+  <--0-- 
+  --2--> (N_PZ_28, amplcpld) (N_PZ_102, amplcpld) 
+ENA,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_165, amplcpld) 
+CLK40.Q,net=amplcpld: PI
+  <--0-- 
+  --21--> (N_PZ_38, amplcpld) (N_PZ_41, amplcpld) (N_PZ_44, amplcpld)  
+          (N_PZ_47, amplcpld) (N_PZ_48, amplcpld) (N_PZ_53, amplcpld)  
+          (N_PZ_138, amplcpld) (N_PZ_152, amplcpld) (N_PZ_156, amplcpld)  
+          (N_PZ_157, amplcpld) (N_PZ_158, amplcpld) (N_PZ_159, amplcpld)  
+          (N_PZ_160, amplcpld) (N_PZ_161, amplcpld) (N_PZ_162, amplcpld)  
+          (N_PZ_163, amplcpld) (N_PZ_164, amplcpld) (N_PZ_166, amplcpld)  
+          (N_PZ_167, amplcpld) (N_PZ_210, amplcpld) (N_PZ_50, amplcpld) 
+CLK20_P.Q,net=amplcpld: PI
+  <--0-- 
+  --26--> (N_PZ_66, amplcpld) (N_PZ_138, amplcpld) (N_PZ_156, amplcpld)  
+          (N_PZ_157, amplcpld) (N_PZ_158, amplcpld) (N_PZ_159, amplcpld)  
+          (N_PZ_160, amplcpld) (N_PZ_161, amplcpld) (N_PZ_162, amplcpld)  
+          (N_PZ_163, amplcpld) (N_PZ_164, amplcpld) (N_PZ_166, amplcpld)  
+          (N_PZ_167, amplcpld) (N_PZ_211, amplcpld) (N_PZ_212, amplcpld)  
+          (N_PZ_213, amplcpld) (N_PZ_214, amplcpld) (N_PZ_215, amplcpld)  
+          (N_PZ_216, amplcpld) (N_PZ_217, amplcpld) (N_PZ_218, amplcpld)  
+          (N_PZ_219, amplcpld) (N_PZ_220, amplcpld) (N_PZ_221, amplcpld)  
+          (N_PZ_222, amplcpld) (N_PZ_50, amplcpld) 
+ADC0<0>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_211, amplcpld) 
+ADC1<0>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_211, amplcpld) 
+ADC0<10>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_212, amplcpld) 
+ADC1<10>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_212, amplcpld) 
+ADC0<11>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_213, amplcpld) 
+ADC1<11>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_213, amplcpld) 
+ADC0<1>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_214, amplcpld) 
+ADC1<1>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_214, amplcpld) 
+ADC0<2>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_215, amplcpld) 
+ADC1<2>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_215, amplcpld) 
+ADC0<3>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_216, amplcpld) 
+ADC1<3>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_216, amplcpld) 
+ADC0<4>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_217, amplcpld) 
+ADC1<4>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_217, amplcpld) 
+ADC0<5>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_218, amplcpld) 
+ADC1<5>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_218, amplcpld) 
+ADC0<6>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_219, amplcpld) 
+ADC1<6>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_219, amplcpld) 
+ADC0<7>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_220, amplcpld) 
+ADC1<7>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_220, amplcpld) 
+ADC0<8>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_221, amplcpld) 
+ADC1<8>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_221, amplcpld) 
+ADC0<9>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_222, amplcpld) 
+ADC1<9>,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_222, amplcpld) 
+EV,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_134, amplcpld) 
+N_PZ_1,net=amplcpld: PINT ( c_count<0>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<0>.CLK, amplcpld) 
+N_PZ_4,net=amplcpld: PINT ( c_count<1>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<1>.CLK, amplcpld) 
+N_PZ_7,net=amplcpld: PINT ( c_count<2>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<2>.CLK, amplcpld) 
+N_PZ_10,net=amplcpld: PINT ( c_count<3>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<3>.CLK, amplcpld) 
+N_PZ_13,net=amplcpld: PINT ( c_count<4>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<4>.CLK, amplcpld) 
+N_PZ_16,net=amplcpld: PINT ( c_count<5>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<5>.CLK, amplcpld) 
+N_PZ_19,net=amplcpld: PINT ( c_count<6>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<6>.CLK, amplcpld) 
+N_PZ_22,net=amplcpld: PINT ( c_count<7>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<7>.CLK, amplcpld) 
+N_PZ_25,net=amplcpld: PINT ( c_count<8>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<8>.CLK, amplcpld) 
+N_PZ_28,net=amplcpld: PINT ( str_div.CLK )
+  <--1--  (STR, amplcpld)
+  --1--> (str_div.CLK, amplcpld) 
+N_PZ_31,net=amplcpld: PINT ( c_count<9>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (c_count<9>.CLK, amplcpld) 
+N_PZ_34,net=amplcpld: PINT ( cal_phase.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (cal_phase.CLK, amplcpld) 
+N_PZ_36,net=amplcpld: PINT ( inhibit_pipe<0>.D )
+  <--1--  (raw_stretch.Q, amplcpld)
+  --1--> (inhibit_pipe<0>.D, amplcpld) 
+N_PZ_37,net=amplcpld: PINT ( inhibit_pipe<0>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (inhibit_pipe<0>.CLK, amplcpld) 
+N_PZ_38,net=amplcpld: PINT ( inhibit_pipe<0>.CE )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (inhibit_pipe<0>.CE, amplcpld) 
+N_PZ_39,net=amplcpld: PINT ( inhibit_pipe<1>.D )
+  <--1--  (inhibit_pipe<0>.Q, amplcpld)
+  --1--> (inhibit_pipe<1>.D, amplcpld) 
+N_PZ_40,net=amplcpld: PINT ( inhibit_pipe<1>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (inhibit_pipe<1>.CLK, amplcpld) 
+N_PZ_41,net=amplcpld: PINT ( inhibit_pipe<1>.CE )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (inhibit_pipe<1>.CE, amplcpld) 
+N_PZ_42,net=amplcpld: PINT ( inhibit_pipe<2>.D )
+  <--1--  (inhibit_pipe<1>.Q, amplcpld)
+  --1--> (inhibit_pipe<2>.D, amplcpld) 
+N_PZ_43,net=amplcpld: PINT ( inhibit_pipe<2>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (inhibit_pipe<2>.CLK, amplcpld) 
+N_PZ_44,net=amplcpld: PINT ( inhibit_pipe<2>.CE )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (inhibit_pipe<2>.CE, amplcpld) 
+N_PZ_45,net=amplcpld: PINT ( str1.D )
+  <--1--  (str_div.Q, amplcpld)
+  --1--> (str1.D, amplcpld) 
+N_PZ_46,net=amplcpld: PINT ( str1.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (str1.CLK, amplcpld) 
+N_PZ_47,net=amplcpld: PINT ( str1.CE )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (str1.CE, amplcpld) 
+N_PZ_48,net=amplcpld: PINT ( cal_sample.D )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (cal_sample.D, amplcpld) 
+N_PZ_49,net=amplcpld: PINT ( cal_sample.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (cal_sample.CLK, amplcpld) 
+N_PZ_50,net=amplcpld: PINT ( cal_sample.CE )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (cal_sample.CE, amplcpld) 
+N_PZ_51,net=amplcpld: PINT ( inhibit_pipe<3>.D )
+  <--1--  (inhibit_pipe<2>.Q, amplcpld)
+  --1--> (inhibit_pipe<3>.D, amplcpld) 
+N_PZ_52,net=amplcpld: PINT ( inhibit_pipe<3>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (inhibit_pipe<3>.CLK, amplcpld) 
+N_PZ_53,net=amplcpld: PINT ( inhibit_pipe<3>.CE )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (inhibit_pipe<3>.CE, amplcpld) 
+N_PZ_55,net=amplcpld: PINT ( raw_stretch.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (raw_stretch.CLK, amplcpld) 
+N_PZ_58,net=amplcpld: PINT ( DOUT<0>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<0>.CLK, amplcpld) 
+N_PZ_61,net=amplcpld: PINT ( DOUT<10>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<10>.CLK, amplcpld) 
+N_PZ_64,net=amplcpld: PINT ( DOUT<11>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<11>.CLK, amplcpld) 
+N_PZ_66,net=amplcpld: PINT ( DOUT<12>.D )
+  <--1--  (CLK20_P.Q, amplcpld)
+  --1--> (DOUT<12>.D, amplcpld) 
+N_PZ_67,net=amplcpld: PINT ( DOUT<12>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<12>.CLK, amplcpld) 
+N_PZ_68,net=amplcpld: PINT ( DOUT<12>.CE )
+  <--2--  (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld)
+  --1--> (DOUT<12>.CE, amplcpld) 
+N_PZ_70,net=amplcpld: PINT ( DOUT<1>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<1>.CLK, amplcpld) 
+N_PZ_73,net=amplcpld: PINT ( DOUT<2>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<2>.CLK, amplcpld) 
+N_PZ_76,net=amplcpld: PINT ( DOUT<3>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<3>.CLK, amplcpld) 
+N_PZ_79,net=amplcpld: PINT ( DOUT<4>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<4>.CLK, amplcpld) 
+N_PZ_82,net=amplcpld: PINT ( DOUT<5>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<5>.CLK, amplcpld) 
+N_PZ_85,net=amplcpld: PINT ( DOUT<6>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<6>.CLK, amplcpld) 
+N_PZ_88,net=amplcpld: PINT ( DOUT<7>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<7>.CLK, amplcpld) 
+N_PZ_91,net=amplcpld: PINT ( DOUT<8>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<8>.CLK, amplcpld) 
+N_PZ_94,net=amplcpld: PINT ( DOUT<9>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DOUT<9>.CLK, amplcpld) 
+N_PZ_98,net=amplcpld: PINT ( CLK20_P.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (CLK20_P.CLK, amplcpld) 
+N_PZ_100,net=amplcpld: PINT ( CLK40.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (CLK40.CLK, amplcpld) 
+N_PZ_102,net=amplcpld: PINT ( raw_str_toggle.CLK )
+  <--1--  (STR, amplcpld)
+  --1--> (raw_str_toggle.CLK, amplcpld) 
+N_PZ_103,net=amplcpld: PINT ( raw_sync<1>.D )
+  <--1--  (raw_sync<0>.Q, amplcpld)
+  --1--> (raw_sync<1>.D, amplcpld) 
+N_PZ_104,net=amplcpld: PINT ( raw_sync<1>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (raw_sync<1>.CLK, amplcpld) 
+N_PZ_107,net=amplcpld: PINT ( dly<0>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<0>.CLK, amplcpld) 
+N_PZ_108,net=amplcpld: PINT ( dly<1>.D )
+  <--1--  (dly<0>.Q, amplcpld)
+  --1--> (dly<1>.D, amplcpld) 
+N_PZ_109,net=amplcpld: PINT ( dly<1>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<1>.CLK, amplcpld) 
+N_PZ_110,net=amplcpld: PINT ( dly<2>.D )
+  <--1--  (dly<1>.Q, amplcpld)
+  --1--> (dly<2>.D, amplcpld) 
+N_PZ_111,net=amplcpld: PINT ( dly<2>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<2>.CLK, amplcpld) 
+N_PZ_112,net=amplcpld: PINT ( dly<3>.D )
+  <--1--  (dly<2>.Q, amplcpld)
+  --1--> (dly<3>.D, amplcpld) 
+N_PZ_113,net=amplcpld: PINT ( dly<3>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<3>.CLK, amplcpld) 
+N_PZ_114,net=amplcpld: PINT ( dly<4>.D )
+  <--1--  (dly<3>.Q, amplcpld)
+  --1--> (dly<4>.D, amplcpld) 
+N_PZ_115,net=amplcpld: PINT ( dly<4>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<4>.CLK, amplcpld) 
+N_PZ_116,net=amplcpld: PINT ( dly<5>.D )
+  <--1--  (dly<4>.Q, amplcpld)
+  --1--> (dly<5>.D, amplcpld) 
+N_PZ_117,net=amplcpld: PINT ( dly<5>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<5>.CLK, amplcpld) 
+N_PZ_118,net=amplcpld: PINT ( dly<6>.D )
+  <--1--  (dly<5>.Q, amplcpld)
+  --1--> (dly<6>.D, amplcpld) 
+N_PZ_119,net=amplcpld: PINT ( dly<6>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (dly<6>.CLK, amplcpld) 
+N_PZ_122,net=amplcpld: PINT ( raw_edge.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (raw_edge.CLK, amplcpld) 
+N_PZ_123,net=amplcpld: PINT ( raw_sync<0>.D )
+  <--1--  (raw_str_toggle.Q, amplcpld)
+  --1--> (raw_sync<0>.D, amplcpld) 
+N_PZ_124,net=amplcpld: PINT ( raw_sync<0>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (raw_sync<0>.CLK, amplcpld) 
+N_PZ_125,net=amplcpld: PINT ( raw_sync<2>.D )
+  <--1--  (raw_sync<1>.Q, amplcpld)
+  --1--> (raw_sync<2>.D, amplcpld) 
+N_PZ_126,net=amplcpld: PINT ( raw_sync<2>.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (raw_sync<2>.CLK, amplcpld) 
+N_PZ_127,net=amplcpld: PINT ( str2.D )
+  <--1--  (str1.Q, amplcpld)
+  --1--> (str2.D, amplcpld) 
+N_PZ_128,net=amplcpld: PINT ( str2.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (str2.CLK, amplcpld) 
+N_PZ_131,net=amplcpld: PINT ( CLK20_N.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (CLK20_N.CLK, amplcpld) 
+N_PZ_132,net=amplcpld: PINT ( DV.D )
+  <--2--  (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld)
+  --1--> (DV.D, amplcpld) 
+N_PZ_133,net=amplcpld: PINT ( DV.CLK )
+  <--1--  (CLK80, amplcpld)
+  --1--> (DV.CLK, amplcpld) 
+N_PZ_134,net=amplcpld: PINT ( EV_out )
+  <--1--  (EV, amplcpld)
+  --1--> (EV_out, amplcpld) 
+c_count<0>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_1, amplcpld)
+  --0--> 
+c_count<1>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_4, amplcpld)
+  --0--> 
+c_count<2>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_7, amplcpld)
+  --0--> 
+c_count<3>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_10, amplcpld)
+  --0--> 
+c_count<4>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_13, amplcpld)
+  --0--> 
+c_count<5>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_16, amplcpld)
+  --0--> 
+c_count<6>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_19, amplcpld)
+  --0--> 
+c_count<7>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_22, amplcpld)
+  --0--> 
+c_count<8>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_25, amplcpld)
+  --0--> 
+str_div.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_28, amplcpld)
+  --0--> 
+c_count<9>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_31, amplcpld)
+  --0--> 
+cal_phase.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_34, amplcpld)
+  --0--> 
+inhibit_pipe<0>.D,net=amplcpld: PO
+  <--1--  (N_PZ_36, amplcpld)
+  --0--> 
+inhibit_pipe<0>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_37, amplcpld)
+  --0--> 
+inhibit_pipe<0>.CE,net=amplcpld: PO
+  <--1--  (N_PZ_38, amplcpld)
+  --0--> 
+inhibit_pipe<1>.D,net=amplcpld: PO
+  <--1--  (N_PZ_39, amplcpld)
+  --0--> 
+inhibit_pipe<1>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_40, amplcpld)
+  --0--> 
+inhibit_pipe<1>.CE,net=amplcpld: PO
+  <--1--  (N_PZ_41, amplcpld)
+  --0--> 
+inhibit_pipe<2>.D,net=amplcpld: PO
+  <--1--  (N_PZ_42, amplcpld)
+  --0--> 
+inhibit_pipe<2>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_43, amplcpld)
+  --0--> 
+inhibit_pipe<2>.CE,net=amplcpld: PO
+  <--1--  (N_PZ_44, amplcpld)
+  --0--> 
+str1.D,net=amplcpld: PO
+  <--1--  (N_PZ_45, amplcpld)
+  --0--> 
+str1.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_46, amplcpld)
+  --0--> 
+str1.CE,net=amplcpld: PO
+  <--1--  (N_PZ_47, amplcpld)
+  --0--> 
+cal_sample.D,net=amplcpld: PO
+  <--1--  (N_PZ_48, amplcpld)
+  --0--> 
+cal_sample.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_49, amplcpld)
+  --0--> 
+cal_sample.CE,net=amplcpld: PO
+  <--1--  (N_PZ_50, amplcpld)
+  --0--> 
+inhibit_pipe<3>.D,net=amplcpld: PO
+  <--1--  (N_PZ_51, amplcpld)
+  --0--> 
+inhibit_pipe<3>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_52, amplcpld)
+  --0--> 
+inhibit_pipe<3>.CE,net=amplcpld: PO
+  <--1--  (N_PZ_53, amplcpld)
+  --0--> 
+raw_stretch.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_55, amplcpld)
+  --0--> 
+DOUT<0>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_58, amplcpld)
+  --0--> 
+DOUT<10>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_61, amplcpld)
+  --0--> 
+DOUT<11>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_64, amplcpld)
+  --0--> 
+DOUT<12>.D,net=amplcpld: PO
+  <--1--  (N_PZ_66, amplcpld)
+  --0--> 
+DOUT<12>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_67, amplcpld)
+  --0--> 
+DOUT<12>.CE,net=amplcpld: PO
+  <--1--  (N_PZ_68, amplcpld)
+  --0--> 
+DOUT<1>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_70, amplcpld)
+  --0--> 
+DOUT<2>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_73, amplcpld)
+  --0--> 
+DOUT<3>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_76, amplcpld)
+  --0--> 
+DOUT<4>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_79, amplcpld)
+  --0--> 
+DOUT<5>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_82, amplcpld)
+  --0--> 
+DOUT<6>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_85, amplcpld)
+  --0--> 
+DOUT<7>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_88, amplcpld)
+  --0--> 
+DOUT<8>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_91, amplcpld)
+  --0--> 
+DOUT<9>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_94, amplcpld)
+  --0--> 
+CLK20_P.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_98, amplcpld)
+  --0--> 
+CLK40.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_100, amplcpld)
+  --0--> 
+raw_str_toggle.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_102, amplcpld)
+  --0--> 
+raw_sync<1>.D,net=amplcpld: PO
+  <--1--  (N_PZ_103, amplcpld)
+  --0--> 
+raw_sync<1>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_104, amplcpld)
+  --0--> 
+dly<0>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_107, amplcpld)
+  --0--> 
+dly<1>.D,net=amplcpld: PO
+  <--1--  (N_PZ_108, amplcpld)
+  --0--> 
+dly<1>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_109, amplcpld)
+  --0--> 
+dly<2>.D,net=amplcpld: PO
+  <--1--  (N_PZ_110, amplcpld)
+  --0--> 
+dly<2>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_111, amplcpld)
+  --0--> 
+dly<3>.D,net=amplcpld: PO
+  <--1--  (N_PZ_112, amplcpld)
+  --0--> 
+dly<3>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_113, amplcpld)
+  --0--> 
+dly<4>.D,net=amplcpld: PO
+  <--1--  (N_PZ_114, amplcpld)
+  --0--> 
+dly<4>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_115, amplcpld)
+  --0--> 
+dly<5>.D,net=amplcpld: PO
+  <--1--  (N_PZ_116, amplcpld)
+  --0--> 
+dly<5>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_117, amplcpld)
+  --0--> 
+dly<6>.D,net=amplcpld: PO
+  <--1--  (N_PZ_118, amplcpld)
+  --0--> 
+dly<6>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_119, amplcpld)
+  --0--> 
+raw_edge.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_122, amplcpld)
+  --0--> 
+raw_sync<0>.D,net=amplcpld: PO
+  <--1--  (N_PZ_123, amplcpld)
+  --0--> 
+raw_sync<0>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_124, amplcpld)
+  --0--> 
+raw_sync<2>.D,net=amplcpld: PO
+  <--1--  (N_PZ_125, amplcpld)
+  --0--> 
+raw_sync<2>.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_126, amplcpld)
+  --0--> 
+str2.D,net=amplcpld: PO
+  <--1--  (N_PZ_127, amplcpld)
+  --0--> 
+str2.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_128, amplcpld)
+  --0--> 
+CLK20_N.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_131, amplcpld)
+  --0--> 
+DV.D,net=amplcpld: PO
+  <--1--  (N_PZ_132, amplcpld)
+  --0--> 
+DV.CLK,net=amplcpld: PO
+  <--1--  (N_PZ_133, amplcpld)
+  --0--> 
+EV_out,net=amplcpld: PO
+  <--1--  (N_PZ_134, amplcpld)
+  --0--> 
+N_PZ_136,net=amplcpld: PINT ( dly<0>.D )
+  <--2--  (str1.Q, amplcpld) (str2.Q, amplcpld)
+  --1--> (dly<0>.D, amplcpld) 
+N_PZ_137,net=amplcpld: PINT ( raw_edge.D )
+  <--2--  (raw_sync<1>.Q, amplcpld) (raw_sync<2>.Q, amplcpld)
+  --1--> (raw_edge.D, amplcpld) 
+N_PZ_138,net=amplcpld: PINT ( CLK20_N.D )
+  <--2--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld)
+  --1--> (CLK20_N.D, amplcpld) 
+dly<0>.D,net=amplcpld: PO
+  <--1--  (N_PZ_136, amplcpld)
+  --0--> 
+raw_edge.D,net=amplcpld: PO
+  <--1--  (N_PZ_137, amplcpld)
+  --0--> 
+CLK20_N.D,net=amplcpld: PO
+  <--1--  (N_PZ_138, amplcpld)
+  --0--> 
+c_count<0>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<1>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<2>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<3>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<4>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<5>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<6>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<7>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+c_count<8>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+str_div.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_45, amplcpld) 
+c_count<9>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+cal_phase.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+inhibit_pipe<0>.Q,net=amplcpld: PI
+  <--0-- 
+  --13--> (N_PZ_39, amplcpld) (N_PZ_156, amplcpld) (N_PZ_157, amplcpld)  
+          (N_PZ_158, amplcpld) (N_PZ_159, amplcpld) (N_PZ_160, amplcpld)  
+          (N_PZ_161, amplcpld) (N_PZ_162, amplcpld) (N_PZ_163, amplcpld)  
+          (N_PZ_164, amplcpld) (N_PZ_166, amplcpld) (N_PZ_167, amplcpld)  
+          (N_PZ_50, amplcpld) 
+inhibit_pipe<1>.Q,net=amplcpld: PI
+  <--0-- 
+  --13--> (N_PZ_42, amplcpld) (N_PZ_156, amplcpld) (N_PZ_157, amplcpld)  
+          (N_PZ_158, amplcpld) (N_PZ_159, amplcpld) (N_PZ_160, amplcpld)  
+          (N_PZ_161, amplcpld) (N_PZ_162, amplcpld) (N_PZ_163, amplcpld)  
+          (N_PZ_164, amplcpld) (N_PZ_166, amplcpld) (N_PZ_167, amplcpld)  
+          (N_PZ_50, amplcpld) 
+inhibit_pipe<2>.Q,net=amplcpld: PI
+  <--0-- 
+  --13--> (N_PZ_51, amplcpld) (N_PZ_156, amplcpld) (N_PZ_157, amplcpld)  
+          (N_PZ_158, amplcpld) (N_PZ_159, amplcpld) (N_PZ_160, amplcpld)  
+          (N_PZ_161, amplcpld) (N_PZ_162, amplcpld) (N_PZ_163, amplcpld)  
+          (N_PZ_164, amplcpld) (N_PZ_166, amplcpld) (N_PZ_167, amplcpld)  
+          (N_PZ_50, amplcpld) 
+str1.Q,net=amplcpld: PI
+  <--0-- 
+  --2--> (N_PZ_127, amplcpld) (N_PZ_136, amplcpld) 
+cal_sample.Q,net=amplcpld: PI
+  <--0-- 
+  --14--> (N_PZ_68, amplcpld) (N_PZ_132, amplcpld) (N_PZ_211, amplcpld)  
+          (N_PZ_212, amplcpld) (N_PZ_213, amplcpld) (N_PZ_214, amplcpld)  
+          (N_PZ_215, amplcpld) (N_PZ_216, amplcpld) (N_PZ_217, amplcpld)  
+          (N_PZ_218, amplcpld) (N_PZ_219, amplcpld) (N_PZ_220, amplcpld)  
+          (N_PZ_221, amplcpld) (N_PZ_222, amplcpld) 
+inhibit_pipe<3>.Q,net=amplcpld: PI
+  <--0-- 
+  --12--> (N_PZ_156, amplcpld) (N_PZ_157, amplcpld) (N_PZ_158, amplcpld)  
+          (N_PZ_159, amplcpld) (N_PZ_160, amplcpld) (N_PZ_161, amplcpld)  
+          (N_PZ_162, amplcpld) (N_PZ_163, amplcpld) (N_PZ_164, amplcpld)  
+          (N_PZ_166, amplcpld) (N_PZ_167, amplcpld) (N_PZ_50, amplcpld) 
+raw_stretch.Q,net=amplcpld: PI
+  <--0-- 
+  --2--> (N_PZ_36, amplcpld) (N_PZ_210, amplcpld) 
+raw_str_toggle.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_123, amplcpld) 
+raw_sync<1>.Q,net=amplcpld: PI
+  <--0-- 
+  --3--> (N_PZ_125, amplcpld) (N_PZ_137, amplcpld) (N_PZ_210, amplcpld) 
+dly<1>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_110, amplcpld) 
+dly<2>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_112, amplcpld) 
+dly<3>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_114, amplcpld) 
+dly<4>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_116, amplcpld) 
+dly<5>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_118, amplcpld) 
+dly<6>.Q,net=amplcpld: PI
+  <--0-- 
+  --14--> (N_PZ_68, amplcpld) (N_PZ_132, amplcpld) (N_PZ_211, amplcpld)  
+          (N_PZ_212, amplcpld) (N_PZ_213, amplcpld) (N_PZ_214, amplcpld)  
+          (N_PZ_215, amplcpld) (N_PZ_216, amplcpld) (N_PZ_217, amplcpld)  
+          (N_PZ_218, amplcpld) (N_PZ_219, amplcpld) (N_PZ_220, amplcpld)  
+          (N_PZ_221, amplcpld) (N_PZ_222, amplcpld) 
+raw_sync<0>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_103, amplcpld) 
+raw_sync<2>.Q,net=amplcpld: PI
+  <--0-- 
+  --2--> (N_PZ_137, amplcpld) (N_PZ_210, amplcpld) 
+str2.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_136, amplcpld) 
+dly<0>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_108, amplcpld) 
+raw_edge.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_210, amplcpld) 
+N_PZ_139,net=amplcpld: PINT ( CLK40.T )
+  <--0-- 
+  --1--> (CLK40.T, amplcpld) 
+N_PZ_140,net=amplcpld: PINT ( raw_str_toggle.T )
+  <--0-- 
+  --1--> (raw_str_toggle.T, amplcpld) 
+N_PZ_152,net=amplcpld: PINT ( CLK20_P.T )
+  <--1--  (CLK40.Q, amplcpld)
+  --1--> (CLK20_P.T, amplcpld) 
+CLK40.T,net=amplcpld: PO
+  <--1--  (N_PZ_139, amplcpld)
+  --0--> 
+raw_str_toggle.T,net=amplcpld: PO
+  <--1--  (N_PZ_140, amplcpld)
+  --0--> 
+CLK20_P.T,net=amplcpld: PO
+  <--1--  (N_PZ_152, amplcpld)
+  --0--> 
+N_PZ_156,net=amplcpld: PINT ( c_count<0>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<0>.T, amplcpld) 
+c_count<0>.T,net=amplcpld: PO
+  <--1--  (N_PZ_156, amplcpld)
+  --0--> 
+N_PZ_157,net=amplcpld: PINT ( c_count<1>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<1>.T, amplcpld) 
+c_count<1>.T,net=amplcpld: PO
+  <--1--  (N_PZ_157, amplcpld)
+  --0--> 
+N_PZ_158,net=amplcpld: PINT ( c_count<2>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<2>.T, amplcpld) 
+c_count<2>.T,net=amplcpld: PO
+  <--1--  (N_PZ_158, amplcpld)
+  --0--> 
+N_PZ_159,net=amplcpld: PINT ( c_count<3>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<3>.T, amplcpld) 
+c_count<3>.T,net=amplcpld: PO
+  <--1--  (N_PZ_159, amplcpld)
+  --0--> 
+N_PZ_160,net=amplcpld: PINT ( c_count<4>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<4>.T, amplcpld) 
+c_count<4>.T,net=amplcpld: PO
+  <--1--  (N_PZ_160, amplcpld)
+  --0--> 
+N_PZ_161,net=amplcpld: PINT ( c_count<5>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<5>.T, amplcpld) 
+c_count<5>.T,net=amplcpld: PO
+  <--1--  (N_PZ_161, amplcpld)
+  --0--> 
+N_PZ_162,net=amplcpld: PINT ( c_count<6>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<6>.T, amplcpld) 
+c_count<6>.T,net=amplcpld: PO
+  <--1--  (N_PZ_162, amplcpld)
+  --0--> 
+N_PZ_163,net=amplcpld: PINT ( c_count<7>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<7>.T, amplcpld) 
+c_count<7>.T,net=amplcpld: PO
+  <--1--  (N_PZ_163, amplcpld)
+  --0--> 
+N_PZ_164,net=amplcpld: PINT ( c_count<8>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<8>.T, amplcpld) 
+c_count<8>.T,net=amplcpld: PO
+  <--1--  (N_PZ_164, amplcpld)
+  --0--> 
+N_PZ_165,net=amplcpld: PINT ( str_div.T )
+  <--1--  (ENA, amplcpld)
+  --1--> (str_div.T, amplcpld) 
+str_div.T,net=amplcpld: PO
+  <--1--  (N_PZ_165, amplcpld)
+  --0--> 
+N_PZ_166,net=amplcpld: PINT ( c_count<9>.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (c_count<9>.T, amplcpld) 
+c_count<9>.T,net=amplcpld: PO
+  <--1--  (N_PZ_166, amplcpld)
+  --0--> 
+N_PZ_167,net=amplcpld: PINT ( cal_phase.T )
+  <--17--  (CLK40.Q, amplcpld) (CLK20_P.Q, amplcpld) (c_count<0>.Q, amplcpld) 
+           (c_count<1>.Q, amplcpld) (c_count<2>.Q, amplcpld) (c_count<3>.Q, amplcpld) 
+           (c_count<4>.Q, amplcpld) (c_count<5>.Q, amplcpld) (c_count<6>.Q, amplcpld) 
+           (c_count<7>.Q, amplcpld) (c_count<8>.Q, amplcpld) (c_count<9>.Q, amplcpld) 
+           (cal_phase.Q, amplcpld) (inhibit_pipe<0>.Q, amplcpld) 
+           (inhibit_pipe<1>.Q, amplcpld) (inhibit_pipe<2>.Q, amplcpld) 
+           (inhibit_pipe<3>.Q, amplcpld)
+  --1--> (cal_phase.T, amplcpld) 
+cal_phase.T,net=amplcpld: PO
+  <--1--  (N_PZ_167, amplcpld)
+  --0--> 
+DOUT<0>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_211, amplcpld) 
+DOUT<10>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_212, amplcpld) 
+DOUT<11>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_213, amplcpld) 
+DOUT<1>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_214, amplcpld) 
+DOUT<2>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_215, amplcpld) 
+DOUT<3>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_216, amplcpld) 
+DOUT<4>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_217, amplcpld) 
+DOUT<5>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_218, amplcpld) 
+DOUT<6>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_219, amplcpld) 
+DOUT<7>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_220, amplcpld) 
+DOUT<8>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_221, amplcpld) 
+DOUT<9>.Q,net=amplcpld: PI
+  <--0-- 
+  --1--> (N_PZ_222, amplcpld) 
+N_PZ_210,net=amplcpld: PINT ( raw_stretch.D )
+  <--5--  (CLK40.Q, amplcpld) (raw_stretch.Q, amplcpld) (raw_sync<1>.Q, amplcpld) 
+          (raw_sync<2>.Q, amplcpld) (raw_edge.Q, amplcpld)
+  --1--> (raw_stretch.D, amplcpld) 
+N_PZ_211,net=amplcpld: PINT ( DOUT<0>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<0>, amplcpld) (ADC1<0>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<0>.Q, amplcpld)
+  --1--> (DOUT<0>.D, amplcpld) 
+N_PZ_212,net=amplcpld: PINT ( DOUT<10>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<10>, amplcpld) (ADC1<10>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<10>.Q, amplcpld)
+  --1--> (DOUT<10>.D, amplcpld) 
+N_PZ_213,net=amplcpld: PINT ( DOUT<11>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<11>, amplcpld) (ADC1<11>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<11>.Q, amplcpld)
+  --1--> (DOUT<11>.D, amplcpld) 
+N_PZ_214,net=amplcpld: PINT ( DOUT<1>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<1>, amplcpld) (ADC1<1>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<1>.Q, amplcpld)
+  --1--> (DOUT<1>.D, amplcpld) 
+N_PZ_215,net=amplcpld: PINT ( DOUT<2>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<2>, amplcpld) (ADC1<2>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<2>.Q, amplcpld)
+  --1--> (DOUT<2>.D, amplcpld) 
+N_PZ_216,net=amplcpld: PINT ( DOUT<3>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<3>, amplcpld) (ADC1<3>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<3>.Q, amplcpld)
+  --1--> (DOUT<3>.D, amplcpld) 
+N_PZ_217,net=amplcpld: PINT ( DOUT<4>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<4>, amplcpld) (ADC1<4>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<4>.Q, amplcpld)
+  --1--> (DOUT<4>.D, amplcpld) 
+N_PZ_218,net=amplcpld: PINT ( DOUT<5>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<5>, amplcpld) (ADC1<5>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<5>.Q, amplcpld)
+  --1--> (DOUT<5>.D, amplcpld) 
+N_PZ_219,net=amplcpld: PINT ( DOUT<6>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<6>, amplcpld) (ADC1<6>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<6>.Q, amplcpld)
+  --1--> (DOUT<6>.D, amplcpld) 
+N_PZ_220,net=amplcpld: PINT ( DOUT<7>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<7>, amplcpld) (ADC1<7>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<7>.Q, amplcpld)
+  --1--> (DOUT<7>.D, amplcpld) 
+N_PZ_221,net=amplcpld: PINT ( DOUT<8>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<8>, amplcpld) (ADC1<8>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<8>.Q, amplcpld)
+  --1--> (DOUT<8>.D, amplcpld) 
+N_PZ_222,net=amplcpld: PINT ( DOUT<9>.D )
+  <--6--  (CLK20_P.Q, amplcpld) (ADC0<9>, amplcpld) (ADC1<9>, amplcpld) 
+          (cal_sample.Q, amplcpld) (dly<6>.Q, amplcpld) (DOUT<9>.Q, amplcpld)
+  --1--> (DOUT<9>.D, amplcpld) 
+raw_stretch.D,net=amplcpld: PO
+  <--1--  (N_PZ_210, amplcpld)
+  --0--> 
+DOUT<0>.D,net=amplcpld: PO
+  <--1--  (N_PZ_211, amplcpld)
+  --0--> 
+DOUT<10>.D,net=amplcpld: PO
+  <--1--  (N_PZ_212, amplcpld)
+  --0--> 
+DOUT<11>.D,net=amplcpld: PO
+  <--1--  (N_PZ_213, amplcpld)
+  --0--> 
+DOUT<1>.D,net=amplcpld: PO
+  <--1--  (N_PZ_214, amplcpld)
+  --0--> 
+DOUT<2>.D,net=amplcpld: PO
+  <--1--  (N_PZ_215, amplcpld)
+  --0--> 
+DOUT<3>.D,net=amplcpld: PO
+  <--1--  (N_PZ_216, amplcpld)
+  --0--> 
+DOUT<4>.D,net=amplcpld: PO
+  <--1--  (N_PZ_217, amplcpld)
+  --0--> 
+DOUT<5>.D,net=amplcpld: PO
+  <--1--  (N_PZ_218, amplcpld)
+  --0--> 
+DOUT<6>.D,net=amplcpld: PO
+  <--1--  (N_PZ_219, amplcpld)
+  --0--> 
+DOUT<7>.D,net=amplcpld: PO
+  <--1--  (N_PZ_220, amplcpld)
+  --0--> 
+DOUT<8>.D,net=amplcpld: PO
+  <--1--  (N_PZ_221, amplcpld)
+  --0--> 
+DOUT<9>.D,net=amplcpld: PO
+  <--1--  (N_PZ_222, amplcpld)
+  --0--> 

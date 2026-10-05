@@ -1,0 +1,72 @@
+{
+  "name": "counter-ascending",
+  "source_sha256": "6379dd1792d9b4bf5cdce692390b3f0ffd216fff9fa0dc8260fa34eb17672fd5",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 380,
+  "canonical_difference_count": 504,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:57:06.695304+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/counter-ascending-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:57:10.443002+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/counter-ascending-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:57:13.149856+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/counter-ascending-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:57:14.403416+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-ascending",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/counter-ascending-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+}

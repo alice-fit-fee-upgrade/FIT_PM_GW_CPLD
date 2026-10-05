@@ -1,0 +1,6 @@
+AR mux_latch behavioral /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd sub00/vhpl03 1791182991
+AR amplcpld frontend /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/amplcpld.vhd sub00/vhpl05 1791182993
+AR cnt2 behavioral /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd sub00/vhpl01 1791182989
+EN amplcpld NULL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/amplcpld.vhd sub00/vhpl04 1791182992
+EN cnt2 NULL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd sub00/vhpl00 1791182988
+EN mux_latch NULL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd sub00/vhpl02 1791182990

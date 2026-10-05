@@ -1,0 +1,11 @@
+toolchain/openfpga/
+toolchain/prjcombine/
+toolchain/venv/
+toolchain/ghdl/
+toolchain/wheels/
+known_hdl/*.git/
+known_hdl/checkout/
+schematic/upstream/
+**/__pycache__/
+experiments/ghdl/*-obj*.cf
+toolchain/ise-compat/root/

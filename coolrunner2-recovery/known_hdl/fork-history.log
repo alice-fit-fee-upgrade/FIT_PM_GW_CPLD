@@ -1,0 +1,367 @@
+commit 95bc8d7df0e6420725acc005701091b8245f70b7
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Jan 7 00:21:03 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Jan 7 00:21:03 2025 +0100
+
+    readme update
+
+M	README.md
+A	img/fit_pm_fpga_block.png
+M	sch/fit_pm_fpga_block.drawio
+
+commit 65f707d08e37f08c47c3336659c16527630bd672
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Jan 6 21:28:32 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Jan 6 21:28:32 2025 +0100
+
+    readme update
+
+M	README.md
+D	img/ampl_logic.svg
+D	img/cnt2.svg
+A	img/fit_pm_clocks.png
+A	img/fit_pm_cpld.png
+D	img/mux_latch.svg
+M	sch/fit_pm_clocks.drawio
+
+commit c064373d7d1efbea94839d60659723a5332f8208
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Jan 6 20:47:19 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Jan 6 20:47:19 2025 +0100
+
+    tb for original code updated
+
+M	obsolete/tb/amplcpld_tb.vhd
+
+commit abaf0f451975faac22be351d9a9d0340ba329c08
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Jan 6 20:24:24 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Jan 6 20:24:24 2025 +0100
+
+    readme updated
+
+M	README.md
+D	img/ampl_logic_tb_wave.png
+A	img/event_basement_measurement.png
+M	tb/ampl_logic_tb.vhd
+
+commit f03437cd10cccf11f632a283308ba818491b8a36
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Jan 6 19:17:07 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Jan 6 19:17:07 2025 +0100
+
+    wip
+
+M	Makefile
+M	README.md
+M	img/cnt2_tb_wave.png
+A	img/dly_clk20_timings.png
+A	img/gate_strobe_circuit.png
+M	img/mux_latch_tb_wave.png
+A	img/strobe_signal_reaction.png
+R100	base/amplcpld.vhd	obsolete/amplcpld.vhd
+R100	base/comps.vhd	obsolete/comps.vhd
+R100	base/tb/amplcpld_tb.vhd	obsolete/tb/amplcpld_tb.vhd
+A	sch/fit_pm_chanell_logic.drawio
+M	tb/ampl_logic_tb.vhd
+M	tb/mux_latch_tb.vhd
+
+commit 7e1e7c925cc3649ceade4d758f07c6847f938e94
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Sun Dec 29 18:52:46 2024 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Sun Dec 29 18:52:46 2024 +0100
+
+    tb improved
+
+M	README.md
+A	img/ampl_logic_tb_wave.png
+M	src/ampl_logic.vhd
+M	tb/ampl_logic_tb.vhd
+
+commit 4502e8ffd687cb7900dd838ec51318deb12558cf
+Merge: c44b562 7039239
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Dec 17 20:43:02 2024 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Dec 17 20:43:02 2024 +0100
+
+    Merge branch 'main' of https://github.com/r-smalec/FIT_PM_GW_CPLD
+
+commit c44b562df6c0c10352e863a71980cc398f47333a
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Dec 17 20:36:26 2024 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Dec 17 20:36:26 2024 +0100
+
+    clocks sch
+
+A	sch/fit_pm_clocks.drawio
+
+commit 7039239af49dd163263c4a7ac69338083a66d2b0
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Dec 17 17:09:22 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Dec 17 17:09:22 2024 +0100
+
+    fpga block sch
+
+M	sch/fit_pm_fpga_block.drawio
+
+commit 48b79ff60cbb83726fee977038185eb3d6931a65
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Dec 17 16:54:15 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Dec 17 16:54:15 2024 +0100
+
+    fpga block sch
+
+A	sch/fit_pm_fpga_block.drawio
+
+commit fa2bcbf7b532bb144584f8f1b7821c2e0162c2b5
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Dec 16 13:20:36 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Dec 16 13:20:36 2024 +0100
+
+    cpld architecture schematic added
+
+A	sch/fit_pm_cpld.drawio
+
+commit d3a73d45aaf4e9e7e9a3743d321a57ac4013ffaa
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Dec 16 13:17:39 2024 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Dec 16 13:17:39 2024 +0100
+
+    wip
+
+M	tb/ampl_logic_tb.vhd
+
+commit c856f9aa9600ec00098285c03737e255e7c0dcef
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Oct 31 15:50:48 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Oct 31 15:50:48 2024 +0100
+
+    wip
+
+M	src/ampl_logic.vhd
+M	tb/ampl_logic_tb.vhd
+
+commit 910345766a0558d2b69967b8f321f3a608f42f99
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Oct 31 14:20:49 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Oct 31 14:20:49 2024 +0100
+
+    wip
+
+M	src/ampl_logic.vhd
+M	tb/ampl_logic_tb.vhd
+
+commit 6eeaba2ec4fd37b080d41eb6f6870f03928b5a22
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Oct 31 14:20:07 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Oct 31 14:20:07 2024 +0100
+
+    pulse delay added to make
+
+M	Makefile
+
+commit 0c8c6ba98c3de8de0190f6ddb4a51eda8ac4a526
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Oct 31 14:17:48 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Oct 31 14:17:48 2024 +0100
+
+    code version for doc
+
+M	base/amplcpld.vhd
+M	base/tb/amplcpld_tb.vhd
+
+commit 838b31f63166da104397385c11205697532aa418
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Oct 29 12:31:22 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Oct 29 12:31:22 2024 +0100
+
+    duration count added
+
+M	test/pulse_delay.vhd
+M	test/pulse_delay_tb.vhd
+
+commit 99ad67f72aeafbc1c7e58a8cd12216f09f036bdd
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Oct 29 10:37:19 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Oct 29 10:37:19 2024 +0100
+
+    pulse_delay changed
+
+M	test/pulse_delay.vhd
+
+commit 0a49e42c7a055bbca0390a14ee3cad3e0fd89eaa
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Oct 28 15:21:14 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Oct 28 15:21:14 2024 +0100
+
+    pulse delay added
+
+M	test/pulse_delay.vhd
+
+commit 1f9e4ff8c079c9184919edf5778cf458d3b2701d
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Oct 28 14:34:09 2024 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Oct 28 14:34:09 2024 +0100
+
+    pulse delay added
+
+M	Makefile
+A	test/pulse_delay.vhd
+A	test/pulse_delay_tb.vhd
+
+commit 1838d61cd6945e2bd98e2c68ae1174a972ccefea
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Oct 23 14:33:47 2024 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Oct 23 14:33:47 2024 +0200
+
+    init value required for simulation
+
+M	base/comps.vhd
+A	base/tb/amplcpld_tb.vhd
+
+commit d292835f737d1873c480137d1856eeb6856ce250
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Oct 21 15:26:42 2024 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Oct 21 15:26:42 2024 +0200
+
+    rstn added
+
+M	src/ampl_logic.vhd
+M	tb/ampl_logic_tb.vhd
+
+commit 7b591ef2dc8d1108410f6e24bfbe52e7c005912a
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Oct 21 14:23:57 2024 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Oct 21 14:23:57 2024 +0200
+
+    ampl logic tb
+
+M	Makefile
+M	README.md
+M	img/ampl_logic.svg
+M	img/cnt2.svg
+A	img/cnt2_tb_wave.png
+M	img/mux_latch.svg
+A	img/mux_latch_tb_wave.png
+M	src/ampl_logic.vhd
+A	tb/ampl_logic_tb.vhd
+M	tb/mux_latch_tb.vhd
+
+commit 7565c94bf1c7167dd969cd97e2a750474c83beb8
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Sat Oct 12 15:08:00 2024 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Sat Oct 12 15:08:00 2024 +0200
+
+    testbench for mux latch and cnt2 and readmeupdate
+
+M	Makefile
+M	README.md
+A	img/cnt2.svg
+M	img/mux_latch.svg
+M	tb/cnt2_tb.vhd
+A	tb/mux_latch_tb.vhd
+
+commit 36bf683c199aab82e1294b180dfb29ef74dac80c
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Fri Oct 11 20:08:30 2024 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Fri Oct 11 20:08:30 2024 +0200
+
+    wip
+
+M	.gitignore
+M	Makefile
+M	base/comps.vhd
+A	img/ampl_logic.svg
+A	img/mux_latch.svg
+M	src/ampl_logic.vhd
+M	src/ampl_top.vhd
+M	src/cnt2.vhd
+A	tb/cnt2_tb.vhd
+D	tb/comps_tb.vhd
+
+commit a3798b35658b655393d95aed3f457d6942e12e10
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Fri Oct 11 08:15:00 2024 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Fri Oct 11 08:15:00 2024 +0200
+
+    wip
+
+M	src/ampl_logic.vhd
+
+commit 81c07912078552ace838cb8f9b8e7321310236b6
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Oct 9 08:45:08 2024 +0000
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Oct 9 08:45:08 2024 +0000
+
+    docker added
+
+A	.devcontainer/devcontainer.json
+R100	src/amplcpld.vhd	base/amplcpld.vhd
+R100	src/comps.vhd	base/comps.vhd
+
+commit 8ce961f511532d36aeef7513b372323e354b918d
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Wed Oct 9 00:19:06 2024 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Wed Oct 9 00:19:06 2024 +0200
+
+    Initial commit
+
+A	.gitignore
+A	Makefile
+M	README.md
+A	src/ampl_logic.vhd
+A	src/ampl_top.vhd
+R100	amplcpld.vhd	src/amplcpld.vhd
+A	src/cnt2.vhd
+R100	comps.vhd	src/comps.vhd
+A	src/mux_latch.vhd
+A	tb/comps_tb.vhd
+
+commit a6c492e4b81ab73ab82cd76c836830cc16a45bd3
+Author:     Greg Kasprowicz <gkasprow@gmail.com>
+AuthorDate: Mon Jul 15 16:33:13 2024 +0200
+Commit:     GitHub <noreply@github.com>
+CommitDate: Mon Jul 15 16:33:13 2024 +0200
+
+    non verified sources
+
+A	amplcpld.vhd
+A	comps.vhd
+
+commit d9faed8e6af0854163d450c947f3ea44461c8c39
+Author:     Greg Kasprowicz <gkasprow@gmail.com>
+AuthorDate: Mon Jul 15 16:32:35 2024 +0200
+Commit:     GitHub <noreply@github.com>
+CommitDate: Mon Jul 15 16:32:35 2024 +0200
+
+    Create README.md
+
+A	README.md

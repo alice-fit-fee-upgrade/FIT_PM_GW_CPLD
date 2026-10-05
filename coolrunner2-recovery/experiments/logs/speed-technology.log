@@ -1,0 +1,9 @@
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+speed-technology-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/speed-technology-xst.log
+speed-technology-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/speed-technology-ngdbuild.log
+speed-technology-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/speed-technology-cpldfit.log
+speed-technology-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/speed-technology-hprep6.log
+readback-2026: raw=927, canonical=1001; reports/readback-2026_structural_diff.md

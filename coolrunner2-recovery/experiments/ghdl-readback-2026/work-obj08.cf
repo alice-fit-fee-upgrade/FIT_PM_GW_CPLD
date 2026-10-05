@@ -1,0 +1,7 @@
+v 4
+file . "../../tests/recovered_tb.vhd" "676e9a08a87d69656cf852a5bdf4b357d306f993" "20261005065017.435":
+  entity recovered_tb at 1( 0) + 0 on 29;
+  architecture test of recovered_tb at 9( 192) + 0 on 30;
+file . "../../recovered/readback-2026/amplcpld_recovered.vhd" "5e0e6c5147ce7eafcf36a73f713e0d382145aaf3" "20261005065017.434":
+  entity amplcpld at 5( 274) + 0 on 27;
+  architecture recovered_2026 of amplcpld at 14( 581) + 0 on 28;

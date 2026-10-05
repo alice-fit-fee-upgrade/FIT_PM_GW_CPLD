@@ -1,0 +1,71 @@
+{
+  "name": "counter-xor-terminal",
+  "source_sha256": "f7491146b4ae2e35b8ed641be63c22858805ee5be69a2c9d4b1de65f356799f4",
+  "build_exit": 0,
+  "proof_exit": 0,
+  "raw_distance": 976,
+  "canonical_difference_count": 957,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:36:01.565683+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:36:05.262999+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:36:07.955947+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-nomlopt",
+        "-optimize",
+        "density",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:36:09.224674+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/counter-xor-terminal",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+}

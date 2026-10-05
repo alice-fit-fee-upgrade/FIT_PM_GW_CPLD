@@ -1,0 +1,17 @@
+warning: hiding a lifetime that's elided elsewhere is confusing
+  --> src/util.rs:48:17
+   |
+48 |     pub fn iter(&self) -> LinebreakSetIter {
+   |                 ^^^^^     ^^^^^^^^^^^^^^^^ the same lifetime is hidden here
+   |                 |
+   |                 the lifetime is elided here
+   |
+   = help: the same lifetime is referred to in inconsistent ways, making the signature confusing
+   = note: `#[warn(mismatched_lifetime_syntaxes)]` on by default
+help: use `'_` for type paths
+   |
+48 |     pub fn iter(&self) -> LinebreakSetIter<'_> {
+   |                                           ++++
+
+warning: `xc2bit` (lib) generated 1 warning (run `cargo fix --lib -p xc2bit` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 0.89s

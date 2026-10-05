@@ -1,0 +1,8 @@
+V3 3
+FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal/amplcpld.vhd 2026/10/05.07:35:55 P.20131013
+EN work/amplcpld 1791182157 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal/amplcpld.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/amplcpld/recovered_2026 1791182158 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-keep-cal/amplcpld.vhd \
+      EN work/amplcpld 1791182157

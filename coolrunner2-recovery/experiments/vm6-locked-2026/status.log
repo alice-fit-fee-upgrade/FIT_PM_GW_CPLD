@@ -1,0 +1,14 @@
+{
+  "kind": "post-fit VM6 implementation lock",
+  "fuse_distance": 0,
+  "canonical_difference_count": 0,
+  "transition_proofs": 49,
+  "native_fitter_fuse_distance": 346,
+  "native_fitter_bit_identity": false,
+  "implementation_locked_bit_identity": true,
+  "hardware_programmed": false,
+  "security_outside_QF_verified": false,
+  "template": "recovered/amplcpld.ptlock.json",
+  "output": "recovered/amplcpld_implementation_locked.jed",
+  "output_sha256": "b0f2cd95bcec7695e7d84aa464f3a8dd451d82a20c096b863e6f8b894af24f65"
+}

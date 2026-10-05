@@ -1,0 +1,78 @@
+{
+  "name": "rename-timer",
+  "source_sha256": "0fe49c18555b8dc396839cc3ce7209764a7ed1c1c217680e2f7c39a49d23859b",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 1,
+  "raw_distance": 380,
+  "canonical_difference_count": 504,
+  "aliased_proof_exit": 0,
+  "proof_aliases": {
+    "c_count": "cal_cnt"
+  },
+  "commands": [
+    {
+      "utc": "2026-10-04T20:56:23.770439+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/rename-timer-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:27.509625+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-timer-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:30.235764+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-timer-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:31.492530+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-timer",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/rename-timer-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "7bb1d72f2c17e918a4a03537c6fe87695ff160cb4c59855bd4bf772ae5d5ada0"
+}

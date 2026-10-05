@@ -1,0 +1,11 @@
+{
+  "source_commit": "7344156",
+  "snapshot": "tracked recovery workspace plus clarified publication docs",
+  "large_file_transformation": {
+    "experiments/logs/ise-install.log": "experiments/logs/ise-install.log.gz"
+  },
+  "ISE_binaries_and_license_included": false,
+  "main_output": "recovered/amplcpld_implementation_locked.jed",
+  "native_fitter_distance": 346,
+  "implementation_locked_fuse_distance": 0
+}

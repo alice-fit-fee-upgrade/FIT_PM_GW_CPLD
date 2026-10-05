@@ -1,0 +1,75 @@
+{
+  "name": "speed-xor-flag",
+  "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed",
+    "NO_OPTX_PRESERVE_XOR": "1"
+  },
+  "proof_exit": 0,
+  "raw_distance": 380,
+  "canonical_difference_count": 504,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:56:08.462187+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/speed-xor-flag-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:12.169912+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-xor-flag-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:14.902804+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-xor-flag-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:16.149290+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-xor-flag",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/speed-xor-flag-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+}

@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+cd "$root"
+export PATH="$HOME/.cargo/bin:$PATH"
+if ! command -v cargo >/dev/null; then
+  echo 'Install Rust 1.99.0 through rustup (toolchain/rustup-init.sh), then rerun make bootstrap.' >&2
+  exit 3
+fi
+rustup toolchain install 1.99.0 --profile minimal
+for name in openfpga prjcombine; do
+  if [[ "$name" == openfpga ]]; then
+    url=https://github.com/azonenberg/openfpga.git
+    revision=f9ae535d0372c246075d1bb05a409adaed0135e7
+  else
+    url=https://github.com/prjunnamed/prjcombine.git
+    revision=234343d23e737e57f2727630e19008b509d7d522
+  fi
+  if [[ ! -d toolchain/$name/.git ]]; then git clone "$url" "toolchain/$name"; fi
+  test "$(git -C "toolchain/$name" rev-parse HEAD)" = "$revision" || git -C "toolchain/$name" checkout --detach "$revision"
+done
+cp toolchain/locks/openfpga.Cargo.lock toolchain/openfpga/src/xc2bit/Cargo.lock
+cp toolchain/locks/prjcombine.Cargo.lock toolchain/prjcombine/Cargo.lock
+python3 tools/run_logged.py xc2bit-build cargo +1.99.0 build --release --locked --manifest-path toolchain/openfpga/src/xc2bit/Cargo.toml
+python3 tools/run_logged.py prjcombine-build cargo +1.99.0 build --release --locked --manifest-path toolchain/prjcombine/Cargo.toml -p prjcombine-coolrunner2
+if [[ ! -x toolchain/venv/bin/python ]]; then python3 -m venv --without-pip toolchain/venv; fi
+if ! toolchain/venv/bin/python -m pip --version >/dev/null 2>&1; then
+  toolchain/venv/bin/python toolchain/get-pip.py
+fi
+toolchain/venv/bin/python -m pip install --require-hashes -r toolchain/requirements.lock
+mkdir -p toolchain/ghdl
+sha256sum -c toolchain/package-sha256.txt
+for package in toolchain/*.deb; do dpkg-deb -x "$package" toolchain/ghdl; done
+for name in upstream fork-r-smalec; do
+  if [[ ! -d known_hdl/$name.git ]]; then git clone --mirror "known_hdl/$name.bundle" "known_hdl/$name.git"; fi
+done
+tools/ghdl --version
+echo 'Bootstrap complete. Run make reproduce. ISE is supplied separately.'
+
+mkdir -p toolchain/ise-compat/root
+sha256sum -c toolchain/ise-compat/SHA256SUMS
+for package in toolchain/ise-compat/packages/*.deb; do dpkg-deb -x "$package" toolchain/ise-compat/root; done

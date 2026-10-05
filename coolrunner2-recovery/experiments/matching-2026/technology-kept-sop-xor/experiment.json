@@ -1,0 +1,72 @@
+{
+  "name": "technology-kept-sop-xor",
+  "source_sha256": "fdf9957323c6d1636da7c2dde9bd60014f84a6251460fd305484eb8f48ec4151",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 1022,
+  "canonical_difference_count": 986,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:45:58.429685+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:46:02.220174+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:46:04.946081+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "density",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:46:06.266513+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-kept-sop-xor",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "65010ef7c39aaef3650444f897355c84ee0967b8365a89c0593f31ba6d8026b9"
+}

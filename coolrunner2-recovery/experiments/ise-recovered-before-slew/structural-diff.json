@@ -1,0 +1,96 @@
+{
+  "differences": [
+    {
+      "path": "/function_blocks/1/macrocells/3/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/3/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/5/macrocells/15/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/5/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/10/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/12/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/14/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    },
+    {
+      "path": "/function_blocks/7/macrocells/1/configuration/IOB_SLEW",
+      "golden": "SLOW",
+      "candidate": "FAST"
+    }
+  ],
+  "structural_difference_count": 18,
+  "warning": "Placement-sensitive diff; semantic equivalence needs independent state mapping/SAT."
+}

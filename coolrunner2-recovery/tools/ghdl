@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+export LD_LIBRARY_PATH="$root/toolchain/ghdl/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export GHDL_PREFIX="$root/toolchain/ghdl/usr/lib/ghdl/mcode/vhdl"
+exec "$root/toolchain/ghdl/usr/bin/ghdl-mcode" "$@"

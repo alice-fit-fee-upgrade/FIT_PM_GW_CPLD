@@ -1,0 +1,80 @@
+{
+  "name": "rename-inhibit",
+  "source_sha256": "e4b4b09d6a15a6ffc7c9b4185d0e4197cc888c85d0c912d28a73f36df02f8ec4",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 1,
+  "raw_distance": 392,
+  "canonical_difference_count": 513,
+  "aliased_proof_exit": 0,
+  "proof_aliases": {
+    "raw_edge": "str_raw_edge",
+    "raw_stretch": "str_raw_stretch",
+    "inhibit_pipe": "str_raw_dly"
+  },
+  "commands": [
+    {
+      "utc": "2026-10-04T20:56:32.828230+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/rename-inhibit-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:36.565137+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-inhibit-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:39.256563+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-inhibit-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:40.509404+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-inhibit",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/rename-inhibit-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "6f9856755e23980c53868375a67c92fccc921dadbf1d7ed5fae312a80f325d92"
+}

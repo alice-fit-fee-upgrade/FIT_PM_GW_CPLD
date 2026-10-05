@@ -1,0 +1,8 @@
+V3 7
+FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor/amplcpld.vhd 2026/10/04.21:44:56 P.20131013
+EN work/amplcpld 1791146698 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor/amplcpld.vhd \
+      PB ieee/std_logic_1164 1381692176 LB unisim PH unisim/VCOMPONENTS 1381692182
+AR work/amplcpld/technology 1791146699 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-sop-xor/amplcpld.vhd \
+      EN work/amplcpld 1791146698 CP FTCP CP FDCPE CP FD

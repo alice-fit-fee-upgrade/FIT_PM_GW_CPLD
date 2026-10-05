@@ -1,0 +1,794 @@
+" XPLAOPT Version 9.99.99.99
+" Created on Sun Oct  4 21:50:45 2026
+" 50 Mcells, 169 PLApts, 1 Levels, 292 Fanins
+" XPLAOPT -run s -it b -i design.blx -dev XC2C128-7VQ100 -reg -xor a -mode 0 
+"         -th 36 -fi 32 -bfi 38 -pre keep -unused ground -terminate keeper -no_output_files 
+MODULE amplcpld
+
+	ADC0<0>  pin 35 ; 
+ 	ADC0<10>  pin 19 ; 
+ 	ADC0<11>  pin 18 ; 
+ 	ADC0<1>  pin 34 ; 
+ 	ADC0<2>  pin 33 ; 
+ 	ADC0<3>  pin 32 ; 
+ 	ADC0<4>  pin 30 ; 
+ 	ADC0<5>  pin 29 ; 
+ 	ADC0<6>  pin 28 ; 
+ 	ADC0<7>  pin 23 ; 
+ 	ADC0<8>  pin 24 ; 
+ 	ADC0<9>  pin 22 ; 
+ 	ADC1<0>  pin 52 ; 
+ 	ADC1<10>  pin 37 ; 
+ 	ADC1<11>  pin 36 ; 
+ 	ADC1<1>  pin 50 ; 
+ 	ADC1<2>  pin 49 ; 
+ 	ADC1<3>  pin 46 ; 
+ 	ADC1<4>  pin 44 ; 
+ 	ADC1<5>  pin 43 ; 
+ 	ADC1<6>  pin 42 ; 
+ 	ADC1<7>  pin 41 ; 
+ 	ADC1<8>  pin 40 ; 
+ 	ADC1<9>  pin 39 ; 
+ 	CLK20_N  pin 54 ;  " 2 pt.
+ 	CLK20_P  pin 53 ;  " 1 pt.
+ 	CLK40  pin 81 ;  " 1 pt.
+ 	CLK80  pin 27 ; 
+ 	DOUT<0>  pin 99 ;  " 5 pt.
+ 	DOUT<10>  pin 87 ;  " 5 pt.
+ 	DOUT<11>  pin 86 ;  " 5 pt.
+ 	DOUT<12>  pin 85 ;  " 1 pt.
+ 	DOUT<1>  pin 97 ;  " 5 pt.
+ 	DOUT<2>  pin 96 ;  " 5 pt.
+ 	DOUT<3>  pin 95 ;  " 5 pt.
+ 	DOUT<4>  pin 94 ;  " 5 pt.
+ 	DOUT<5>  pin 93 ;  " 5 pt.
+ 	DOUT<6>  pin 92 ;  " 5 pt.
+ 	DOUT<7>  pin 91 ;  " 5 pt.
+ 	DOUT<8>  pin 90 ;  " 5 pt.
+ 	DOUT<9>  pin 89 ;  " 5 pt.
+ 	DV  pin 82 ;  " 1 pt.
+ 	ENA  pin 64 ; 
+ 	EV  pin 60 ; 
+ 	EV_out  pin 16 ;  " 1 pt.
+ 	STR  pin 63 ; 
+ 
+
+	c_count<0>  node ;  " 12 pt.
+ 	c_count<1>  node ;  " 11 pt.
+ 	c_count<2>  node ;  " 10 pt.
+ 	c_count<3>  node ;  " 9 pt.
+ 	c_count<4>  node ;  " 8 pt.
+ 	c_count<5>  node ;  " 7 pt.
+ 	c_count<6>  node ;  " 6 pt.
+ 	c_count<7>  node ;  " 5 pt.
+ 	c_count<8>  node ;  " 4 pt.
+ 	c_count<9>  node ;  " 3 pt.
+ 	cal_phase  node ;  " 2 pt.
+ 	cal_sample  node ;  " 1 pt.
+ 	dly<0>  node ;  " 2 pt.
+ 	dly<1>  node ;  " 1 pt.
+ 	dly<2>  node ;  " 1 pt.
+ 	dly<3>  node ;  " 1 pt.
+ 	dly<4>  node ;  " 1 pt.
+ 	dly<5>  node ;  " 1 pt.
+ 	dly<6>  node ;  " 1 pt.
+ 	inhibit_pipe<0>  node ;  " 1 pt.
+ 	inhibit_pipe<1>  node ;  " 1 pt.
+ 	inhibit_pipe<2>  node ;  " 1 pt.
+ 	inhibit_pipe<3>  node ;  " 1 pt.
+ 	raw_edge  node ;  " 2 pt.
+ 	raw_str_toggle  node ;  " 1 pt.
+ 	raw_stretch  node ;  " 3 pt.
+ 	raw_sync<0>  node ;  " 1 pt.
+ 	raw_sync<1>  node ;  " 1 pt.
+ 	raw_sync<2>  node ;  " 1 pt.
+ 	str1  node ;  " 1 pt.
+ 	str2  node ;  " 1 pt.
+ 	str_div  node ;  " 1 pt.
+ 
+
+xpla property 'LB_GROUP 1 c_count<1> c_count<2> c_count<3> c_count<4> c_count<5> c_count<6> 
+	c_count<7> c_count<8> c_count<0> inhibit_pipe<1> c_count<9> cal_phase '; 
+xpla property 'LB_GROUP 2 inhibit_pipe<0> inhibit_pipe<2> inhibit_pipe<3> raw_stretch str1 
+	cal_sample raw_edge raw_sync<1> raw_sync<2> raw_sync<0> dly<1> dly<2> dly<3> dly<4> dly<5> 
+	'; 
+xpla property 'LB_GROUP 3 dly<6> raw_str_toggle dly<0> str2 '; 
+xpla property 'LB_GROUP 6 str_div '; 
+xpla property 'SLOW_SLEW_RATE DOUT<0> DOUT<10> DOUT<11> DOUT<12> CLK20_P DOUT<1> DOUT<2> DOUT<3> 
+	DOUT<4> DOUT<5> DOUT<6> DOUT<7> DOUT<8> DOUT<9> CLK20_N DV EV_out '; 
+xpla property 'USER_SLEW_RATE CLK40 DOUT<0> DOUT<10> DOUT<11> DOUT<12> CLK20_P DOUT<1> DOUT<2> 
+	DOUT<3> DOUT<4> DOUT<5> DOUT<6> DOUT<7> DOUT<8> DOUT<9> CLK20_N DV EV_out '; 
+xpla property 'GLOBAL_CLK CLK80 '; 
+xpla property 'POWER_UP_HIGH CLK40 DOUT<0> DOUT<10> DOUT<11> DOUT<12> CLK20_P DOUT<1> DOUT<2> 
+	DOUT<3> DOUT<4> DOUT<5> DOUT<6> DOUT<7> DOUT<8> DOUT<9> DV c_count<1> c_count<2> c_count<3> 
+	c_count<4> c_count<5> c_count<6> c_count<7> c_count<8> c_count<0> inhibit_pipe<0> inhibit_pipe<1> 
+	inhibit_pipe<2> inhibit_pipe<3> str_div c_count<9> cal_phase raw_stretch str1 cal_sample 
+	raw_edge dly<6> raw_str_toggle raw_sync<1> raw_sync<2> raw_sync<0> dly<0> str2 dly<1> dly<2> 
+	dly<3> dly<4> dly<5> '; 
+xpla property 'terminate_unused'; 
+xpla property 'timespec  c_count<0>.Q c_count<0>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<0>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<1>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<1>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<2>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<2>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<3>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<3>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<4>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<4>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<5>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<5>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<6>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<6>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<7>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<7>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<8>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<8>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<9>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q c_count<9>.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q cal_phase.D 1.000000'; 
+xpla property 'timespec  CLK40.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q cal_phase.CE 1.000000'; 
+xpla property 'timespec  raw_stretch.Q inhibit_pipe<0>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q inhibit_pipe<0>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q inhibit_pipe<1>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q inhibit_pipe<1>.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q inhibit_pipe<2>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q inhibit_pipe<2>.CE 1.000000'; 
+xpla property 'timespec  CLK40.Q str1.CE 1.000000'; 
+xpla property 'timespec  CLK40.Q cal_sample.D 1.000000'; 
+xpla property 'timespec  CLK40.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<0>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<1>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<2>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<3>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<4>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<5>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<6>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<7>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<8>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  c_count<9>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<0>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<1>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<3>.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  cal_phase.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q cal_sample.CE 1.000000'; 
+xpla property 'timespec  inhibit_pipe<2>.Q inhibit_pipe<3>.D 1.000000'; 
+xpla property 'timespec  CLK40.Q inhibit_pipe<3>.CE 1.000000'; 
+xpla property 'timespec  raw_sync<1>.Q raw_stretch.D 1.000000'; 
+xpla property 'timespec  raw_sync<2>.Q raw_stretch.D 1.000000'; 
+xpla property 'timespec  raw_edge.Q raw_stretch.D 1.000000'; 
+xpla property 'timespec  CLK40.Q raw_stretch.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<0>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<0>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<0>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<10>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<10>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<10>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<11>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<11>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<11>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<12>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<12>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<12>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<1>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<1>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<1>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<2>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<2>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<2>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<3>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<3>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<3>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<4>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<4>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<4>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<5>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<5>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<5>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<6>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<6>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<6>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<7>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<7>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<7>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<8>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<8>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<8>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q DOUT<9>.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DOUT<9>.CE 1.000000'; 
+xpla property 'timespec  dly<6>.Q DOUT<9>.CE 1.000000'; 
+xpla property 'timespec  CLK20_P.Q CLK20_P.D 1.000000'; 
+xpla property 'timespec  CLK40.Q CLK20_P.D 1.000000'; 
+xpla property 'timespec  CLK40.Q CLK40.D 1.000000'; 
+xpla property 'timespec  raw_sync<0>.Q raw_sync<1>.D 1.000000'; 
+xpla property 'timespec  str1.Q dly<0>.D 1.000000'; 
+xpla property 'timespec  str2.Q dly<0>.D 1.000000'; 
+xpla property 'timespec  dly<0>.Q dly<1>.D 1.000000'; 
+xpla property 'timespec  dly<1>.Q dly<2>.D 1.000000'; 
+xpla property 'timespec  dly<2>.Q dly<3>.D 1.000000'; 
+xpla property 'timespec  dly<3>.Q dly<4>.D 1.000000'; 
+xpla property 'timespec  dly<4>.Q dly<5>.D 1.000000'; 
+xpla property 'timespec  dly<5>.Q dly<6>.D 1.000000'; 
+xpla property 'timespec  raw_sync<1>.Q raw_edge.D 1.000000'; 
+xpla property 'timespec  raw_sync<2>.Q raw_edge.D 1.000000'; 
+xpla property 'timespec  raw_sync<1>.Q raw_sync<2>.D 1.000000'; 
+xpla property 'timespec  str1.Q str2.D 1.000000'; 
+xpla property 'timespec  CLK20_P.Q CLK20_N.D 1.000000'; 
+xpla property 'timespec  CLK40.Q CLK20_N.D 1.000000'; 
+xpla property 'timespec  cal_sample.Q DV.D 1.000000'; 
+xpla property 'timespec  dly<6>.Q DV.D 1.000000'; 
+xpla property 'IOSTD CLK80 0 -1';
+xpla property 'IOSTD STR 0 -1';
+xpla property 'IOSTD ENA 0 -1';
+xpla property 'IOSTD CLK40 0 -1';
+xpla property 'IOSTD DOUT<0> 0 -1';
+xpla property 'IOSTD DOUT<10> 0 -1';
+xpla property 'IOSTD DOUT<11> 0 -1';
+xpla property 'IOSTD DOUT<12> 0 -1';
+xpla property 'IOSTD CLK20_P 0 -1';
+xpla property 'IOSTD DOUT<1> 0 -1';
+xpla property 'IOSTD DOUT<2> 0 -1';
+xpla property 'IOSTD DOUT<3> 0 -1';
+xpla property 'IOSTD DOUT<4> 0 -1';
+xpla property 'IOSTD DOUT<5> 0 -1';
+xpla property 'IOSTD DOUT<6> 0 -1';
+xpla property 'IOSTD DOUT<7> 0 -1';
+xpla property 'IOSTD DOUT<8> 0 -1';
+xpla property 'IOSTD DOUT<9> 0 -1';
+xpla property 'IOSTD ADC0<0> 0 -1';
+xpla property 'IOSTD ADC1<0> 0 -1';
+xpla property 'IOSTD ADC0<10> 0 -1';
+xpla property 'IOSTD ADC1<10> 0 -1';
+xpla property 'IOSTD ADC0<11> 0 -1';
+xpla property 'IOSTD ADC1<11> 0 -1';
+xpla property 'IOSTD ADC0<1> 0 -1';
+xpla property 'IOSTD ADC1<1> 0 -1';
+xpla property 'IOSTD ADC0<2> 0 -1';
+xpla property 'IOSTD ADC1<2> 0 -1';
+xpla property 'IOSTD ADC0<3> 0 -1';
+xpla property 'IOSTD ADC1<3> 0 -1';
+xpla property 'IOSTD ADC0<4> 0 -1';
+xpla property 'IOSTD ADC1<4> 0 -1';
+xpla property 'IOSTD ADC0<5> 0 -1';
+xpla property 'IOSTD ADC1<5> 0 -1';
+xpla property 'IOSTD ADC0<6> 0 -1';
+xpla property 'IOSTD ADC1<6> 0 -1';
+xpla property 'IOSTD ADC0<7> 0 -1';
+xpla property 'IOSTD ADC1<7> 0 -1';
+xpla property 'IOSTD ADC0<8> 0 -1';
+xpla property 'IOSTD ADC1<8> 0 -1';
+xpla property 'IOSTD ADC0<9> 0 -1';
+xpla property 'IOSTD ADC1<9> 0 -1';
+xpla property 'IOSTD CLK20_N 0 -1';
+xpla property 'IOSTD DV 0 -1';
+xpla property 'IOSTD EV_out 0 -1';
+xpla property 'IOSTD EV 0 -1';
+EQUATIONS 
+
+! CLK20_N.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ CLK20_N.D = !CLK40.Q & !CLK20_P.Q
+      # CLK40.Q & CLK20_P.Q;		"--- [PT=2, FI=2, LVL=1] ---
+! CLK20_P.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ CLK20_P.T = CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+! CLK40.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ CLK40.T = 1;
+ DOUT<0>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<0>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<0>.Q
+      # !CLK20_P.Q & !ADC1<0> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<0> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<0> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<0> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<10>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<10>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<10>.Q
+      # !CLK20_P.Q & !ADC1<10> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<10> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<10> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<10> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<11>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<11>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<11>.Q
+      # !CLK20_P.Q & !ADC1<11> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<11> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<11> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<11> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+! DOUT<12>.CE = !cal_sample.Q & !dly<6>.Q;		"--- [PT=1, FI=2, LVL=1] ---
+ DOUT<12>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ DOUT<12>.D = !CLK20_P.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ DOUT<1>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<1>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<1>.Q
+      # !CLK20_P.Q & !ADC1<1> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<1> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<1> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<1> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<2>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<2>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<2>.Q
+      # !CLK20_P.Q & !ADC1<2> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<2> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<2> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<2> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<3>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<3>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<3>.Q
+      # !CLK20_P.Q & !ADC1<3> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<3> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<3> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<3> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<4>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<4>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<4>.Q
+      # !CLK20_P.Q & !ADC1<4> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<4> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<4> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<4> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<5>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<5>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<5>.Q
+      # !CLK20_P.Q & !ADC1<5> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<5> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<5> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<5> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<6>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<6>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<6>.Q
+      # !CLK20_P.Q & !ADC1<6> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<6> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<6> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<6> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<7>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<7>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<7>.Q
+      # !CLK20_P.Q & !ADC1<7> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<7> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<7> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<7> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<8>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<8>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<8>.Q
+      # !CLK20_P.Q & !ADC1<8> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<8> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<8> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<8> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DOUT<9>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DOUT<9>.D = !cal_sample.Q & !dly<6>.Q & !DOUT<9>.Q
+      # !CLK20_P.Q & !ADC1<9> & dly<6>.Q
+      # CLK20_P.Q & !ADC0<9> & dly<6>.Q
+      # !CLK20_P.Q & !ADC1<9> & cal_sample.Q
+      # CLK20_P.Q & !ADC0<9> & cal_sample.Q;		"--- [PT=5, FI=6, LVL=1] ---
+ DV.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! DV.D = !cal_sample.Q & !dly<6>.Q;		"--- [PT=1, FI=2, LVL=1] ---
+ EV_out = EV;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<0>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<0>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & cal_phase.Q & !inhibit_pipe<0>.Q & !
+    inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<8>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<7>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<6>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<5>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<4>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<3>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<2>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<1>.Q
+      # CLK40.Q & CLK20_P.Q & !c_count<0>.Q;		"--- [PT=12, FI=17, LVL=1] ---
+ c_count<1>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<1>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & cal_phase.Q & !inhibit_pipe<0>.Q
+     & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<8>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<7>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<6>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<5>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<4>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<2>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & !c_count<1>.Q
+    ;		"--- [PT=11, FI=17, LVL=1] ---
+ c_count<2>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<2>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<9>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<8>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<7>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<6>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<5>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<4>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<3>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & !c_count<2>.Q
+    ;		"--- [PT=10, FI=17, LVL=1] ---
+ c_count<3>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<3>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    cal_phase.Q & !inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q
+     & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<8>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<7>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<6>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<5>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<4>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & !
+    c_count<3>.Q;		"--- [PT=9, FI=17, LVL=1] ---
+ c_count<4>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<4>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & cal_phase.Q & !inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !
+    inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & !c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & !c_count<8>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & !c_count<7>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & !c_count<6>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & !c_count<5>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & !c_count<4>.Q;		"--- [PT=8, FI=17, LVL=1] ---
+ c_count<5>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<5>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & cal_phase.Q & !inhibit_pipe<0>.Q & !
+    inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & !c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & !c_count<8>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & !c_count<7>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & !c_count<6>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & !c_count<5>.Q
+    ;		"--- [PT=7, FI=17, LVL=1] ---
+ c_count<6>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<6>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & !c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & !c_count<8>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & !c_count<7>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & !c_count<6>.Q
+    ;		"--- [PT=6, FI=17, LVL=1] ---
+ c_count<7>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<7>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & !c_count<9>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & !c_count<8>.Q
+    
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & !c_count<7>.Q
+    ;		"--- [PT=5, FI=17, LVL=1] ---
+ c_count<8>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<8>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & cal_phase.Q & !inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !
+    inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & !c_count<9>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & !c_count<8>.Q;		"--- [PT=4, FI=17, LVL=1] ---
+ c_count<9>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ c_count<9>.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & c_count<8>.Q & c_count<9>.Q & cal_phase.Q & !inhibit_pipe<0>.Q & !
+    inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & c_count<8>.Q & !c_count<9>.Q;		"--- [PT=3, FI=17, LVL=1] ---
+ cal_phase.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ cal_phase.T = CLK40.Q & !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & 
+    c_count<2>.Q & c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q
+     & c_count<7>.Q & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !
+    inhibit_pipe<0>.Q & !inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !
+    inhibit_pipe<3>.Q
+      # CLK40.Q & CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & c_count<8>.Q & c_count<9>.Q & cal_phase.Q & !inhibit_pipe<0>.Q & !
+    inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+    ;		"--- [PT=2, FI=17, LVL=1] ---
+ cal_sample.CE = !CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & 
+    c_count<3>.Q & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q
+     & c_count<8>.Q & c_count<9>.Q & !cal_phase.Q & !inhibit_pipe<0>.Q & !
+    inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # CLK20_P.Q & c_count<0>.Q & c_count<1>.Q & c_count<2>.Q & c_count<3>.Q
+     & c_count<4>.Q & c_count<5>.Q & c_count<6>.Q & c_count<7>.Q & 
+    c_count<8>.Q & c_count<9>.Q & cal_phase.Q & !inhibit_pipe<0>.Q & !
+    inhibit_pipe<1>.Q & !inhibit_pipe<2>.Q & !inhibit_pipe<3>.Q
+      # !CLK40.Q;		"--- [PT=3, FI=17, LVL=1] ---
+ cal_sample.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ cal_sample.D = CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<0>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<0>.D = str1.Q & !str2.Q
+      # !str1.Q & str2.Q;		"--- [PT=2, FI=2, LVL=1] ---
+ dly<1>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<1>.D = dly<0>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<2>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<2>.D = dly<1>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<3>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<3>.D = dly<2>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<4>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<4>.D = dly<3>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<5>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<5>.D = dly<4>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<6>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ dly<6>.D = dly<5>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<0>.CE = !CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<0>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<0>.D = raw_stretch.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<1>.CE = !CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<1>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<1>.D = inhibit_pipe<0>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<2>.CE = !CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<2>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<2>.D = inhibit_pipe<1>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<3>.CE = !CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<3>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ inhibit_pipe<3>.D = inhibit_pipe<2>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_edge.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_edge.D = raw_sync<1>.Q & !raw_sync<2>.Q
+      # !raw_sync<1>.Q & raw_sync<2>.Q;		"--- [PT=2, FI=2, LVL=1] ---
+! raw_str_toggle.CLK = STR;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_str_toggle.T = 1;
+ raw_stretch.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+! raw_stretch.D = !CLK40.Q & !raw_sync<1>.Q & !raw_sync<2>.Q & !raw_edge.Q
+    
+      # !CLK40.Q & raw_sync<1>.Q & raw_sync<2>.Q & !raw_edge.Q
+      # CLK40.Q & !raw_stretch.Q;		"--- [PT=3, FI=5, LVL=1] ---
+ raw_sync<0>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_sync<0>.D = raw_str_toggle.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_sync<1>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_sync<1>.D = raw_sync<0>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_sync<2>.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ raw_sync<2>.D = raw_sync<1>.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ str1.CE = !CLK40.Q;		"--- [PT=1, FI=1, LVL=1] ---
+! str1.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ str1.D = str_div.Q;		"--- [PT=1, FI=1, LVL=1] ---
+ str2.CLK = CLK80;		"--- [PT=1, FI=1, LVL=1] ---
+ str2.D = str1.Q;		"--- [PT=1, FI=1, LVL=1] ---
+! str_div.CLK = STR;		"--- [PT=1, FI=1, LVL=1] ---
+ str_div.T = ENA;		"--- [PT=1, FI=1, LVL=1] ---
+END

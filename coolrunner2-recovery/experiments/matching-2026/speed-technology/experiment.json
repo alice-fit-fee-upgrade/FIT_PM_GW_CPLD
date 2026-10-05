@@ -1,0 +1,74 @@
+{
+  "name": "speed-technology",
+  "source_sha256": "fdf9957323c6d1636da7c2dde9bd60014f84a6251460fd305484eb8f48ec4151",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 0,
+  "raw_distance": 927,
+  "canonical_difference_count": 1001,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:55:13.370188+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/speed-technology-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:17.313459+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-technology-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:20.082569+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/speed-technology-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:55:21.434826+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/speed-technology-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "65010ef7c39aaef3650444f897355c84ee0967b8365a89c0593f31ba6d8026b9"
+}

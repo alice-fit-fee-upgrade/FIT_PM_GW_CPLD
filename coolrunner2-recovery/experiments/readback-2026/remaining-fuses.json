@@ -1,0 +1,2424 @@
+[
+  {
+    "fuse": 2082,
+    "region": "FB1 PLA AND",
+    "offset": 962,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2085,
+    "region": "FB1 PLA AND",
+    "offset": 965,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2087,
+    "region": "FB1 PLA AND",
+    "offset": 967,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2088,
+    "region": "FB1 PLA AND",
+    "offset": 968,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2090,
+    "region": "FB1 PLA AND",
+    "offset": 970,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2105,
+    "region": "FB1 PLA AND",
+    "offset": 985,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2108,
+    "region": "FB1 PLA AND",
+    "offset": 988,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2109,
+    "region": "FB1 PLA AND",
+    "offset": 989,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2112,
+    "region": "FB1 PLA AND",
+    "offset": 992,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2118,
+    "region": "FB1 PLA AND",
+    "offset": 998,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2121,
+    "region": "FB1 PLA AND",
+    "offset": 1001,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2122,
+    "region": "FB1 PLA AND",
+    "offset": 1002,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2138,
+    "region": "FB1 PLA AND",
+    "offset": 1018,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2162,
+    "region": "FB1 PLA AND",
+    "offset": 1042,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2163,
+    "region": "FB1 PLA AND",
+    "offset": 1043,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2165,
+    "region": "FB1 PLA AND",
+    "offset": 1045,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2167,
+    "region": "FB1 PLA AND",
+    "offset": 1047,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2168,
+    "region": "FB1 PLA AND",
+    "offset": 1048,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2170,
+    "region": "FB1 PLA AND",
+    "offset": 1050,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2180,
+    "region": "FB1 PLA AND",
+    "offset": 1060,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2181,
+    "region": "FB1 PLA AND",
+    "offset": 1061,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2185,
+    "region": "FB1 PLA AND",
+    "offset": 1065,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2188,
+    "region": "FB1 PLA AND",
+    "offset": 1068,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2192,
+    "region": "FB1 PLA AND",
+    "offset": 1072,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2198,
+    "region": "FB1 PLA AND",
+    "offset": 1078,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2201,
+    "region": "FB1 PLA AND",
+    "offset": 1081,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2202,
+    "region": "FB1 PLA AND",
+    "offset": 1082,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2219,
+    "region": "FB1 PLA AND",
+    "offset": 1099,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2242,
+    "region": "FB1 PLA AND",
+    "offset": 1122,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2248,
+    "region": "FB1 PLA AND",
+    "offset": 1128,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2250,
+    "region": "FB1 PLA AND",
+    "offset": 1130,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2268,
+    "region": "FB1 PLA AND",
+    "offset": 1148,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2273,
+    "region": "FB1 PLA AND",
+    "offset": 1153,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2278,
+    "region": "FB1 PLA AND",
+    "offset": 1158,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2282,
+    "region": "FB1 PLA AND",
+    "offset": 1162,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2283,
+    "region": "FB1 PLA AND",
+    "offset": 1163,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2322,
+    "region": "FB1 PLA AND",
+    "offset": 1202,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2325,
+    "region": "FB1 PLA AND",
+    "offset": 1205,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2327,
+    "region": "FB1 PLA AND",
+    "offset": 1207,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2328,
+    "region": "FB1 PLA AND",
+    "offset": 1208,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2329,
+    "region": "FB1 PLA AND",
+    "offset": 1209,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2330,
+    "region": "FB1 PLA AND",
+    "offset": 1210,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2345,
+    "region": "FB1 PLA AND",
+    "offset": 1225,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2348,
+    "region": "FB1 PLA AND",
+    "offset": 1228,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2358,
+    "region": "FB1 PLA AND",
+    "offset": 1238,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2361,
+    "region": "FB1 PLA AND",
+    "offset": 1241,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2362,
+    "region": "FB1 PLA AND",
+    "offset": 1242,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2378,
+    "region": "FB1 PLA AND",
+    "offset": 1258,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2402,
+    "region": "FB1 PLA AND",
+    "offset": 1282,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2408,
+    "region": "FB1 PLA AND",
+    "offset": 1288,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2410,
+    "region": "FB1 PLA AND",
+    "offset": 1290,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2411,
+    "region": "FB1 PLA AND",
+    "offset": 1291,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2428,
+    "region": "FB1 PLA AND",
+    "offset": 1308,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2439,
+    "region": "FB1 PLA AND",
+    "offset": 1319,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2442,
+    "region": "FB1 PLA AND",
+    "offset": 1322,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2482,
+    "region": "FB1 PLA AND",
+    "offset": 1362,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2488,
+    "region": "FB1 PLA AND",
+    "offset": 1368,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2490,
+    "region": "FB1 PLA AND",
+    "offset": 1370,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2508,
+    "region": "FB1 PLA AND",
+    "offset": 1388,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2513,
+    "region": "FB1 PLA AND",
+    "offset": 1393,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2519,
+    "region": "FB1 PLA AND",
+    "offset": 1399,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2522,
+    "region": "FB1 PLA AND",
+    "offset": 1402,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2562,
+    "region": "FB1 PLA AND",
+    "offset": 1442,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2565,
+    "region": "FB1 PLA AND",
+    "offset": 1445,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2567,
+    "region": "FB1 PLA AND",
+    "offset": 1447,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2568,
+    "region": "FB1 PLA AND",
+    "offset": 1448,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2570,
+    "region": "FB1 PLA AND",
+    "offset": 1450,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2585,
+    "region": "FB1 PLA AND",
+    "offset": 1465,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2588,
+    "region": "FB1 PLA AND",
+    "offset": 1468,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2593,
+    "region": "FB1 PLA AND",
+    "offset": 1473,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2601,
+    "region": "FB1 PLA AND",
+    "offset": 1481,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2602,
+    "region": "FB1 PLA AND",
+    "offset": 1482,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2618,
+    "region": "FB1 PLA AND",
+    "offset": 1498,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2722,
+    "region": "FB1 PLA AND",
+    "offset": 1602,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2725,
+    "region": "FB1 PLA AND",
+    "offset": 1605,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2727,
+    "region": "FB1 PLA AND",
+    "offset": 1607,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2728,
+    "region": "FB1 PLA AND",
+    "offset": 1608,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2731,
+    "region": "FB1 PLA AND",
+    "offset": 1611,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2745,
+    "region": "FB1 PLA AND",
+    "offset": 1625,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2748,
+    "region": "FB1 PLA AND",
+    "offset": 1628,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2761,
+    "region": "FB1 PLA AND",
+    "offset": 1641,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2762,
+    "region": "FB1 PLA AND",
+    "offset": 1642,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2778,
+    "region": "FB1 PLA AND",
+    "offset": 1658,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2805,
+    "region": "FB1 PLA AND",
+    "offset": 1685,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2807,
+    "region": "FB1 PLA AND",
+    "offset": 1687,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2810,
+    "region": "FB1 PLA AND",
+    "offset": 1690,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2820,
+    "region": "FB1 PLA AND",
+    "offset": 1700,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2821,
+    "region": "FB1 PLA AND",
+    "offset": 1701,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2825,
+    "region": "FB1 PLA AND",
+    "offset": 1705,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2832,
+    "region": "FB1 PLA AND",
+    "offset": 1712,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2838,
+    "region": "FB1 PLA AND",
+    "offset": 1718,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2839,
+    "region": "FB1 PLA AND",
+    "offset": 1719,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2841,
+    "region": "FB1 PLA AND",
+    "offset": 1721,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2859,
+    "region": "FB1 PLA AND",
+    "offset": 1739,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2962,
+    "region": "FB1 PLA AND",
+    "offset": 1842,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2963,
+    "region": "FB1 PLA AND",
+    "offset": 1843,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2968,
+    "region": "FB1 PLA AND",
+    "offset": 1848,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 2993,
+    "region": "FB1 PLA AND",
+    "offset": 1873,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3002,
+    "region": "FB1 PLA AND",
+    "offset": 1882,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3042,
+    "region": "FB1 PLA AND",
+    "offset": 1922,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3045,
+    "region": "FB1 PLA AND",
+    "offset": 1925,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3047,
+    "region": "FB1 PLA AND",
+    "offset": 1927,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3048,
+    "region": "FB1 PLA AND",
+    "offset": 1928,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3065,
+    "region": "FB1 PLA AND",
+    "offset": 1945,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3081,
+    "region": "FB1 PLA AND",
+    "offset": 1961,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3082,
+    "region": "FB1 PLA AND",
+    "offset": 1962,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3083,
+    "region": "FB1 PLA AND",
+    "offset": 1963,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3098,
+    "region": "FB1 PLA AND",
+    "offset": 1978,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3122,
+    "region": "FB1 PLA AND",
+    "offset": 2002,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3162,
+    "region": "FB1 PLA AND",
+    "offset": 2042,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3202,
+    "region": "FB1 PLA AND",
+    "offset": 2082,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3242,
+    "region": "FB1 PLA AND",
+    "offset": 2122,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3282,
+    "region": "FB1 PLA AND",
+    "offset": 2162,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3322,
+    "region": "FB1 PLA AND",
+    "offset": 2202,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3362,
+    "region": "FB1 PLA AND",
+    "offset": 2242,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3402,
+    "region": "FB1 PLA AND",
+    "offset": 2282,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3442,
+    "region": "FB1 PLA AND",
+    "offset": 2322,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 3482,
+    "region": "FB1 PLA AND",
+    "offset": 2362,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4162,
+    "region": "FB1 PLA AND",
+    "offset": 3042,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4163,
+    "region": "FB1 PLA AND",
+    "offset": 3043,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4169,
+    "region": "FB1 PLA AND",
+    "offset": 3049,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4202,
+    "region": "FB1 PLA AND",
+    "offset": 3082,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4242,
+    "region": "FB1 PLA AND",
+    "offset": 3122,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4251,
+    "region": "FB1 PLA AND",
+    "offset": 3131,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4282,
+    "region": "FB1 PLA AND",
+    "offset": 3162,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4283,
+    "region": "FB1 PLA AND",
+    "offset": 3163,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4322,
+    "region": "FB1 PLA AND",
+    "offset": 3202,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4329,
+    "region": "FB1 PLA AND",
+    "offset": 3209,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4359,
+    "region": "FB1 PLA AND",
+    "offset": 3239,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4362,
+    "region": "FB1 PLA AND",
+    "offset": 3242,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4402,
+    "region": "FB1 PLA AND",
+    "offset": 3282,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4411,
+    "region": "FB1 PLA AND",
+    "offset": 3291,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4433,
+    "region": "FB1 PLA AND",
+    "offset": 3313,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4442,
+    "region": "FB1 PLA AND",
+    "offset": 3322,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4482,
+    "region": "FB1 PLA AND",
+    "offset": 3362,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4485,
+    "region": "FB1 PLA AND",
+    "offset": 3365,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4487,
+    "region": "FB1 PLA AND",
+    "offset": 3367,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4505,
+    "region": "FB1 PLA AND",
+    "offset": 3385,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4519,
+    "region": "FB1 PLA AND",
+    "offset": 3399,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4521,
+    "region": "FB1 PLA AND",
+    "offset": 3401,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4522,
+    "region": "FB1 PLA AND",
+    "offset": 3402,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4538,
+    "region": "FB1 PLA AND",
+    "offset": 3418,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4562,
+    "region": "FB1 PLA AND",
+    "offset": 3442,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4568,
+    "region": "FB1 PLA AND",
+    "offset": 3448,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4571,
+    "region": "FB1 PLA AND",
+    "offset": 3451,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4593,
+    "region": "FB1 PLA AND",
+    "offset": 3473,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4602,
+    "region": "FB1 PLA AND",
+    "offset": 3482,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4642,
+    "region": "FB1 PLA AND",
+    "offset": 3522,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4645,
+    "region": "FB1 PLA AND",
+    "offset": 3525,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4647,
+    "region": "FB1 PLA AND",
+    "offset": 3527,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4648,
+    "region": "FB1 PLA AND",
+    "offset": 3528,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4665,
+    "region": "FB1 PLA AND",
+    "offset": 3545,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4679,
+    "region": "FB1 PLA AND",
+    "offset": 3559,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4681,
+    "region": "FB1 PLA AND",
+    "offset": 3561,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4682,
+    "region": "FB1 PLA AND",
+    "offset": 3562,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4698,
+    "region": "FB1 PLA AND",
+    "offset": 3578,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4722,
+    "region": "FB1 PLA AND",
+    "offset": 3602,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4728,
+    "region": "FB1 PLA AND",
+    "offset": 3608,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4748,
+    "region": "FB1 PLA AND",
+    "offset": 3628,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4749,
+    "region": "FB1 PLA AND",
+    "offset": 3629,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4753,
+    "region": "FB1 PLA AND",
+    "offset": 3633,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4762,
+    "region": "FB1 PLA AND",
+    "offset": 3642,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4802,
+    "region": "FB1 PLA AND",
+    "offset": 3682,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4803,
+    "region": "FB1 PLA AND",
+    "offset": 3683,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4805,
+    "region": "FB1 PLA AND",
+    "offset": 3685,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4807,
+    "region": "FB1 PLA AND",
+    "offset": 3687,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4808,
+    "region": "FB1 PLA AND",
+    "offset": 3688,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4825,
+    "region": "FB1 PLA AND",
+    "offset": 3705,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4828,
+    "region": "FB1 PLA AND",
+    "offset": 3708,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4841,
+    "region": "FB1 PLA AND",
+    "offset": 3721,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4842,
+    "region": "FB1 PLA AND",
+    "offset": 3722,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4858,
+    "region": "FB1 PLA AND",
+    "offset": 3738,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4882,
+    "region": "FB1 PLA AND",
+    "offset": 3762,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4888,
+    "region": "FB1 PLA AND",
+    "offset": 3768,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4890,
+    "region": "FB1 PLA AND",
+    "offset": 3770,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4908,
+    "region": "FB1 PLA AND",
+    "offset": 3788,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4919,
+    "region": "FB1 PLA AND",
+    "offset": 3799,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4922,
+    "region": "FB1 PLA AND",
+    "offset": 3802,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4923,
+    "region": "FB1 PLA AND",
+    "offset": 3803,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4962,
+    "region": "FB1 PLA AND",
+    "offset": 3842,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4968,
+    "region": "FB1 PLA AND",
+    "offset": 3848,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4969,
+    "region": "FB1 PLA AND",
+    "offset": 3849,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4970,
+    "region": "FB1 PLA AND",
+    "offset": 3850,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4988,
+    "region": "FB1 PLA AND",
+    "offset": 3868,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 4993,
+    "region": "FB1 PLA AND",
+    "offset": 3873,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5002,
+    "region": "FB1 PLA AND",
+    "offset": 3882,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5122,
+    "region": "FB1 PLA AND",
+    "offset": 4002,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5125,
+    "region": "FB1 PLA AND",
+    "offset": 4005,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5127,
+    "region": "FB1 PLA AND",
+    "offset": 4007,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5128,
+    "region": "FB1 PLA AND",
+    "offset": 4008,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5130,
+    "region": "FB1 PLA AND",
+    "offset": 4010,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5131,
+    "region": "FB1 PLA AND",
+    "offset": 4011,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5145,
+    "region": "FB1 PLA AND",
+    "offset": 4025,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5148,
+    "region": "FB1 PLA AND",
+    "offset": 4028,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5161,
+    "region": "FB1 PLA AND",
+    "offset": 4041,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5162,
+    "region": "FB1 PLA AND",
+    "offset": 4042,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5178,
+    "region": "FB1 PLA AND",
+    "offset": 4058,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5202,
+    "region": "FB1 PLA AND",
+    "offset": 4082,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5208,
+    "region": "FB1 PLA AND",
+    "offset": 4088,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5210,
+    "region": "FB1 PLA AND",
+    "offset": 4090,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5228,
+    "region": "FB1 PLA AND",
+    "offset": 4108,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5233,
+    "region": "FB1 PLA AND",
+    "offset": 4113,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5238,
+    "region": "FB1 PLA AND",
+    "offset": 4118,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5239,
+    "region": "FB1 PLA AND",
+    "offset": 4119,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5242,
+    "region": "FB1 PLA AND",
+    "offset": 4122,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5282,
+    "region": "FB1 PLA AND",
+    "offset": 4162,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5285,
+    "region": "FB1 PLA AND",
+    "offset": 4165,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5287,
+    "region": "FB1 PLA AND",
+    "offset": 4167,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5288,
+    "region": "FB1 PLA AND",
+    "offset": 4168,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5290,
+    "region": "FB1 PLA AND",
+    "offset": 4170,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5305,
+    "region": "FB1 PLA AND",
+    "offset": 4185,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5308,
+    "region": "FB1 PLA AND",
+    "offset": 4188,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5312,
+    "region": "FB1 PLA AND",
+    "offset": 4192,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5313,
+    "region": "FB1 PLA AND",
+    "offset": 4193,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5318,
+    "region": "FB1 PLA AND",
+    "offset": 4198,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5321,
+    "region": "FB1 PLA AND",
+    "offset": 4201,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5322,
+    "region": "FB1 PLA AND",
+    "offset": 4202,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5338,
+    "region": "FB1 PLA AND",
+    "offset": 4218,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5365,
+    "region": "FB1 PLA AND",
+    "offset": 4245,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5367,
+    "region": "FB1 PLA AND",
+    "offset": 4247,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5378,
+    "region": "FB1 PLA AND",
+    "offset": 4258,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5380,
+    "region": "FB1 PLA AND",
+    "offset": 4260,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5385,
+    "region": "FB1 PLA AND",
+    "offset": 4265,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5386,
+    "region": "FB1 PLA AND",
+    "offset": 4266,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5390,
+    "region": "FB1 PLA AND",
+    "offset": 4270,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5396,
+    "region": "FB1 PLA AND",
+    "offset": 4276,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5400,
+    "region": "FB1 PLA AND",
+    "offset": 4280,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5401,
+    "region": "FB1 PLA AND",
+    "offset": 4281,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5418,
+    "region": "FB1 PLA AND",
+    "offset": 4298,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5560,
+    "region": "FB1 PLA AND",
+    "offset": 4440,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 5797,
+    "region": "FB1 PLA OR",
+    "offset": 197,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5799,
+    "region": "FB1 PLA OR",
+    "offset": 199,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5802,
+    "region": "FB1 PLA OR",
+    "offset": 202,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5809,
+    "region": "FB1 PLA OR",
+    "offset": 209,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5813,
+    "region": "FB1 PLA OR",
+    "offset": 213,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5814,
+    "region": "FB1 PLA OR",
+    "offset": 214,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5815,
+    "region": "FB1 PLA OR",
+    "offset": 215,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5819,
+    "region": "FB1 PLA OR",
+    "offset": 219,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5820,
+    "region": "FB1 PLA OR",
+    "offset": 220,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5822,
+    "region": "FB1 PLA OR",
+    "offset": 222,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5823,
+    "region": "FB1 PLA OR",
+    "offset": 223,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5830,
+    "region": "FB1 PLA OR",
+    "offset": 230,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5834,
+    "region": "FB1 PLA OR",
+    "offset": 234,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5846,
+    "region": "FB1 PLA OR",
+    "offset": 246,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5850,
+    "region": "FB1 PLA OR",
+    "offset": 250,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5857,
+    "region": "FB1 PLA OR",
+    "offset": 257,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5866,
+    "region": "FB1 PLA OR",
+    "offset": 266,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5873,
+    "region": "FB1 PLA OR",
+    "offset": 273,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5882,
+    "region": "FB1 PLA OR",
+    "offset": 282,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5889,
+    "region": "FB1 PLA OR",
+    "offset": 289,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5898,
+    "region": "FB1 PLA OR",
+    "offset": 298,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5930,
+    "region": "FB1 PLA OR",
+    "offset": 330,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5935,
+    "region": "FB1 PLA OR",
+    "offset": 335,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5937,
+    "region": "FB1 PLA OR",
+    "offset": 337,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5941,
+    "region": "FB1 PLA OR",
+    "offset": 341,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5942,
+    "region": "FB1 PLA OR",
+    "offset": 342,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5943,
+    "region": "FB1 PLA OR",
+    "offset": 343,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5946,
+    "region": "FB1 PLA OR",
+    "offset": 346,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5947,
+    "region": "FB1 PLA OR",
+    "offset": 347,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5948,
+    "region": "FB1 PLA OR",
+    "offset": 348,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5950,
+    "region": "FB1 PLA OR",
+    "offset": 350,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5979,
+    "region": "FB1 PLA OR",
+    "offset": 379,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5983,
+    "region": "FB1 PLA OR",
+    "offset": 383,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5995,
+    "region": "FB1 PLA OR",
+    "offset": 395,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 5999,
+    "region": "FB1 PLA OR",
+    "offset": 399,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6011,
+    "region": "FB1 PLA OR",
+    "offset": 411,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6014,
+    "region": "FB1 PLA OR",
+    "offset": 414,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6027,
+    "region": "FB1 PLA OR",
+    "offset": 427,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6030,
+    "region": "FB1 PLA OR",
+    "offset": 430,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6043,
+    "region": "FB1 PLA OR",
+    "offset": 443,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6046,
+    "region": "FB1 PLA OR",
+    "offset": 446,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6059,
+    "region": "FB1 PLA OR",
+    "offset": 459,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6062,
+    "region": "FB1 PLA OR",
+    "offset": 462,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6075,
+    "region": "FB1 PLA OR",
+    "offset": 475,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6078,
+    "region": "FB1 PLA OR",
+    "offset": 478,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6219,
+    "region": "FB1 PLA OR",
+    "offset": 619,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6222,
+    "region": "FB1 PLA OR",
+    "offset": 622,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6235,
+    "region": "FB1 PLA OR",
+    "offset": 635,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6238,
+    "region": "FB1 PLA OR",
+    "offset": 638,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6251,
+    "region": "FB1 PLA OR",
+    "offset": 651,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6254,
+    "region": "FB1 PLA OR",
+    "offset": 654,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6267,
+    "region": "FB1 PLA OR",
+    "offset": 667,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6270,
+    "region": "FB1 PLA OR",
+    "offset": 670,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6283,
+    "region": "FB1 PLA OR",
+    "offset": 683,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6286,
+    "region": "FB1 PLA OR",
+    "offset": 686,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6299,
+    "region": "FB1 PLA OR",
+    "offset": 699,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6303,
+    "region": "FB1 PLA OR",
+    "offset": 703,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6315,
+    "region": "FB1 PLA OR",
+    "offset": 715,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6319,
+    "region": "FB1 PLA OR",
+    "offset": 719,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6330,
+    "region": "FB1 PLA OR",
+    "offset": 730,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6335,
+    "region": "FB1 PLA OR",
+    "offset": 735,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6346,
+    "region": "FB1 PLA OR",
+    "offset": 746,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6351,
+    "region": "FB1 PLA OR",
+    "offset": 751,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6353,
+    "region": "FB1 PLA OR",
+    "offset": 753,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6362,
+    "region": "FB1 PLA OR",
+    "offset": 762,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6369,
+    "region": "FB1 PLA OR",
+    "offset": 769,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6378,
+    "region": "FB1 PLA OR",
+    "offset": 778,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6401,
+    "region": "FB1 PLA OR",
+    "offset": 801,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6410,
+    "region": "FB1 PLA OR",
+    "offset": 810,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6422,
+    "region": "FB1 PLA OR",
+    "offset": 822,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6426,
+    "region": "FB1 PLA OR",
+    "offset": 826,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6437,
+    "region": "FB1 PLA OR",
+    "offset": 837,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6438,
+    "region": "FB1 PLA OR",
+    "offset": 838,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6439,
+    "region": "FB1 PLA OR",
+    "offset": 839,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6442,
+    "region": "FB1 PLA OR",
+    "offset": 842,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6452,
+    "region": "FB1 PLA OR",
+    "offset": 852,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6458,
+    "region": "FB1 PLA OR",
+    "offset": 858,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 6484,
+    "region": "FB1 PLA OR",
+    "offset": 884,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 8046,
+    "region": "FB2 PLA AND",
+    "offset": 18,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8055,
+    "region": "FB2 PLA AND",
+    "offset": 27,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8060,
+    "region": "FB2 PLA AND",
+    "offset": 32,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8063,
+    "region": "FB2 PLA AND",
+    "offset": 35,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8127,
+    "region": "FB2 PLA AND",
+    "offset": 99,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8133,
+    "region": "FB2 PLA AND",
+    "offset": 105,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8140,
+    "region": "FB2 PLA AND",
+    "offset": 112,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8141,
+    "region": "FB2 PLA AND",
+    "offset": 113,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8206,
+    "region": "FB2 PLA AND",
+    "offset": 178,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8207,
+    "region": "FB2 PLA AND",
+    "offset": 179,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8213,
+    "region": "FB2 PLA AND",
+    "offset": 185,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8215,
+    "region": "FB2 PLA AND",
+    "offset": 187,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8221,
+    "region": "FB2 PLA AND",
+    "offset": 193,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8223,
+    "region": "FB2 PLA AND",
+    "offset": 195,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8287,
+    "region": "FB2 PLA AND",
+    "offset": 259,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8293,
+    "region": "FB2 PLA AND",
+    "offset": 265,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8294,
+    "region": "FB2 PLA AND",
+    "offset": 266,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8295,
+    "region": "FB2 PLA AND",
+    "offset": 267,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8367,
+    "region": "FB2 PLA AND",
+    "offset": 339,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8373,
+    "region": "FB2 PLA AND",
+    "offset": 345,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8374,
+    "region": "FB2 PLA AND",
+    "offset": 346,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8375,
+    "region": "FB2 PLA AND",
+    "offset": 347,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8446,
+    "region": "FB2 PLA AND",
+    "offset": 418,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8462,
+    "region": "FB2 PLA AND",
+    "offset": 434,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8526,
+    "region": "FB2 PLA AND",
+    "offset": 498,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 8542,
+    "region": "FB2 PLA AND",
+    "offset": 514,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term literals/allocation and factoring. Raw-fuse SAT proves all state next functions equal; internal combinational propagation delay may differ."
+  },
+  {
+    "fuse": 12514,
+    "region": "FB2 PLA OR",
+    "offset": 6,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12515,
+    "region": "FB2 PLA OR",
+    "offset": 7,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12530,
+    "region": "FB2 PLA OR",
+    "offset": 22,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12531,
+    "region": "FB2 PLA OR",
+    "offset": 23,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12562,
+    "region": "FB2 PLA OR",
+    "offset": 54,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12563,
+    "region": "FB2 PLA OR",
+    "offset": 55,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12578,
+    "region": "FB2 PLA OR",
+    "offset": 70,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12579,
+    "region": "FB2 PLA OR",
+    "offset": 71,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12588,
+    "region": "FB2 PLA OR",
+    "offset": 80,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12603,
+    "region": "FB2 PLA OR",
+    "offset": 95,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12604,
+    "region": "FB2 PLA OR",
+    "offset": 96,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  },
+  {
+    "fuse": 12619,
+    "region": "FB2 PLA OR",
+    "offset": 111,
+    "classification": "fitter implementation",
+    "explanation": "Different product-term connections/order and XOR decomposition. Local transitions are proved equal, not physical timing."
+  }
+]

@@ -1,0 +1,266 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "design.prj"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "design"
+Output Format                      : NGC
+Target Device                      : xc2c128-7-vq100
+
+---- Source Options
+Top Module Name                    : amplcpld
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology/amplcpld.vhd" in Library work.
+Entity <amplcpld> compiled.
+Entity <amplcpld> (Architecture <technology>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <amplcpld> in library <work> (architecture <technology>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <amplcpld> in library <work> (Architecture <technology>).
+    Set user-defined property "KEEP =  true" for signal <comb_C0B0MC3>.
+    Set user-defined property "KEEP =  true" for signal <comb_C0B0MC5>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC1> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC10> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC11> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC12> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC13> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC14> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC15> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC4> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC6> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC7> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC8> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B0MC9> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC0> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC1> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC10> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC11> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC12> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC13> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC14> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC15> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC2> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC4> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC5> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC6> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC7> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC8> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B1MC9> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC10> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC11> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC12> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC13> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC14> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC15> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC3> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC4> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC5> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC6> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC7> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC8> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B2MC9> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B5MC0> in unit <amplcpld>.
+    Set user-defined property "INIT =  0" for instance <ff_C0B5MC15> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B6MC10> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B6MC12> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B6MC13> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B6MC14> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B6MC15> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B6MC5> in unit <amplcpld>.
+    Set user-defined property "INIT =  1" for instance <ff_C0B7MC1> in unit <amplcpld>.
+Entity <amplcpld> analyzed. Unit <amplcpld> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <amplcpld>.
+    Related source file is "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-technology/amplcpld.vhd".
+    Found 1-bit xor2 for signal <drive_C0B0MC13>.
+    Found 1-bit xor2 for signal <drive_C0B0MC8>.
+    Found 1-bit xor2 for signal <drive_C0B0MC9>.
+    Summary:
+	inferred   3 Xor(s).
+Unit <amplcpld> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <amplcpld> ...
+  implementation constraint: KEEP	 : comb_C0B0MC3
+  implementation constraint: KEEP	 : comb_C0B0MC5
+  implementation constraint: INIT=1	 : ff_C0B0MC1
+  implementation constraint: INIT=1	 : ff_C0B0MC10
+  implementation constraint: INIT=1	 : ff_C0B0MC11
+  implementation constraint: INIT=1	 : ff_C0B0MC12
+  implementation constraint: INIT=1	 : ff_C0B0MC13
+  implementation constraint: INIT=1	 : ff_C0B0MC14
+  implementation constraint: INIT=1	 : ff_C0B0MC15
+  implementation constraint: INIT=1	 : ff_C0B0MC4
+  implementation constraint: INIT=1	 : ff_C0B0MC6
+  implementation constraint: INIT=1	 : ff_C0B0MC7
+  implementation constraint: INIT=1	 : ff_C0B0MC8
+  implementation constraint: INIT=1	 : ff_C0B0MC9
+  implementation constraint: INIT=1	 : ff_C0B1MC0
+  implementation constraint: INIT=1	 : ff_C0B1MC1
+  implementation constraint: INIT=1	 : ff_C0B1MC10
+  implementation constraint: INIT=1	 : ff_C0B1MC11
+  implementation constraint: INIT=1	 : ff_C0B1MC12
+  implementation constraint: INIT=1	 : ff_C0B1MC13
+  implementation constraint: INIT=1	 : ff_C0B1MC14
+  implementation constraint: INIT=1	 : ff_C0B1MC15
+  implementation constraint: INIT=1	 : ff_C0B1MC2
+  implementation constraint: INIT=1	 : ff_C0B1MC4
+  implementation constraint: INIT=1	 : ff_C0B1MC5
+  implementation constraint: INIT=1	 : ff_C0B1MC6
+  implementation constraint: INIT=1	 : ff_C0B1MC7
+  implementation constraint: INIT=1	 : ff_C0B1MC8
+  implementation constraint: INIT=1	 : ff_C0B1MC9
+  implementation constraint: INIT=1	 : ff_C0B2MC10
+  implementation constraint: INIT=1	 : ff_C0B2MC11
+  implementation constraint: INIT=1	 : ff_C0B2MC12
+  implementation constraint: INIT=1	 : ff_C0B2MC13
+  implementation constraint: INIT=1	 : ff_C0B2MC14
+  implementation constraint: INIT=1	 : ff_C0B2MC15
+  implementation constraint: INIT=1	 : ff_C0B2MC3
+  implementation constraint: INIT=1	 : ff_C0B2MC4
+  implementation constraint: INIT=1	 : ff_C0B2MC5
+  implementation constraint: INIT=1	 : ff_C0B2MC6
+  implementation constraint: INIT=1	 : ff_C0B2MC7
+  implementation constraint: INIT=1	 : ff_C0B2MC8
+  implementation constraint: INIT=1	 : ff_C0B2MC9
+  implementation constraint: INIT=1	 : ff_C0B5MC0
+  implementation constraint: INIT=0	 : ff_C0B5MC15
+  implementation constraint: INIT=1	 : ff_C0B6MC10
+  implementation constraint: INIT=1	 : ff_C0B6MC12
+  implementation constraint: INIT=1	 : ff_C0B6MC13
+  implementation constraint: INIT=1	 : ff_C0B6MC14
+  implementation constraint: INIT=1	 : ff_C0B6MC15
+  implementation constraint: INIT=1	 : ff_C0B6MC5
+  implementation constraint: INIT=1	 : ff_C0B7MC1
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : design
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : no
+Target Technology                  : xc2c128-7-vq100
+
+Design Statistics
+# IOs                              : 46
+
+Cell Usage :
+# BELS                             : 463
+#      AND2                        : 179
+#      AND3                        : 5
+#      AND4                        : 2
+#      AND5                        : 1
+#      GND                         : 1
+#      INV                         : 155
+#      OR2                         : 92
+#      OR3                         : 12
+#      OR4                         : 11
+#      OR5                         : 1
+#      VCC                         : 1
+#      XOR2                        : 3
+# FlipFlops/Latches                : 49
+#      FD                          : 27
+#      FDCPE                       : 7
+#      FTCP                        : 15
+# IO Buffers                       : 46
+#      IBUF                        : 28
+#      OBUF                        : 18
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.31 secs
+ 
+--> 
+
+
+Total memory usage is 511464 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

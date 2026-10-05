@@ -1,0 +1,1002 @@
+[
+  {
+    "pin": 1,
+    "resource": "IOB_C0B2MC2",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": "GOE2"
+  },
+  {
+    "pin": 2,
+    "resource": "IOB_C0B2MC1",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": "GOE3"
+  },
+  {
+    "pin": 3,
+    "resource": "IOB_C0B0MC15",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": "GOE0"
+  },
+  {
+    "pin": 4,
+    "resource": "IOB_C0B0MC14",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": "GOE1"
+  },
+  {
+    "pin": 5,
+    "resource": "VCCAUX",
+    "net": "P3V3",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCAUX"
+  },
+  {
+    "pin": 6,
+    "resource": "IOB_C0B0MC12",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 7,
+    "resource": "IOB_C0B0MC11",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 8,
+    "resource": "IOB_C0B0MC10",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 9,
+    "resource": "IOB_C0B0MC5",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 10,
+    "resource": "IOB_C0B0MC4",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 11,
+    "resource": "IOB_C0B0MC3",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 12,
+    "resource": "IOB_C0B0MC2",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 13,
+    "resource": "IOB_C0B0MC0",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 14,
+    "resource": "IOB_C0B1MC1",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 15,
+    "resource": "IOB_C0B1MC2",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 16,
+    "resource": "IOB_C0B1MC3",
+    "net": "EV_OUT_",
+    "hdl": "EV_out",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "event-chain output",
+    "special": ""
+  },
+  {
+    "pin": 17,
+    "resource": "IOB_C0B1MC4",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 18,
+    "resource": "IOB_C0B1MC5",
+    "net": "ADCA_D11",
+    "hdl": "ADC0<11>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 19,
+    "resource": "IOB_C0B1MC10",
+    "net": "ADCA_D10",
+    "hdl": "ADC0<10>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 20,
+    "resource": "VCCIO0",
+    "net": "P3V3",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCIO0"
+  },
+  {
+    "pin": 21,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 22,
+    "resource": "IOB_C0B1MC12",
+    "net": "ADCA_D9",
+    "hdl": "ADC0<9>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": "GCLK0"
+  },
+  {
+    "pin": 23,
+    "resource": "IOB_C0B1MC13",
+    "net": "ADCA_D7",
+    "hdl": "ADC0<7>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": "GCLK1"
+  },
+  {
+    "pin": 24,
+    "resource": "IOB_C0B1MC14",
+    "net": "ADCA_D8",
+    "hdl": "ADC0<8>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": "CDR"
+  },
+  {
+    "pin": 25,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 26,
+    "resource": "VCCINT",
+    "net": "P1V8",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCINT"
+  },
+  {
+    "pin": 27,
+    "resource": "IOB_C0B1MC15",
+    "net": "ADC_CLK",
+    "hdl": "CLK80",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC clock fanout, ADC clock distribution",
+    "special": "GCLK2"
+  },
+  {
+    "pin": 28,
+    "resource": "IOB_C0B3MC0",
+    "net": "ADCA_D6",
+    "hdl": "ADC0<6>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": "DGE"
+  },
+  {
+    "pin": 29,
+    "resource": "IOB_C0B3MC3",
+    "net": "ADCA_D5",
+    "hdl": "ADC0<5>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 30,
+    "resource": "IOB_C0B3MC4",
+    "net": "ADCA_D4",
+    "hdl": "ADC0<4>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 31,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 32,
+    "resource": "IOB_C0B3MC5",
+    "net": "ADCA_D3",
+    "hdl": "ADC0<3>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 33,
+    "resource": "IOB_C0B3MC6",
+    "net": "ADCA_D2",
+    "hdl": "ADC0<2>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 34,
+    "resource": "IOB_C0B3MC10",
+    "net": "ADCA_D1",
+    "hdl": "ADC0<1>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 35,
+    "resource": "IOB_C0B3MC11",
+    "net": "ADCA_D0",
+    "hdl": "ADC0<0>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC A digital data",
+    "special": ""
+  },
+  {
+    "pin": 36,
+    "resource": "IOB_C0B3MC12",
+    "net": "ADCB_D11",
+    "hdl": "ADC1<11>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 37,
+    "resource": "IOB_C0B3MC13",
+    "net": "ADCB_D10",
+    "hdl": "ADC1<10>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 38,
+    "resource": "VCCIO0",
+    "net": "P3V3",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCIO0"
+  },
+  {
+    "pin": 39,
+    "resource": "IOB_C0B3MC14",
+    "net": "ADCB_D9",
+    "hdl": "ADC1<9>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 40,
+    "resource": "IOB_C0B3MC15",
+    "net": "ADCB_D8",
+    "hdl": "ADC1<8>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 41,
+    "resource": "IOB_C0B7MC15",
+    "net": "ADCB_D7",
+    "hdl": "ADC1<7>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 42,
+    "resource": "IOB_C0B7MC14",
+    "net": "ADCB_D6",
+    "hdl": "ADC1<6>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 43,
+    "resource": "IOB_C0B7MC13",
+    "net": "ADCB_D5",
+    "hdl": "ADC1<5>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 44,
+    "resource": "IOB_C0B7MC12",
+    "net": "ADCB_D4",
+    "hdl": "ADC1<4>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 45,
+    "resource": "TDI",
+    "net": "CPLD_TDI",
+    "hdl": "\u2014",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "JTAG chain",
+    "special": "TDI"
+  },
+  {
+    "pin": 46,
+    "resource": "IOB_C0B7MC11",
+    "net": "ADCB_D3",
+    "hdl": "ADC1<3>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 47,
+    "resource": "TMS",
+    "net": "CPLD_TMS",
+    "hdl": "\u2014",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "JTAG chain",
+    "special": "TMS"
+  },
+  {
+    "pin": 48,
+    "resource": "TCK",
+    "net": "CPLD_TCK",
+    "hdl": "\u2014",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "JTAG chain",
+    "special": "TCK"
+  },
+  {
+    "pin": 49,
+    "resource": "IOB_C0B7MC5",
+    "net": "ADCB_D2",
+    "hdl": "ADC1<2>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 50,
+    "resource": "IOB_C0B7MC3",
+    "net": "ADCB_D1",
+    "hdl": "ADC1<1>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 51,
+    "resource": "VCCIO0",
+    "net": "P3V3",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCIO0"
+  },
+  {
+    "pin": 52,
+    "resource": "IOB_C0B7MC2",
+    "net": "ADCB_D0",
+    "hdl": "ADC1<0>",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "ADC B digital data",
+    "special": ""
+  },
+  {
+    "pin": 53,
+    "resource": "IOB_C0B7MC1",
+    "net": "INTA_G_DRV",
+    "hdl": "CLK20_P",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "Integrator A gate driver",
+    "special": ""
+  },
+  {
+    "pin": 54,
+    "resource": "IOB_C0B5MC15",
+    "net": "INTB_G_DRV",
+    "hdl": "CLK20_N",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "Integrator B gate driver",
+    "special": ""
+  },
+  {
+    "pin": 55,
+    "resource": "IOB_C0B5MC13",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 56,
+    "resource": "IOB_C0B5MC11",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 57,
+    "resource": "VCCINT",
+    "net": "P1V8",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCINT"
+  },
+  {
+    "pin": 58,
+    "resource": "IOB_C0B5MC5",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 59,
+    "resource": "IOB_C0B5MC4",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 60,
+    "resource": "IOB_C0B5MC3",
+    "net": "EV_IN_",
+    "hdl": "EV",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "event-chain input",
+    "special": ""
+  },
+  {
+    "pin": 61,
+    "resource": "IOB_C0B5MC2",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 62,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 63,
+    "resource": "IOB_C0B5MC1",
+    "net": "CFD_OUT",
+    "hdl": "STR",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "DD1 pin7 LVPECL\u2192LVTTL receiver output, sheet 12",
+    "special": ""
+  },
+  {
+    "pin": 64,
+    "resource": "IOB_C0B5MC0",
+    "net": "Gate_STR1_o",
+    "hdl": "ENA",
+    "direction": "input",
+    "hardware_direction_inferred": "input",
+    "destination": "DD1 pin6 Gate receiver output, sheet 12",
+    "special": ""
+  },
+  {
+    "pin": 65,
+    "resource": "IOB_C0B4MC0",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 66,
+    "resource": "IOB_C0B4MC1",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 67,
+    "resource": "IOB_C0B4MC2",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 68,
+    "resource": "IOB_C0B4MC4",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 69,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 70,
+    "resource": "IOB_C0B4MC6",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 71,
+    "resource": "IOB_C0B4MC10",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 72,
+    "resource": "IOB_C0B4MC11",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 73,
+    "resource": "IOB_C0B4MC12",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 74,
+    "resource": "IOB_C0B4MC13",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 75,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 76,
+    "resource": "IOB_C0B4MC14",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 77,
+    "resource": "IOB_C0B6MC0",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 78,
+    "resource": "IOB_C0B6MC1",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 79,
+    "resource": "IOB_C0B6MC3",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 80,
+    "resource": "IOB_C0B6MC4",
+    "net": "NC",
+    "hdl": "\u2014",
+    "direction": "NC",
+    "hardware_direction_inferred": "NC",
+    "destination": "unconnected",
+    "special": ""
+  },
+  {
+    "pin": 81,
+    "resource": "IOB_C0B6MC5",
+    "net": "Gate_STR1_i",
+    "hdl": "CLK40",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "DA2/R1/R9 gate shaping input, sheet 12",
+    "special": ""
+  },
+  {
+    "pin": 82,
+    "resource": "IOB_C0B6MC10",
+    "net": "STR1_",
+    "hdl": "DV",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA data-valid input",
+    "special": ""
+  },
+  {
+    "pin": 83,
+    "resource": "TDO",
+    "net": "CPLD_TDO",
+    "hdl": "\u2014",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "JTAG chain",
+    "special": "TDO"
+  },
+  {
+    "pin": 84,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  },
+  {
+    "pin": 85,
+    "resource": "IOB_C0B6MC12",
+    "net": "DI12_",
+    "hdl": "DOUT<12>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 86,
+    "resource": "IOB_C0B6MC13",
+    "net": "DI11_",
+    "hdl": "DOUT<11>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 87,
+    "resource": "IOB_C0B6MC14",
+    "net": "DI10_",
+    "hdl": "DOUT<10>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 88,
+    "resource": "VCCIO1",
+    "net": "P1V8",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCIO1"
+  },
+  {
+    "pin": 89,
+    "resource": "IOB_C0B6MC15",
+    "net": "DI9_",
+    "hdl": "DOUT<9>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 90,
+    "resource": "IOB_C0B2MC15",
+    "net": "DI8_",
+    "hdl": "DOUT<8>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 91,
+    "resource": "IOB_C0B2MC14",
+    "net": "DI7_",
+    "hdl": "DOUT<7>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 92,
+    "resource": "IOB_C0B2MC13",
+    "net": "DI6_",
+    "hdl": "DOUT<6>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 93,
+    "resource": "IOB_C0B2MC12",
+    "net": "DI5_",
+    "hdl": "DOUT<5>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 94,
+    "resource": "IOB_C0B2MC10",
+    "net": "DI4_",
+    "hdl": "DOUT<4>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 95,
+    "resource": "IOB_C0B2MC6",
+    "net": "DI3_",
+    "hdl": "DOUT<3>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 96,
+    "resource": "IOB_C0B2MC5",
+    "net": "DI2_",
+    "hdl": "DOUT<2>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 97,
+    "resource": "IOB_C0B2MC4",
+    "net": "DI1_",
+    "hdl": "DOUT<1>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": ""
+  },
+  {
+    "pin": 98,
+    "resource": "VCCIO1",
+    "net": "P1V8",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "VCCIO1"
+  },
+  {
+    "pin": 99,
+    "resource": "IOB_C0B2MC3",
+    "net": "DI0_",
+    "hdl": "DOUT<0>",
+    "direction": "output",
+    "hardware_direction_inferred": "output",
+    "destination": "FPGA ADC data bus",
+    "special": "GSR"
+  },
+  {
+    "pin": 100,
+    "resource": "GND",
+    "net": "GND",
+    "hdl": "\u2014",
+    "direction": "power",
+    "hardware_direction_inferred": "power",
+    "destination": "power/ground",
+    "special": "GND"
+  }
+]

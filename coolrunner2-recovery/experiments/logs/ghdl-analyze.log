@@ -1,0 +1,3 @@
+../../recovered/previous-input/amplcpld_recovered.vhd:6:1:warning: entity "amplcpld" was also defined in file "../../recovered/amplcpld_recovered.vhd" [-Wlibrary]
+library ieee;
+^

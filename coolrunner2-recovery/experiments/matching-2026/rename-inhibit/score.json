@@ -1,0 +1,9 @@
+{
+  "raw_hamming": 392,
+  "canonical_field_changes": 513,
+  "changed_regions": {
+    "PLA AND literals": 409,
+    "PLA OR allocation": 104
+  },
+  "functional_equivalence_verified": false
+}

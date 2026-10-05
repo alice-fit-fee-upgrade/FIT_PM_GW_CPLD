@@ -1,0 +1,2315 @@
+NDS Database:  version P.20131013
+
+NDS_INFO | xbr | 2C128100 | XC2C128-7-VQ100
+
+DEVICE | 2C128 | 2C128100 | 
+
+NETWORK | amplcpld | 0 | 0 | 1073758214 | 0
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<0>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<0> | 3308 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<0>_II/UIM | 3357 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<10>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<10> | 3309 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<10>_II/UIM | 3474 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<10>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<11>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<11> | 3310 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<11>_II/UIM | 3483 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<11>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<1>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<1> | 3311 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<1>_II/UIM | 3499 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<2>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<2> | 3312 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<2>_II/UIM | 3508 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<3>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<3> | 3313 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<3>_II/UIM | 3517 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<4>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<4> | 3314 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<4>_II/UIM | 3526 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<4>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<5>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<5> | 3315 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<5>_II/UIM | 3535 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<5>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<6>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<6> | 3316 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<6>_II/UIM | 3544 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<6>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<7>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<7> | 3317 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<7>_II/UIM | 3553 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<7>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<8>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<8> | 3318 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<8>_II/UIM | 3562 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<8>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC0<9>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC0<9> | 3319 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC0<9>_II/UIM | 3571 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<9>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<0>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<0> | 3320 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<0>_II/UIM | 3466 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<10>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<10> | 3321 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<10>_II/UIM | 3475 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<10>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<11>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<11> | 3322 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<11>_II/UIM | 3484 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<11>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<1>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<1> | 3323 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<1>_II/UIM | 3500 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<2>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<2> | 3324 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<2>_II/UIM | 3509 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<3>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<3> | 3325 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<3>_II/UIM | 3518 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<3>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<4>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<4> | 3326 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<4>_II/UIM | 3527 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<4>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<5>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<5> | 3327 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<5>_II/UIM | 3536 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<5>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<6>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<6> | 3328 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<6>_II/UIM | 3545 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<6>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<7>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<7> | 3329 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<7>_II/UIM | 3554 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<7>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<8>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<8> | 3330 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<8>_II/UIM | 3563 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<8>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | ADC1<9>_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ADC1<9> | 3331 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | ADC1<9>_II/UIM | 3572 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<9>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldHigh+Ce | CLK20_N_MC | amplcpld_COPY_0_COPY_0 | 268435968 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | CLK20_N_MC.Q | 3348 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_N_MC.Q | CLK20_N_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | CLK20_N_MC.SI | CLK20_N_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CLK20_N_MC.D1 | 3334 | ? | 0 | 0 | CLK20_N_MC | NULL | NULL | CLK20_N_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CLK20_N_MC.D2 | 3333 | ? | 0 | 0 | CLK20_N_MC | NULL | NULL | CLK20_N_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | CLK20_P_MC.UIM
+SPPTERM | 2 | IV_FALSE | CLK40_MC.UIM | IV_FALSE | CLK20_P_MC.UIM
+
+SRFF_INSTANCE | CLK20_N_MC.REG | CLK20_N_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CLK20_N_MC.D | 3332 | ? | 0 | 0 | CLK20_N_MC | NULL | NULL | CLK20_N_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CLK20_N_MC.Q | 3347 | ? | 0 | 0 | CLK20_N_MC | NULL | NULL | CLK20_N_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow+Tff+Ce | CLK40_MC | amplcpld_COPY_0_COPY_0 | 268440832 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | CLK40_MC.Q | 3352 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CLK40_MC.SI | CLK40_MC | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CLK40_MC.D1 | 3337 | ? | 0 | 0 | CLK40_MC | NULL | NULL | CLK40_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CLK40_MC.D2 | 3336 | ? | 0 | 0 | CLK40_MC | NULL | NULL | CLK40_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CLK40_MC.REG | CLK40_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CLK40_MC.D | 3335 | ? | 0 | 0 | CLK40_MC | NULL | NULL | CLK40_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CLK40_MC.Q | 3340 | ? | 0 | 0 | CLK40_MC | NULL | NULL | CLK40_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | CLK80_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CLK80 | 3338 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+
+MACROCELL_INSTANCE | PrldLow+Tff+Ce | CLK20_P_MC | amplcpld_COPY_0_COPY_0 | 268440576 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | CLK20_P_MC.Q | 3350 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | CLK20_P_MC.SI | CLK20_P_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | CLK20_P_MC.D1 | 3343 | ? | 0 | 0 | CLK20_P_MC | NULL | NULL | CLK20_P_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | CLK40_MC.UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | CLK20_P_MC.D2 | 3344 | ? | 0 | 0 | CLK20_P_MC | NULL | NULL | CLK20_P_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | CLK20_P_MC.REG | CLK20_P_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | CLK20_P_MC.D | 3342 | ? | 0 | 0 | CLK20_P_MC | NULL | NULL | CLK20_P_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | CLK20_P_MC.Q | 3345 | ? | 0 | 0 | CLK20_P_MC | NULL | NULL | CLK20_P_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | CLK20_N | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | CLK20_N_MC.Q | 3348 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_N_MC.Q | CLK20_N_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | CLK20_N | 3349 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK20_N | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | CLK20_P | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | CLK20_P_MC.Q | 3350 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | CLK20_P | 3351 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK20_P | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | CLK40 | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | CLK40_MC.Q | 3352 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | CLK40 | 3353 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK40 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<0>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<0>_MC.UIM | 3468 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<0>_MC.Q | DOUT<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<0>_II/UIM | 3357 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<0>_II/UIM | 3466 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<0>_MC.Q | 3469 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<0>_MC.Q | DOUT<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<0>_MC.UIM | 3468 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<0>_MC.Q | DOUT<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<0>_MC.SI | DOUT<0>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<0>_MC.UIM | 3468 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<0>_MC.Q | DOUT<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<0>_II/UIM | 3357 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<0>_II/UIM | 3466 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<0>_MC.D1 | 3356 | ? | 0 | 0 | DOUT<0>_MC | NULL | NULL | DOUT<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<0>_MC.D2 | 3355 | ? | 0 | 0 | DOUT<0>_MC | NULL | NULL | DOUT<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<0>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | ADC0<0>_II/UIM | IV_TRUE | dly<6>
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<0>_II/UIM
+
+SRFF_INSTANCE | DOUT<0>_MC.REG | DOUT<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<0>_MC.D | 3354 | ? | 0 | 0 | DOUT<0>_MC | NULL | NULL | DOUT<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<0>_MC.Q | 3467 | ? | 0 | 0 | DOUT<0>_MC | NULL | NULL | DOUT<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<6>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<5> | 3363 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<5>_MC.Q | dly<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<6>_MC.SI | dly<6>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<5> | 3363 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<5>_MC.Q | dly<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<6>_MC.D1 | 3361 | ? | 0 | 0 | dly<6>_MC | NULL | NULL | dly<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<5>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<6>_MC.D2 | 3362 | ? | 0 | 0 | dly<6>_MC | NULL | NULL | dly<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dly<6>_MC.REG | dly<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<6>_MC.D | 3360 | ? | 0 | 0 | dly<6>_MC | NULL | NULL | dly<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<6>_MC.Q | 3359 | ? | 0 | 0 | dly<6>_MC | NULL | NULL | dly<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<5>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<4> | 3368 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<4>_MC.Q | dly<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<5> | 3363 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<5>_MC.Q | dly<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<5>_MC.SI | dly<5>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<4> | 3368 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<4>_MC.Q | dly<4>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<5>_MC.D1 | 3366 | ? | 0 | 0 | dly<5>_MC | NULL | NULL | dly<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<4>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<5>_MC.D2 | 3367 | ? | 0 | 0 | dly<5>_MC | NULL | NULL | dly<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dly<5>_MC.REG | dly<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<5>_MC.D | 3365 | ? | 0 | 0 | dly<5>_MC | NULL | NULL | dly<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<5>_MC.Q | 3364 | ? | 0 | 0 | dly<5>_MC | NULL | NULL | dly<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<4>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<3> | 3373 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<3>_MC.Q | dly<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<4> | 3368 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<4>_MC.Q | dly<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<4>_MC.SI | dly<4>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<3> | 3373 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<3>_MC.Q | dly<3>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<4>_MC.D1 | 3371 | ? | 0 | 0 | dly<4>_MC | NULL | NULL | dly<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<4>_MC.D2 | 3372 | ? | 0 | 0 | dly<4>_MC | NULL | NULL | dly<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dly<4>_MC.REG | dly<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<4>_MC.D | 3370 | ? | 0 | 0 | dly<4>_MC | NULL | NULL | dly<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<4>_MC.Q | 3369 | ? | 0 | 0 | dly<4>_MC | NULL | NULL | dly<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<3>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<2> | 3378 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<2>_MC.Q | dly<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<3> | 3373 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<3>_MC.Q | dly<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<3>_MC.SI | dly<3>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<2> | 3378 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<2>_MC.Q | dly<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<3>_MC.D1 | 3376 | ? | 0 | 0 | dly<3>_MC | NULL | NULL | dly<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<3>_MC.D2 | 3377 | ? | 0 | 0 | dly<3>_MC | NULL | NULL | dly<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dly<3>_MC.REG | dly<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<3>_MC.D | 3375 | ? | 0 | 0 | dly<3>_MC | NULL | NULL | dly<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<3>_MC.Q | 3374 | ? | 0 | 0 | dly<3>_MC | NULL | NULL | dly<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<2>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<1> | 3383 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<1>_MC.Q | dly<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<2> | 3378 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<2>_MC.Q | dly<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<2>_MC.SI | dly<2>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<1> | 3383 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<1>_MC.Q | dly<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<2>_MC.D1 | 3381 | ? | 0 | 0 | dly<2>_MC | NULL | NULL | dly<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<2>_MC.D2 | 3382 | ? | 0 | 0 | dly<2>_MC | NULL | NULL | dly<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dly<2>_MC.REG | dly<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<2>_MC.D | 3380 | ? | 0 | 0 | dly<2>_MC | NULL | NULL | dly<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<2>_MC.Q | 3379 | ? | 0 | 0 | dly<2>_MC | NULL | NULL | dly<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<1>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<0> | 3388 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<0>_MC.Q | dly<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<1> | 3383 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<1>_MC.Q | dly<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<1>_MC.SI | dly<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<0> | 3388 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<0>_MC.Q | dly<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<1>_MC.D1 | 3386 | ? | 0 | 0 | dly<1>_MC | NULL | NULL | dly<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<1>_MC.D2 | 3387 | ? | 0 | 0 | dly<1>_MC | NULL | NULL | dly<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | dly<1>_MC.REG | dly<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<1>_MC.D | 3385 | ? | 0 | 0 | dly<1>_MC | NULL | NULL | dly<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<1>_MC.Q | 3384 | ? | 0 | 0 | dly<1>_MC | NULL | NULL | dly<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | dly<0>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str1 | 3450 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str1_MC.Q | str1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str2 | 3461 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str2_MC.Q | str2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | dly<0> | 3388 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<0>_MC.Q | dly<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | dly<0>_MC.SI | dly<0>_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str1 | 3450 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str1_MC.Q | str1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str2 | 3461 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str2_MC.Q | str2_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | dly<0>_MC.D1 | 3392 | ? | 0 | 0 | dly<0>_MC | NULL | NULL | dly<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | dly<0>_MC.D2 | 3391 | ? | 0 | 0 | dly<0>_MC | NULL | NULL | dly<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | cal_str
+SPPTERM | 2 | IV_TRUE | str1 | IV_FALSE | str2
+SPPTERM | 2 | IV_FALSE | str1 | IV_TRUE | str2
+
+SRFF_INSTANCE | dly<0>_MC.REG | dly<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | dly<0>_MC.D | 3390 | ? | 0 | 0 | dly<0>_MC | NULL | NULL | dly<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | dly<0>_MC.Q | 3389 | ? | 0 | 0 | dly<0>_MC | NULL | NULL | dly<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | Inv+PrldLow | cal_str_MC | amplcpld_COPY_0_COPY_0 | 1280 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cal_str_MC.SI | cal_str_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cal_str_MC.D1 | 3397 | ? | 0 | 0 | cal_str_MC | NULL | NULL | cal_str_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cal_str_MC.D2 | 3396 | ? | 0 | 0 | cal_str_MC | NULL | NULL | cal_str_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | cal_str | IV_FALSE | N_PZ_191
+SPPTERM | 9 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+
+SRFF_INSTANCE | cal_str_MC.REG | cal_str_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cal_str_MC.D | 3395 | ? | 0 | 0 | cal_str_MC | NULL | NULL | cal_str_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cal_str_MC.Q | 3394 | ? | 0 | 0 | cal_str_MC | NULL | NULL | cal_str_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | c_count<0>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<0>_MC.SI | c_count<0>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<0>_MC.D1 | 3402 | ? | 0 | 0 | c_count<0>_MC | NULL | NULL | c_count<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<0>_MC.D2 | 3401 | ? | 0 | 0 | c_count<0>_MC | NULL | NULL | c_count<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | CLK40_MC.UIM | IV_FALSE | c_count<0> | IV_FALSE | N_PZ_191
+SPPTERM | 3 | IV_FALSE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191
+SPPTERM | 8 | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+
+SRFF_INSTANCE | c_count<0>_MC.REG | c_count<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<0>_MC.D | 3400 | ? | 0 | 0 | c_count<0>_MC | NULL | NULL | c_count<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<0>_MC.Q | 3399 | ? | 0 | 0 | c_count<0>_MC | NULL | NULL | c_count<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_191_MC | amplcpld_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<1> | 3408 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<1>_MC.Q | evnt_i<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<2> | 3415 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<2>_MC.Q | evnt_i<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_191_MC.SI | N_PZ_191_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<1> | 3408 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<1>_MC.Q | evnt_i<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<2> | 3415 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<2>_MC.Q | evnt_i<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_191_MC.D1 | 3406 | ? | 0 | 0 | N_PZ_191_MC | NULL | NULL | N_PZ_191_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | evnt_i<1> | IV_FALSE | evnt_i<2>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_191_MC.D2 | 3407 | ? | 0 | 0 | N_PZ_191_MC | NULL | NULL | N_PZ_191_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | N_PZ_191_MC.REG | N_PZ_191_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_191_MC.D | 3405 | ? | 0 | 0 | N_PZ_191_MC | NULL | NULL | N_PZ_191_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_191_MC.Q | 3404 | ? | 0 | 0 | N_PZ_191_MC | NULL | NULL | N_PZ_191_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | evnt_i<1>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<0> | 3413 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<0>_MC.Q | evnt_i<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | evnt_i<1> | 3408 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<1>_MC.Q | evnt_i<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | evnt_i<1>_MC.SI | evnt_i<1>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<0> | 3413 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<0>_MC.Q | evnt_i<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | evnt_i<1>_MC.D1 | 3411 | ? | 0 | 0 | evnt_i<1>_MC | NULL | NULL | evnt_i<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | evnt_i<0>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | evnt_i<1>_MC.D2 | 3412 | ? | 0 | 0 | evnt_i<1>_MC | NULL | NULL | evnt_i<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | evnt_i<1>_MC.REG | evnt_i<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | evnt_i<1>_MC.D | 3410 | ? | 0 | 0 | evnt_i<1>_MC | NULL | NULL | evnt_i<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | evnt_i<1>_MC.Q | 3409 | ? | 0 | 0 | evnt_i<1>_MC | NULL | NULL | evnt_i<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | evnt_i<0>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EV_II/IREG | 3597 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | evnt_i<0> | 3413 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<0>_MC.Q | evnt_i<0>_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | evnt_i<0>_MC.REG | evnt_i<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | EV_II/IREG | 3597 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | evnt_i<0>_MC.Q | 3414 | ? | 0 | 0 | evnt_i<0>_MC | NULL | NULL | evnt_i<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | evnt_i<2>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<1> | 3408 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<1>_MC.Q | evnt_i<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | evnt_i<2> | 3415 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<2>_MC.Q | evnt_i<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | evnt_i<2>_MC.SI | evnt_i<2>_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | evnt_i<1> | 3408 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | evnt_i<1>_MC.Q | evnt_i<1>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | evnt_i<2>_MC.D1 | 3418 | ? | 0 | 0 | evnt_i<2>_MC | NULL | NULL | evnt_i<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | evnt_i<1>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | evnt_i<2>_MC.D2 | 3419 | ? | 0 | 0 | evnt_i<2>_MC | NULL | NULL | evnt_i<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | evnt_i<2>_MC.REG | evnt_i<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | evnt_i<2>_MC.D | 3417 | ? | 0 | 0 | evnt_i<2>_MC | NULL | NULL | evnt_i<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | evnt_i<2>_MC.Q | 3416 | ? | 0 | 0 | evnt_i<2>_MC | NULL | NULL | evnt_i<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | c_count<1>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<1>_MC.SI | c_count<1>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<1>_MC.D1 | 3424 | ? | 0 | 0 | c_count<1>_MC | NULL | NULL | c_count<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<1>_MC.D2 | 3423 | ? | 0 | 0 | c_count<1>_MC | NULL | NULL | c_count<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | CLK40_MC.UIM | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1>
+SPPTERM | 4 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_FALSE | c_count<1>
+SPPTERM | 4 | IV_TRUE | CLK40_MC.UIM | IV_FALSE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1>
+SPPTERM | 8 | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+
+SRFF_INSTANCE | c_count<1>_MC.REG | c_count<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<1>_MC.D | 3422 | ? | 0 | 0 | c_count<1>_MC | NULL | NULL | c_count<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<1>_MC.Q | 3421 | ? | 0 | 0 | c_count<1>_MC | NULL | NULL | c_count<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | c_count<2>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<2>_MC.SI | c_count<2>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<2>_MC.D1 | 3429 | ? | 0 | 0 | c_count<2>_MC | NULL | NULL | c_count<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<2>_MC.D2 | 3428 | ? | 0 | 0 | c_count<2>_MC | NULL | NULL | c_count<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | CLK40_MC.UIM | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<2>
+SPPTERM | 3 | IV_FALSE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<2>
+SPPTERM | 3 | IV_FALSE | N_PZ_191 | IV_FALSE | c_count<1> | IV_TRUE | c_count<2>
+SPPTERM | 5 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_FALSE | c_count<2>
+SPPTERM | 6 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+
+SRFF_INSTANCE | c_count<2>_MC.REG | c_count<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<2>_MC.D | 3427 | ? | 0 | 0 | c_count<2>_MC | NULL | NULL | c_count<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<2>_MC.Q | 3426 | ? | 0 | 0 | c_count<2>_MC | NULL | NULL | c_count<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | c_count<3>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<3>_MC.SI | c_count<3>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<3>_MC.D1 | 3433 | ? | 0 | 0 | c_count<3>_MC | NULL | NULL | c_count<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<3>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<3>_MC.D2 | 3434 | ? | 0 | 0 | c_count<3>_MC | NULL | NULL | c_count<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_FALSE | c_count<3>
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<4>
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<5>
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<6>
+
+SRFF_INSTANCE | c_count<3>_MC.REG | c_count<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<3>_MC.D | 3432 | ? | 0 | 0 | c_count<3>_MC | NULL | NULL | c_count<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<3>_MC.Q | 3431 | ? | 0 | 0 | c_count<3>_MC | NULL | NULL | c_count<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | c_count<4>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<4>_MC.SI | c_count<4>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<4>_MC.D1 | 3438 | ? | 0 | 0 | c_count<4>_MC | NULL | NULL | c_count<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<4>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<4>_MC.D2 | 3439 | ? | 0 | 0 | c_count<4>_MC | NULL | NULL | c_count<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<4>
+SPPTERM | 8 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_FALSE | c_count<5>
+SPPTERM | 8 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_FALSE | c_count<6>
+
+SRFF_INSTANCE | c_count<4>_MC.REG | c_count<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<4>_MC.D | 3437 | ? | 0 | 0 | c_count<4>_MC | NULL | NULL | c_count<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<4>_MC.Q | 3436 | ? | 0 | 0 | c_count<4>_MC | NULL | NULL | c_count<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff | c_count<5>_MC | amplcpld_COPY_0_COPY_0 | 5120 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<5>_MC.SI | c_count<5>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<5>_MC.D1 | 3444 | ? | 0 | 0 | c_count<5>_MC | NULL | NULL | c_count<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<5>_MC.D2 | 3443 | ? | 0 | 0 | c_count<5>_MC | NULL | NULL | c_count<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | N_PZ_191 | IV_TRUE | c_count<5>
+SPPTERM | 8 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_FALSE | c_count<5>
+SPPTERM | 8 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_FALSE | c_count<6>
+
+SRFF_INSTANCE | c_count<5>_MC.REG | c_count<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<5>_MC.D | 3442 | ? | 0 | 0 | c_count<5>_MC | NULL | NULL | c_count<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<5>_MC.Q | 3441 | ? | 0 | 0 | c_count<5>_MC | NULL | NULL | c_count<5>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | c_count<6>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | c_count<6>_MC.SI | c_count<6>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_191 | 3403 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | N_PZ_191_MC.Q | N_PZ_191_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | c_count<6>_MC.D1 | 3449 | ? | 0 | 0 | c_count<6>_MC | NULL | NULL | c_count<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | c_count<6>_MC.D2 | 3448 | ? | 0 | 0 | c_count<6>_MC | NULL | NULL | c_count<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<6>
+SPPTERM | 9 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_FALSE | c_count<6>
+
+SRFF_INSTANCE | c_count<6>_MC.REG | c_count<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | c_count<6>_MC.D | 3447 | ? | 0 | 0 | c_count<6>_MC | NULL | NULL | c_count<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | c_count<6>_MC.Q | 3446 | ? | 0 | 0 | c_count<6>_MC | NULL | NULL | c_count<6>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Ce | str1_MC | amplcpld_COPY_0_COPY_0 | 268436480 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str_div | 3455 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str_div_MC.Q | str_div_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | str1 | 3450 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str1_MC.Q | str1_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | str1_MC.SI | str1_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str_div | 3455 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str_div_MC.Q | str_div_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK40_MC.UIM | 3341 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK40_MC.Q | CLK40_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | str1_MC.D1 | 3454 | ? | 0 | 0 | str1_MC | NULL | NULL | str1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | str1_MC.D2 | 3453 | ? | 0 | 0 | str1_MC | NULL | NULL | str1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | str_div
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | str1_MC.CE | 3460 | ? | 0 | 0 | str1_MC | NULL | NULL | str1_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_FALSE | CLK40_MC.UIM
+
+SRFF_INSTANCE | str1_MC.REG | str1_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | str1_MC.D | 3452 | ? | 0 | 0 | str1_MC | NULL | NULL | str1_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | str1_MC.CE | 3460 | ? | 0 | 0 | str1_MC | NULL | NULL | str1_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_FALSE | CLK40_MC.UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | str1_MC.Q | 3451 | ? | 0 | 0 | str1_MC | NULL | NULL | str1_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+Ce | str_div_MC | amplcpld_COPY_0_COPY_0 | 268440576 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR6__ctinst/4 | 3457 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | FOOBAR6__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | STR_II/UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ENA_II/IREG | 3599 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ENA_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | str_div | 3455 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str_div_MC.Q | str_div_MC | 1 | 0 | MC_UIM
+
+SRFF_INSTANCE | str_div_MC.REG | str_div_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ENA_II/IREG | 3599 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ENA_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR6__ctinst/4 | 3457 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | FOOBAR6__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | STR_II/UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | str_div_MC.Q | 3456 | ? | 0 | 0 | str_div_MC | NULL | NULL | str_div_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | STR_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | STR | 3458 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | STR_II/UIM | 3459 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | STR_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | str2_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str1 | 3450 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str1_MC.Q | str1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | str2 | 3461 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str2_MC.Q | str2_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | str2_MC.SI | str2_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | str1 | 3450 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | str1_MC.Q | str1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | str2_MC.D1 | 3464 | ? | 0 | 0 | str2_MC | NULL | NULL | str2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | str1
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | str2_MC.D2 | 3465 | ? | 0 | 0 | str2_MC | NULL | NULL | str2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | str2_MC.REG | str2_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | str2_MC.D | 3463 | ? | 0 | 0 | str2_MC | NULL | NULL | str2_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | str2_MC.Q | 3462 | ? | 0 | 0 | str2_MC | NULL | NULL | str2_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<0> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<0>_MC.Q | 3469 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<0>_MC.Q | DOUT<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<0> | 3470 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<10>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<10>_MC.UIM | 3477 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<10>_MC.Q | DOUT<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<10>_II/UIM | 3474 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<10>_II/UIM | 3475 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<10>_MC.Q | 3478 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<10>_MC.Q | DOUT<10>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<10>_MC.UIM | 3477 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<10>_MC.Q | DOUT<10>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<10>_MC.SI | DOUT<10>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<10>_MC.UIM | 3477 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<10>_MC.Q | DOUT<10>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<10>_II/UIM | 3474 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<10>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<10>_II/UIM | 3475 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<10>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<10>_MC.D1 | 3473 | ? | 0 | 0 | DOUT<10>_MC | NULL | NULL | DOUT<10>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<10>_MC.D2 | 3472 | ? | 0 | 0 | DOUT<10>_MC | NULL | NULL | DOUT<10>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<10>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<10>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<10>_II/UIM
+
+SRFF_INSTANCE | DOUT<10>_MC.REG | DOUT<10>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<10>_MC.D | 3471 | ? | 0 | 0 | DOUT<10>_MC | NULL | NULL | DOUT<10>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<10>_MC.Q | 3476 | ? | 0 | 0 | DOUT<10>_MC | NULL | NULL | DOUT<10>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<10> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<10>_MC.Q | 3478 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<10>_MC.Q | DOUT<10>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<10> | 3479 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<10> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<11>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<11>_MC.UIM | 3486 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<11>_MC.Q | DOUT<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<11>_II/UIM | 3483 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<11>_II/UIM | 3484 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<11>_MC.Q | 3487 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<11>_MC.Q | DOUT<11>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<11>_MC.UIM | 3486 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<11>_MC.Q | DOUT<11>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<11>_MC.SI | DOUT<11>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<11>_MC.UIM | 3486 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<11>_MC.Q | DOUT<11>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<11>_II/UIM | 3483 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<11>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<11>_II/UIM | 3484 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<11>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<11>_MC.D1 | 3482 | ? | 0 | 0 | DOUT<11>_MC | NULL | NULL | DOUT<11>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<11>_MC.D2 | 3481 | ? | 0 | 0 | DOUT<11>_MC | NULL | NULL | DOUT<11>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<11>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<11>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<11>_II/UIM
+
+SRFF_INSTANCE | DOUT<11>_MC.REG | DOUT<11>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<11>_MC.D | 3480 | ? | 0 | 0 | DOUT<11>_MC | NULL | NULL | DOUT<11>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<11>_MC.Q | 3485 | ? | 0 | 0 | DOUT<11>_MC | NULL | NULL | DOUT<11>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<11> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<11>_MC.Q | 3487 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<11>_MC.Q | DOUT<11>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<11> | 3488 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<11> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<12>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<12>_MC.Q | 3494 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<12>_MC.Q | DOUT<12>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | DOUT<12>_MC.SI | DOUT<12>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<12>_MC.D1 | 3491 | ? | 0 | 0 | DOUT<12>_MC | NULL | NULL | DOUT<12>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<12>_MC.D2 | 3490 | ? | 0 | 0 | DOUT<12>_MC | NULL | NULL | DOUT<12>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | CLK20_P_MC.UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | DOUT<12>_MC.CE | 3492 | ? | 0 | 0 | DOUT<12>_MC | NULL | NULL | DOUT<12>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | dly<6>
+
+SRFF_INSTANCE | DOUT<12>_MC.REG | DOUT<12>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<12>_MC.D | 3489 | ? | 0 | 0 | DOUT<12>_MC | NULL | NULL | DOUT<12>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | DOUT<12>_MC.CE | 3492 | ? | 0 | 0 | DOUT<12>_MC | NULL | NULL | DOUT<12>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | dly<6>
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<12>_MC.Q | 3493 | ? | 0 | 0 | DOUT<12>_MC | NULL | NULL | DOUT<12>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<12> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<12>_MC.Q | 3494 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<12>_MC.Q | DOUT<12>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<12> | 3495 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<12> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<1>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<1>_MC.UIM | 3502 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<1>_MC.Q | DOUT<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<1>_II/UIM | 3499 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<1>_II/UIM | 3500 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<1>_MC.Q | 3503 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<1>_MC.Q | DOUT<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<1>_MC.UIM | 3502 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<1>_MC.Q | DOUT<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<1>_MC.SI | DOUT<1>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<1>_MC.UIM | 3502 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<1>_MC.Q | DOUT<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<1>_II/UIM | 3499 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<1>_II/UIM | 3500 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<1>_MC.D1 | 3498 | ? | 0 | 0 | DOUT<1>_MC | NULL | NULL | DOUT<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<1>_MC.D2 | 3497 | ? | 0 | 0 | DOUT<1>_MC | NULL | NULL | DOUT<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<1>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<1>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<1>_II/UIM
+
+SRFF_INSTANCE | DOUT<1>_MC.REG | DOUT<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<1>_MC.D | 3496 | ? | 0 | 0 | DOUT<1>_MC | NULL | NULL | DOUT<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<1>_MC.Q | 3501 | ? | 0 | 0 | DOUT<1>_MC | NULL | NULL | DOUT<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<1> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<1>_MC.Q | 3503 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<1>_MC.Q | DOUT<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<1> | 3504 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<2>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<2>_MC.UIM | 3511 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<2>_MC.Q | DOUT<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<2>_II/UIM | 3508 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<2>_II/UIM | 3509 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<2>_MC.Q | 3512 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<2>_MC.Q | DOUT<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<2>_MC.UIM | 3511 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<2>_MC.Q | DOUT<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<2>_MC.SI | DOUT<2>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<2>_MC.UIM | 3511 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<2>_MC.Q | DOUT<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<2>_II/UIM | 3508 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<2>_II/UIM | 3509 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<2>_MC.D1 | 3507 | ? | 0 | 0 | DOUT<2>_MC | NULL | NULL | DOUT<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<2>_MC.D2 | 3506 | ? | 0 | 0 | DOUT<2>_MC | NULL | NULL | DOUT<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<2>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<2>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<2>_II/UIM
+
+SRFF_INSTANCE | DOUT<2>_MC.REG | DOUT<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<2>_MC.D | 3505 | ? | 0 | 0 | DOUT<2>_MC | NULL | NULL | DOUT<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<2>_MC.Q | 3510 | ? | 0 | 0 | DOUT<2>_MC | NULL | NULL | DOUT<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<2> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<2>_MC.Q | 3512 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<2>_MC.Q | DOUT<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<2> | 3513 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<3>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<3>_MC.UIM | 3520 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<3>_MC.Q | DOUT<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<3>_II/UIM | 3517 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<3>_II/UIM | 3518 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<3>_MC.Q | 3521 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<3>_MC.Q | DOUT<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<3>_MC.UIM | 3520 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<3>_MC.Q | DOUT<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<3>_MC.SI | DOUT<3>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<3>_MC.UIM | 3520 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<3>_MC.Q | DOUT<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<3>_II/UIM | 3517 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<3>_II/UIM | 3518 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<3>_MC.D1 | 3516 | ? | 0 | 0 | DOUT<3>_MC | NULL | NULL | DOUT<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<3>_MC.D2 | 3515 | ? | 0 | 0 | DOUT<3>_MC | NULL | NULL | DOUT<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<3>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<3>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<3>_II/UIM
+
+SRFF_INSTANCE | DOUT<3>_MC.REG | DOUT<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<3>_MC.D | 3514 | ? | 0 | 0 | DOUT<3>_MC | NULL | NULL | DOUT<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<3>_MC.Q | 3519 | ? | 0 | 0 | DOUT<3>_MC | NULL | NULL | DOUT<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<3> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<3>_MC.Q | 3521 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<3>_MC.Q | DOUT<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<3> | 3522 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<3> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<4>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<4>_MC.UIM | 3529 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<4>_MC.Q | DOUT<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<4>_II/UIM | 3526 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<4>_II/UIM | 3527 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<4>_MC.Q | 3530 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<4>_MC.Q | DOUT<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<4>_MC.UIM | 3529 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<4>_MC.Q | DOUT<4>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<4>_MC.SI | DOUT<4>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<4>_MC.UIM | 3529 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<4>_MC.Q | DOUT<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<4>_II/UIM | 3526 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<4>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<4>_II/UIM | 3527 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<4>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<4>_MC.D1 | 3525 | ? | 0 | 0 | DOUT<4>_MC | NULL | NULL | DOUT<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<4>_MC.D2 | 3524 | ? | 0 | 0 | DOUT<4>_MC | NULL | NULL | DOUT<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<4>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<4>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<4>_II/UIM
+
+SRFF_INSTANCE | DOUT<4>_MC.REG | DOUT<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<4>_MC.D | 3523 | ? | 0 | 0 | DOUT<4>_MC | NULL | NULL | DOUT<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<4>_MC.Q | 3528 | ? | 0 | 0 | DOUT<4>_MC | NULL | NULL | DOUT<4>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<4> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<4>_MC.Q | 3530 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<4>_MC.Q | DOUT<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<4> | 3531 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<4> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<5>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<5>_MC.UIM | 3538 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<5>_MC.Q | DOUT<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<5>_II/UIM | 3535 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<5>_II/UIM | 3536 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<5>_MC.Q | 3539 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<5>_MC.Q | DOUT<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<5>_MC.UIM | 3538 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<5>_MC.Q | DOUT<5>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<5>_MC.SI | DOUT<5>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<5>_MC.UIM | 3538 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<5>_MC.Q | DOUT<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<5>_II/UIM | 3535 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<5>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<5>_II/UIM | 3536 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<5>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<5>_MC.D1 | 3534 | ? | 0 | 0 | DOUT<5>_MC | NULL | NULL | DOUT<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<5>_MC.D2 | 3533 | ? | 0 | 0 | DOUT<5>_MC | NULL | NULL | DOUT<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<5>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<5>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<5>_II/UIM
+
+SRFF_INSTANCE | DOUT<5>_MC.REG | DOUT<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<5>_MC.D | 3532 | ? | 0 | 0 | DOUT<5>_MC | NULL | NULL | DOUT<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<5>_MC.Q | 3537 | ? | 0 | 0 | DOUT<5>_MC | NULL | NULL | DOUT<5>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<5> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<5>_MC.Q | 3539 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<5>_MC.Q | DOUT<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<5> | 3540 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<5> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<6>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<6>_MC.UIM | 3547 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<6>_MC.Q | DOUT<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<6>_II/UIM | 3544 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<6>_II/UIM | 3545 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<6>_MC.Q | 3548 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<6>_MC.Q | DOUT<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<6>_MC.UIM | 3547 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<6>_MC.Q | DOUT<6>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<6>_MC.SI | DOUT<6>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<6>_MC.UIM | 3547 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<6>_MC.Q | DOUT<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<6>_II/UIM | 3544 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<6>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<6>_II/UIM | 3545 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<6>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<6>_MC.D1 | 3543 | ? | 0 | 0 | DOUT<6>_MC | NULL | NULL | DOUT<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<6>_MC.D2 | 3542 | ? | 0 | 0 | DOUT<6>_MC | NULL | NULL | DOUT<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<6>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<6>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<6>_II/UIM
+
+SRFF_INSTANCE | DOUT<6>_MC.REG | DOUT<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<6>_MC.D | 3541 | ? | 0 | 0 | DOUT<6>_MC | NULL | NULL | DOUT<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<6>_MC.Q | 3546 | ? | 0 | 0 | DOUT<6>_MC | NULL | NULL | DOUT<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<6> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<6>_MC.Q | 3548 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<6>_MC.Q | DOUT<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<6> | 3549 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<6> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<7>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<7>_MC.UIM | 3556 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<7>_MC.Q | DOUT<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<7>_II/UIM | 3553 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<7>_II/UIM | 3554 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<7>_MC.Q | 3557 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<7>_MC.Q | DOUT<7>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<7>_MC.UIM | 3556 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<7>_MC.Q | DOUT<7>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<7>_MC.SI | DOUT<7>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<7>_MC.UIM | 3556 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<7>_MC.Q | DOUT<7>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<7>_II/UIM | 3553 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<7>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<7>_II/UIM | 3554 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<7>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<7>_MC.D1 | 3552 | ? | 0 | 0 | DOUT<7>_MC | NULL | NULL | DOUT<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<7>_MC.D2 | 3551 | ? | 0 | 0 | DOUT<7>_MC | NULL | NULL | DOUT<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<7>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<7>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<7>_II/UIM
+
+SRFF_INSTANCE | DOUT<7>_MC.REG | DOUT<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<7>_MC.D | 3550 | ? | 0 | 0 | DOUT<7>_MC | NULL | NULL | DOUT<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<7>_MC.Q | 3555 | ? | 0 | 0 | DOUT<7>_MC | NULL | NULL | DOUT<7>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<7> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<7>_MC.Q | 3557 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<7>_MC.Q | DOUT<7>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<7> | 3558 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<7> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<8>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<8>_MC.UIM | 3565 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<8>_MC.Q | DOUT<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<8>_II/UIM | 3562 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<8>_II/UIM | 3563 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<8>_MC.Q | 3566 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<8>_MC.Q | DOUT<8>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<8>_MC.UIM | 3565 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<8>_MC.Q | DOUT<8>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<8>_MC.SI | DOUT<8>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<8>_MC.UIM | 3565 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<8>_MC.Q | DOUT<8>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<8>_II/UIM | 3562 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<8>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<8>_II/UIM | 3563 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<8>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<8>_MC.D1 | 3561 | ? | 0 | 0 | DOUT<8>_MC | NULL | NULL | DOUT<8>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<8>_MC.D2 | 3560 | ? | 0 | 0 | DOUT<8>_MC | NULL | NULL | DOUT<8>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<8>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<8>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<8>_II/UIM
+
+SRFF_INSTANCE | DOUT<8>_MC.REG | DOUT<8>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<8>_MC.D | 3559 | ? | 0 | 0 | DOUT<8>_MC | NULL | NULL | DOUT<8>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<8>_MC.Q | 3564 | ? | 0 | 0 | DOUT<8>_MC | NULL | NULL | DOUT<8>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<8> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<8>_MC.Q | 3566 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<8>_MC.Q | DOUT<8>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<8> | 3567 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<8> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DOUT<9>_MC | amplcpld_COPY_0_COPY_0 | 1024 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<9>_MC.UIM | 3574 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<9>_MC.Q | DOUT<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<9>_II/UIM | 3571 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<9>_II/UIM | 3572 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DOUT<9>_MC.Q | 3575 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<9>_MC.Q | DOUT<9>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | DOUT<9>_MC.UIM | 3574 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<9>_MC.Q | DOUT<9>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | DOUT<9>_MC.SI | DOUT<9>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | DOUT<9>_MC.UIM | 3574 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<9>_MC.Q | DOUT<9>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK20_P_MC.UIM | 3346 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | CLK20_P_MC.Q | CLK20_P_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC0<9>_II/UIM | 3571 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC0<9>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ADC1<9>_II/UIM | 3572 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ADC1<9>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DOUT<9>_MC.D1 | 3570 | ? | 0 | 0 | DOUT<9>_MC | NULL | NULL | DOUT<9>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DOUT<9>_MC.D2 | 3569 | ? | 0 | 0 | DOUT<9>_MC | NULL | NULL | DOUT<9>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<9>_MC.UIM
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<9>_II/UIM
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<9>_II/UIM
+
+SRFF_INSTANCE | DOUT<9>_MC.REG | DOUT<9>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DOUT<9>_MC.D | 3568 | ? | 0 | 0 | DOUT<9>_MC | NULL | NULL | DOUT<9>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DOUT<9>_MC.Q | 3573 | ? | 0 | 0 | DOUT<9>_MC | NULL | NULL | DOUT<9>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DOUT<9> | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DOUT<9>_MC.Q | 3575 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DOUT<9>_MC.Q | DOUT<9>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DOUT<9> | 3576 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DOUT<9> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | DV_MC | amplcpld_COPY_0_COPY_0 | 1024 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | DV_MC.Q | 3581 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DV_MC.Q | DV_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | DV_MC.SI | DV_MC | 0 | 1 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | dly<6> | 3358 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | dly<6>_MC.Q | dly<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | DV_MC.D1 | 3578 | ? | 0 | 0 | DV_MC | NULL | NULL | DV_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 1 | IV_TRUE | dly<6>
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | DV_MC.D2 | 3579 | ? | 0 | 0 | DV_MC | NULL | NULL | DV_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | DV_MC.REG | DV_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | DV_MC.D | 3577 | ? | 0 | 0 | DV_MC | NULL | NULL | DV_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | DV_MC.Q | 3580 | ? | 0 | 0 | DV_MC | NULL | NULL | DV_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | DV | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | DV_MC.Q | 3581 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | DV_MC.Q | DV_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | DV | 3582 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | DV | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | EV_out_MC | amplcpld_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EV_II/UIM | 3587 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EVOUT__or0000 | 3589 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | EVOUT__or0000_MC.Q | EVOUT__or0000_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | EV_out_MC.Q | 3595 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | EV_out_MC.Q | EV_out_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | EV_out_MC.SI | EV_out_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EV_II/UIM | 3587 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EVOUT__or0000 | 3589 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | EVOUT__or0000_MC.Q | EVOUT__or0000_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | EV_out_MC.D1 | 3585 | ? | 0 | 0 | EV_out_MC | NULL | NULL | EV_out_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | EV_out_MC.D2 | 3584 | ? | 0 | 0 | EV_out_MC | NULL | NULL | EV_out_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EV_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | EV_out_MC.CE | 3588 | ? | 0 | 0 | EV_out_MC | NULL | NULL | EV_out_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | EVOUT__or0000
+
+SRFF_INSTANCE | EV_out_MC.REG | EV_out_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | EV_out_MC.D | 3583 | ? | 0 | 0 | EV_out_MC | NULL | NULL | EV_out_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK80_II/FCLK | 3339 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | CLK80_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | EV_out_MC.CE | 3588 | ? | 0 | 0 | EV_out_MC | NULL | NULL | EV_out_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | EVOUT__or0000
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | EV_out_MC.Q | 3594 | ? | 0 | 0 | EV_out_MC | NULL | NULL | EV_out_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | EV_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | EV | 3586 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | EV_II/UIM | 3587 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | EV_II/IREG | 3597 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | NULL | EVOUT__or0000_MC | amplcpld_COPY_0_COPY_0 | 0 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EV_II/UIM | 3587 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | EVOUT__or0000 | 3589 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | EVOUT__or0000_MC.Q | EVOUT__or0000_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | EVOUT__or0000_MC.SI | EVOUT__or0000_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EV_II/UIM | 3587 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cal_str | 3393 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | cal_str_MC.Q | cal_str_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<0> | 3398 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<0>_MC.Q | c_count<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<1> | 3420 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<1>_MC.Q | c_count<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<2> | 3425 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<2>_MC.Q | c_count<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<3> | 3430 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<3>_MC.Q | c_count<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<4> | 3435 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<4>_MC.Q | c_count<4>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<5> | 3440 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<5>_MC.Q | c_count<5>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | c_count<6> | 3445 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | c_count<6>_MC.Q | c_count<6>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | EVOUT__or0000_MC.D1 | 3593 | ? | 0 | 0 | EVOUT__or0000_MC | NULL | NULL | EVOUT__or0000_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | EVOUT__or0000_MC.D2 | 3592 | ? | 0 | 0 | EVOUT__or0000_MC | NULL | NULL | EVOUT__or0000_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_FALSE | EV_II/UIM
+SPPTERM | 8 | IV_TRUE | cal_str | IV_TRUE | c_count<0> | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+
+SRFF_INSTANCE | EVOUT__or0000_MC.REG | EVOUT__or0000_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | EVOUT__or0000_MC.D | 3591 | ? | 0 | 0 | EVOUT__or0000_MC | NULL | NULL | EVOUT__or0000_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | EVOUT__or0000_MC.Q | 3590 | ? | 0 | 0 | EVOUT__or0000_MC | NULL | NULL | EVOUT__or0000_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | EV_out | amplcpld_COPY_0_COPY_0 | 2 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | EV_out_MC.Q | 3595 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | EV_out_MC.Q | EV_out_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | EV_out | 3596 | PO | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | EV_out | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | ENA_II | amplcpld_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | ENA | 3598 | PI | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | ENA_II/IREG | 3599 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | ENA_II | 10 | 5 | II_REG
+
+FB_INSTANCE | FOOBAR1_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | dly<4>_MC | 1 | NULL | 0 | NULL | 0 | 13 | 49152
+FBPIN | 2 | c_count<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 3 | dly<3>_MC | 1 | NULL | 0 | NULL | 0 | 12 | 49152
+FBPIN | 4 | dly<2>_MC | 1 | NULL | 0 | NULL | 0 | 11 | 49152
+FBPIN | 5 | dly<1>_MC | 1 | NULL | 0 | NULL | 0 | 10 | 49152
+FBPIN | 6 | str1_MC | 1 | NULL | 0 | NULL | 0 | 9 | 49152
+FBPIN | 7 | c_count<6>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | c_count<3>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | c_count<5>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | c_count<4>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | str2_MC | 1 | NULL | 0 | NULL | 0 | 8 | 49152
+FBPIN | 12 | dly<0>_MC | 1 | NULL | 0 | NULL | 0 | 7 | 49152
+FBPIN | 13 | EVOUT__or0000_MC | 1 | NULL | 0 | NULL | 0 | 6 | 49152
+FBPIN | 14 | cal_str_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | c_count<2>_MC | 1 | NULL | 0 | NULL | 0 | 4 | 53248
+FBPIN | 16 | c_count<1>_MC | 1 | NULL | 0 | NULL | 0 | 3 | 53248
+
+FB_INSTANCE | FOOBAR2_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | EV_out_MC | 1 | NULL | 0 | EV_out | 1 | 16 | 49152
+FBPIN | 6 | NULL | 0 | ADC0<11>_II | 1 | NULL | 0 | 18 | 49152
+FBPIN | 7 | N_PZ_191_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | evnt_i<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | evnt_i<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | dly<6>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | NULL | 0 | ADC0<10>_II | 1 | NULL | 0 | 19 | 49152
+FBPIN | 12 | dly<5>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 13 | NULL | 0 | ADC0<9>_II | 1 | NULL | 0 | 22 | 57344
+FBPIN | 14 | NULL | 0 | ADC0<7>_II | 1 | NULL | 0 | 23 | 57344
+FBPIN | 15 | NULL | 0 | ADC0<8>_II | 1 | NULL | 0 | 24 | 49664
+FBPIN | 16 | NULL | 0 | CLK80_II | 1 | NULL | 0 | 27 | 57344
+
+FB_INSTANCE | FOOBAR3_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 4 | DOUT<0>_MC | 1 | NULL | 0 | DOUT<0> | 1 | 99 | 51200
+FBPIN | 5 | DOUT<1>_MC | 1 | NULL | 0 | DOUT<1> | 1 | 97 | 49152
+FBPIN | 6 | DOUT<2>_MC | 1 | NULL | 0 | DOUT<2> | 1 | 96 | 49152
+FBPIN | 7 | DOUT<3>_MC | 1 | NULL | 0 | DOUT<3> | 1 | 95 | 49152
+FBPIN | 11 | DOUT<4>_MC | 1 | NULL | 0 | DOUT<4> | 1 | 94 | 49152
+FBPIN | 13 | DOUT<5>_MC | 1 | NULL | 0 | DOUT<5> | 1 | 93 | 49152
+FBPIN | 14 | DOUT<6>_MC | 1 | NULL | 0 | DOUT<6> | 1 | 92 | 49152
+FBPIN | 15 | DOUT<7>_MC | 1 | NULL | 0 | DOUT<7> | 1 | 91 | 49152
+FBPIN | 16 | DOUT<8>_MC | 1 | NULL | 0 | DOUT<8> | 1 | 90 | 49152
+
+FB_INSTANCE | FOOBAR4_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | ADC0<6>_II | 1 | NULL | 0 | 28 | 50176
+FBPIN | 4 | NULL | 0 | ADC0<5>_II | 1 | NULL | 0 | 29 | 49152
+FBPIN | 5 | NULL | 0 | ADC0<4>_II | 1 | NULL | 0 | 30 | 49152
+FBPIN | 6 | NULL | 0 | ADC0<3>_II | 1 | NULL | 0 | 32 | 49152
+FBPIN | 7 | NULL | 0 | ADC0<2>_II | 1 | NULL | 0 | 33 | 49152
+FBPIN | 11 | NULL | 0 | ADC0<1>_II | 1 | NULL | 0 | 34 | 49152
+FBPIN | 12 | NULL | 0 | ADC0<0>_II | 1 | NULL | 0 | 35 | 49152
+FBPIN | 13 | NULL | 0 | ADC1<11>_II | 1 | NULL | 0 | 36 | 49152
+FBPIN | 14 | NULL | 0 | ADC1<10>_II | 1 | NULL | 0 | 37 | 49152
+FBPIN | 15 | NULL | 0 | ADC1<9>_II | 1 | NULL | 0 | 39 | 49152
+FBPIN | 16 | NULL | 0 | ADC1<8>_II | 1 | NULL | 0 | 40 | 49152
+
+FB_INSTANCE | FOOBAR5_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | str_div_MC | 1 | ENA_II | 1 | NULL | 0 | 64 | 49152
+FBPIN | 2 | NULL | 0 | STR_II | 1 | NULL | 0 | 63 | 49152
+FBPIN | 4 | evnt_i<0>_MC | 1 | EV_II | 1 | NULL | 0 | 60 | 49152
+FBPIN | 16 | CLK20_N_MC | 1 | NULL | 0 | CLK20_N | 1 | 54 | 49152
+
+FB_INSTANCE | FOOBAR7_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 6 | CLK40_MC | 1 | NULL | 0 | CLK40 | 1 | 81 | 49152
+FBPIN | 11 | DV_MC | 1 | NULL | 0 | DV | 1 | 82 | 49152
+FBPIN | 13 | DOUT<12>_MC | 1 | NULL | 0 | DOUT<12> | 1 | 85 | 50176
+FBPIN | 14 | DOUT<11>_MC | 1 | NULL | 0 | DOUT<11> | 1 | 86 | 49152
+FBPIN | 15 | DOUT<10>_MC | 1 | NULL | 0 | DOUT<10> | 1 | 87 | 49152
+FBPIN | 16 | DOUT<9>_MC | 1 | NULL | 0 | DOUT<9> | 1 | 89 | 49152
+
+FB_INSTANCE | FOOBAR8_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 2 | CLK20_P_MC | 1 | NULL | 0 | CLK20_P | 1 | 53 | 49152
+FBPIN | 3 | NULL | 0 | ADC1<0>_II | 1 | NULL | 0 | 52 | 49152
+FBPIN | 4 | NULL | 0 | ADC1<1>_II | 1 | NULL | 0 | 50 | 49152
+FBPIN | 6 | NULL | 0 | ADC1<2>_II | 1 | NULL | 0 | 49 | 49152
+FBPIN | 12 | NULL | 0 | ADC1<3>_II | 1 | NULL | 0 | 46 | 49152
+FBPIN | 13 | NULL | 0 | ADC1<4>_II | 1 | NULL | 0 | 44 | 49152
+FBPIN | 14 | NULL | 0 | ADC1<5>_II | 1 | NULL | 0 | 43 | 49152
+FBPIN | 15 | NULL | 0 | ADC1<6>_II | 1 | NULL | 0 | 42 | 49152
+FBPIN | 16 | NULL | 0 | ADC1<7>_II | 1 | NULL | 0 | 41 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR9_ | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR5_ | FOOBAR5__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR6_ | FOOBAR6__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | STR_II/UIM | 3459 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | STR_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR6__ctinst/4 | 3457 | ? | 0 | 0 | amplcpld_COPY_0_COPY_0 | NULL | NULL | FOOBAR6__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | STR_II/UIM
+
+CT_INSTANCE | FOOBAR7_ | FOOBAR7__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR8_ | FOOBAR8__ctinst | amplcpld_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 36
+PLA_TERM | 0 | 
+SPPTERM | 9 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+PLA_TERM | 1 | 
+SPPTERM | 2 | IV_FALSE | cal_str | IV_FALSE | N_PZ_191
+PLA_TERM | 2 | 
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<4>
+PLA_TERM | 3 | 
+SPPTERM | 8 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_FALSE | c_count<5>
+PLA_TERM | 4 | 
+SPPTERM | 8 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_FALSE | c_count<6>
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_TRUE | N_PZ_191 | IV_TRUE | c_count<5>
+PLA_TERM | 6 | 
+SPPTERM | 6 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_FALSE | c_count<3>
+PLA_TERM | 7 | 
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<5>
+PLA_TERM | 8 | 
+SPPTERM | 7 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_FALSE | c_count<6>
+PLA_TERM | 9 | 
+SPPTERM | 2 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<6>
+PLA_TERM | 10 | 
+SPPTERM | 1 | IV_TRUE | dly<3>
+PLA_TERM | 11 | 
+SPPTERM | 9 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_FALSE | c_count<6>
+PLA_TERM | 12 | 
+SPPTERM | 3 | IV_FALSE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_TRUE | CLK40_MC.UIM | IV_FALSE | c_count<0> | IV_FALSE | N_PZ_191
+PLA_TERM | 14 | 
+SPPTERM | 8 | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+PLA_TERM | 15 | 
+SPPTERM | 3 | IV_FALSE | CLK40_MC.UIM | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1>
+PLA_TERM | 16 | 
+SPPTERM | 1 | IV_TRUE | dly<2>
+PLA_TERM | 17 | 
+SPPTERM | 4 | IV_TRUE | CLK40_MC.UIM | IV_FALSE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1>
+PLA_TERM | 18 | 
+SPPTERM | 4 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_FALSE | c_count<1>
+PLA_TERM | 19 | 
+SPPTERM | 1 | IV_TRUE | dly<1>
+PLA_TERM | 20 | 
+SPPTERM | 3 | IV_FALSE | CLK40_MC.UIM | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<2>
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_FALSE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<2>
+PLA_TERM | 22 | 
+SPPTERM | 1 | IV_TRUE | dly<0>
+PLA_TERM | 23 | 
+SPPTERM | 3 | IV_FALSE | N_PZ_191 | IV_FALSE | c_count<1> | IV_TRUE | c_count<2>
+PLA_TERM | 24 | 
+SPPTERM | 5 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | c_count<0> | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<1> | IV_FALSE | c_count<2>
+PLA_TERM | 25 | 
+SPPTERM | 1 | IV_FALSE | CLK40_MC.UIM
+PLA_TERM | 26 | 
+SPPTERM | 6 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+PLA_TERM | 27 | 
+SPPTERM | 1 | IV_FALSE | EV_II/UIM
+PLA_TERM | 28 | 
+SPPTERM | 8 | IV_TRUE | cal_str | IV_TRUE | c_count<0> | IV_TRUE | c_count<1> | IV_TRUE | c_count<2> | IV_TRUE | c_count<3> | IV_TRUE | c_count<4> | IV_TRUE | c_count<5> | IV_TRUE | c_count<6>
+PLA_TERM | 29 | 
+SPPTERM | 2 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | cal_str
+PLA_TERM | 30 | 
+SPPTERM | 2 | IV_FALSE | str1 | IV_TRUE | str2
+PLA_TERM | 31 | 
+SPPTERM | 2 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<3>
+PLA_TERM | 32 | 
+SPPTERM | 2 | IV_TRUE | str1 | IV_FALSE | str2
+PLA_TERM | 33 | 
+SPPTERM | 1 | IV_TRUE | str_div
+PLA_TERM | 37 | 
+SPPTERM | 2 | IV_FALSE | N_PZ_191 | IV_TRUE | c_count<4>
+PLA_TERM | 40 | 
+SPPTERM | 1 | IV_TRUE | str1
+
+PLA | FOOBAR2_ | 7
+PLA_TERM | 0 | 
+SPPTERM | 1 | IV_TRUE | EV_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 1 | IV_TRUE | EVOUT__or0000
+PLA_TERM | 28 | 
+SPPTERM | 2 | IV_TRUE | evnt_i<1> | IV_FALSE | evnt_i<2>
+PLA_TERM | 31 | 
+SPPTERM | 1 | IV_TRUE | evnt_i<1>
+PLA_TERM | 34 | 
+SPPTERM | 1 | IV_TRUE | evnt_i<0>
+PLA_TERM | 37 | 
+SPPTERM | 1 | IV_TRUE | dly<5>
+PLA_TERM | 43 | 
+SPPTERM | 1 | IV_TRUE | dly<4>
+
+PLA | FOOBAR3_ | 27
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | ADC0<0>_II/UIM | IV_TRUE | dly<6>
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<0>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<0>_MC.UIM
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<1>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<1>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<1>_MC.UIM
+PLA_TERM | 6 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<2>_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<2>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<2>_MC.UIM
+PLA_TERM | 9 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<3>_II/UIM
+PLA_TERM | 10 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<3>_II/UIM
+PLA_TERM | 11 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<3>_MC.UIM
+PLA_TERM | 12 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<4>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<4>_II/UIM
+PLA_TERM | 14 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<4>_MC.UIM
+PLA_TERM | 15 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<5>_II/UIM
+PLA_TERM | 16 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<5>_II/UIM
+PLA_TERM | 17 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<5>_MC.UIM
+PLA_TERM | 18 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<6>_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<6>_II/UIM
+PLA_TERM | 20 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<6>_MC.UIM
+PLA_TERM | 21 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<7>_II/UIM
+PLA_TERM | 22 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<7>_II/UIM
+PLA_TERM | 23 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<7>_MC.UIM
+PLA_TERM | 24 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<8>_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<8>_II/UIM
+PLA_TERM | 26 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<8>_MC.UIM
+
+PLA | FOOBAR6_ | 3
+PLA_TERM | 0 | 
+SPPTERM | 2 | IV_TRUE | CLK40_MC.UIM | IV_TRUE | CLK20_P_MC.UIM
+PLA_TERM | 1 | 
+SPPTERM | 2 | IV_FALSE | CLK40_MC.UIM | IV_FALSE | CLK20_P_MC.UIM
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | STR_II/UIM
+
+PLA | FOOBAR7_ | 12
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<10>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<10>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<10>_MC.UIM
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<11>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<11>_II/UIM
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<11>_MC.UIM
+PLA_TERM | 6 | 
+SPPTERM | 3 | IV_TRUE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC0<9>_II/UIM
+PLA_TERM | 7 | 
+SPPTERM | 3 | IV_FALSE | CLK20_P_MC.UIM | IV_TRUE | dly<6> | IV_TRUE | ADC1<9>_II/UIM
+PLA_TERM | 8 | 
+SPPTERM | 2 | IV_FALSE | dly<6> | IV_TRUE | DOUT<9>_MC.UIM
+PLA_TERM | 9 | 
+SPPTERM | 1 | IV_FALSE | CLK20_P_MC.UIM
+PLA_TERM | 40 | 
+SPPTERM | 1 | IV_TRUE | dly<6>
+PLA_TERM | 46 | 
+SPPTERM | 1 | IV_TRUE | dly<6>
+
+PLA | FOOBAR8_ | 1
+PLA_TERM | 13 | 
+SPPTERM | 1 | IV_TRUE | CLK40_MC.UIM
+
+BUSINFO | ADC0<11:0> | 12 | 0 | 0 | ADC0<0> | 11 | ADC0<10> | 1 | ADC0<11> | 0 | ADC0<1> | 10 | ADC0<2> | 9 | ADC0<3> | 8 | ADC0<4> | 7 | ADC0<5> | 6 | ADC0<6> | 5 | ADC0<7> | 4 | ADC0<8> | 3 | ADC0<9> | 2
+BUSINFO | ADC1<11:0> | 12 | 0 | 0 | ADC1<0> | 11 | ADC1<10> | 1 | ADC1<11> | 0 | ADC1<1> | 10 | ADC1<2> | 9 | ADC1<3> | 8 | ADC1<4> | 7 | ADC1<5> | 6 | ADC1<6> | 5 | ADC1<7> | 4 | ADC1<8> | 3 | ADC1<9> | 2
+BUSINFO | DOUT<12:0> | 13 | 0 | 1 | DOUT<0> | 12 | DOUT<10> | 2 | DOUT<11> | 1 | DOUT<12> | 0 | DOUT<1> | 11 | DOUT<2> | 10 | DOUT<3> | 9 | DOUT<4> | 8 | DOUT<5> | 7 | DOUT<6> | 6 | DOUT<7> | 5 | DOUT<8> | 4 | DOUT<9> | 3
+
+IOSTD | LVCMOS18
+ADC0<0> | LVCMOS18
+ADC0<10> | LVCMOS18
+ADC0<11> | LVCMOS18
+ADC0<1> | LVCMOS18
+ADC0<2> | LVCMOS18
+ADC0<3> | LVCMOS18
+ADC0<4> | LVCMOS18
+ADC0<5> | LVCMOS18
+ADC0<6> | LVCMOS18
+ADC0<7> | LVCMOS18
+ADC0<8> | LVCMOS18
+ADC0<9> | LVCMOS18
+ADC1<0> | LVCMOS18
+ADC1<10> | LVCMOS18
+ADC1<11> | LVCMOS18
+ADC1<1> | LVCMOS18
+ADC1<2> | LVCMOS18
+ADC1<3> | LVCMOS18
+ADC1<4> | LVCMOS18
+ADC1<5> | LVCMOS18
+ADC1<6> | LVCMOS18
+ADC1<7> | LVCMOS18
+ADC1<8> | LVCMOS18
+ADC1<9> | LVCMOS18
+CLK80 | LVCMOS18
+CLK20_N | LVCMOS18
+CLK20_P | LVCMOS18
+CLK40 | LVCMOS18
+STR | LVCMOS18
+DOUT<0> | LVCMOS18
+DOUT<10> | LVCMOS18
+DOUT<11> | LVCMOS18
+DOUT<12> | LVCMOS18
+DOUT<1> | LVCMOS18
+DOUT<2> | LVCMOS18
+DOUT<3> | LVCMOS18
+DOUT<4> | LVCMOS18
+DOUT<5> | LVCMOS18
+DOUT<6> | LVCMOS18
+DOUT<7> | LVCMOS18
+DOUT<8> | LVCMOS18
+DOUT<9> | LVCMOS18
+DV | LVCMOS18
+EV | LVCMOS18
+EV_out | LVCMOS18
+ENA | LVCMOS18
+
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | str2 | NULL | 1 | N_PZ_191 | NULL | 2 | dly<1> | NULL | 3 | cal_str | NULL | 4 | c_count<2> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | c_count<1> | NULL | 6 | str_div | NULL | 7 | dly<2> | NULL | 8 | dly<3> | NULL | 9 | CLK40_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | c_count<0> | NULL | 11 | str1 | NULL | 13 | c_count<5> | NULL | 14 | c_count<3> | NULL | 16 | dly<0> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 18 | c_count<4> | NULL | 23 | EV | 60 | 28 | c_count<6> | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 110 | 122 | 104 | 113 | 114 | 115 | 180 | 103 | 102 | 201 | 101 | 105 | -1 | 108 | 107 | -1 | 111 | -1 | 109 | -1 | -1 | -1 | -1 | 66 | -1 | -1 | -1 | -1 | 106 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | EV | 60 | 2 | EVOUT__or0000 | NULL | 4 | dly<5> | NULL | 5 | dly<4> | NULL | 8 | evnt_i<0> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 9 | evnt_i<2> | NULL | 16 | evnt_i<1> | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | 66 | -1 | 112 | -1 | 127 | 100 | -1 | -1 | 183 | 123 | -1 | -1 | -1 | -1 | -1 | -1 | 124 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 0 | ADC1<7> | 41 | 1 | DOUT<6>_MC.UIM | NULL | 2 | ADC1<3> | 46 | 3 | DOUT<5>_MC.UIM | NULL | 4 | DOUT<1>_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 5 | DOUT<8>_MC.UIM | NULL | 6 | ADC0<7> | 23 | 7 | DOUT<4>_MC.UIM | NULL | 8 | DOUT<2>_MC.UIM | NULL | 9 | DOUT<0>_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 10 | CLK20_P_MC.UIM | NULL | 12 | DOUT<3>_MC.UIM | NULL | 13 | dly<6> | NULL | 14 | ADC1<1> | 50 | 15 | ADC1<8> | 40
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 16 | ADC0<5> | 29 | 17 | DOUT<7>_MC.UIM | NULL | 18 | ADC0<2> | 33 | 19 | ADC1<2> | 49 | 20 | ADC1<0> | 52
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 21 | ADC0<4> | 30 | 22 | ADC0<0> | 35 | 23 | ADC1<6> | 42 | 25 | ADC1<4> | 44 | 26 | ADC0<3> | 32
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 29 | ADC0<8> | 24 | 31 | ADC1<5> | 43 | 33 | ADC0<6> | 28 | 37 | ADC0<1> | 34
+
+FB_IMUX_INDEX | FOOBAR3_ | 99 | 145 | 95 | 144 | 136 | 147 | 21 | 142 | 137 | 135 | 213 | -1 | 138 | 125 | 91 | 49 | 40 | 146 | 43 | 93 | 90 | 41 | 45 | 98 | -1 | 96 | 42 | -1 | -1 | 22 | -1 | 97 | -1 | 37 | -1 | -1 | -1 | 44 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR6_ | 7 | STR | 63 | 9 | CLK40_MC.UIM | NULL | 10 | CLK20_P_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR6_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 64 | -1 | 201 | 213 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR7_ | 1 | DOUT<11>_MC.UIM | NULL | 2 | DOUT<9>_MC.UIM | NULL | 3 | dly<6> | NULL | 4 | ADC0<11> | 18 | 5 | DOUT<10>_MC.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR7_ | 6 | ADC1<9> | 39 | 7 | ADC1<10> | 37 | 10 | CLK20_P_MC.UIM | NULL | 14 | ADC1<11> | 36 | 18 | ADC0<10> | 19
+FB_ORDER_OF_INPUTS | FOOBAR7_ | 30 | ADC0<9> | 22
+
+FB_IMUX_INDEX | FOOBAR7_ | -1 | 209 | 211 | 125 | 17 | 210 | 48 | 47 | -1 | -1 | 213 | -1 | -1 | -1 | 46 | -1 | -1 | -1 | 18 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 20 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR8_ | 9 | CLK40_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR8_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 201 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | CLK80 | 2 | 2

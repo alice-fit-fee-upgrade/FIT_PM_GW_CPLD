@@ -1,0 +1,82 @@
+{
+  "name": "rename-prior",
+  "source_sha256": "5e26e86661f38f7178b850aecdca6e07a5e2c70fe000259c63c94c063a408415",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 1,
+  "raw_distance": 380,
+  "canonical_difference_count": 504,
+  "aliased_proof_exit": 0,
+  "proof_aliases": {
+    "c_count": "cal_cnt",
+    "raw_edge": "str3",
+    "raw_stretch": "str4",
+    "cal_phase": "cal_str",
+    "cal_sample": "cal_str1"
+  },
+  "commands": [
+    {
+      "utc": "2026-10-04T20:56:50.887745+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/rename-prior-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:54.615598+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-prior-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:57.328460+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-prior-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:58.597933+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-prior",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/rename-prior-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "31086ca421fa764f2562cc0b455463a07c0f8351d21c4632b592951298fff38e"
+}

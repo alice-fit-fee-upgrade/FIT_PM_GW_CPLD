@@ -1,0 +1,4 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Usage: cpldfit [-help xc9500|xc9500xl|xcr3|xc2c|xa9500xl|xa2c]
+  -help:   Specify device family to display architecture specific options.

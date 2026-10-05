@@ -1,0 +1,23 @@
+original/readback-2026/pm_cpld_gold_2026.jed: OK
+{
+  "active_golden": "original/readback-2026/pm_cpld_gold_2026.jed",
+  "sha256": "1748e3c4f0f6152bd395d0a88df1e3a2214ec31fe0e704e11e77b854556f3d95",
+  "baseline_raw_distance": 1412,
+  "baseline_canonical_difference_count": 1346,
+  "decoder_roundtrip_distance": 0,
+  "vhdl_bit_identity_verified": false,
+  "formal_equivalence_verified": false,
+  "hardware_programmed": false
+}
+{
+  "property": "new P16 EV_OUT = P60 EV_IN for all Boolean inputs/states",
+  "SAT_result": "unsat",
+  "verified_from_raw_AND_OR_fuses": true,
+  "old_P16_is_registered": true,
+  "logical_counterexample": {
+    "condition": "EV_IN changes 0 to 1 between CLK80 edges, old EVOUT previously 0",
+    "new_EV_OUT": 1,
+    "baseline_EV_OUT": 0
+  },
+  "limit": "Ideal Boolean configuration model; not physical timing or readback-export validation"
+}

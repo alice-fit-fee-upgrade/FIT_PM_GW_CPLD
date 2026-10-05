@@ -1,0 +1,322 @@
+{
+  "proof": "local transition equivalence: UNSAT means no counterexample for any Boolean state/input",
+  "registers": [
+    {
+      "resource": "C0B0MC1",
+      "name": "c_count_0",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC15",
+      "name": "c_count_1",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC14",
+      "name": "c_count_2",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC7",
+      "name": "c_count_3",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC9",
+      "name": "c_count_4",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC8",
+      "name": "c_count_5",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC6",
+      "name": "c_count_6",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC11",
+      "name": "dly_0",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC4",
+      "name": "dly_1",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC3",
+      "name": "dly_2",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC2",
+      "name": "dly_3",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC0",
+      "name": "dly_4",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B1MC11",
+      "name": "dly_5",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B1MC9",
+      "name": "dly_6",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B6MC10",
+      "name": "dly_7",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B5MC3",
+      "name": "evnt_i_0",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B1MC8",
+      "name": "evnt_i_1",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B1MC7",
+      "name": "evnt_i_2",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B6MC5",
+      "name": "CNT_0",
+      "clock": "FCLK2",
+      "falling": true,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B7MC1",
+      "name": "CNT_1",
+      "clock": "FCLK2",
+      "falling": true,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B5MC0",
+      "name": "str_div",
+      "clock": "IOB_C0B5MC1",
+      "falling": true,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC5",
+      "name": "str1",
+      "clock": "FCLK2",
+      "falling": true,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC10",
+      "name": "str2",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B0MC13",
+      "name": "cal_str",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B1MC3",
+      "name": "EVOUT",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B5MC15",
+      "name": "CLK20_N_reg",
+      "clock": "FCLK2",
+      "falling": true,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC3",
+      "name": "O_0",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC4",
+      "name": "O_1",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC5",
+      "name": "O_2",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC6",
+      "name": "O_3",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC10",
+      "name": "O_4",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC12",
+      "name": "O_5",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC13",
+      "name": "O_6",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC14",
+      "name": "O_7",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B2MC15",
+      "name": "O_8",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B6MC15",
+      "name": "O_9",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B6MC14",
+      "name": "O_10",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B6MC13",
+      "name": "O_11",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    },
+    {
+      "resource": "C0B6MC12",
+      "name": "O_12",
+      "clock": "FCLK2",
+      "falling": false,
+      "status": "unsat",
+      "counterexample": null
+    }
+  ],
+  "initial_state_matches": true,
+  "clock_mapping_matches": true,
+  "complementary_clock_invariant": true,
+  "vhdl_frontend_formal_verified": false,
+  "all_passed": true
+}

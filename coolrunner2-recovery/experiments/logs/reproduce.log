@@ -1,0 +1,52 @@
+sha256sum -c original/SHA256SUMS
+original/amplcpld.jed: OK
+sha256sum -c schematic/SHA256SUMS
+schematic/FIT_PM12.pdf: OK
+tools/jedtool original/amplcpld.jed > decoded/jed_metadata.json
+tools/decode_xc2c128 original/amplcpld.jed > decoded/original.json
+toolchain/prjcombine/target/release/coolrunner2_dis toolchain/prjcombine/databases/coolrunner2.zstd original/amplcpld.jed > decoded/original.combine.txt
+toolchain/prjcombine/target/release/coolrunner2_as toolchain/prjcombine/databases/coolrunner2.zstd decoded/original.combine.txt decoded/combine-roundtrip.jed
+tools/compare_jed original/amplcpld.jed decoded/combine-roundtrip.jed > decoded/combine-roundtrip-diff.json
+python3 -c 'import json; assert json.load(open("decoded/combine-roundtrip-diff.json"))["hamming_distance"] == 0'
+python3 tools/history.py
+python3 tools/pinout.py
+toolchain/venv/bin/python tools/verify_transition.py > tests/transition-proof.json
+python3 tools/placement.py
+python3 tools/render_decode.py
+python3 tools/gen_vectors.py > tests/vector-generation.log
+mkdir -p experiments/ghdl
+cd experiments/ghdl && python3 ../../tools/run_logged.py ghdl-analyze ../../tools/ghdl -a --std=08 ../../recovered/amplcpld_recovered.vhd ../../tests/recovered_tb.vhd
+ghdl-analyze: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/ghdl-analyze.log
+cd experiments/ghdl && python3 ../../tools/run_logged.py ghdl-elaborate ../../tools/ghdl -e --std=08 recovered_tb
+ghdl-elaborate: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/ghdl-elaborate.log
+cd experiments/ghdl && python3 ../../tools/run_logged.py ghdl-run ../../tools/ghdl -r --std=08 recovered_tb --assert-level=error
+ghdl-run: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/ghdl-run.log
+cp experiments/logs/ghdl-run.log tests/ghdl-equivalence.log
+python3 tools/write_reports.py
+make baseline recovered-build
+make[1]: Entering directory '/home/codex-hil/coolrunner2-recovery'
+tools/build_ise baseline
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+baseline-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-xst.log
+baseline-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-ngdbuild.log
+baseline-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-cpldfit.log
+baseline-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/baseline-hprep6.log
+baseline: raw=0, canonical=0; reports/baseline_structural_diff.md
+python3 tools/write_reports.py
+tools/build_ise recovered
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+recovered-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-xst.log
+recovered-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-ngdbuild.log
+recovered-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-cpldfit.log
+recovered-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-hprep6.log
+recovered: raw=0, canonical=0; reports/recovered_structural_diff.md
+python3 tools/write_reports.py
+make[1]: Leaving directory '/home/codex-hil/coolrunner2-recovery'
+python3 tools/check_identity.py
+PASS: baseline and recovered are identical to all 55341 golden fuses and canonical configuration

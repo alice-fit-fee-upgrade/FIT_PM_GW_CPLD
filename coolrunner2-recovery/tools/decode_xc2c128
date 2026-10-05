@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+"""Canonical decode using pinned Project Combine, including full physical pin mapping."""
+import json, re, subprocess, sys
+from pathlib import Path
+from jedlib import read
+ROOT=Path(__file__).resolve().parent.parent
+
+def decode(path):
+    meta=read(path); meta.pop('fuses')
+    pc=ROOT/'toolchain/prjcombine'
+    text=subprocess.check_output([str(pc/'target/release/coolrunner2_dis'),str(pc/'databases/coolrunner2.zstd'),str(path)],text=True)
+    db=(pc/'databases/coolrunner2.txt').read_text()
+    bond=re.search(r'bond BOND22 \{(.*?)\n\}',db,re.S)[1]
+    pins={r:int(p) for p,r in re.findall(r'pin P(\d+) = (\w+);',bond)}
+    chip=re.search(r'chip CHIP4 \{(.*?)\n\}',db,re.S)[1]
+    specials=dict(re.findall(r'io_special (\w+) = (\w+);',chip))
+    globals={}; blocks=[]
+    def fields(line): return dict(re.findall(r'(\S+?)=(\S+)',line))
+    for line in text.splitlines():
+        if line.startswith('GLOBAL:'): globals=fields(line)
+        elif line.startswith('FB '):
+            i=int(line.split()[1][:-1]); blocks.append(dict(index=i+1,zia=[None]*40,macrocells=[],and_terms=[[] for _ in range(56)],or_terms=[[] for _ in range(16)]))
+            for k,v in fields(line).items(): blocks[i]['zia'][int(re.search(r'\[(\d+)\]',k)[1])]=v
+        elif line.startswith('MC '):
+            _,f,m=line.split(':')[0].split(); f,m=int(f),int(m)
+            resource=f'C0B{f}MC{m}'; cfg=fields(line)
+            blocks[f]['macrocells'].append(dict(index=m+1,resource=resource,pin=pins.get('IOB_'+resource),special=[k for k,v in specials.items() if v==resource],configuration=cfg))
+        elif line.startswith(('PT ','ST ')):
+            kind,f,t=line.split(':')[0].split(); f,t=int(f),int(t)
+            blocks[f]['and_terms' if kind=='PT' else 'or_terms'][t]=line.split(':')[1].split()
+    references=set(v for fb in blocks for v in fb['zia'] if v.startswith(('MC_','IOB_')))
+    for n in range(3):
+        if globals[f'FCLK{n}_ENABLE']=='1': references.add('IOB_'+specials[f'GCLK{n}'])
+    for fb in blocks:
+        def pt(t):
+            terms=[]
+            for literal in fb['and_terms'][t]:
+                neg=literal.startswith('!'); src=fb['zia'][int(literal.lstrip('!'))]
+                terms.append(('not ' if neg else '')+src)
+            return ' and '.join(terms) or '1'
+        fb['and_equations']=[pt(t) for t in range(56)]
+        for mc in fb['macrocells']:
+            m=mc['index']-1; cfg=mc['configuration']; st=' or '.join('('+pt(int(t))+')' for t in fb['or_terms'][m]) or '0'
+            xor=cfg['XOR_MUX']; other={'GND':'0','VCC':'1','PT':pt(10+3*m),'PT_INV':'not ('+pt(10+3*m)+')'}[xor]
+            mc['equation']=st if xor=='GND' else f'({st}) xor ({other})'
+            mc['sum_terms']=[int(t) for t in fb['or_terms'][m]]
+            mc['output_enabled']=cfg.get('OE_MUX','GND')!='GND' and mc['pin'] is not None
+            mc['used']=bool(mc['output_enabled'] or 'MC_'+mc['resource'] in references or 'IOB_'+mc['resource'] in references)
+            mc['registered']=bool((cfg['MC_ZIA_MUX']=='REG' and 'MC_'+mc['resource'] in references) or (cfg.get('IOB_ZIA_MUX')=='REG' and 'IOB_'+mc['resource'] in references) or (mc['output_enabled'] and cfg.get('MC_IOB_MUX')=='REG'))
+            mc['data_equation']=('IOB_'+mc['resource']) if cfg.get('REG_D_MUX')=='IBUF' else mc['equation']
+            mc['ce_equation']=pt(10+3*m) if cfg['REG_MODE']=='DFFCE' else '1'
+            mc['clock_equation']=pt(4) if cfg['CLK_MUX']=='CT4' else pt(10+3*m) if cfg['CLK_MUX']=='PT' else cfg['CLK_MUX']
+            mc['reset_equation']=pt(8+3*m) if cfg['RST_MUX']=='PT' else pt(5) if cfg['RST_MUX']=='CT5' else '0' if cfg['RST_MUX']=='GND' else 'FSR'
+            mc['set_equation']=pt(8+3*m) if cfg['SET_MUX']=='PT' else pt(6) if cfg['SET_MUX']=='CT6' else '0' if cfg['SET_MUX']=='GND' else 'FSR'
+    return dict(schema='coolrunner2-recovery/1',metadata=meta,decoder='Project Combine 234343d23e737e57f2727630e19008b509d7d522',globals=globals,function_blocks=blocks,physical_pins={p:r for p,r in re.findall(r'pin P(\d+) = (\w+);',bond)})
+
+if __name__=='__main__':
+    d=decode(Path(sys.argv[1]).resolve())
+    print(json.dumps(d,indent=2,sort_keys=True))

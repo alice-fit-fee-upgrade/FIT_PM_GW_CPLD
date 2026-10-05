@@ -1,0 +1,22 @@
+V3 13
+FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/amplcpld.vhd 2026/10/05.07:49:46 P.20131013
+EN work/amplcpld 1791182992 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/amplcpld.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/amplcpld/Frontend 1791182993 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/amplcpld.vhd \
+      EN work/amplcpld 1791182992 CP IBUF CP OBUF CP mux_latch CP cnt2
+FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd 2026/10/05.07:49:46 P.20131013
+EN work/cnt2 1791182988 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/cnt2/Behavioral 1791182989 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd \
+      EN work/cnt2 1791182988
+EN work/mux_latch 1791182990 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux_latch/Behavioral 1791182991 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/ise-baseline/comps.vhd \
+      EN work/mux_latch 1791182990

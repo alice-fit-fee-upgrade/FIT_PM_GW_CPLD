@@ -1,0 +1,15 @@
+d812b2a9dc7d6b21b72169aca8fd073b50c615d8d4262c1b4b1204b3ed96cb0e  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_tq144.bsd
+5981a7d3dff8fb07872fc7bb9e47638908629f52e41180e7868ed48fe38c3d51  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_cp132_1532.bsd
+8ed84ad23ad183db577c5a3e84c9c5ffdb01cadbcf21ab571463525f790c0e47  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128.map
+1ed66952bc4ea1166dee77ab6a299ebffd921b98e28a061d17102fc4440c7b80  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_cv100.bsd
+36c7a21b066dad06faaf1d499f7894d0e26591b57c5adc38af1fccef9acfabfc  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_ft256_1532.bsd
+63b432da4a1f7b74d3d2ea86b76bdcb0e6aae53a777ef2e549434caf2fb0bfce  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_vq100.bsd
+abc576c5b31cc6fcfe28d3f26276dc0ddc9c70870cf08ff1fb66982a46d10187  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_tq144_1532.bsd
+09e80d2f464c14d91bdfdf267365cf2f70abeffde184bc6f5e7733ccf7f4a7b2  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_ft256.bsd
+07fac2a9713a07fb701300b1172125e19a9001e772c9411d52e631832d45d894  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128.chp
+f035277a9205c681b04777f869e4f729723d810b86d492f6346480c71e06c05e  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_1532.bsd
+145648f6be9926d87ca6ba62f3e449f7f0988fccbcec6ccf630442349d15e282  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_vq100_1532.bsd
+b6c246dbadfc026979b2f90cfbab54bd4463bd19c36a893e33d77690f7fa0762  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128_cp132.bsd
+b3763062e9daa993e734bf84dc4c78e04fd7dde69ee392fd7d019a4d4dff29fe  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/xbr/data/xc2c128.bsd
+8ed84ad23ad183db577c5a3e84c9c5ffdb01cadbcf21ab571463525f790c0e47  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/bin/lin/digilent/digilent.adept.runtime_2.13.1-i686/data/xbr/xc2c128.map
+8ed84ad23ad183db577c5a3e84c9c5ffdb01cadbcf21ab571463525f790c0e47  /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/bin/lin64/digilent/digilent.adept.runtime_2.13.1-x86_64/data/xbr/xc2c128.map

@@ -1,0 +1,5 @@
+{
+  "differences": [],
+  "structural_difference_count": 0,
+  "warning": "Placement-sensitive diff; semantic equivalence needs independent state mapping/SAT."
+}

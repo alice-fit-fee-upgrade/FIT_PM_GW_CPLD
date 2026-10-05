@@ -1,0 +1,74 @@
+{
+  "name": "period80-speed",
+  "source_sha256": "2395b0f37b4a27afde5603c34317f9f1bb7fa79bf4701b74fae06f56b5f71b86",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 0,
+  "raw_distance": 380,
+  "canonical_difference_count": 504,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:50:37.754376+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/period80-speed-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:50:41.452885+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/period80-speed-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:50:44.166959+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/period80-speed-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:50:45.504971+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/period80-speed",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/period80-speed-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "16186775518c135978917363f2ed56a25bd94d8a80d96039bb37625b776179f8"
+}

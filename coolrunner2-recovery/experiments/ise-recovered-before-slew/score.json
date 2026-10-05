@@ -1,0 +1,8 @@
+{
+  "raw_hamming": 18,
+  "canonical_field_changes": 18,
+  "changed_regions": {
+    "MC/IOB configuration": 18
+  },
+  "functional_equivalence_verified": false
+}

@@ -1,0 +1,242 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "design.prj"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "design"
+Output Format                      : NGC
+Target Device                      : xc2c128-7-vq100
+
+---- Source Options
+Top Module Name                    : amplcpld
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-ce-golden/amplcpld.vhd" in Library work.
+Entity <amplcpld> compiled.
+Entity <amplcpld> (Architecture <recovered_2026>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <amplcpld> in library <work> (architecture <recovered_2026>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <amplcpld> in library <work> (Architecture <recovered_2026>).
+Entity <amplcpld> analyzed. Unit <amplcpld> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <amplcpld>.
+    Related source file is "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/directive-ce-golden/amplcpld.vhd".
+    Found 10-bit register for signal <c_count>.
+    Found 1-bit register for signal <cal_phase>.
+    Found 1-bit register for signal <cal_sample>.
+    Found 1-bit register for signal <clk20n_reg>.
+    Found 1-bit xor2 for signal <clk20n_reg$xor0000> created at line 56.
+    Found 2-bit up counter for signal <CNT>.
+    Found 7-bit register for signal <dly>.
+    Found 1-bit xor2 for signal <dly$xor0000> created at line 64.
+    Found 1-bit register for signal <dv_reg>.
+    Found 4-bit register for signal <inhibit_pipe>.
+    Found 13-bit register for signal <O>.
+    Found 1-bit register for signal <raw_edge>.
+    Found 1-bit xor2 for signal <raw_edge$xor0000> created at line 67.
+    Found 1-bit register for signal <raw_str_toggle>.
+    Found 1-bit register for signal <raw_stretch>.
+    Found 3-bit register for signal <raw_sync>.
+    Found 1-bit xor2 for signal <restart$xor0000> created at line 42.
+    Found 1-bit register for signal <str1>.
+    Found 1-bit register for signal <str2>.
+    Found 1-bit register for signal <str_div>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   4 Xor(s).
+Unit <amplcpld> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 24
+ 1-bit register                                        : 20
+ 13-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+# Xors                                                 : 4
+ 1-bit xor2                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <amplcpld> ...
+  implementation constraint: INIT=s	 : CNT_0
+  implementation constraint: INIT=s	 : raw_str_toggle
+  implementation constraint: INIT=s	 : cal_phase
+  implementation constraint: INIT=s	 : raw_stretch
+  implementation constraint: INIT=s	 : raw_sync_2
+  implementation constraint: INIT=s	 : raw_edge
+  implementation constraint: INIT=s	 : dly_6
+  implementation constraint: INIT=s	 : O_12
+  implementation constraint: INIT=s	 : str_div
+  implementation constraint: INIT=s	 : c_count_0
+  implementation constraint: INIT=s	 : c_count_1
+  implementation constraint: INIT=s	 : c_count_2
+  implementation constraint: INIT=s	 : c_count_3
+  implementation constraint: INIT=s	 : c_count_4
+  implementation constraint: INIT=s	 : str1
+  implementation constraint: INIT=s	 : str2
+  implementation constraint: INIT=s	 : c_count_5
+  implementation constraint: INIT=s	 : dv_reg
+  implementation constraint: INIT=r	 : clk20n_reg
+  implementation constraint: INIT=s	 : c_count_6
+  implementation constraint: INIT=s	 : inhibit_pipe_3
+  implementation constraint: INIT=s	 : c_count_7
+  implementation constraint: INIT=s	 : cal_sample
+  implementation constraint: INIT=s	 : c_count_8
+  implementation constraint: INIT=s	 : c_count_9
+  implementation constraint: INIT=s	 : inhibit_pipe_0
+  implementation constraint: INIT=s	 : inhibit_pipe_1
+  implementation constraint: INIT=s	 : inhibit_pipe_2
+  implementation constraint: INIT=s	 : O_0
+  implementation constraint: INIT=s	 : O_1
+  implementation constraint: INIT=s	 : O_2
+  implementation constraint: INIT=s	 : O_3
+  implementation constraint: INIT=s	 : O_4
+  implementation constraint: INIT=s	 : O_5
+  implementation constraint: INIT=s	 : O_6
+  implementation constraint: INIT=s	 : O_7
+  implementation constraint: INIT=s	 : O_8
+  implementation constraint: INIT=s	 : O_9
+  implementation constraint: INIT=s	 : O_10
+  implementation constraint: INIT=s	 : O_11
+  implementation constraint: INIT=s	 : dly_0
+  implementation constraint: INIT=s	 : dly_1
+  implementation constraint: INIT=s	 : dly_2
+  implementation constraint: INIT=s	 : dly_3
+  implementation constraint: INIT=s	 : dly_4
+  implementation constraint: INIT=s	 : dly_5
+  implementation constraint: INIT=s	 : raw_sync_0
+  implementation constraint: INIT=s	 : raw_sync_1
+  implementation constraint: INIT=s	 : CNT_1
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : design
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : no
+Target Technology                  : xc2c128-7-vq100
+
+Design Statistics
+# IOs                              : 46
+
+Cell Usage :
+# BELS                             : 202
+#      AND2                        : 60
+#      AND4                        : 1
+#      AND8                        : 1
+#      GND                         : 1
+#      INV                         : 101
+#      OR2                         : 27
+#      OR3                         : 1
+#      OR4                         : 1
+#      OR5                         : 1
+#      OR6                         : 1
+#      OR7                         : 1
+#      OR8                         : 2
+#      XOR2                        : 4
+# FlipFlops/Latches                : 49
+#      FD                          : 17
+#      FDCE                        : 32
+# IO Buffers                       : 46
+#      IBUF                        : 28
+#      OBUF                        : 18
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.16 secs
+ 
+--> 
+
+
+Total memory usage is 502972 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

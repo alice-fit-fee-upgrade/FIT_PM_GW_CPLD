@@ -1,0 +1,11 @@
+{
+  "raw_hamming": 916,
+  "canonical_field_changes": 941,
+  "changed_regions": {
+    "PLA AND literals": 681,
+    "PLA OR allocation": 232,
+    "MC/IOB configuration": 17,
+    "ZIA routing": 11
+  },
+  "functional_equivalence_verified": false
+}

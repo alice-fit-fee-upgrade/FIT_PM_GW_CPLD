@@ -1,0 +1,136 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK2: 3=CLK80.p
+----------------- B l o c k 0 ------------------
+PLApt(20/56), Fanin(21/38), Clk(1/3), Bct(0/4), Pin(0/10), Mcell(15/16)
+PLApts[20/32] 41 50 49 48 47 46 45 38 39 42 40 43 44 11 34 35 25 () () () () () 2 () () 10 () () () () () 37
+Fanins[21] CLK20_P.n CLK40.n N_PZ_229.n c_count<0>.n c_count<1>.n c_count<2>.n c_count<3>.n c_count<4>.n 
+           c_count<5>.n c_count<6>.n c_count<7>.n c_count<8>.n c_count<9>.n cal_phase.n cal_sample.n 
+           cal_sample__or0000.n dly<6>.n inhibit_pipe<0>.n inhibit_pipe<1>.n inhibit_pipe<2>.n 
+           inhibit_pipe<3>.n
+clk[1] CLK80 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[15] [c_count<9>(107)] [c_count<8>(102)] [c_count<7>(116)] [c_count<6>(115)] [c_count<5>(113)]  
+           [c_count<4>(112)] [c_count<3>(111)] [c_count<0>(114)] [c_count<1>(110)] [c_count<2>(109)]  
+           [cal_phase(108)] [inhibit_pipe<1>(105)] [N_PZ_229(106)] [cal_sample__or0000(104)] [N_PZ_223(103)] 
+Signal[15] [ 0: (13)  ][ 1: c_count<8>(102)  ][ 2: N_PZ_223(103) (12)  ][ 3: cal_sample__or0000(104) (11)  ] 
+           [ 4: inhibit_pipe<1>(105) (10)  ][ 5: N_PZ_229(106) (9)  ][ 6: c_count<9>(107)  ][ 7:  
+           cal_phase(108)  ][ 8: c_count<2>(109)  ][ 9: c_count<1>(110)  ][ 10: c_count<3>(111) (8)  ][ 11:  
+           c_count<4>(112) (7)  ][ 12: c_count<5>(113) (6)  ][ 13: c_count<0>(114)  ][ 14: c_count<6>(115)  
+           (4)  ][ 15: c_count<7>(116) (3)  ]
+----------------- B l o c k 1 ------------------
+PLApt(24/56), Fanin(17/38), Clk(1/3), Bct(0/4), Pin(7/10), Mcell(16/16)
+PLApts[24/56] 17 32 33 27 28 1 16 12 13 14 2 () () 23 () () 22 () () 9 () () 21 () () 20 () () () () () () () 
+              () 19 () () 26 () () 31 () () 18 () () 2 () () 2 () () 2 () () 36
+Fanins[17] CLK40.n cal_sample__or0000.n dly<0>.n dly<1>.n dly<2>.n dly<3>.n dly<4>.n inhibit_pipe<1>.n 
+           inhibit_pipe<2>.n raw_edge.n raw_str_toggle.n raw_stretch.n raw_sync<0>.n raw_sync<1>.n 
+           raw_sync<2>.n str_div.n EV.p
+clk[1] CLK80 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[22] [raw_stretch(123)] [raw_edge(124)] [cal_sample(132)] [inhibit_pipe<0>(117)]  
+           [inhibit_pipe<2>(131)] [inhibit_pipe<3>(130)] [str1(129)] [dly<1>(127)] [dly<2>(122)]  
+           [dly<3>(121)] [dly<4>(119)] [dly<5>(118)] [raw_sync<0>(128)] [raw_sync<1>(126)]  
+           [raw_sync<2>(125)] [EV_out(120),EV_out(16)] [ADC0<10>(19)] [ADC0<11>(18)] [ADC0<7>(23)]  
+           [ADC0<8>(24)] [ADC0<9>(22)] [CLK80(27)] 
+Signal[22] [ 0: inhibit_pipe<0>(117)  ][ 1: dly<5>(118) (14)  ][ 2: dly<4>(119) (15)  ][ 3: EV_out(120)  
+           EV_out(16)  ][ 4: dly<3>(121) (17)  ][ 5: dly<2>(122) ADC0<11>(18)  ][ 6: raw_stretch(123)  ][ 7:  
+           raw_edge(124)  ][ 8: raw_sync<2>(125)  ][ 9: raw_sync<1>(126)  ][ 10: dly<1>(127) ADC0<10>(19)  ] 
+           [ 11: raw_sync<0>(128)  ][ 12: str1(129) ADC0<9>(22)  ][ 13: inhibit_pipe<3>(130) ADC0<7>(23)  ] 
+           [ 14: inhibit_pipe<2>(131) ADC0<8>(24)  ][ 15: cal_sample(132) CLK80(27)  ]
+----------------- B l o c k 2 ------------------
+PLApt(32/56), Fanin(33/38), Clk(1/3), Bct(1/4), Pin(9/11), Mcell(13/16)
+PLApts[32/44] 52 65 66 55 4 71 72 56 73 74 57 75 76 58 77 78 59 79 80 60 81 82 61 83 84 62 85 86 29 30 () () 
+              () () () () () 15 () () () () () 24
+Fanins[33] CLK20_P.n DOUT<0>.n DOUT<1>.n DOUT<2>.n DOUT<3>.n DOUT<4>.n DOUT<5>.n DOUT<6>.n DOUT<7>.n 
+           DOUT<8>.n N_PZ_223.n dly<5>.n str1.n str2.n ADC0<0>.p ADC0<1>.p ADC0<2>.p ADC0<3>.p ADC0<4>.p 
+           ADC0<5>.p ADC0<6>.p ADC0<7>.p ADC0<8>.p ADC1<0>.p ADC1<1>.p ADC1<2>.p ADC1<3>.p ADC1<4>.p 
+           ADC1<5>.p ADC1<6>.p ADC1<7>.p ADC1<8>.p STR.p
+clk[1] CLK80 
+CTC: (pt=4) STR ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [DOUT<0>(136),DOUT<0>(99)] [DOUT<1>(137),DOUT<1>(97)] [DOUT<2>(138),DOUT<2>(96)]  
+           [DOUT<3>(139),DOUT<3>(95)] [DOUT<4>(143),DOUT<4>(94)] [DOUT<5>(145),DOUT<5>(93)]  
+           [DOUT<6>(146),DOUT<6>(92)] [DOUT<7>(147),DOUT<7>(91)] [DOUT<8>(148),DOUT<8>(90)] [dly<0>(141)]  
+           [dly<6>(144)] [str2(142)] [raw_str_toggle(140)] 
+Signal[13] [ 0:  ][ 1: (2)  ][ 2: (1)  ][ 3: DOUT<0>(136) DOUT<0>(99)  ][ 4: DOUT<1>(137) DOUT<1>(97)  ][ 5:  
+           DOUT<2>(138) DOUT<2>(96)  ][ 6: DOUT<3>(139) DOUT<3>(95)  ][ 7: raw_str_toggle(140)  ][ 8:  
+           dly<0>(141)  ][ 9: str2(142)  ][ 10: DOUT<4>(143) DOUT<4>(94)  ][ 11: dly<6>(144)  ][ 12:  
+           DOUT<5>(145) DOUT<5>(93)  ][ 13: DOUT<6>(146) DOUT<6>(92)  ][ 14: DOUT<7>(147) DOUT<7>(91)  ] 
+           [ 15: DOUT<8>(148) DOUT<8>(90)  ]
+----------------- B l o c k 3 ------------------
+PLApt(0/56), Fanin(0/38), Clk(0/3), Bct(0/4), Pin(11/11), Mcell(0/16)
+PLApts[0/0]
+Fanins[ 0]
+clk[0] 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[11] [ADC0<0>(35)] [ADC0<1>(34)] [ADC0<2>(33)] [ADC0<3>(32)] [ADC0<4>(30)] [ADC0<5>(29)] [ADC0<6>(28)]  
+           [ADC1<10>(37)] [ADC1<11>(36)] [ADC1<8>(40)] [ADC1<9>(39)] 
+Signal[11] [ 0: ADC0<6>(28)  ][ 1:  ][ 2:  ][ 3: ADC0<5>(29)  ][ 4: ADC0<4>(30)  ][ 5: ADC0<3>(32)  ][ 6:  
+           ADC0<2>(33)  ][ 7:  ][ 8:  ][ 9:  ][ 10: ADC0<1>(34)  ][ 11: ADC0<0>(35)  ][ 12: ADC1<11>(36)  ] 
+           [ 13: ADC1<10>(37)  ][ 14: ADC1<9>(39)  ][ 15: ADC1<8>(40)  ]
+----------------- B l o c k 4 ------------------
+----------------- B l o c k 5 ------------------
+PLApt(3/56), Fanin(3/38), Clk(1/3), Bct(1/4), Pin(4/9), Mcell(2/16)
+PLApts[3/5] 6 8 () () 4
+Fanins[ 3] CLK20_P.n CLK40.n STR.p
+clk[1] CLK80 
+CTC: (pt=4) STR ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 5] [CLK20_N(196),CLK20_N(54)] [str_div,ENA(64)] [EV(60)] [STR(63)] 
+Signal[ 5] [ 0: str_div(181) ENA(64)  ][ 1: STR(63)  ][ 2: (61)  ][ 3: EV(60)  ][ 4: (59)  ][ 5: (58)  ][ 6:  
+            ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: (56)  ][ 12:  ][ 13: (55)  ][ 14:  ][ 15: CLK20_N(196)  
+           CLK20_N(54)  ]
+----------------- B l o c k 6 ------------------
+PLApt(12/56), Fanin(11/38), Clk(1/3), Bct(0/4), Pin(6/10), Mcell(6/16)
+PLApts[12/47] 53 67 68 54 69 70 63 87 88 7 () () () () () () () () () () () () () () () () () () () () () () 
+              () () () () () () () () 51 () () () () () 64
+Fanins[11] CLK20_P.n DOUT<10>.n DOUT<11>.n DOUT<9>.n N_PZ_223.n ADC0<10>.p ADC0<11>.p ADC0<9>.p ADC1<10>.p 
+           ADC1<11>.p ADC1<9>.p
+clk[1] CLK80 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [DOUT<10>(211),DOUT<10>(87)] [DOUT<11>(210),DOUT<11>(86)] [DOUT<9>(212),DOUT<9>(89)]  
+           [DOUT<12>(209),DOUT<12>(85)] [DV(207),DV(82)] [CLK40(202),CLK40(81)] 
+Signal[ 6] [ 0: (77)  ][ 1: (78)  ][ 2:  ][ 3: (79)  ][ 4: (80)  ][ 5: CLK40(202) CLK40(81)  ][ 6:  ][ 7:  ] 
+           [ 8:  ][ 9:  ][ 10: DV(207) DV(82)  ][ 11:  ][ 12: DOUT<12>(209) DOUT<12>(85)  ][ 13:  
+           DOUT<11>(210) DOUT<11>(86)  ][ 14: DOUT<10>(211) DOUT<10>(87)  ][ 15: DOUT<9>(212) DOUT<9>(89)  ]
+----------------- B l o c k 7 ------------------
+PLApt(1/56), Fanin(1/38), Clk(1/3), Bct(0/4), Pin(9/9), Mcell(1/16)
+PLApts[1/14] () () () () () () () () () () () () () 1
+Fanins[ 1] CLK40.n
+clk[1] CLK80 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 9] [CLK20_P(214),CLK20_P(53)] [ADC1<0>(52)] [ADC1<1>(50)] [ADC1<2>(49)] [ADC1<3>(46)] [ADC1<4>(44)]  
+           [ADC1<5>(43)] [ADC1<6>(42)] [ADC1<7>(41)] 
+Signal[ 9] [ 0:  ][ 1: CLK20_P(214) CLK20_P(53)  ][ 2: ADC1<0>(52)  ][ 3: ADC1<1>(50)  ][ 4:  ][ 5:  
+           ADC1<2>(49)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: ADC1<3>(46)  ][ 12: ADC1<4>(44)  ][ 13:  
+           ADC1<5>(43)  ][ 14: ADC1<6>(42)  ][ 15: ADC1<7>(41)  ]

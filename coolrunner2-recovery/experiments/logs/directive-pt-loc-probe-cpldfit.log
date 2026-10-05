@@ -1,0 +1,2114 @@
+Release 14.7 - CPLD Optimizer/Partitioner P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'amplcpld.ise'.
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/XST_GND prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_phase\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_phase\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_phase\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_phase\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_stretch\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_stretch\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_stretch\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_stretch\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_edge\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_edge\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_edge\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_edge\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_edge\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_edge\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str_div\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str_div\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str_div\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str_div\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str1\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str1\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str1\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str1\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str2\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str2\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str2\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str2\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dv_reg\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dv_reg\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dv_reg\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dv_reg\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dv_reg\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dv_reg\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "0"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "0"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "0"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_0\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_0\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_0\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_0\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_1\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_1\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_1\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_1\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_2\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_2\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_2\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_2\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_3\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_3\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_3\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/inhibit_pipe_3\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_0\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_0\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_0\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_0\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_1\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_1\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_1\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_1\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_2\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_2\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_2\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_2\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_3\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_3\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_3\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_3\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_4\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_4\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_4\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_4\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_5\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_5\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_5\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_5\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_6\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_6\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_6\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_6\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_7\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_7\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_7\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_7\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_8\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_8\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_8\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_8\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_9\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_9\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_9\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_9\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_10\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_10\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_10\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_10\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_11\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_11\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_11\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_11\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_12\/Q prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_12\/Q prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_12\/X_ZERO prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCE"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_12\/X_ZERO prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_0\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_0\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_0\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_0\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_1\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_1\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_1\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_1\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_2\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_2\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_2\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_2\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_3\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_3\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_3\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_3\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_3\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_3\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_4\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_4\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_4\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_4\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_4\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_4\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_5\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_5\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_5\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_5\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_5\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_5\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_6\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_6\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_6\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_6\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_6\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/dly_6\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_0\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_0\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_0\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_0\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_1\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_1\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_1\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_1\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_2\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_2\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_2\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_2\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_2\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_sync_2\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_1\/Q\/FDCP prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_1\/Q\/FDCP prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_1\/Q\/X_ONE prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "FDCP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_1\/Q\/X_ONE prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_1\/$1I43 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "GND"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_1\/$1I43 prop_name=INIT prop_terse=XDM_PROPERTY_STRING "INIT" "1"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/Mxor_restart_xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/Mxor_clk20n_reg_xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/Mxor_raw_edge_xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/Mxor_dly_xor0000\/Xo<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "XOR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/data_enable1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_stretch_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<12>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<11>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<11>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<11>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<11>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<10>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<10>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<10>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<10>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<9>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<9>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<9>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<9>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<8>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<8>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<8>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<8>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<7>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<7>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<7>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<7>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<6>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<6>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<6>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<6>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<5>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<5>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<5>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<5>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<4>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<4>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<4>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<4>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<3>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<3>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<3>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<3>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<2>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<2>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<2>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<2>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<1>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<1>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<1>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<1>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<0>2 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<0>3 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/O_mux0001<0>4 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_phase_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/str_div_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/clk20n_reg_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT__add0000<0>1 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/raw_str_toggle_N01 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CNT_0_N01 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00012 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00013 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00014 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00015 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND4"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_not00011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/cal_sample_or00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00007 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00008 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or00009 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or000010 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR8"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0000_or000011 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_9_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00007 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00008 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0001_or00009 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR8"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_8_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00007 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0002_or00008 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR7"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_7_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0003_or00007 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR6"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_6_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0004_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0004_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0004_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0004_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0004_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0004_or00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR5"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_5_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0005_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0005_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0005_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0005_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0005_or00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR4"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_4_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0006_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0006_or00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0006_or00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/mux0006_or00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR3"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_3_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND8"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_cmp_eq00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00005 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00006 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00007 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_and00008 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_2_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/restart_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_1_and00004 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0_and00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0_and00002 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "INV"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0_and00003 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "AND2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/c_count_0_or00001 prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OR2"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ENA_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ENA_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/STR_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/STR_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK80_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK80_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_11_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_11_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_10_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_10_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_9_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_9_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_8_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_8_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_7_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_7_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_6_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_6_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_5_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_5_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_4_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_4_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_3_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_3_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_2_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_2_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_1_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_1_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_0_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0_0_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_11_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_11_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_10_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_10_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_9_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_9_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_8_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_8_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_7_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_7_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_6_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_6_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_5_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_5_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_4_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_4_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_3_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_3_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_2_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_2_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_1_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_1_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_0_IBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "IBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1_0_IBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_out_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_out_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_N_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_N_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_P_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_P_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DV_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DV_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK40_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK40_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_12_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_12_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_11_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_11_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_10_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_10_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_9_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_9_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_8_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_8_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_7_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_7_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_6_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_6_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_5_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_5_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_4_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_4_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_3_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_3_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_2_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_2_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_1_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_1_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_0_OBUF prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "OBUF"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT_0_OBUF prop_name=IOCOMP prop_terse=XDM_PROPERTY_BOOL "IOCOMP"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<0> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P35"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<0> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<10> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P19"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<10> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<11> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P18"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<11> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<1> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P34"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<1> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<2> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<2> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<3> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P32"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<3> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<4> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P30"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<4> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<5> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P29"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<5> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<6> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P28"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<6> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<7> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P23"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<7> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<8> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P24"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<8> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<9> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P22"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC0<9> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<0> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P52"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<0> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<10> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P37"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<10> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<11> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P36"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<11> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<1> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P50"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<1> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<2> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P49"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<2> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<3> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P46"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<3> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<4> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P44"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<4> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<5> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P43"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<5> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<6> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P42"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<6> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<7> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P41"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<7> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<8> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P40"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<8> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<9> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P39"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ADC1<9> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_N prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P54"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_N prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_N prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_P prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P53"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_P prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK20_P prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK40 prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P81"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK40 prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK40 prop_name=FAST prop_terse=XDM_PROPERTY_BOOL "FAST"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK80 prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P27"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/CLK80 prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<0> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P99"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<0> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<0> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<10> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P87"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<10> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<10> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<11> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P86"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<11> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<11> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<12> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P85"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<12> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<12> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<1> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P97"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<1> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<1> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<2> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P96"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<2> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<2> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<3> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P95"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<3> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<3> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<4> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P94"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<4> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<4> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<5> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P93"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<5> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<5> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<6> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P92"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<6> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<6> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<7> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P91"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<7> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<7> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<8> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P90"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<8> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<8> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<9> prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P89"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<9> prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DOUT<9> prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DV prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P82"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DV prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/DV prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ENA prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P64"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/ENA prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P60"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_out prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P16"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_out prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/EV_out prop_name=SLOW prop_terse=XDM_PROPERTY_BOOL "SLOW"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/STR prop_name=LOC prop_terse=XDM_PROPERTY_STRING "LOC" "P63"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld/STR prop_name=IOSTANDARD prop_terse=XDM_PROPERTY_STRING "IOSTANDARD" "LVCMOS33"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+CS: block property: block_name=/amplcpld/EXPANDED_FlattenFull/amplcpld prop_name=TYPE prop_terse=XDM_PROPERTY_STRING "TYPE" "amplcpld"
+
+INFO:Cpld - Inferring BUFG constraint for signal 'ADC0<7>' based upon the LOC
+   constraint 'P23'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+INFO:Cpld - Inferring BUFG constraint for signal 'ADC0<9>' based upon the LOC
+   constraint 'P22'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+INFO:Cpld - Inferring BUFG constraint for signal 'CLK80' based upon the LOC
+   constraint 'P27'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+WARNING:Cpld:1239 - The global clock designation (BUFG) on signal 'ADC0_9_IBUF'
+   is ignored. Most likely the signal is gated and therefore cannot be used as a
+   global control signal.
+WARNING:Cpld:1239 - The global clock designation (BUFG) on signal 'ADC0_7_IBUF'
+   is ignored. Most likely the signal is gated and therefore cannot be used as a
+   global control signal.
+Considering device XC2C128-7-VQ100.

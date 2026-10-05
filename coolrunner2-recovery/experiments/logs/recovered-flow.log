@@ -1,0 +1,9 @@
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+recovered-xst: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-xst.log
+recovered-ngdbuild: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-ngdbuild.log
+recovered-cpldfit: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-cpldfit.log
+recovered-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/recovered-hprep6.log
+recovered: raw=0, canonical=0; reports/recovered_structural_diff.md

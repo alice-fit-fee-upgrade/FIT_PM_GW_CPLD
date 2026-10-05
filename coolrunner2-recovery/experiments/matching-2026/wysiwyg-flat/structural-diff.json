@@ -1,0 +1,4841 @@
+{
+  "differences": [
+    {
+      "path": "/function_blocks/0/and_terms/0/0",
+      "golden": "1",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/1",
+      "golden": "4",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/2",
+      "golden": "5",
+      "candidate": "!15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/3",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/4",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/5",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/6",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/7",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/8",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/9",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/10",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/11",
+      "golden": "20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/0/12",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/1",
+      "golden": "4",
+      "candidate": "!2"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/2",
+      "golden": "5",
+      "candidate": "!3"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/3",
+      "golden": "9",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/4",
+      "golden": "10",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/5",
+      "golden": "12",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/6",
+      "golden": "13",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/7",
+      "golden": "14",
+      "candidate": "!12"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/8",
+      "golden": "15",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/9",
+      "golden": "16",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/10",
+      "golden": "18",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/11",
+      "golden": "19",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/12",
+      "golden": "21",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/13",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/14",
+      "golden": null,
+      "candidate": "!20"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/15",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/1/16",
+      "golden": null,
+      "candidate": "!29"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/0",
+      "golden": "1",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/1",
+      "golden": "3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/2",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/3",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/4",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/5",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/6",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/7",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/8",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/9",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/10",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/11",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/2/12",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/0",
+      "golden": "1",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/1",
+      "golden": "2",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/2",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/3",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/4",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/5",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/6",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/7",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/8",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/9",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/10",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/11",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/3/12",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/0",
+      "golden": "1",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/1",
+      "golden": "!2",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/2",
+      "golden": "!3",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/3",
+      "golden": "4",
+      "candidate": "!29"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/4",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/5",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/6",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/7",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/8",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/9",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/10",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/11",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/12",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/13",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/14",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/4/15",
+      "golden": "!29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/5/0",
+      "golden": "!9",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/5/1",
+      "golden": "10",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/5/2",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/5/3",
+      "golden": null,
+      "candidate": "20"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/6/0",
+      "golden": "10",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/6/1",
+      "golden": "!15",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/6/2",
+      "golden": null,
+      "candidate": "12"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/6/3",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/7/0",
+      "golden": "10",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/7/1",
+      "golden": "!18",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/7/2",
+      "golden": null,
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/7/3",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/0",
+      "golden": "1",
+      "candidate": "2"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/1",
+      "golden": "4",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/2",
+      "golden": "5",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/3",
+      "golden": "10",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/4",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/5",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/6",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/7",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/8",
+      "golden": "20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/8/9",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/0",
+      "golden": "1",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/1",
+      "golden": "4",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/2",
+      "golden": "5",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/3",
+      "golden": "10",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/4",
+      "golden": "12",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/5",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/6",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/7",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/8",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/9/9",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/1",
+      "golden": "3",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/2",
+      "golden": "4",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/3",
+      "golden": "5",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/4",
+      "golden": "10",
+      "candidate": "!11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/7",
+      "golden": "16",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/8",
+      "golden": "19",
+      "candidate": "!16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/9",
+      "golden": "21",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/10",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/10/11",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/0",
+      "golden": "1",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/1",
+      "golden": "2",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/2",
+      "golden": "4",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/3",
+      "golden": "5",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/4",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/5",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/6",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/7",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/8",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/11/9",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/0",
+      "golden": "1",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/1",
+      "golden": "!2",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/2",
+      "golden": "!3",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/3",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/4",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/5",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/6",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/7",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/8",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/9",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/10",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/11",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/12",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/13",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/14",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/15",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/12/16",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/1",
+      "golden": "!2",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/2",
+      "golden": "!3",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/3",
+      "golden": "4",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/4",
+      "golden": "5",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/5",
+      "golden": "9",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/6",
+      "golden": "!10",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/7",
+      "golden": "!12",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/8",
+      "golden": "13",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/9",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/10",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/11",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/12",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/13",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/14",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/15",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/13/16",
+      "golden": "!29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/2",
+      "golden": "5",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/3",
+      "golden": "9",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/4",
+      "golden": "10",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/5",
+      "golden": "13",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/6",
+      "golden": "14",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/7",
+      "golden": "15",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/8",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/9",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/10",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/14/11",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/1",
+      "golden": "!2",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/2",
+      "golden": "!3",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/3",
+      "golden": "4",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/4",
+      "golden": "5",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/5",
+      "golden": "9",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/6",
+      "golden": "10",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/7",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/8",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/9",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/10",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/11",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/12",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/13",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/14",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/15/15",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/0",
+      "golden": "1",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/1",
+      "golden": "4",
+      "candidate": "!6"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/2",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/3",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/4",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/5",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/6",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/7",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/8",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/9",
+      "golden": "!19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/16/10",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/1",
+      "golden": "4",
+      "candidate": "!7"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/2",
+      "golden": "5",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/3",
+      "golden": "9",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/4",
+      "golden": "10",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/5",
+      "golden": "13",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/6",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/7",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/8",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/9",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/17/10",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/0",
+      "golden": "1",
+      "candidate": "20"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/1",
+      "golden": "!2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/2",
+      "golden": "!3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/3",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/4",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/5",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/6",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/7",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/8",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/9",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/10",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/11",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/12",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/13",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/18/14",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/0",
+      "golden": "!0",
+      "candidate": "1"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/1",
+      "golden": "!6",
+      "candidate": "!2"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/2",
+      "golden": null,
+      "candidate": "!3"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/3",
+      "golden": null,
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/4",
+      "golden": null,
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/5",
+      "golden": null,
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/6",
+      "golden": null,
+      "candidate": "!12"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/7",
+      "golden": null,
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/8",
+      "golden": null,
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/9",
+      "golden": null,
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/10",
+      "golden": null,
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/11",
+      "golden": null,
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/12",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/13",
+      "golden": null,
+      "candidate": "!20"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/14",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/19/15",
+      "golden": null,
+      "candidate": "29"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/1",
+      "golden": "4",
+      "candidate": "!2"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/2",
+      "golden": "!5",
+      "candidate": "!3"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/3",
+      "golden": "9",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/4",
+      "golden": "10",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/5",
+      "golden": "13",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/6",
+      "golden": "14",
+      "candidate": "!12"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/7",
+      "golden": "15",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/8",
+      "golden": "18",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/9",
+      "golden": "21",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/10",
+      "golden": null,
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/11",
+      "golden": null,
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/12",
+      "golden": null,
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/13",
+      "golden": null,
+      "candidate": "!20"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/14",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/20/15",
+      "golden": null,
+      "candidate": "!29"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/0",
+      "golden": "1",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/1",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/2",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/3",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/4",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/5",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/6",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/7",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/8",
+      "golden": "!19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/21/9",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/2",
+      "golden": "9",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/3",
+      "golden": "10",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/4",
+      "golden": "13",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/5",
+      "golden": "14",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/6",
+      "golden": "15",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/7",
+      "golden": "!16",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/8",
+      "golden": "18",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/23/9",
+      "golden": "21",
+      "candidate": "!29"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/1",
+      "golden": "!2",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/2",
+      "golden": "!3",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/3",
+      "golden": "4",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/4",
+      "golden": "9",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/5",
+      "golden": "10",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/6",
+      "golden": "!12",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/7",
+      "golden": "13",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/8",
+      "golden": "14",
+      "candidate": "20"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/9",
+      "golden": "15",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/10",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/11",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/12",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/24/13",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/25/1",
+      "golden": "!4",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/25/2",
+      "golden": "9",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/25/3",
+      "golden": "10",
+      "candidate": "12"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/25/6",
+      "golden": "15",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/25/8",
+      "golden": "21",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/25/9",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/26/1",
+      "golden": "!5",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/26/2",
+      "golden": "9",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/26/3",
+      "golden": "10",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/26/6",
+      "golden": "15",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/26/8",
+      "golden": "21",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/26/9",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/1",
+      "golden": "9",
+      "candidate": "2"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/2",
+      "golden": "10",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/3",
+      "golden": "13",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/4",
+      "golden": "14",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/5",
+      "golden": "15",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/6",
+      "golden": "18",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/7",
+      "golden": "!19",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/8",
+      "golden": "21",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/27/9",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/6",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/7",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/28/8",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/1",
+      "golden": "!2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/2",
+      "golden": "!3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/3",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/4",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/5",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/6",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/7",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/8",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/9",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/10",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/11",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/29/12",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/6",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/30/7",
+      "golden": "!21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/0",
+      "golden": "1",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/1",
+      "golden": "!4",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/2",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/3",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/4",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/5",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/6",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/31/7",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/1",
+      "golden": "!5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/2",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/3",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/4",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/5",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/6",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/32/7",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/6",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/33/7",
+      "golden": "!19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/34/0",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/6",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/35/7",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/0",
+      "golden": "1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/1",
+      "golden": "!2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/2",
+      "golden": "!3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/3",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/4",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/5",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/6",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/7",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/8",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/9",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/10",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/36/11",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/37/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/37/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/37/2",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/0",
+      "golden": "!1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/38/6",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/3",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/39/6",
+      "golden": "!21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/0",
+      "golden": "!4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/40/6",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/0",
+      "golden": "!5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/5",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/41/6",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/3",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/42/6",
+      "golden": "!19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/3",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/5",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/43/6",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/0",
+      "golden": "!2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/1",
+      "golden": "!3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/2",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/3",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/4",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/5",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/6",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/7",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/8",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/9",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/44/10",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/45/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/45/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/45/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/45/3",
+      "golden": "!14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/45/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/45/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/46/0",
+      "golden": "!1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/46/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/46/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/46/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/46/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/46/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/47/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/47/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/47/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/47/3",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/47/4",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/47/5",
+      "golden": "!21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/48/0",
+      "golden": "!4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/48/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/48/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/48/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/48/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/48/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/49/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/49/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/50/0",
+      "golden": "!5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/50/1",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/50/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/50/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/50/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/50/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/51/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/51/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/51/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/51/3",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/51/4",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/51/5",
+      "golden": "!19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/52/0",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/52/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/52/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/52/3",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/52/4",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/52/5",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/0",
+      "golden": "!2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/1",
+      "golden": "!3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/2",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/3",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/4",
+      "golden": "!12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/5",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/6",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/7",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/8",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/53/9",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/54/0",
+      "golden": "6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/54/1",
+      "golden": "!9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/and_terms/55/0",
+      "golden": "20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/1/sum_terms/1",
+      "golden": 16,
+      "candidate": 31
+    },
+    {
+      "path": "/function_blocks/0/macrocells/1/sum_terms/2",
+      "golden": 17,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/1/sum_terms/3",
+      "golden": 18,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/2/configuration/MC_ZIA_MUX",
+      "golden": "NONE",
+      "candidate": "XOR"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/2/configuration/REG_INIT",
+      "golden": "1",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/2/configuration/XOR_MUX",
+      "golden": "GND",
+      "candidate": "PT"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/configuration/XOR_MUX",
+      "golden": "PT",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/0",
+      "golden": null,
+      "candidate": 21
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/1",
+      "golden": null,
+      "candidate": 22
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/2",
+      "golden": null,
+      "candidate": 23
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/3",
+      "golden": null,
+      "candidate": 24
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/4",
+      "golden": null,
+      "candidate": 25
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/5",
+      "golden": null,
+      "candidate": 26
+    },
+    {
+      "path": "/function_blocks/0/macrocells/3/sum_terms/6",
+      "golden": null,
+      "candidate": 27
+    },
+    {
+      "path": "/function_blocks/0/macrocells/4/sum_terms/0",
+      "golden": 55,
+      "candidate": 18
+    },
+    {
+      "path": "/function_blocks/0/macrocells/5/sum_terms/0",
+      "golden": 12,
+      "candidate": 19
+    },
+    {
+      "path": "/function_blocks/0/macrocells/5/sum_terms/1",
+      "golden": 13,
+      "candidate": 20
+    },
+    {
+      "path": "/function_blocks/0/macrocells/5/sum_terms/2",
+      "golden": 54,
+      "candidate": 22
+    },
+    {
+      "path": "/function_blocks/0/macrocells/6/sum_terms/0",
+      "golden": 13,
+      "candidate": 10
+    },
+    {
+      "path": "/function_blocks/0/macrocells/6/sum_terms/1",
+      "golden": 14,
+      "candidate": 31
+    },
+    {
+      "path": "/function_blocks/0/macrocells/6/sum_terms/2",
+      "golden": 15,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/7/configuration/XOR_MUX",
+      "golden": "GND",
+      "candidate": "PT"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/7/sum_terms/0",
+      "golden": 12,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/7/sum_terms/1",
+      "golden": 13,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/8/configuration/XOR_MUX",
+      "golden": "PT",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/8/sum_terms/5",
+      "golden": 9,
+      "candidate": 12
+    },
+    {
+      "path": "/function_blocks/0/macrocells/8/sum_terms/6",
+      "golden": 10,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/8/sum_terms/7",
+      "golden": 11,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/9/configuration/XOR_MUX",
+      "golden": "PT",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/9/sum_terms/0",
+      "golden": 0,
+      "candidate": 1
+    },
+    {
+      "path": "/function_blocks/0/macrocells/9/sum_terms/1",
+      "golden": 1,
+      "candidate": 3
+    },
+    {
+      "path": "/function_blocks/0/macrocells/9/sum_terms/2",
+      "golden": 2,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/9/sum_terms/3",
+      "golden": 3,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/9/sum_terms/4",
+      "golden": 4,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/0",
+      "golden": 13,
+      "candidate": 4
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/1",
+      "golden": 45,
+      "candidate": 5
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/2",
+      "golden": 46,
+      "candidate": 6
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/3",
+      "golden": 47,
+      "candidate": 7
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/4",
+      "golden": 48,
+      "candidate": 8
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/5",
+      "golden": 50,
+      "candidate": 11
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/6",
+      "golden": 51,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/7",
+      "golden": 52,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/10/sum_terms/8",
+      "golden": 53,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/0",
+      "golden": 13,
+      "candidate": 4
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/1",
+      "golden": 38,
+      "candidate": 5
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/2",
+      "golden": 39,
+      "candidate": 6
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/3",
+      "golden": 40,
+      "candidate": 7
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/4",
+      "golden": 41,
+      "candidate": 8
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/5",
+      "golden": 42,
+      "candidate": 9
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/6",
+      "golden": 43,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/11/sum_terms/7",
+      "golden": 44,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/0",
+      "golden": 13,
+      "candidate": 17
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/1",
+      "golden": 30,
+      "candidate": 31
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/2",
+      "golden": 31,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/3",
+      "golden": 32,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/4",
+      "golden": 33,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/5",
+      "golden": 35,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/12/sum_terms/6",
+      "golden": 36,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/13/configuration/XOR_MUX",
+      "golden": "PT",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/0/macrocells/13/sum_terms/3",
+      "golden": 3,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/13/sum_terms/4",
+      "golden": 4,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/14/sum_terms/0",
+      "golden": 13,
+      "candidate": 15
+    },
+    {
+      "path": "/function_blocks/0/macrocells/14/sum_terms/1",
+      "golden": 25,
+      "candidate": 31
+    },
+    {
+      "path": "/function_blocks/0/macrocells/14/sum_terms/2",
+      "golden": 26,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/14/sum_terms/3",
+      "golden": 27,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/14/sum_terms/4",
+      "golden": 28,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/14/sum_terms/5",
+      "golden": 29,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/15/sum_terms/0",
+      "golden": 13,
+      "candidate": 14
+    },
+    {
+      "path": "/function_blocks/0/macrocells/15/sum_terms/1",
+      "golden": 20,
+      "candidate": 31
+    },
+    {
+      "path": "/function_blocks/0/macrocells/15/sum_terms/2",
+      "golden": 21,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/15/sum_terms/3",
+      "golden": 23,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/macrocells/15/sum_terms/4",
+      "golden": 24,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/1/1",
+      "golden": "16",
+      "candidate": "31"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/1/2",
+      "golden": "17",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/1/3",
+      "golden": "18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/0",
+      "golden": null,
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/1",
+      "golden": null,
+      "candidate": "22"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/2",
+      "golden": null,
+      "candidate": "23"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/3",
+      "golden": null,
+      "candidate": "24"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/4",
+      "golden": null,
+      "candidate": "25"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/5",
+      "golden": null,
+      "candidate": "26"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/3/6",
+      "golden": null,
+      "candidate": "27"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/4/0",
+      "golden": "55",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/5/0",
+      "golden": "12",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/5/1",
+      "golden": "13",
+      "candidate": "20"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/5/2",
+      "golden": "54",
+      "candidate": "22"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/6/0",
+      "golden": "13",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/6/1",
+      "golden": "14",
+      "candidate": "31"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/6/2",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/7/0",
+      "golden": "12",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/7/1",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/8/5",
+      "golden": "9",
+      "candidate": "12"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/8/6",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/8/7",
+      "golden": "11",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/9/0",
+      "golden": "0",
+      "candidate": "1"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/9/1",
+      "golden": "1",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/9/2",
+      "golden": "2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/9/3",
+      "golden": "3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/9/4",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/0",
+      "golden": "13",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/1",
+      "golden": "45",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/2",
+      "golden": "46",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/3",
+      "golden": "47",
+      "candidate": "7"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/4",
+      "golden": "48",
+      "candidate": "8"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/5",
+      "golden": "50",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/6",
+      "golden": "51",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/7",
+      "golden": "52",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/10/8",
+      "golden": "53",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/0",
+      "golden": "13",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/1",
+      "golden": "38",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/2",
+      "golden": "39",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/3",
+      "golden": "40",
+      "candidate": "7"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/4",
+      "golden": "41",
+      "candidate": "8"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/5",
+      "golden": "42",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/6",
+      "golden": "43",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/11/7",
+      "golden": "44",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/0",
+      "golden": "13",
+      "candidate": "17"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/1",
+      "golden": "30",
+      "candidate": "31"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/2",
+      "golden": "31",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/3",
+      "golden": "32",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/4",
+      "golden": "33",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/5",
+      "golden": "35",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/12/6",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/13/3",
+      "golden": "3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/13/4",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/14/0",
+      "golden": "13",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/14/1",
+      "golden": "25",
+      "candidate": "31"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/14/2",
+      "golden": "26",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/14/3",
+      "golden": "27",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/14/4",
+      "golden": "28",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/14/5",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/15/0",
+      "golden": "13",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/15/1",
+      "golden": "20",
+      "candidate": "31"
+    },
+    {
+      "path": "/function_blocks/0/or_terms/15/2",
+      "golden": "21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/15/3",
+      "golden": "23",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/or_terms/15/4",
+      "golden": "24",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/0/zia/7",
+      "golden": "VCC",
+      "candidate": "MC_C0B0MC3"
+    },
+    {
+      "path": "/function_blocks/0/zia/11",
+      "golden": "VCC",
+      "candidate": "MC_C0B0MC5"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/0/0",
+      "golden": "!13",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/0/1",
+      "golden": "16",
+      "candidate": "!17"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/1/0",
+      "golden": "13",
+      "candidate": "!9"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/1/1",
+      "golden": "!16",
+      "candidate": "!12"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/1/2",
+      "golden": null,
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/1/3",
+      "golden": null,
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/2/0",
+      "golden": "9",
+      "candidate": "!9"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/2/1",
+      "golden": "!17",
+      "candidate": "!12"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/2/2",
+      "golden": null,
+      "candidate": "!13"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/2/3",
+      "golden": null,
+      "candidate": "!16"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/3/0",
+      "golden": "!9",
+      "candidate": "!13"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/3/1",
+      "golden": "!12",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/3/2",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/1/and_terms/3/3",
+      "golden": "16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/1/and_terms/4/0",
+      "golden": "!9",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/4/1",
+      "golden": "!12",
+      "candidate": "!16"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/4/2",
+      "golden": "!13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/1/and_terms/4/3",
+      "golden": "!16",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/1/and_terms/5/0",
+      "golden": "17",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/1/and_terms/6/0",
+      "golden": "9",
+      "candidate": "17"
+    },
+    {
+      "path": "/function_blocks/1/macrocells/0/sum_terms/0",
+      "golden": 5,
+      "candidate": 6
+    },
+    {
+      "path": "/function_blocks/1/macrocells/6/sum_terms/0",
+      "golden": 2,
+      "candidate": 0
+    },
+    {
+      "path": "/function_blocks/1/macrocells/6/sum_terms/1",
+      "golden": 3,
+      "candidate": 1
+    },
+    {
+      "path": "/function_blocks/1/macrocells/6/sum_terms/2",
+      "golden": 4,
+      "candidate": 2
+    },
+    {
+      "path": "/function_blocks/1/macrocells/7/sum_terms/0",
+      "golden": 0,
+      "candidate": 3
+    },
+    {
+      "path": "/function_blocks/1/macrocells/7/sum_terms/1",
+      "golden": 1,
+      "candidate": 4
+    },
+    {
+      "path": "/function_blocks/1/macrocells/15/sum_terms/0",
+      "golden": 6,
+      "candidate": 5
+    },
+    {
+      "path": "/function_blocks/1/or_terms/0/0",
+      "golden": "5",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/1/or_terms/6/0",
+      "golden": "2",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/1/or_terms/6/1",
+      "golden": "3",
+      "candidate": "1"
+    },
+    {
+      "path": "/function_blocks/1/or_terms/6/2",
+      "golden": "4",
+      "candidate": "2"
+    },
+    {
+      "path": "/function_blocks/1/or_terms/7/0",
+      "golden": "0",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/1/or_terms/7/1",
+      "golden": "1",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/1/or_terms/15/0",
+      "golden": "6",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/0/0",
+      "golden": "10",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/0/1",
+      "golden": "!22",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/0/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/1/0",
+      "golden": "!10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/1/1",
+      "golden": "!20",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/1/2",
+      "golden": "36",
+      "candidate": "20"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/2/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/2/2",
+      "golden": "!22",
+      "candidate": "22"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/3/1",
+      "golden": "!10",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/3/2",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/5/1",
+      "golden": "!9",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/5/2",
+      "golden": "!36",
+      "candidate": "37"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/6/0",
+      "golden": "10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/6/1",
+      "golden": "36",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/6/2",
+      "golden": "!37",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/7/0",
+      "golden": "!10",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/7/1",
+      "golden": "!18",
+      "candidate": "8"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/7/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/8/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/8/1",
+      "golden": "10",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/8/2",
+      "golden": "!37",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/9/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/9/1",
+      "golden": "!10",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/9/2",
+      "golden": "!18",
+      "candidate": "28"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/10/0",
+      "golden": "!0",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/10/1",
+      "golden": "!14",
+      "candidate": "12"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/10/2",
+      "golden": "!36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/11/0",
+      "golden": "10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/11/1",
+      "golden": "!28",
+      "candidate": "2"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/11/2",
+      "golden": "36",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/12/0",
+      "golden": "!10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/12/1",
+      "golden": "!19",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/12/2",
+      "golden": "36",
+      "candidate": "35"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/13/1",
+      "golden": "10",
+      "candidate": "7"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/13/2",
+      "golden": "!28",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/14/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/14/2",
+      "golden": "!19",
+      "candidate": "25"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/15/1",
+      "golden": "!8",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/15/2",
+      "golden": "!36",
+      "candidate": "30"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/16/0",
+      "golden": "10",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/16/1",
+      "golden": "!35",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/16/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/17/0",
+      "golden": "!2",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/17/2",
+      "golden": "36",
+      "candidate": "31"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/18/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/18/2",
+      "golden": "!35",
+      "candidate": "32"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/19/1",
+      "golden": "!2",
+      "candidate": "1"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/19/2",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/20/1",
+      "golden": "!12",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/20/2",
+      "golden": "!36",
+      "candidate": "33"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/21/0",
+      "golden": "10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/21/1",
+      "golden": "!30",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/21/2",
+      "golden": "36",
+      "candidate": "23"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/22/0",
+      "golden": "!10",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/22/1",
+      "golden": "!25",
+      "candidate": "17"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/22/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/23/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/23/1",
+      "golden": "10",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/23/2",
+      "golden": "!30",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/24/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/24/1",
+      "golden": "!10",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/24/2",
+      "golden": "!25",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/25/0",
+      "golden": "!0",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/25/1",
+      "golden": "!7",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/25/2",
+      "golden": "!36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/26/0",
+      "golden": "10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/26/1",
+      "golden": "!32",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/26/2",
+      "golden": "36",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/27/0",
+      "golden": "!10",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/27/1",
+      "golden": "!31",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/27/2",
+      "golden": "36",
+      "candidate": "29"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/28/0",
+      "golden": "0",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/28/1",
+      "golden": "10",
+      "candidate": "!26"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/28/2",
+      "golden": "!32",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/29/0",
+      "golden": "0",
+      "candidate": "!4"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/29/1",
+      "golden": "!10",
+      "candidate": "26"
+    },
+    {
+      "path": "/function_blocks/2/and_terms/29/2",
+      "golden": "!31",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/30/0",
+      "golden": "!0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/30/1",
+      "golden": "!3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/30/2",
+      "golden": "!36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/31/0",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/31/1",
+      "golden": "!33",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/31/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/32/0",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/32/1",
+      "golden": "!23",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/32/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/33/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/33/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/33/2",
+      "golden": "!33",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/34/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/34/1",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/34/2",
+      "golden": "!23",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/35/0",
+      "golden": "!0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/35/1",
+      "golden": "!1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/35/2",
+      "golden": "!36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/36/0",
+      "golden": "!6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/36/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/36/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/38/0",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/38/1",
+      "golden": "!21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/38/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/39/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/39/1",
+      "golden": "!6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/39/2",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/40/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/40/1",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/40/2",
+      "golden": "!21",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/41/0",
+      "golden": "!0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/41/1",
+      "golden": "!17",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/41/2",
+      "golden": "!36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/42/0",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/42/1",
+      "golden": "!29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/42/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/44/0",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/44/1",
+      "golden": "!15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/44/2",
+      "golden": "36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/45/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/45/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/45/2",
+      "golden": "!29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/46/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/46/1",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/46/2",
+      "golden": "!15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/47/0",
+      "golden": "!0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/47/1",
+      "golden": "!5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/47/2",
+      "golden": "!36",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/48/0",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/48/1",
+      "golden": "!26",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/49/0",
+      "golden": "!4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/and_terms/49/1",
+      "golden": "26",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/3/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/3/sum_terms/3",
+      "golden": 3,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/3/sum_terms/4",
+      "golden": 5,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/sum_terms/0",
+      "golden": 6,
+      "candidate": 3
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/sum_terms/1",
+      "golden": 7,
+      "candidate": 5
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/sum_terms/2",
+      "golden": 8,
+      "candidate": 6
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/sum_terms/3",
+      "golden": 9,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/4/sum_terms/4",
+      "golden": 10,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/sum_terms/0",
+      "golden": 11,
+      "candidate": 7
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/sum_terms/1",
+      "golden": 12,
+      "candidate": 8
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/sum_terms/2",
+      "golden": 13,
+      "candidate": 9
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/sum_terms/3",
+      "golden": 14,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/5/sum_terms/4",
+      "golden": 15,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/sum_terms/0",
+      "golden": 16,
+      "candidate": 10
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/sum_terms/1",
+      "golden": 17,
+      "candidate": 11
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/sum_terms/2",
+      "golden": 18,
+      "candidate": 12
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/sum_terms/3",
+      "golden": 19,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/6/sum_terms/4",
+      "golden": 20,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/8/sum_terms/0",
+      "golden": 48,
+      "candidate": 28
+    },
+    {
+      "path": "/function_blocks/2/macrocells/8/sum_terms/1",
+      "golden": 49,
+      "candidate": 29
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/sum_terms/0",
+      "golden": 21,
+      "candidate": 13
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/sum_terms/1",
+      "golden": 22,
+      "candidate": 14
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/sum_terms/2",
+      "golden": 23,
+      "candidate": 15
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/sum_terms/3",
+      "golden": 24,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/10/sum_terms/4",
+      "golden": 25,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/sum_terms/0",
+      "golden": 26,
+      "candidate": 16
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/sum_terms/1",
+      "golden": 27,
+      "candidate": 17
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/sum_terms/2",
+      "golden": 28,
+      "candidate": 18
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/sum_terms/3",
+      "golden": 29,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/12/sum_terms/4",
+      "golden": 30,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/sum_terms/0",
+      "golden": 31,
+      "candidate": 19
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/sum_terms/1",
+      "golden": 32,
+      "candidate": 20
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/sum_terms/2",
+      "golden": 33,
+      "candidate": 21
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/sum_terms/3",
+      "golden": 34,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/13/sum_terms/4",
+      "golden": 35,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/sum_terms/0",
+      "golden": 36,
+      "candidate": 22
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/sum_terms/1",
+      "golden": 38,
+      "candidate": 23
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/sum_terms/2",
+      "golden": 39,
+      "candidate": 24
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/sum_terms/3",
+      "golden": 40,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/14/sum_terms/4",
+      "golden": 41,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/sum_terms/0",
+      "golden": 42,
+      "candidate": 25
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/sum_terms/1",
+      "golden": 44,
+      "candidate": 26
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/sum_terms/2",
+      "golden": 45,
+      "candidate": 27
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/sum_terms/3",
+      "golden": 46,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/macrocells/15/sum_terms/4",
+      "golden": 47,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/3/3",
+      "golden": "3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/3/4",
+      "golden": "5",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/4/0",
+      "golden": "6",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/4/1",
+      "golden": "7",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/4/2",
+      "golden": "8",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/4/3",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/4/4",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/5/0",
+      "golden": "11",
+      "candidate": "7"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/5/1",
+      "golden": "12",
+      "candidate": "8"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/5/2",
+      "golden": "13",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/5/3",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/5/4",
+      "golden": "15",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/6/0",
+      "golden": "16",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/6/1",
+      "golden": "17",
+      "candidate": "11"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/6/2",
+      "golden": "18",
+      "candidate": "12"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/6/3",
+      "golden": "19",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/6/4",
+      "golden": "20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/8/0",
+      "golden": "48",
+      "candidate": "28"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/8/1",
+      "golden": "49",
+      "candidate": "29"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/10/0",
+      "golden": "21",
+      "candidate": "13"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/10/1",
+      "golden": "22",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/10/2",
+      "golden": "23",
+      "candidate": "15"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/10/3",
+      "golden": "24",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/10/4",
+      "golden": "25",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/12/0",
+      "golden": "26",
+      "candidate": "16"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/12/1",
+      "golden": "27",
+      "candidate": "17"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/12/2",
+      "golden": "28",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/12/3",
+      "golden": "29",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/12/4",
+      "golden": "30",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/13/0",
+      "golden": "31",
+      "candidate": "19"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/13/1",
+      "golden": "32",
+      "candidate": "20"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/13/2",
+      "golden": "33",
+      "candidate": "21"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/13/3",
+      "golden": "34",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/13/4",
+      "golden": "35",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/14/0",
+      "golden": "36",
+      "candidate": "22"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/14/1",
+      "golden": "38",
+      "candidate": "23"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/14/2",
+      "golden": "39",
+      "candidate": "24"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/14/3",
+      "golden": "40",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/14/4",
+      "golden": "41",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/15/0",
+      "golden": "42",
+      "candidate": "25"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/15/1",
+      "golden": "44",
+      "candidate": "26"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/15/2",
+      "golden": "45",
+      "candidate": "27"
+    },
+    {
+      "path": "/function_blocks/2/or_terms/15/3",
+      "golden": "46",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/or_terms/15/4",
+      "golden": "47",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/2/zia/0",
+      "golden": "MC_C0B2MC11",
+      "candidate": "MC_C0B0MC2"
+    },
+    {
+      "path": "/function_blocks/2/zia/36",
+      "golden": "MC_C0B1MC15",
+      "candidate": "VCC"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/0/0",
+      "golden": "6",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/0/1",
+      "golden": "10",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/0/2",
+      "golden": "!18",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/1/0",
+      "golden": "6",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/1/1",
+      "golden": "!10",
+      "candidate": "7"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/1/2",
+      "golden": "!20",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/2/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/2/2",
+      "golden": "!18",
+      "candidate": "18"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/3/1",
+      "golden": "!10",
+      "candidate": "1"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/3/2",
+      "golden": "!20",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/4/1",
+      "golden": "!5",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/4/2",
+      "golden": "!6",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/5/0",
+      "golden": "!4",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/5/1",
+      "golden": "6",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/5/2",
+      "golden": "10",
+      "candidate": "14"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/6/0",
+      "golden": "6",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/6/1",
+      "golden": "!10",
+      "candidate": "2"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/6/2",
+      "golden": "!14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/7/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/7/1",
+      "golden": "!4",
+      "candidate": "10"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/7/2",
+      "golden": "10",
+      "candidate": "30"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/8/0",
+      "golden": "0",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/8/1",
+      "golden": "!10",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/8/2",
+      "golden": "!14",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/9/0",
+      "golden": "!0",
+      "candidate": "!10"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/9/1",
+      "golden": "!1",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/9/2",
+      "golden": "!6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/10/0",
+      "golden": "6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/10/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/10/2",
+      "golden": "!30",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/11/0",
+      "golden": "6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/11/1",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/11/2",
+      "golden": "!11",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/12/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/12/1",
+      "golden": "10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/12/2",
+      "golden": "!30",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/13/0",
+      "golden": "0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/13/1",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/13/2",
+      "golden": "!11",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/14/0",
+      "golden": "!0",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/14/1",
+      "golden": "!2",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/14/2",
+      "golden": "!6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/15/0",
+      "golden": "!10",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/40/0",
+      "golden": "!0",
+      "candidate": "0"
+    },
+    {
+      "path": "/function_blocks/6/and_terms/40/1",
+      "golden": "!6",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/and_terms/46/0",
+      "golden": "!7",
+      "candidate": "!0"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/12/sum_terms/0",
+      "golden": 15,
+      "candidate": 9
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/sum_terms/0",
+      "golden": 5,
+      "candidate": 3
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/sum_terms/1",
+      "golden": 6,
+      "candidate": 4
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/sum_terms/2",
+      "golden": 7,
+      "candidate": 5
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/sum_terms/3",
+      "golden": 8,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/macrocells/13/sum_terms/4",
+      "golden": 9,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/macrocells/14/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/14/sum_terms/3",
+      "golden": 3,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/macrocells/14/sum_terms/4",
+      "golden": 4,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/configuration/XOR_MUX",
+      "golden": "VCC",
+      "candidate": "GND"
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/sum_terms/0",
+      "golden": 10,
+      "candidate": 6
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/sum_terms/1",
+      "golden": 11,
+      "candidate": 7
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/sum_terms/2",
+      "golden": 12,
+      "candidate": 8
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/sum_terms/3",
+      "golden": 13,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/macrocells/15/sum_terms/4",
+      "golden": 14,
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/or_terms/12/0",
+      "golden": "15",
+      "candidate": "9"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/13/0",
+      "golden": "5",
+      "candidate": "3"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/13/1",
+      "golden": "6",
+      "candidate": "4"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/13/2",
+      "golden": "7",
+      "candidate": "5"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/13/3",
+      "golden": "8",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/or_terms/13/4",
+      "golden": "9",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/or_terms/14/3",
+      "golden": "3",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/or_terms/14/4",
+      "golden": "4",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/or_terms/15/0",
+      "golden": "10",
+      "candidate": "6"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/15/1",
+      "golden": "11",
+      "candidate": "7"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/15/2",
+      "golden": "12",
+      "candidate": "8"
+    },
+    {
+      "path": "/function_blocks/6/or_terms/15/3",
+      "golden": "13",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/or_terms/15/4",
+      "golden": "14",
+      "candidate": null
+    },
+    {
+      "path": "/function_blocks/6/zia/0",
+      "golden": "MC_C0B2MC11",
+      "candidate": "MC_C0B0MC2"
+    },
+    {
+      "path": "/function_blocks/6/zia/6",
+      "golden": "MC_C0B1MC15",
+      "candidate": "IOB_C0B3MC14"
+    },
+    {
+      "path": "/function_blocks/6/zia/7",
+      "golden": "MC_C0B0MC3",
+      "candidate": "IOB_C0B3MC13"
+    },
+    {
+      "path": "/function_blocks/6/zia/11",
+      "golden": "IOB_C0B3MC14",
+      "candidate": "VCC"
+    },
+    {
+      "path": "/function_blocks/6/zia/20",
+      "golden": "IOB_C0B3MC13",
+      "candidate": "VCC"
+    }
+  ],
+  "structural_difference_count": 967,
+  "warning": "Placement-sensitive diff; semantic equivalence needs independent state mapping/SAT."
+}

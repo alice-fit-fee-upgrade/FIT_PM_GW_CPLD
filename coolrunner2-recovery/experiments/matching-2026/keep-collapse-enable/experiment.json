@@ -1,0 +1,71 @@
+{
+  "name": "keep-collapse-enable",
+  "source_sha256": "cc59a4bcb7d89d85afe065e1ac74b9381c687f910c9e287634e4ee79fd6f497a",
+  "build_exit": 0,
+  "proof_exit": 0,
+  "raw_distance": 976,
+  "canonical_difference_count": 957,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:33:33.589287+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:33:37.308966+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:33:40.084863+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-nomlopt",
+        "-optimize",
+        "density",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:33:41.349369+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/keep-collapse-enable",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "d55c38fe5c6cd6522f7ae404b2922f9ef7bd61881b8a66e995fc0dd242e25b3e"
+}

@@ -1,0 +1,7 @@
+vm6-placement-lock: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/vm6-placement-lock.log
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/common
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/EDK
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/PlanAhead
+. /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE/.settings64.sh /home/codex-hil/.local/opt/xilinx/14.7/ISE_DS/ISE
+vm6-locked-hprep6: exit 0, log /home/codex-hil/coolrunner2-recovery/experiments/logs/vm6-locked-hprep6.log
+POST-FIT VM6 LOCK: 0 fuse, 0 canonical differences; 49/49 state proofs. Native fitter remains separate.

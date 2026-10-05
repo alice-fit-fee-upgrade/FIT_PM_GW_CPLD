@@ -1,0 +1,72 @@
+{
+  "name": "technology-noreduce",
+  "source_sha256": "fdf9957323c6d1636da7c2dde9bd60014f84a6251460fd305484eb8f48ec4151",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 974,
+  "canonical_difference_count": 1009,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:48:11.323755+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:48:15.193611+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:48:17.907731+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "density",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:48:19.174666+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/technology-noreduce",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "ded29239adad5034a81084d174ffd5c9b0439b98c93a239b3f5b65d9ced447af"
+}

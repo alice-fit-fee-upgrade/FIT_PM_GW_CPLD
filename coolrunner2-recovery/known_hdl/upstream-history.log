@@ -1,0 +1,1561 @@
+commit af94653f6097babb7f0343613615904c6fadcfbb
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Apr 14 10:29:48 2026 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Apr 14 10:29:48 2026 +0200
+
+    test app with uart added
+
+D	outputs/vivado_test/design_1_wrapper.bit
+D	outputs/vivado_test/design_1_wrapper.ltx
+D	outputs/vivado_test/design_1_wrapper.xsa
+D	outputs/vivado_test/spi_test_app.elf
+R081	outputs/vivado_tests2/design_1_wrapper.bit	outputs/vivado_test_uart_app/design_1_wrapper.bit
+R086	outputs/vivado_tests2/design_1_wrapper.ltx	outputs/vivado_test_uart_app/design_1_wrapper.ltx
+R093	outputs/vivado_test/design_1_wrapper.mmi	outputs/vivado_test_uart_app/design_1_wrapper.mmi
+A	outputs/vivado_test_uart_app/design_1_wrapper.xsa
+R080	outputs/vivado_test/design_1_wrapper_with_app.bit	outputs/vivado_test_uart_app/design_1_wrapper_with_app.bit
+A	outputs/vivado_test_uart_app/uart_test_app.elf
+D	outputs/vivado_tests2/design_1_wrapper.xsa
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bmj
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1_bmstub.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c.bd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hdl/bd_f60c_wrapper.vhd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0.xci
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0.xml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/sim/bd_f60c_ila_lib_0.vhd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/sim/bd_f60c.vhd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.vhd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_sim_netlist.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_sim_netlist.vhdl
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.vhdl
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/sim/design_1_system_ila_0_0.vhd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/bd_365d.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/hw_handoff/design_1_system_ila_1_0.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/synth/design_1_system_ila_1_0.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/bd_36ad.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/hw_handoff/design_1_system_ila_2_0.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/synth/design_1_system_ila_2_0.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.dcp
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.xml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_sim_netlist.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_sim_netlist.vhdl
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_stub.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_stub.vhdl
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/sim/design_1_vio_1_0.vhd
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/synth/design_1_vio_1_0.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/sim/design_1.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/synth/design_1.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/synth/design_1.v
+M	vivado_test/afe_test.srcs/sources_1/bd/design_1/design_1.bd
+M	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci
+M	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.xci
+M	vivado_test/afe_test.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui
+M	vivado_test/afe_test.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+M	vivado_test/afe_test.xpr
+M	vivado_test/block_design.png
+
+commit 7f585dd6b821a60cdaa6abd5e7114a40ad5fc0c8
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Fri Mar 6 12:41:46 2026 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Fri Mar 6 12:41:46 2026 +0100
+
+    app for microbalze after clk and reset changes
+
+M	.gitignore
+A	vitis_test/afe_test_platform/export/afe_test_platform/hw/design_1_wrapper.xsa
+A	vitis_test/aft_test_app/Debug/aft_test_app.elf
+A	vitis_test/aft_test_app/src/main.c
+
+commit 1b94c5c622193926780b794519b0459f1e65205c
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Mar 4 22:54:08 2026 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Mar 4 22:54:08 2026 +0100
+
+    rst on vio, uart pins changed
+
+A	outputs/vivado_tests2/design_1_wrapper.bit
+A	outputs/vivado_tests2/design_1_wrapper.ltx
+A	outputs/vivado_tests2/design_1_wrapper.xsa
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bmj
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0.xml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_sim_netlist.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_sim_netlist.vhdl
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.vhdl
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/bd_365d.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/hw_handoff/design_1_system_ila_1_0.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/synth/design_1_system_ila_1_0.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/bd_36ad.bxml
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/hw_handoff/design_1_system_ila_2_0.hwh
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/synth/design_1_system_ila_2_0.hwdef
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/sim/design_1_vio_1_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_1_0/synth/design_1_vio_1_0.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/sim/design_1.v
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/synth/design_1.hwdef
+M	vivado_test/afe_test.gen/sources_1/bd/design_1/synth/design_1.v
+M	vivado_test/afe_test.srcs/constrs_1/new/constraints.xdc
+M	vivado_test/afe_test.srcs/sources_1/bd/design_1/design_1.bd
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_vio_1_0/design_1_vio_1_0.xci
+M	vivado_test/afe_test.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui
+M	vivado_test/afe_test.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+M	vivado_test/afe_test.xpr
+
+commit e6c60c83c04fb16666673ab394b23b82b6e643cd
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Feb 25 11:44:16 2026 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Feb 25 11:44:16 2026 +0100
+
+    xsa added
+
+A	outputs/vivado_test/design_1_wrapper.xsa
+
+commit a9154a826a2ab4ddf7c966e9bcd125bd8ac2b4a8
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Fri Feb 13 13:07:22 2026 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Fri Feb 13 13:07:22 2026 +0100
+
+    vivado design to test uart, spi and adc
+
+M	.gitignore
+A	outputs/vivado_test/design_1_wrapper.bit
+A	outputs/vivado_test/design_1_wrapper.ltx
+A	outputs/vivado_test/design_1_wrapper.mmi
+A	outputs/vivado_test/design_1_wrapper_with_app.bit
+A	outputs/vivado_test/spi_test_app.elf
+M	vivado/fit_pm_dual_range_afe.xpr
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bda
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bmj
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bmm
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1.bxml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1_bmstub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/design_1_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_0_mixed.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_0_mixed.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_1_wb.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_1_wb.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_2_nm.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_2_nm.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_3_sp.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_3_sp.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_4_mx.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_4_mx.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_0_mixed.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_0_mixed.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_1_wb.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_1_wb.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_2_nm.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_2_nm.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_3_sp.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_3_sp.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_4_mx.mem
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_4_mx.mif
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/sim/design_1_axi_quad_spi_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/synth/design_1_axi_quad_spi_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/sim/design_1_io_dual_adc_ddr_top_0_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/synth/design_1_io_dual_adc_ddr_top_0_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/sim/design_1_microblaze_0_axi_intc_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/synth/design_1_microblaze_0_axi_intc_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0.cpp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0.h
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0_sc.cpp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0_sc.h
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0_stub.sv
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/src/axi_crossbar.cpp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/src/axi_crossbar.h
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/synth/design_1_microblaze_0_axi_periph_imp_xbar_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.cpp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.h
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0_sc.cpp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0_sc.h
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0_stub.sv
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sysc/design_1_microblaze_0_xlconcat_0_core.h
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sysc/xlconcat_v2_1_xlconcat_h.txt
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c.bd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c.bxml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hdl/bd_f60c_wrapper.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0.xci
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/sim/bd_f60c_ila_lib_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/sim/bd_f60c.protoinst
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/sim/bd_f60c.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/sim/design_1_system_ila_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/bd_365d.bd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/bd_365d.bxml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/bd_365d_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/hdl/bd_365d_wrapper.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/hw_handoff/design_1_system_ila_1_0.hwh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/bd_365d_ila_lib_0.xci
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/bd_365d_ila_lib_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/bd_365d_ila_lib_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/sim/bd_365d_ila_lib_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/synth/bd_365d_ila_lib_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/sim/bd_365d.protoinst
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/sim/bd_365d.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/synth/bd_365d.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/synth/design_1_system_ila_1_0.hwdef
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/sim/design_1_system_ila_1_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/synth/design_1_system_ila_1_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/bd_36ad.bd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/bd_36ad.bxml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/bd_36ad_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/hdl/bd_36ad_wrapper.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/hw_handoff/design_1_system_ila_2_0.hwh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/bd_36ad_ila_lib_0.xci
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/bd_36ad_ila_lib_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/bd_36ad_ila_lib_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/sim/bd_36ad_ila_lib_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/ip/ip_0/synth/bd_36ad_ila_lib_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/sim/bd_36ad.protoinst
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/sim/bd_36ad.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/synth/bd_36ad.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/bd_0/synth/design_1_system_ila_2_0.hwdef
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/sim/design_1_system_ila_2_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_system_ila_2_0/synth/design_1_system_ila_2_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.dcp
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xml
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0_ooc.xdc
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0_sim_netlist.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0_sim_netlist.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0_stub.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0_stub.vhdl
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/sim/design_1_vio_0_0.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/synth/design_1_vio_0_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog/xsdbs_v1_0_4_i2x.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/1017/hdl/verilog/xsdbs_v1_0_4_in.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/1017/hdl/xsdbs_v1_0_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/1665/hdl/fifo_generator_v13_1_vhsyn_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/1a4e/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2276/hdl/ila_v6_2_syn_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2276/hdl/verilog/ila_v6_2_16_ila_in.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2276/hdl/verilog/ila_v6_2_16_ila_lib_fn.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2276/hdl/verilog/ila_v6_2_16_ila_lparam.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2276/hdl/verilog/ila_v6_2_16_ila_param.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2276/hdl/verilog/ila_v6_2_16_ila_ver.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_7s_mmcm.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_7s_pll.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_mmcm.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_pll.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_plus_mmcm.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_plus_pll.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/4506/hdl/vio_v3_0_26_vio_include.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/4506/hdl/vio_v3_0_syn_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs_core.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs_core_ext.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs_core_vec.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs_ext.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs_ports.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bs_vec.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bsid_ports.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_bsid_vec_ports.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_i2x.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_icn.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_id_map.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_id_vec_map.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_in.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/verilog/xsdbm_v3_0_3_sl_prt_map.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/52c0/hdl/xsdbm_v3_0_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/5ec1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/5ec1/simulation/blk_mem_gen_v8_4.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/6080/hdl/fifo_generator_v13_2_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/6080/hdl/fifo_generator_v13_2_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/6080/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/6080/simulation/fifo_generator_vlog_beh.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/73e9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/7495/hdl/lmb_v10_v3_0_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/7d5e/hdl/axi_quad_spi_v3_2_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/814a/hdl/ltlib_v1_0_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog/ltlib_v1_0_2_lib_fn.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/814a/hdl/verilog/ltlib_v1_0_2_ver.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/8c68/hdl/lib_pkg_v1_0_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/99b7/hdl/axi_intc_v4_1_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/9a87/hdl/axi_uartlite_v2_0_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/a243/hdl/microblaze_v11_0_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/e160/hdl/lib_fifo_v1_0_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/fa7e/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/ipshared/fa7e/simulation/dist_mem_gen_v8_0.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/sim/design_1.protoinst
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/sim/design_1.v
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/synth/design_1.hwdef
+A	vivado_test/afe_test.gen/sources_1/bd/design_1/synth/design_1.v
+A	vivado_test/afe_test.gen/sources_1/bd/mref/io_dual_adc_ddr_top/component.xml
+A	vivado_test/afe_test.gen/sources_1/bd/mref/io_dual_adc_ddr_top/xgui/io_dual_adc_ddr_top_v1_0.tcl
+A	vivado_test/afe_test.hw/afe_test.lpr
+A	vivado_test/afe_test.hw/hw_1/hw.xml
+A	vivado_test/afe_test.srcs/constrs_1/new/constraints.xdc
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/design_1.bd
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/design_1.bda
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_system_ila_2_0/design_1_system_ila_2_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xci
+A	vivado_test/afe_test.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui
+A	vivado_test/afe_test.srcs/sources_1/imports/src/adc_ddr_top.vhd
+A	vivado_test/afe_test.srcs/sources_1/imports/src/io_dual_adc_ddr_top.vhd
+A	vivado_test/afe_test.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+A	vivado_test/afe_test.xpr
+A	vivado_test/block_design.png
+
+commit 8c6e3d36f420d11559e6f7f5edf9a1e282a3bd9e
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Dec 18 11:03:48 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Dec 18 11:03:48 2025 +0100
+
+    wip
+
+M	vivado/fit_pm_dual_range_afe.xpr
+
+commit 7a0e2e8ebae1947a87615f899129411bddf132d9
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Dec 18 11:03:33 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Dec 18 11:03:33 2025 +0100
+
+    cdc for signal synchronization
+
+A	src/cdc.vhd
+
+commit 7cf7edc51a0068027a65c91687c9cf70bc324a1a
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Dec 15 23:34:26 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Dec 15 23:34:26 2025 +0100
+
+    gitignore updated
+
+D	wave.vcd
+
+commit 468d3590f350e125f81b012094779e75c4b016a7
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Dec 15 23:33:57 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Dec 15 23:33:57 2025 +0100
+
+    gitignore updated
+
+M	.gitignore
+
+commit feaacb5bf1741ad55c9fa6211b358b1b5d7e535b
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Dec 15 23:33:28 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Dec 15 23:33:28 2025 +0100
+
+    sch wip
+
+M	Makefile
+M	sch/adc_chanell.drawio
+A	src/adc_processing.vhd
+M	tb/ampl_logic_tb.vhd
+A	wave.vcd
+
+commit adf290e6a849f3107b52f694fd1758b8d3296809
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Sat Dec 13 15:28:05 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Sat Dec 13 15:28:05 2025 +0100
+
+    sch updated
+
+M	sch/adc_chanell.drawio
+
+commit 6b8007f8759840eed0abaf5cdcd4ca82d345e243
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Aug 26 18:55:22 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Aug 26 18:55:22 2025 +0200
+
+    gitignore updated
+
+M	.gitignore
+
+commit 04af5bf12f9a89a727793a327c5e09ffaf7f91a4
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Aug 26 18:52:58 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Aug 26 18:52:58 2025 +0200
+
+    vivado proj added
+
+M	.gitignore
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/design_1.bda
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/design_1.bmj
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/design_1.bmm
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/design_1.bxml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/design_1_bmstub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/design_1_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/synth/design_1_axi_gpio_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_clocks.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_0_mixed.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_0_mixed.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_1_wb.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_1_wb.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_2_nm.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_2_nm.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_3_sp.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_3_sp.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_4_mx.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_1_memory_4_mx.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_0_mixed.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_0_mixed.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_1_wb.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_1_wb.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_2_nm.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_2_nm.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_3_sp.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_3_sp.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_4_mx.mem
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/netlist/mode_2_memory_4_mx.mif
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/sim/design_1_axi_quad_spi_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/synth/design_1_axi_quad_spi_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/sim/design_1_axi_uartlite_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_clk_wiz.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/synth/design_1_dlmb_bram_if_cntlr_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/synth/design_1_dlmb_v10_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/sim/design_1_fit_pm_afe_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/synth/design_1_fit_pm_afe_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/synth/design_1_ilmb_bram_if_cntlr_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/synth/design_1_ilmb_v10_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/sim/design_1_io_dual_adc_ddr_top_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/synth/design_1_io_dual_adc_ddr_top_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/sim/design_1_io_event_calibration_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/synth/design_1_io_event_calibration_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/sim/design_1_io_int_g_drv_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/synth/design_1_io_int_g_drv_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_ooc_trace.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_clocks.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/sim/design_1_microblaze_0_axi_intc_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/synth/design_1_microblaze_0_axi_intc_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/sim/design_1_microblaze_0_axi_periph_imp_xbar_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/src/axi_crossbar.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/src/axi_crossbar.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/synth/design_1_microblaze_0_axi_periph_imp_xbar_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sim/design_1_microblaze_0_xlconcat_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sysc/design_1_microblaze_0_xlconcat_0_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/sysc/xlconcat_v2_1_xlconcat_h.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.dcp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_sim_netlist.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_sim_netlist.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_stub.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_stub.vhdl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/sim/design_1_util_ds_buf_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/design_1_xlslice_0_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sysc/design_1_xlslice_0_0_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/design_1_xlslice_0_1.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sim/design_1_xlslice_0_1_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sysc/design_1_xlslice_0_1_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_1/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/design_1_xlslice_1_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sysc/design_1_xlslice_1_0_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/design_1_xlslice_1_1.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sim/design_1_xlslice_1_1.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sim/design_1_xlslice_1_1.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sim/design_1_xlslice_1_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sim/design_1_xlslice_1_1_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sim/design_1_xlslice_1_1_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sim/design_1_xlslice_1_1_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/synth/design_1_xlslice_1_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sysc/design_1_xlslice_1_1_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_1/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/design_1_xlslice_s11_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sim/design_1_xlslice_s11_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sim/design_1_xlslice_s11_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sim/design_1_xlslice_s11_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sim/design_1_xlslice_s11_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sim/design_1_xlslice_s11_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sim/design_1_xlslice_s11_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/synth/design_1_xlslice_s11_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sysc/design_1_xlslice_s11_0_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/design_1_xlslice_s21_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sim/design_1_xlslice_s21_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sim/design_1_xlslice_s21_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sim/design_1_xlslice_s21_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sim/design_1_xlslice_s21_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sim/design_1_xlslice_s21_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sim/design_1_xlslice_s21_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/synth/design_1_xlslice_s21_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sysc/design_1_xlslice_s21_0_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/design_1_xlslice_s31_0.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sim/design_1_xlslice_s31_0.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sim/design_1_xlslice_s31_0.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sim/design_1_xlslice_s31_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sim/design_1_xlslice_s31_0_sc.cpp
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sim/design_1_xlslice_s31_0_sc.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sim/design_1_xlslice_s31_0_stub.sv
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/synth/design_1_xlslice_s31_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sysc/design_1_xlslice_s31_0_core.h
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/sysc/xlslice_v1_0_xlslice.txt
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_7s_mmcm.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_7s_pll.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_mmcm.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_pll.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_plus_mmcm.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3cbc/mmcm_pll_drp_func_us_plus_pll.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/5ec1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/5ec1/simulation/blk_mem_gen_v8_4.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/6080/hdl/fifo_generator_v13_2_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/6080/hdl/fifo_generator_v13_2_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/6080/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/6080/simulation/fifo_generator_vlog_beh.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/6120/hdl/xlconcat_v2_1_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/6718/hdl/axi_gpio_v2_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/73e9/hdl/lmb_bram_if_cntlr_v4_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/7495/hdl/lmb_v10_v3_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/7d5e/hdl/axi_quad_spi_v3_2_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/8c68/hdl/lib_pkg_v1_0_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/99b7/hdl/axi_intc_v4_1_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/9a87/hdl/axi_uartlite_v2_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/a243/hdl/microblaze_v11_0_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/d8cc/hdl/interrupt_control_v3_1_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/e160/hdl/lib_fifo_v1_0_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_0.vh
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/fa7e/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/ipshared/fa7e/simulation/dist_mem_gen_v8_0.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/sim/design_1.protoinst
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/sim/design_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/synth/design_1.hwdef
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/design_1/synth/design_1.v
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/adc_ddr_top/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/adc_ddr_top/xgui/adc_ddr_top_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/dual_adc_ddr_top/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/dual_adc_ddr_top/xgui/dual_adc_ddr_top_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/fit_pm_afe/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/fit_pm_afe/xgui/fit_pm_afe_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_dual_adc_ddr_top/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_dual_adc_ddr_top/xgui/io_dual_adc_ddr_top_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_event_calibration/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_event_calibration/xgui/io_event_calibration_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_int_g_drv/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_int_g_drv/xgui/io_int_g_drv_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_la_outputs/component.xml
+A	vivado/fit_pm_dual_range_afe.gen/sources_1/bd/mref/io_la_outputs/xgui/io_la_outputs_v1_0.tcl
+A	vivado/fit_pm_dual_range_afe.hw/fit_pm_dual_range_afe.lpr
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/design_1.bd
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/design_1.bda
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/design_1_axi_quad_spi_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_fit_pm_afe_0_0/design_1_fit_pm_afe_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_io_dual_adc_ddr_top_0_0/design_1_io_dual_adc_ddr_top_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_io_event_calibration_0_0/design_1_io_event_calibration_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_io_int_g_drv_0_0/design_1_io_int_g_drv_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_0/design_1_microblaze_0_axi_periph_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_periph_imp_xbar_0/design_1_microblaze_0_axi_periph_imp_xbar_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/design_1_xlslice_0_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_1/design_1_xlslice_0_1.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_0/design_1_xlslice_1_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_1_1/design_1_xlslice_1_1.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_s11_0/design_1_xlslice_s11_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_s21_0/design_1_xlslice_s21_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ip/design_1_xlslice_s31_0/design_1_xlslice_s31_0.xci
+A	vivado/fit_pm_dual_range_afe.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui
+A	vivado/fit_pm_dual_range_afe.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+A	vivado/fit_pm_dual_range_afe.xpr
+
+commit 72db0c736a8cbc70e486857d57a31c73b1523cef
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Aug 26 18:50:37 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Aug 26 18:50:37 2025 +0200
+
+    wrappers for vivado design
+
+M	constraints/fit_pm_dual_range_afe_constraints.xdc
+M	src/fit_pm_afe.vhd
+M	src/io_dual_adc_ddr_top.vhd
+M	src/io_event_calibration.vhd
+
+commit fd58b3af31bbd62869d1c2b55ce7a6540f2d1224
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Aug 26 17:46:47 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Aug 26 17:46:47 2025 +0200
+
+    constraints corrected
+
+M	constraints/fit_pm_dual_range_afe_constraints.xdc
+
+commit 5f1bd51c239df8075994fd32beb5fba6c20e1a06
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Aug 26 14:30:21 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Aug 26 14:30:21 2025 +0200
+
+    io blocks designed
+
+D	src/dual_adc_ddr_top.vhd
+M	src/fit_pm_afe.vhd
+A	src/io_dual_adc_ddr_top.vhd
+A	src/io_int_g_drv.vhd
+
+commit c9e6974906de0606727f3163ff0408d0a219673a
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 26 11:52:33 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 26 11:52:33 2025 +0200
+
+    fit pm afe placeholder
+
+A	src/fit_pm_afe.vhd
+D	src/fit_pm_afe_top.vhd
+
+commit fe9efbf01b8437490a5bd79d124a5a05ba4e179c
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Aug 25 16:22:54 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Aug 25 16:22:54 2025 +0200
+
+    modules for final design
+
+M	src/dual_adc_ddr_top.vhd
+
+commit 971bad7b5e7b9f0f37ab42a45a311b8dbdde037d
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Aug 25 16:17:30 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Aug 25 16:17:30 2025 +0200
+
+    modules for final design
+
+M	.gitignore
+M	README.md
+A	src/dual_adc_ddr_top.vhd
+A	src/io_event_calibration.vhd
+
+commit b42aa5a4f842528846266a80d41290273ee6192c
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Aug 25 01:26:13 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Aug 25 01:26:13 2025 +0200
+
+    file with constraints for the device
+
+A	constraints/fit_pm_dual_range_afe_constraints.xdc
+
+commit 7cca8ebb5b4d3008cc68afc31cabf04fbbf20b3a
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Aug 21 17:09:04 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Aug 21 17:09:04 2025 +0200
+
+    high level fit pm dual range afe schematic
+
+D	sch/fit_pm_afe_clocks.drawio
+A	sch/fit_pm_dual_range_afe_clocks.drawio
+
+commit 1159b2fb31a62616d395135d4ce111e6f0cd4c0c
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Aug 21 14:17:49 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Aug 21 14:17:49 2025 +0200
+
+    ampl logic tb improvements
+
+M	tb/ampl_logic_tb.vhd
+
+commit ae5b88cf9aaebe3bab24b5d35967c7caa24f0495
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Aug 20 16:42:02 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Aug 20 16:42:02 2025 +0200
+
+    ampl logic tb improvements
+
+M	src/ampl_logic.vhd
+M	src/mux_latch.vhd
+M	tb/ampl_logic_tb.vhd
+
+commit d0d523464bdbe8e574e95cba58a2e5b2b8c68428
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 19 15:05:40 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 19 15:05:40 2025 +0200
+
+    ampl logic tb adc pipeline
+
+M	tb/ampl_logic_tb.vhd
+
+commit 1012ec299c3e4c99c58363165ab2d8da8e43c037
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 19 15:03:50 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 19 15:03:50 2025 +0200
+
+    ampl logic tb adc pipeline
+
+M	tb/ampl_logic_tb.vhd
+
+commit ec83242e1cef0b8da922fedcb4d18daaabd79e08
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 19 14:24:49 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 19 14:24:49 2025 +0200
+
+    ampl logic tb dev
+
+M	README.md
+M	tb/ampl_logic_tb.vhd
+
+commit a7f03f2aaf5c0ca550bdb92d3de20f206dd171f3
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 19 01:30:56 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 19 01:30:56 2025 +0200
+
+    ampl logic testbench added
+
+M	Makefile
+M	src/ampl_logic.vhd
+M	src/mux_latch.vhd
+A	tb/ampl_logic_tb.vhd
+
+commit f6a4a278402e0c10f21f426a8deac4db9a5acc66
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 19 00:22:26 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 19 00:22:26 2025 +0200
+
+    wip
+
+M	src/adc_channel_avg.vhd
+M	src/adc_channel_shift_reg.vhd
+M	src/adc_channel_top.vhd
+M	src/adc_ddr_top.vhd
+M	tb/adc_channel_avg_tb.vhd
+R100	test/iddre1_tb.vhd	tb/iddre1_tb.vhd
+
+commit 23108c21070bc795bc1c4998fc5d0ae10d18b9e6
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Aug 12 14:29:45 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Aug 12 14:29:45 2025 +0200
+
+    repo cleanup
+
+M	Makefile
+M	src/adc_channel_avg.vhd
+M	src/adc_channel_mux.vhd
+M	src/adc_channel_shift_reg.vhd
+R082	src/adc_channel.vhd	src/adc_channel_top.vhd
+R085	test/adc_ddr_top.vhd	src/adc_ddr_top.vhd
+M	tb/adc_channel_avg_tb.vhd
+
+commit cbd45cdff50d9f3777f799943dd7583ea09b3cda
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Thu Apr 24 13:32:30 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Thu Apr 24 13:32:30 2025 +0200
+
+    removed ff in data aligment
+
+M	src/fit_pm_afe_top.vhd
+
+commit 8d57cc2551052f1112ea1e77114ab619073f941b
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Thu Apr 24 13:24:48 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Thu Apr 24 13:24:48 2025 +0200
+
+    wip
+
+M	src/adc_channel_avg.vhd
+R095	src/ampl_top.vhd	src/fit_pm_afe_top.vhd
+M	tb/adc_channel_avg_tb.vhd
+
+commit 2ebca2db27631093845b21149d6f600202359b79
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Apr 23 10:36:08 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Apr 23 10:36:08 2025 +0200
+
+    nameing changed
+
+M	Makefile
+R088	src/adc_chanell.vhd	src/adc_channel.vhd
+R093	src/adc_chanell_avg.vhd	src/adc_channel_avg.vhd
+R086	src/adc_chanell_mux.vhd	src/adc_channel_mux.vhd
+R092	src/adc_chanell_pipeline.vhd	src/adc_channel_pipeline.vhd
+R091	src/adc_chanell_shift_reg.vhd	src/adc_channel_shift_reg.vhd
+R086	tb/adc_chanell_tb.vhd	tb/adc_channel_avg_tb.vhd
+
+commit beee7428ebaef4d0fa2ff1a294a2f653f2196f28
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Tue Apr 22 00:40:03 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Tue Apr 22 00:40:03 2025 +0200
+
+    sch changed
+
+M	sch/adc_chanell.drawio
+
+commit 076d0155b3e5870cbfa29c3becd1479bc8854541
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Apr 15 11:34:49 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Apr 15 11:34:49 2025 +0200
+
+    sch modified
+
+M	sch/adc_chanell.drawio
+M	src/adc_chanell.vhd
+M	src/adc_chanell_avg.vhd
+
+commit c8c8e934bf4391369bce994ac5b3cfdf7dab70ae
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Fri Apr 11 17:20:09 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Fri Apr 11 17:20:09 2025 +0200
+
+    adc chanell wip
+
+A	sch/adc_chanell.drawio
+M	src/adc_chanell.vhd
+M	src/adc_chanell_avg.vhd
+M	src/adc_chanell_pipeline.vhd
+M	tb/adc_chanell_tb.vhd
+
+commit f92be7524bc098ad25f9f7a3a96583103d41cf0b
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Thu Apr 10 16:48:58 2025 +0200
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Thu Apr 10 16:48:58 2025 +0200
+
+    adc chanell wip
+
+M	Makefile
+D	src/adc_avg.vhd
+A	src/adc_chanell.vhd
+A	src/adc_chanell_avg.vhd
+R065	src/adc_mux.vhd	src/adc_chanell_mux.vhd
+A	src/adc_chanell_pipeline.vhd
+A	src/adc_chanell_shift_reg.vhd
+M	tb/adc_chanell_tb.vhd
+M	test/adc_ddr_top.vhd
+
+commit d7c09dfab24a17f0c644d474793f05e94f132251
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Apr 9 15:59:12 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Apr 9 15:59:12 2025 +0200
+
+    adc avg wip
+
+M	src/adc_avg.vhd
+M	src/adc_mux.vhd
+M	tb/adc_chanell_tb.vhd
+
+commit 46ed3269be6cff568e83f059adcd814a213bfdb1
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Apr 8 15:59:28 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Apr 8 15:59:28 2025 +0200
+
+    adc chanell nd cleanup
+
+M	Makefile
+A	src/adc_avg.vhd
+M	src/adc_mux.vhd
+A	tb/adc_chanell_tb.vhd
+D	tb/ampl_logic_tb.vhd
+M	tb/cnt2_tb.vhd
+M	tb/mux_latch_tb.vhd
+
+commit ec6b8462a85b6ac6983868dde5370f213f1c9a36
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Fri Apr 4 15:17:32 2025 +0200
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Fri Apr 4 15:17:32 2025 +0200
+
+    adc mux aadded
+
+A	src/adc_mux.vhd
+
+commit ac17800a3e0ca04b327b8576268ee641790fd7c2
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Mar 25 23:35:05 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Mar 25 23:35:05 2025 +0100
+
+    test modules
+
+M	src/ampl_top.vhd
+A	test/adc_ddr_top.vhd
+R100	tb/iddre1_tb.vhd	test/iddre1_tb.vhd
+
+commit b686fd2f5a0358fc1634157e3efaadb4c907927a
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Feb 20 16:34:53 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Feb 20 16:34:53 2025 +0100
+
+    wip
+
+M	src/ampl_logic.vhd
+M	tb/cnt2_tb.vhd
+
+commit ac9ee3c7c236d4c67d1d93fcb58caf5ec3bb8ab7
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Feb 20 16:34:41 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Feb 20 16:34:41 2025 +0100
+
+    iddre data
+
+M	src/ampl_top.vhd
+
+commit aa6abdb04a819a00d006f8ceaa79279ecd4793e4
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Thu Feb 20 15:39:12 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Thu Feb 20 15:39:12 2025 +0100
+
+    iddre1 operation verification
+
+M	src/ampl_top.vhd
+A	tb/iddre1_tb.vhd
+
+commit a8079bc6aa6a4c8e073fcd93b0fd6389399a4f2a
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Feb 17 15:30:15 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Feb 17 15:30:15 2025 +0100
+
+    frontend primitives
+
+A	.gitignore
+M	src/ampl_logic.vhd
+M	src/ampl_top.vhd
+
+commit cc918bfc13b1f994586468397d81189e382c538e
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Feb 10 15:04:26 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Feb 10 15:04:26 2025 +0100
+
+    wip
+
+M	sch/fit_pm_afe_chanell_logic.drawio
+M	src/ampl_logic.vhd
+M	src/ampl_top.vhd
+
+commit 71e8acc5d8c18985ee96546616eea840a1f9d156
+Author:     r-smalec <rsmalec@gmail.com>
+AuthorDate: Mon Feb 10 00:42:07 2025 +0100
+Commit:     r-smalec <rsmalec@gmail.com>
+CommitDate: Mon Feb 10 00:42:07 2025 +0100
+
+    wip
+
+M	sch/fit_pm_afe_chanell_logic.drawio
+M	sch/fit_pm_afe_fpga_block.drawio
+
+commit 07670e763987dd9569dacdada1c4638aab4b9a41
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Feb 10 00:33:03 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Feb 10 00:33:03 2025 +0100
+
+    wip
+
+M	README.md
+
+commit dec0b35162e7f081f6614c07688e4ca809e38ea1
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Fri Feb 7 16:35:21 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Fri Feb 7 16:35:21 2025 +0100
+
+    sch wip
+
+A	sch/fit_pm_afe_chanell_logic.drawio
+A	sch/fit_pm_afe_clocks.drawio
+R100	sch/fit_pm_fpga_block.drawio	sch/fit_pm_afe_fpga_block.drawio
+D	sch/fit_pm_chanell_logic.drawio
+M	sch/fit_pm_clocks.drawio
+
+commit 554c5a04a5a1be7a48d6f4b4cba56d353b9fb64c
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Wed Jan 15 16:49:35 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Wed Jan 15 16:49:35 2025 +0100
+
+    wip
+
+M	src/ampl_top.vhd
+
+commit 7bb71a357121c6fc7427b90360045c01131884b9
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Tue Jan 14 15:43:39 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Tue Jan 14 15:43:39 2025 +0100
+
+    wip
+
+M	sch/fit_pm_chanell_logic.drawio
+M	src/ampl_top.vhd
+
+commit d3e6c848168d72dbb5f9d82ece9771737d558eb7
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Jan 13 12:52:34 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Jan 13 12:52:34 2025 +0100
+
+    wip
+
+A	Makefile
+A	src/ampl_logic.vhd
+A	src/ampl_top.vhd
+A	src/cnt2.vhd
+A	src/mux_latch.vhd
+A	tb/ampl_logic_tb.vhd
+A	tb/cnt2_tb.vhd
+A	tb/mux_latch_tb.vhd
+
+commit 35997f3c5b1abc737f72b4fbb634c6527293aa3e
+Author:     rsmalec <rsmalec@kplabs.pl>
+AuthorDate: Mon Jan 13 12:50:37 2025 +0100
+Commit:     rsmalec <rsmalec@kplabs.pl>
+CommitDate: Mon Jan 13 12:50:37 2025 +0100
+
+    testbench and doc added
+
+M	README.md
+A	amplcpld_tb.vhd
+A	img/cnt2_tb_wave.png
+A	img/dly_clk20_timings.png
+A	img/event_basement_measurement.png
+A	img/fit_pm_clocks.png
+A	img/fit_pm_cpld.png
+A	img/fit_pm_fpga_block.png
+A	img/gate_strobe_circuit.png
+A	img/mux_latch_tb_wave.png
+A	img/strobe_signal_reaction.png
+A	sch/fit_pm_chanell_logic.drawio
+A	sch/fit_pm_clocks.drawio
+A	sch/fit_pm_cpld.drawio
+A	sch/fit_pm_fpga_block.drawio
+
+commit a6c492e4b81ab73ab82cd76c836830cc16a45bd3
+Author:     Greg Kasprowicz <gkasprow@gmail.com>
+AuthorDate: Mon Jul 15 16:33:13 2024 +0200
+Commit:     GitHub <noreply@github.com>
+CommitDate: Mon Jul 15 16:33:13 2024 +0200
+
+    non verified sources
+
+A	amplcpld.vhd
+A	comps.vhd
+
+commit d9faed8e6af0854163d450c947f3ea44461c8c39
+Author:     Greg Kasprowicz <gkasprow@gmail.com>
+AuthorDate: Mon Jul 15 16:32:35 2024 +0200
+Commit:     GitHub <noreply@github.com>
+CommitDate: Mon Jul 15 16:32:35 2024 +0200
+
+    Create README.md
+
+A	README.md

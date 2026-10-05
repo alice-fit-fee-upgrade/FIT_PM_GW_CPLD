@@ -1,0 +1,79 @@
+{
+  "name": "rename-phase",
+  "source_sha256": "4f7249d6adbe7129724073805ae701083199a7bfb5aa2f8a7c5d648f2bdcfd15",
+  "build_exit": 0,
+  "fit_environment": {
+    "ISE_FIT_OPTIMIZE": "speed"
+  },
+  "proof_exit": 1,
+  "raw_distance": 380,
+  "canonical_difference_count": 504,
+  "aliased_proof_exit": 0,
+  "proof_aliases": {
+    "cal_phase": "cal_str",
+    "cal_sample": "cal_str1"
+  },
+  "commands": [
+    {
+      "utc": "2026-10-04T20:56:41.837248+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/rename-phase-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:45.544897+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-phase-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:48.259693+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "speed",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/rename-phase-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:56:49.516464+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/rename-phase",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/rename-phase-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "6268837d934140fcd99620ff94e98e614862c2a48e3301cd14b2bad79660964b"
+}

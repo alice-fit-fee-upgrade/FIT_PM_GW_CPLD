@@ -1,0 +1,25 @@
+{
+  "qf": 55341,
+  "hamming_distance": 18,
+  "different_fuses": [
+    13516,
+    20424,
+    20453,
+    20482,
+    20511,
+    20588,
+    20646,
+    20675,
+    20704,
+    20733,
+    41483,
+    48153,
+    48259,
+    48317,
+    48346,
+    48375,
+    48404,
+    54958
+  ],
+  "warning": "Raw fuse comparison alone does not establish semantic equivalence."
+}

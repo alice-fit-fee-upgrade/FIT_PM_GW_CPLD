@@ -1,0 +1,8 @@
+V3 3
+FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative/amplcpld.vhd 2026/10/04.21:55:59 P.20131013
+EN work/amplcpld 1791147361 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative/amplcpld.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/amplcpld/recovered_2026 1791147362 \
+      FL /home/codex-hil/coolrunner2-recovery/experiments/matching-2026/speed-hold-negative/amplcpld.vhd \
+      EN work/amplcpld 1791147361

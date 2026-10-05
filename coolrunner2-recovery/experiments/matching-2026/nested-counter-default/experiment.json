@@ -1,0 +1,72 @@
+{
+  "name": "nested-counter-default",
+  "source_sha256": "cf0deddbe74368f8ba77827af827f72af6443c0344d8084c4a5ff97eb37fa253",
+  "build_exit": 0,
+  "fit_environment": {},
+  "proof_exit": 0,
+  "raw_distance": 1039,
+  "canonical_difference_count": 992,
+  "commands": [
+    {
+      "utc": "2026-10-04T20:41:03.770315+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+      "argv": [
+        "xst",
+        "-ifn",
+        "design.xst",
+        "-ofn",
+        "design.syr"
+      ],
+      "log": "experiments/logs/readback-2026-xst.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:07.477629+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+      "argv": [
+        "ngdbuild",
+        "-p",
+        "xc2c128-7-vq100",
+        "-uc",
+        "design.ucf",
+        "design.ngc",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-ngdbuild.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:10.216833+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+      "argv": [
+        "cpldfit",
+        "-p",
+        "xc2c128-7-vq100",
+        "-unused",
+        "ground",
+        "-terminate",
+        "keeper",
+        "-iostd",
+        "LVCMOS33",
+        "-optimize",
+        "density",
+        "-nomlopt",
+        "design.ngd"
+      ],
+      "log": "experiments/logs/readback-2026-cpldfit.log",
+      "exit_code": 0
+    },
+    {
+      "utc": "2026-10-04T20:41:11.466219+00:00",
+      "cwd": "/home/codex-hil/coolrunner2-recovery/experiments/matching-2026/nested-counter-default",
+      "argv": [
+        "hprep6",
+        "-i",
+        "design.vm6"
+      ],
+      "log": "experiments/logs/readback-2026-hprep6.log",
+      "exit_code": 0
+    }
+  ],
+  "source_ucf_sha256": "be6997bc1aa0363be244a63e2d852b90669aa161e70191d2d300aa749c105da1"
+}
